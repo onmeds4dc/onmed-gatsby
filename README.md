@@ -1,1 +1,0 @@
-# onmed-gatsby
