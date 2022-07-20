@@ -1,18 +1,13 @@
 import * as React from "react";
 import { graphql } from "gatsby";
 import Button from "react-bootstrap/Button";
-import "bootstrap/dist/css/bootstrap.min.css";
+import "../sass/index.scss";
 
 // data
 
 // markup
 const IndexPage = ({ data }) => {
     console.log("data: ", data);
-    // const {
-    //     wpPost: { title },
-    // } = data;
-
-    console.log("data.wpPage.title: " + data.wpPage.title);
 
     const {
         wpPage: { title, content },
@@ -24,9 +19,8 @@ const IndexPage = ({ data }) => {
         <main className="container">
             <title>{title}</title>
             <h1>{title}</h1>
-            <Button>Button</Button>
-
             <div dangerouslySetInnerHTML={{ __html: content }}></div>
+            <Button>Button</Button>
         </main>
     );
 };
