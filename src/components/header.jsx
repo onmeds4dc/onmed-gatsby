@@ -1,23 +1,38 @@
 import { Link } from "gatsby";
-import PropTypes from "prop-types";
+
 import React from "react";
+import SiteLogo from "./site-logo";
 
-const Header = ({ siteTitle }) => (
-    <header className="container bg-primary p-4">
-        <h1 style={{ margin: 0 }}>
-            <Link to="/" className="text-light">
-                {siteTitle}
-            </Link>
-        </h1>
-    </header>
-);
+const Header = ({ data }) => {
+    console.log("data: ", data);
 
-Header.propTypes = {
-    siteTitle: PropTypes.string,
+    // const {
+    //     wpMediaItem: { altText },
+    // } = data;
+    return (
+        <header className="container bg-primary p-4">
+            <SiteLogo />
+            <h1 style={{ margin: 0 }}>
+                <Link to="/" className="text-light">
+                    {siteTitle}
+                </Link>
+            </h1>
+        </header>
+    );
 };
 
-Header.defaultProps = {
-    siteTitle: `OnMed`,
-};
+const logo = "SS";
+const siteTitle = "On Med";
+
+const pageQuery = graphql`
+    query {
+        wpMediaItem(title: { eq: "Site Logo" }) {
+            altText
+            sourceUrl
+        }
+    }
+`;
+
+console.log("pageQuery: ", pageQuery.wpMediaItem);
 
 export default Header;

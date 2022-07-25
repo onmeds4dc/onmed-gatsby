@@ -1,6 +1,5 @@
 import React from "react";
 import { Link, useStaticQuery, graphql } from "gatsby";
-// import { getUrlPath } from "../utils/get-url-path";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
