@@ -1,12 +1,11 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Header from "./header";
-import MainMenu from "./main-menu";
 
 const Layout = ({ children, data }) => (
     <>
         <Header />
-        <MainMenu />
+
         <main className="container">{children}</main>
     </>
 );

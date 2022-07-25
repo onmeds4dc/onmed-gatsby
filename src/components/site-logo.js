@@ -19,7 +19,7 @@ export default () => {
             src={logo.sourceUrl}
             alt={logo.altText}
             fluid={true}
-            style={{ height: "50px" }}
+            style={{ maxHeight: "50px" }}
         />
     );
 };

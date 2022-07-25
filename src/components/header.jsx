@@ -2,37 +2,17 @@ import { Link } from "gatsby";
 
 import React from "react";
 import SiteLogo from "./site-logo";
+import MainMenu from "./main-menu";
 
 const Header = ({ data }) => {
-    console.log("data: ", data);
-
-    // const {
-    //     wpMediaItem: { altText },
-    // } = data;
     return (
-        <header className="container bg-primary p-4">
-            <SiteLogo />
-            <h1 style={{ margin: 0 }}>
-                <Link to="/" className="text-light">
-                    {siteTitle}
-                </Link>
-            </h1>
+        <header className="container py-4 d-flex justify-content-between">
+            <Link to="/" className="text-light d-flex">
+                <SiteLogo />
+            </Link>
+            <MainMenu />
         </header>
     );
 };
-
-const logo = "SS";
-const siteTitle = "On Med";
-
-const pageQuery = graphql`
-    query {
-        wpMediaItem(title: { eq: "Site Logo" }) {
-            altText
-            sourceUrl
-        }
-    }
-`;
-
-console.log("pageQuery: ", pageQuery.wpMediaItem);
 
 export default Header;
