@@ -1,6 +1,9 @@
 import * as React from "react";
 import { graphql } from "gatsby";
-import Button from "react-bootstrap/Button";
+// import Button from "react-bootstrap/Button";
+import { Row, Col, Container, ListGroup } from "react-bootstrap";
+
+import Layout from "../components/layout";
 import "../sass/index.scss";
 
 // data
@@ -16,12 +19,10 @@ const IndexPage = ({ data }) => {
     console.log("title: " + title);
 
     return (
-        <main className="container">
-            <title>{title}</title>
+        <Layout>
             <h1>{title}</h1>
             <div dangerouslySetInnerHTML={{ __html: content }}></div>
-            <Button>Button</Button>
-        </main>
+        </Layout>
     );
 };
 
@@ -29,8 +30,7 @@ export default IndexPage;
 
 export const pageQuery = graphql`
     query {
-        wpPage {
-            isFrontPage
+        wpPage(isFrontPage: { eq: true }) {
             slug
             title
             content
