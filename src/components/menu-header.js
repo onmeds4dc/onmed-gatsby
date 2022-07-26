@@ -1,12 +1,12 @@
 import React from "react";
-import { Link, useStaticQuery, graphql } from "gatsby";
+import { useStaticQuery, graphql } from "gatsby";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { flatListToHierarchical } from "../utilities/menus";
 
-export default () => {
+const MenuHeader = () => {
     const { wpMenu } = useStaticQuery(graphql`
         {
             wpMenu(slug: { eq: "header-menu" }) {
@@ -60,3 +60,5 @@ export default () => {
         </Navbar>
     ) : null;
 };
+
+export default MenuHeader;

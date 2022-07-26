@@ -2,7 +2,7 @@ import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import Image from "react-bootstrap/Image";
 
-export default () => {
+const SiteLogo = ({ data }) => {
     const { wpMediaItem } = useStaticQuery(graphql`
         {
             wpMediaItem(title: { eq: "Site Logo" }) {
@@ -23,3 +23,5 @@ export default () => {
         />
     );
 };
+
+export default SiteLogo;
