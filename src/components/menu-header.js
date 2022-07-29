@@ -34,7 +34,10 @@ const MenuHeader = () => {
                     <Nav className="me-auto" defaultActiveKey="/">
                         {menuHierarchical.map((menuItem, i) => (
                             <>
-                                <Nav.Link key={`menu-${i}`} href={menuItem.url}>
+                                <Nav.Link
+                                    key={`menu-${i}`}
+                                    href={menuItem.path}
+                                >
                                     {menuItem.label}
                                 </Nav.Link>
                                 {/* Are there any child menu items? */}
@@ -43,7 +46,7 @@ const MenuHeader = () => {
                                         {menuItem.children.map(
                                             (menuItemChild, x) => (
                                                 <NavDropdown.Item
-                                                    href="#action/3.1"
+                                                    href={menuItemChild.path}
                                                     key={`menu-${x}`}
                                                 >
                                                     {menuItemChild.label}
