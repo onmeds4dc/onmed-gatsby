@@ -4,13 +4,14 @@ import Header from "../components/header";
 import Footer from "../components/footer";
 import "../sass/index.scss";
 
-const DefaultTemplate = ({ data: { wpPage } }) => {
+const ContactTemplate = ({ data: { wpPage } }) => {
     const { title, content } = wpPage;
     return (
         <>
             <Header />
             <main className="container">
-                <h1>{title}</h1>
+                <h3>{title}</h3>
+                <hr />
                 <div dangerouslySetInnerHTML={{ __html: content }}></div>
             </main>
             <Footer />
@@ -27,4 +28,4 @@ export const query = graphql`
     }
 `;
 
-export default DefaultTemplate;
+export default ContactTemplate;

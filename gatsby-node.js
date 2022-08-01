@@ -3,7 +3,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
     const result = await graphql(`
         {
-            allWpPages: allWpPage(
+            allWpPage: allWpPage(
                 filter: { template: { templateName: { eq: "Default" } } }
             ) {
                 nodes {
@@ -14,8 +14,10 @@ exports.createPages = async ({ graphql, actions }) => {
                     }
                 }
             }
-            homePages: allWpPage(
-                filter: { template: { templateName: { eq: "Home Template" } } }
+            contactPage: allWpPage(
+                filter: {
+                    template: { templateName: { eq: "Contact Template" } }
+                }
             ) {
                 nodes {
                     id
@@ -28,9 +30,9 @@ exports.createPages = async ({ graphql, actions }) => {
         }
     `);
 
-    const { allWpPages, homePages } = result.data;
+    const { allWpPage, contactPage } = result.data;
 
-    allWpPages.nodes.map((page) => {
+    allWpPage.nodes.map((page) => {
         console.log("page all: ", page);
         const { id, uri } = page;
         return actions.createPage({
@@ -42,12 +44,12 @@ exports.createPages = async ({ graphql, actions }) => {
         });
     });
 
-    homePages.nodes.map((page) => {
+    contactPage.nodes.map((page) => {
         console.log("page: ", page);
         const { id, uri } = page;
         return actions.createPage({
             path: uri,
-            component: require.resolve("./src/templates/home-template.js"),
+            component: require.resolve("./src/templates/contact-template.js"),
             context: {
                 id: id,
             },
