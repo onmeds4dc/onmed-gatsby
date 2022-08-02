@@ -1,1 +1,80 @@
 // $body-bg: #000;
+
+// Spacing
+$spacer: 1rem !default;
+$spacers: (
+    0: 0,
+    1: $spacer * 0.25,
+    // 4px
+    2: $spacer * 0.5,
+    // 8px
+    3: $spacer,
+    // 16px
+    4: $spacer * 1.5,
+    // 24px
+    5: $spacer * 2,
+    // 32px
+    6: $spacer * 3,
+    // 48px
+) !default;
+
+// Adding these to match .p-1, .p2, etc.
+$spacing-0: 0rem !default;
+$spacing-1: 0.25rem !default;
+$spacing-2: 0.5rem !default;
+$spacing-3: 1rem !default;
+$spacing-4: 1.5rem !default;
+$spacing-5: 2rem !default;
+$spacing-6: 3rem !default;
+
+// Typography
+$font-size-root: null !default;
+$font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
+
+$font-size-lg: $font-size-base * 1.25 !default; // 20px
+$font-size-sm: $font-size-base * 0.875 !default; // 14
+$font-size-xs: $font-size-base * 0.75 !default; // 12
+
+$font-weight-lighter: lighter !default;
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-bold: 700 !default;
+$font-weight-bolder: bolder !default;
+
+$font-weight-base: $font-weight-normal !default;
+
+$line-height-base: 1.4 !default; // 24
+$line-height-lg: 1.4 !default; // 28
+$line-height-sm: 1.571428571 !default; // 22
+$line-height-xs: 1.666666667 !default; // 20
+
+$h1-font-size: $font-size-base * 3.5 !default; // 56px
+$h1-line-height: 1.142857143 !default; // 64px
+
+$h2-font-size: $font-size-base * 2.875 !default; // 46px
+$h2-line-height: 1.173913043 !default; // 54px
+
+$h3-font-size: $font-size-base * 2.375 !default; // 38px
+$h3-line-height: 1.210526316 !default; // 46px
+
+$h4-font-size: $font-size-base * 1.875 !default; // 30px
+$h4-line-height: 1.266666667 !default; // 38px
+
+$h5-font-size: $font-size-base * 1.5 !default; // 24px
+$h5-line-height: 1.333333333 !default; // 32px
+
+$h6-font-size: $font-size-base * 1.25 !default; // 20px
+$h6-line-height: 1.4 !default; // 28px
+
+$font-sizes: (
+    1: $h1-font-size,
+    2: $h2-font-size,
+    3: $h3-font-size,
+    4: $h4-font-size,
+    5: $h5-font-size,
+    6: $h6-font-size,
+) !default;
+
+$lead-font-size: $font-size-base * 1.25 !default; // 20px
+$lead-font-weight: 300 !default;
+$small-font-size: 0.875em !default;

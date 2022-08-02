@@ -1,0 +1,38 @@
+.list-unstyled {
+    @include list-unstyled();
+}
+
+// Inline turns list items into inline-block
+.list-inline {
+    @include list-unstyled();
+}
+.list-inline-item {
+    display: inline-block;
+
+    &:not(:last-child) {
+        margin-right: $list-inline-padding;
+    }
+}
+
+.list-indent-none {
+    padding-left: 20px;
+}
+
+.list-definition-justified {
+    display: flex;
+    justify-content: space-between;
+
+    + .list-definition-justified {
+        border-top: 1px solid $border-color;
+        margin-top: $spacing-3;
+        padding-top: $spacing-3;
+    }
+    > dt {
+        font-weight: bold;
+        color: $black;
+    }
+    > dd {
+        text-align: end;
+        margin-bottom: 0;
+    }
+}

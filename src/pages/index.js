@@ -1,7 +1,5 @@
 import * as React from "react";
 import { graphql } from "gatsby";
-// import Button from "react-bootstrap/Button";
-import { Row, Col, Container, ListGroup } from "react-bootstrap";
 
 import Layout from "../components/layout";
 import "../sass/index.scss";
