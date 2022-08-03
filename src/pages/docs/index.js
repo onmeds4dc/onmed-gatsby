@@ -11,14 +11,13 @@ const DocsPage = () => {
         <LayoutDocs>
             <h1 className="mb-5">Docs</h1>
 
-            <hr className="my-5" />
+            <hr className="my-6" />
             <h2 className="mb-5">Utilities</h2>
             <DocsTypography />
             <DocsColor />
             <DocsSpacing />
 
-            <hr className="my-5" />
-            <h2 className="mb-5">Components</h2>
+            <h2 className="my-6">Components</h2>
             <DocsLists />
         </LayoutDocs>
     );
