@@ -1,9 +1,6 @@
 import React from "react";
 
 const DocsColor = () => {
-    const fpo =
-        "_____ is a great font. Let's use it all over this website for all the words on the website. Do you know what I mean? It's such a great idea!";
-
     return (
         <>
             <section className="docs docs__section">

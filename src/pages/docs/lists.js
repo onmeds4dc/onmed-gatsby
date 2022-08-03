@@ -1,5 +1,5 @@
 import React from "react";
-import { LoremIpsum, loremIpsum } from "react-lorem-ipsum";
+import { loremIpsum } from "react-lorem-ipsum";
 
 const DocsLists = () => {
     const listItem1 =

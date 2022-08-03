@@ -4,7 +4,8 @@ import DocsTypography from "./typography";
 import DocsColor from "./color";
 import DocsSpacing from "./spacing";
 import DocsLists from "./lists";
-import "../../sass/index.scss";
+import DocsForms from "./forms";
+import DocsButtons from "./buttons";
 
 const DocsPage = () => {
     return (
@@ -18,6 +19,8 @@ const DocsPage = () => {
             <DocsSpacing />
 
             <h2 className="my-6">Components</h2>
+            <DocsButtons />
+            <DocsForms />
             <DocsLists />
         </LayoutDocs>
     );
