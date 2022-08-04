@@ -3,51 +3,51 @@ import { loremIpsum } from "react-lorem-ipsum";
 
 const DocsLists = () => {
     const listItem1 =
-        "List item 1. " +
+        "List item one. " +
         loremIpsum({
             avgWordsPerSentence: 5,
             avgSentencesPerParagraph: 1,
         });
     const listItem2 =
-        "List item 2. " +
+        "List item two. " +
         loremIpsum({
             avgWordsPerSentence: 5,
             avgSentencesPerParagraph: 4,
         });
     const listItem3 =
-        "List item 3. " +
+        "List item three. " +
         loremIpsum({
             avgWordsPerSentence: 9,
             avgSentencesPerParagraph: 1,
         });
     const listItem4 =
-        "List item 4. " +
+        "List item four. " +
         loremIpsum({
             avgWordsPerSentence: 2,
             avgSentencesPerParagraph: 1,
         });
     const lists = (
-        <section class="docs docs__section">
-            <h3 class="ant-typography">Lists</h3>
+        <section className="docs docs__section">
+            <h3>Lists</h3>
             <ul>
                 <li>{listItem1}</li>
                 <li>{listItem2}</li>
                 <li>{listItem3}</li>
                 <li>{listItem4}</li>
             </ul>
-            <h5 class="ant-typography mt-6">Unstyled</h5>
-            <ul class="list-unstyled">
+            <h5 className="mt-6">Unstyled</h5>
+            <ul className="list-unstyled">
                 <li>{listItem1}</li>
                 <li>{listItem2}</li>
                 <li>{listItem3}</li>
                 <li>{listItem4}</li>
             </ul>
-            <h5 class="ant-typography mt-6">Inline</h5>
-            <ul class="list-unstyled list-inline">
-                <li class="list-inline-item">List item 1</li>
-                <li class="list-inline-item">List item 2</li>
-                <li class="list-inline-item">List item 3</li>
-                <li class="list-inline-item">List item 4</li>
+            <h5 className="mt-6">Inline</h5>
+            <ul className="list-unstyled list-inline">
+                <li className="list-inline-item">List item one</li>
+                <li className="list-inline-item">List item two</li>
+                <li className="list-inline-item">List item three</li>
+                <li className="list-inline-item">List item four</li>
             </ul>
         </section>
     );

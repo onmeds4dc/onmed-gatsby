@@ -1,6 +1,5 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
-import Form from "react-bootstrap/Form";
 
 const DocsButtons = () => {
     function RowOfButtons(label, args) {
@@ -68,6 +67,20 @@ const DocsButtons = () => {
             </tr>
         );
     }
+    const sizes = (
+        <div className="my-4">
+            <Button variant="primary" size="lg" className="me-3">
+                Large
+            </Button>
+            <Button variant="primary" className="me-3">
+                Default
+            </Button>
+            <Button variant="primary" size="sm" className="me-3">
+                Small
+            </Button>
+        </div>
+    );
+
     return (
         <>
             <section className="docs docs__section">
@@ -94,6 +107,7 @@ const DocsButtons = () => {
                         {RowOfButtons("Disabled", "disabled")}
                     </tbody>
                 </table>
+                {sizes}
             </section>
         </>
     );
