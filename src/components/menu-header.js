@@ -18,6 +18,7 @@ const MenuHeader = () => {
                         title
                         path
                         parentId
+                        cssClasses
                     }
                 }
             }
@@ -37,6 +38,13 @@ const MenuHeader = () => {
                                 <Nav.Link
                                     key={`menu-${i}`}
                                     href={menuItem.path}
+                                    className={
+                                        menuItem.cssClasses.length
+                                            ? menuItem.cssClasses.map(
+                                                  (className) => ` ${className}`
+                                              )
+                                            : null
+                                    }
                                 >
                                     {menuItem.label}
                                 </Nav.Link>
