@@ -6,7 +6,7 @@ import "../sass/index.scss";
 const Layout = ({ children, data }) => (
     <>
         <Header />
-        <main className="container">{children}</main>
+        <main>{children}</main>
         <Footer />
     </>
 );

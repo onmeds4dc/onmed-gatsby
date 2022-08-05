@@ -1,5 +1,15 @@
 // $body-bg: #000;
 
+$sage: #a3c6a0;
+$sage-light: #e6edef;
+$blue: #3e5aa7;
+$orange: #fe8c6e;
+
+$theme-colors: (
+    "primary": $blue,
+    "secondary": $orange,
+);
+
 // Spacing
 $spacer: 1rem !default;
 $spacers: (
@@ -78,3 +88,20 @@ $font-sizes: (
 $lead-font-size: $font-size-base * 1.25 !default; // 20px
 $lead-font-weight: 300 !default;
 $small-font-size: 0.875em !default;
+
+// Quickly modify global styling by enabling or disabling optional features.
+$enable-caret: false !default;
+$enable-rounded: false !default;
+$enable-shadows: false !default;
+$enable-gradients: false !default;
+$enable-transitions: false !default;
+$enable-reduced-motion: true !default;
+$enable-smooth-scroll: true !default;
+$enable-grid-classes: true !default;
+$enable-cssgrid: false !default;
+$enable-button-pointers: true !default;
+$enable-rfs: true !default;
+$enable-validation-icons: false !default;
+$enable-negative-margins: true !default;
+$enable-deprecation-messages: false !default;
+$enable-important-utilities: false !default;

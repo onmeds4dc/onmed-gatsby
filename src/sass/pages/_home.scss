@@ -1,0 +1,21 @@
+.bg-home-intro {
+    background-color: $sage;
+    padding: $spacing-4;
+
+    @include media-breakpoint-up(sm) {
+        background-image: url("/images/backgrounds/green-lab-lady.jpg");
+        background-size: cover;
+        background-position: 100% 50%;
+        background-repeat: no-repeat;
+    }
+
+    @include media-breakpoint-up(md) {
+        padding: $spacing-6;
+        background-size: cover;
+        min-height: 500px;
+    }
+
+    @include media-breakpoint-up(xl) {
+        min-height: 700px;
+    }
+}

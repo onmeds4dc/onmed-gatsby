@@ -1,0 +1,8 @@
+.bg {
+    &-sage {
+        background-color: $sage;
+        &-light {
+            background-color: $sage-light;
+        }
+    }
+}
