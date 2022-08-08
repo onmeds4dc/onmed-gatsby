@@ -34,9 +34,8 @@ const MenuHeader = () => {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto" defaultActiveKey="/">
                         {menuHierarchical.map((menuItem, i) => (
-                            <>
+                            <span key={`menu-${i}`}>
                                 <Nav.Link
-                                    key={`menu-${i}`}
                                     href={menuItem.path}
                                     className={
                                         menuItem.cssClasses.length
@@ -63,7 +62,7 @@ const MenuHeader = () => {
                                         )}
                                     </NavDropdown>
                                 ) : null}
-                            </>
+                            </span>
                         ))}
                     </Nav>
                 </Navbar.Collapse>
