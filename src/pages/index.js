@@ -13,11 +13,15 @@ import imgValues from "../../static/images/backgrounds/hex-three-people-from-abo
 
 const IndexPage = ({ data }) => {
     const {
-        wpPage: { title, content, featuredImage },
+        wpPage: { title, content, featuredImage, pageHome, introBody },
     } = data;
 
     //     const image = getImage(featuredImage.node.localFile);
     // <GatsbyImage image={image} alt="" />
+
+    console.log("introHeadline: ", pageHome.introHeadline);
+
+    console.log("pageHome: ", pageHome);
 
     const listItem = (
         <li>
@@ -39,10 +43,10 @@ const IndexPage = ({ data }) => {
     const sectionIntro = (
         <section className="bg-home-intro text-white">
             <div className="container">
-                <div class="row">
-                    <div class="col-sm-7 col-lg-6">
+                <div className="row">
+                    <div className="col-sm-7 col-lg-6">
                         <h1 style={{ marginTop: "5vw" }}>
-                            Aenean lacinia bibendum nulla sed consect.
+                            {pageHome.introHeadline}
                         </h1>
                     </div>
                 </div>
@@ -52,8 +56,8 @@ const IndexPage = ({ data }) => {
 
     const sectionComprehensive = (
         <section className="container">
-            <div class="row justify-content-between">
-                <div class="col-md-5 py-4 py-md-6">
+            <div className="row justify-content-between">
+                <div className="col-md-5 py-4 py-md-6">
                     <h2 className="text-primary">
                         The most comprehensive lorem ipsum dolor sit amet
                     </h2>
@@ -64,7 +68,7 @@ const IndexPage = ({ data }) => {
                         </Link>
                     </p>
                 </div>
-                <div class="col-md-7">
+                <div className="col-md-7">
                     <img src={imgComprehensive} alt="" className="img-fluid" />
                 </div>
             </div>
@@ -74,11 +78,11 @@ const IndexPage = ({ data }) => {
     const sectionValues = (
         <section className="container mt-n3">
             <div className="row justify-content-between align-items-center">
-                <div class="col-md-4">
+                <div className="col-md-4">
                     <img src={imgValues} alt="" className="img-fluid" />
                 </div>
 
-                <div class="col-md-7 py-4 py-md-6">
+                <div className="col-md-7 py-4 py-md-6">
                     <ul className="list-unstyled">
                         {listItem}
                         {listItem}
@@ -165,7 +169,10 @@ export const pageQuery = graphql`
         wpPage(isFrontPage: { eq: true }) {
             slug
             title
-            content
+            pageHome {
+                introBody
+                introHeadline
+            }
             featuredImage {
                 node {
                     localFile {
