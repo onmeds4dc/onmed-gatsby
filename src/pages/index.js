@@ -48,6 +48,11 @@ const IndexPage = ({ data }) => {
                         <h1 style={{ marginTop: "5vw" }}>
                             {pageHome.introHeadline}
                         </h1>
+                        <div
+                            dangerouslySetInnerHTML={{
+                                __html: pageHome.introBody,
+                            }}
+                        ></div>
                     </div>
                 </div>
             </div>
