@@ -9,7 +9,7 @@ import { flatListToHierarchical } from "../utilities/menus";
 const MenuHeader = () => {
     const { wpMenu } = useStaticQuery(graphql`
         {
-            wpMenu(slug: { eq: "header-menu" }) {
+            wpMenu(slug: { eq: "primary-menu" }) {
                 name
                 menuItems {
                     nodes {
@@ -34,7 +34,7 @@ const MenuHeader = () => {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto" defaultActiveKey="/">
                         {menuHierarchical.map((menuItem, i) => (
-                            <span key={`menu-${i}`}>
+                            <>
                                 <Nav.Link
                                     href={menuItem.path}
                                     className={
@@ -48,13 +48,16 @@ const MenuHeader = () => {
                                     {menuItem.label}
                                 </Nav.Link>
                                 {/* Are there any child menu items? */}
+
                                 {menuItem.children.length ? (
-                                    <NavDropdown id={`dropdown-menu-${i}`}>
+                                    <NavDropdown
+                                        id={`dropdown-menu-${menuItem.path}`}
+                                    >
                                         {menuItem.children.map(
                                             (menuItemChild, x) => (
                                                 <NavDropdown.Item
                                                     href={menuItemChild.path}
-                                                    key={`menu-${x}`}
+                                                    key={`dropdown-menu-${x}`}
                                                 >
                                                     {menuItemChild.label}
                                                 </NavDropdown.Item>
@@ -62,7 +65,7 @@ const MenuHeader = () => {
                                         )}
                                     </NavDropdown>
                                 ) : null}
-                            </span>
+                            </>
                         ))}
                     </Nav>
                 </Navbar.Collapse>

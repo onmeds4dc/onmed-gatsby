@@ -90,7 +90,7 @@ $lead-font-weight: 300 !default;
 $small-font-size: 0.875em !default;
 
 // Quickly modify global styling by enabling or disabling optional features.
-$enable-caret: false !default;
+$enable-caret: true !default;
 $enable-rounded: false !default;
 $enable-shadows: false !default;
 $enable-gradients: false !default;

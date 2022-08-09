@@ -2,15 +2,17 @@ import { Link } from "gatsby";
 import React from "react";
 import SiteLogoLight from "./site-logo-light";
 import MenuFooter from "./menu-footer";
+import MenuUtility from "./menu-utility";
 
 const Footer = ({ data }) => {
     return (
-        <footer className="bg-primary text-light">
+        <footer className="bg-primary text-white links-white">
             <div className="container py-4">
-                <Link to="/" className="text-light d-flex">
+                <Link to="/" className="d-flex">
                     <SiteLogoLight />
                 </Link>
                 <MenuFooter />
+                <MenuUtility />
                 <div>
                     <Link to="mailto:info@onmed.com">info@onmed.com</Link>
                     <br />

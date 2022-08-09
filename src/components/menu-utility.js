@@ -4,10 +4,10 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { flatListToHierarchical } from "../utilities/menus";
 
-const MenuFooter = () => {
+const MenuUtility = () => {
     const { wpMenu } = useStaticQuery(graphql`
         {
-            wpMenu(slug: { eq: "footer-menu" }) {
+            wpMenu(slug: { eq: "utility-menu" }) {
                 name
                 menuItems {
                     nodes {
@@ -35,4 +35,4 @@ const MenuFooter = () => {
     ) : null;
 };
 
-export default MenuFooter;
+export default MenuUtility;
