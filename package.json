@@ -32,6 +32,7 @@
         "sass": "^1.53.0"
     },
     "devDependencies": {
+        "gatsby-plugin-manifest": "^4.20.0",
         "gatsby-plugin-sass": "^5.20.0"
     }
 }

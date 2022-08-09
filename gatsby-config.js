@@ -34,6 +34,13 @@ module.exports = {
             },
         },
         {
+            resolve: "gatsby-plugin-manifest",
+            options: {
+                icon: "static/images/favicon/favicon.svg",
+            },
+        },
+
+        {
             resolve: "gatsby-plugin-web-font-loader",
             options: {
                 typekit: {
