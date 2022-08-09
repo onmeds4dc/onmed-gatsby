@@ -1,9 +1,12 @@
 // $body-bg: #000;
 
 $sage: #a3c6a0;
+$cloud: #e6edef;
 $sage-light: #e6edef;
 $blue: #3e5aa7;
 $orange: #fe8c6e;
+$black: #000;
+$dark: #252831;
 
 $theme-colors: (
     "primary": $blue,
@@ -105,3 +108,9 @@ $enable-validation-icons: false !default;
 $enable-negative-margins: true !default;
 $enable-deprecation-messages: false !default;
 $enable-important-utilities: false !default;
+
+// Menus
+
+$menu-primary-color: $dark;
+$menu-primary-weight: bold;
+$menu-primary-size: $small-font-size;
