@@ -6,10 +6,11 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { LoremIpsum, loremIpsum } from "react-lorem-ipsum";
 
 import Layout from "../components/layout";
-import "../sass/index.scss";
+// import "../sass/index.scss";
 
 import imgComprehensive from "../../static/images/backgrounds/hex-lady-scrubs.jpg";
 import imgValues from "../../static/images/backgrounds/hex-three-people-from-above.jpg";
+import imgFriendsCoffeeShop from "../../static/images/fpo/friends-coffee-shop-v2.jpg";
 
 const IndexPage = ({ data }) => {
     const {
@@ -22,6 +23,34 @@ const IndexPage = ({ data }) => {
     console.log("introHeadline: ", pageHome.introHeadline);
 
     console.log("pageHome: ", pageHome);
+
+    const sectionIntro = (
+        <section className="bg-cloud  text-center">
+            <div className="container">
+                <div className="row justify-content-center">
+                    <div className="col-sm-7 col-lg-6">
+                        <h1
+                            style={{ marginTop: "5vw" }}
+                            className="text-primary"
+                        >
+                            {pageHome.introHeadline}
+                        </h1>
+                        <img
+                            src={imgFriendsCoffeeShop}
+                            alt=""
+                            className="img-fluid mask-image--hex"
+                        />
+
+                        {/* <div
+                            dangerouslySetInnerHTML={{
+                                __html: pageHome.introBody,
+                            }}
+                        ></div> */}
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
 
     const listItem = (
         <li>
@@ -40,68 +69,43 @@ const IndexPage = ({ data }) => {
             avgSentencesPerParagraph: 1,
         });
 
-    const sectionIntro = (
-        <section className="bg-home-intro text-white">
+    const sectionComprehensive = (
+        <section className=" bg-primary" style={{ paddingTop: "200px" }}>
             <div className="container">
-                <div className="row">
-                    <div className="col-sm-7 col-lg-6">
-                        <h1 style={{ marginTop: "5vw" }}>
-                            {pageHome.introHeadline}
-                        </h1>
-                        <div
-                            dangerouslySetInnerHTML={{
-                                __html: pageHome.introBody,
-                            }}
-                        ></div>
+                <div className="row justify-content-between">
+                    <div className="col-md-5 py-4 py-md-6 text-white">
+                        <h2>
+                            The most comprehensive lorem ipsum dolor sit amet
+                        </h2>
+                        <LoremIpsum
+                            avgSentencesPerParagraph="1"
+                            avgWordsPerSentence="40"
+                        />
+                        <p>
+                            <Link to="/" className="btn btn-secondary">
+                                Request a Location
+                            </Link>
+                        </p>
+                    </div>
+                    <div className="col-md-5">
+                        <ul
+                            className="list-unstyled bg-white"
+                            style={{ marginTop: "200px" }}
+                        >
+                            {listItem}
+                            {listItem}
+                            {listItem}
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
     );
 
-    const sectionComprehensive = (
-        <section className="container">
-            <div className="row justify-content-between">
-                <div className="col-md-5 py-4 py-md-6">
-                    <h2 className="text-primary">
-                        The most comprehensive lorem ipsum dolor sit amet
-                    </h2>
-                    <LoremIpsum />
-                    <p>
-                        <Link to="/" className="btn btn-secondary">
-                            Request a Location
-                        </Link>
-                    </p>
-                </div>
-                <div className="col-md-7">
-                    <img src={imgComprehensive} alt="" className="img-fluid" />
-                </div>
-            </div>
-        </section>
-    );
-
-    const sectionValues = (
-        <section className="container mt-n3">
-            <div className="row justify-content-between align-items-center">
-                <div className="col-md-4">
-                    <img src={imgValues} alt="" className="img-fluid" />
-                </div>
-
-                <div className="col-md-7 py-4 py-md-6">
-                    <ul className="list-unstyled">
-                        {listItem}
-                        {listItem}
-                        {listItem}
-                    </ul>
-                </div>
-            </div>
-        </section>
-    );
-
     const sectionHowItWorks = (
-        <section className="bg-sage-light py-4 py-md-6 text-center">
+        <section className="bg-secondary py-4 py-md-6 text-center">
             <div className="container">
-                <h2>How it Works</h2>
+                <h2 className="text-white">How it Works</h2>
                 <ol className="list-unstyled row">
                     <li className="col-md">
                         <h4>Step 1</h4>
@@ -154,7 +158,6 @@ const IndexPage = ({ data }) => {
         <Layout>
             {sectionIntro}
             {sectionComprehensive}
-            {sectionValues}
             {sectionHowItWorks}
             {/*
             {sectionAudiences}
