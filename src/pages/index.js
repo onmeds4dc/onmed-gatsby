@@ -1,15 +1,9 @@
 import * as React from "react";
 import { graphql } from "gatsby";
 import { Link } from "gatsby";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
-
 import { LoremIpsum, loremIpsum } from "react-lorem-ipsum";
-
 import Layout from "../components/layout";
-// import "../sass/index.scss";
-
-import imgComprehensive from "../../static/images/backgrounds/hex-lady-scrubs.jpg";
-import imgValues from "../../static/images/backgrounds/hex-three-people-from-above.jpg";
+import "../sass/index.scss";
 import imgFriendsCoffeeShop from "../../static/images/fpo/friends-coffee-shop-v2.jpg";
 
 const IndexPage = ({ data }) => {

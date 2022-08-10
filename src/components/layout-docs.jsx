@@ -1,5 +1,5 @@
 import React from "react";
-// import "../sass/docs.scss";
+import "../sass/docs.scss";
 
 const LayoutDocs = ({ children, data }) => (
     <>
