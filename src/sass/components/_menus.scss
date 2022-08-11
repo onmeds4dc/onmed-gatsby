@@ -1,7 +1,10 @@
 .navbar--primary {
     .nav-link {
         text-transform: uppercase;
-        color: $menu-primary-color;
+        &:not(.btn) {
+            color: $menu-primary-color;
+        }
+
         font-weight: $menu-primary-weight;
         font-size: $menu-primary-size;
     }

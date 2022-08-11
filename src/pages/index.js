@@ -1,6 +1,8 @@
 import * as React from "react";
 import { graphql } from "gatsby";
 import { Link } from "gatsby";
+import Button from "react-bootstrap/Button";
+import Form from "react-bootstrap/Form";
 import { LoremIpsum, loremIpsum } from "react-lorem-ipsum";
 import Layout from "../components/layout";
 import "../sass/index.scss";
@@ -25,15 +27,10 @@ const IndexPage = ({ data }) => {
                     <div className="col-sm-7 col-lg-6">
                         <h1
                             style={{ marginTop: "5vw" }}
-                            className="text-primary"
+                            className="text-primary mb-5"
                         >
                             {pageHome.introHeadline}
                         </h1>
-                        <img
-                            src={imgFriendsCoffeeShop}
-                            alt=""
-                            className="img-fluid mask-image--hex"
-                        />
 
                         {/* <div
                             dangerouslySetInnerHTML={{
@@ -46,9 +43,21 @@ const IndexPage = ({ data }) => {
         </section>
     );
 
+    const sectionHexImage = (
+        <section className="bg-half-horz-cloud-primary">
+            <div className="container text-center">
+                <img
+                    src={imgFriendsCoffeeShop}
+                    alt=""
+                    className="img-fluid mask-image--hex"
+                />
+            </div>
+        </section>
+    );
+
     const listItem = (
         <li>
-            <h3 className="text-primary">Value prop</h3>
+            <h3 className="text-primary">Value props</h3>
             <p>
                 Integer posuere erat a ante venenatis dapibus posuere velit
                 aliquet.
@@ -64,10 +73,10 @@ const IndexPage = ({ data }) => {
         });
 
     const sectionComprehensive = (
-        <section className=" bg-primary" style={{ paddingTop: "200px" }}>
+        <section className="bg-primary">
             <div className="container">
                 <div className="row justify-content-between">
-                    <div className="col-md-5 py-4 py-md-6 text-white">
+                    <div className="col-md-5 py-4 py-md-6 text-white mt-md-n6">
                         <h2>
                             The most comprehensive lorem ipsum dolor sit amet
                         </h2>
@@ -76,7 +85,7 @@ const IndexPage = ({ data }) => {
                             avgWordsPerSentence="40"
                         />
                         <p>
-                            <Link to="/" className="btn btn-secondary">
+                            <Link to="/" className="btn btn-light">
                                 Request a Location
                             </Link>
                         </p>
@@ -144,15 +153,101 @@ const IndexPage = ({ data }) => {
             </div>
         </section>
     );
-    // const sectionHowItWorks = ();
+    const sectionConversation = (
+        <section className="bg-secondary py-4 py-md-6">
+            <div className="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2>Start a Conversation</h2>
+                        <LoremIpsum
+                            avgWordsPerSentence="3"
+                            avgSentencesPerParagraph={1}
+                        />
+                    </div>
+                    <div class="col-md-6">
+                        <Form>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <Form.Group
+                                        className="mb-3 form-floating"
+                                        controlId="formYourName"
+                                    >
+                                        <Form.Control
+                                            type="text"
+                                            placeholder="Your Name"
+                                        />
+                                        <Form.Label>Your Name</Form.Label>
+                                    </Form.Group>
+                                </div>
+                                <div class="col-md-6">
+                                    <Form.Group
+                                        className="mb-3 form-floating"
+                                        controlId="formBasicEmail"
+                                    >
+                                        <Form.Control
+                                            type="email"
+                                            placeholder="Enter email"
+                                        />
+                                        <Form.Label>Email address</Form.Label>
+                                    </Form.Group>
+                                </div>
+                            </div>
+
+                            <Form.Group
+                                className="mb-3 form-floating"
+                                controlId="formCompanyName"
+                            >
+                                <Form.Control
+                                    type="text"
+                                    placeholder="Company Name"
+                                />
+                                <Form.Label>Company Name</Form.Label>
+                            </Form.Group>
+
+                            <Form.Group
+                                className="mb-3 form-floating"
+                                controlId="formSector"
+                            >
+                                <Form.Select>
+                                    <option>Sector 1</option>
+                                    <option>Sector 2</option>
+                                    <option>Sector 3</option>
+                                </Form.Select>
+                                <Form.Label>Sector</Form.Label>
+                            </Form.Group>
+
+                            <Form.Group
+                                className="mb-3 form-floating"
+                                controlId="formMessage"
+                            >
+                                <Form.Control
+                                    as="textarea"
+                                    rows={5}
+                                    placeholder="Message"
+                                    style={{ height: "auto" }}
+                                />
+                                <Form.Label>Message</Form.Label>
+                            </Form.Group>
+
+                            <Button variant="primary" type="submit">
+                                Submit
+                            </Button>
+                        </Form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
     // const sectionAudiences = ();
     // const sectionTestimonials = ();
 
     return (
         <Layout>
             {sectionIntro}
+            {sectionHexImage}
             {sectionComprehensive}
             {sectionHowItWorks}
+            {sectionConversation}
             {/*
             {sectionAudiences}
             {sectionTestimonials}

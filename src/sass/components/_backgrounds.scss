@@ -8,4 +8,7 @@
     &-cloud {
         background-color: $cloud;
     }
+    &-half-horz-cloud-primary {
+        background: linear-gradient(0deg, $primary 50%, $cloud 50%);
+    }
 }

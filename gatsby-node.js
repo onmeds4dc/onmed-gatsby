@@ -33,7 +33,7 @@ exports.createPages = async ({ graphql, actions }) => {
     const { allWpPage, contactPage } = result.data;
 
     allWpPage.nodes.map((page) => {
-        console.log("page all: ", page);
+        // console.log("page all: ", page);
         const { id, uri } = page;
         return actions.createPage({
             path: uri,
@@ -45,7 +45,7 @@ exports.createPages = async ({ graphql, actions }) => {
     });
 
     contactPage.nodes.map((page) => {
-        console.log("page: ", page);
+        // console.log("page: ", page);
         const { id, uri } = page;
         return actions.createPage({
             path: uri,

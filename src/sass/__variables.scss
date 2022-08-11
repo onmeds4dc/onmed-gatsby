@@ -8,10 +8,8 @@ $orange: #fe8c6e;
 $black: #000;
 $dark: #252831;
 
-$theme-colors: (
-    "primary": $blue,
-    "secondary": $orange,
-);
+$primary: $blue;
+$secondary: $orange;
 
 // Spacing
 $spacer: 1rem !default;
