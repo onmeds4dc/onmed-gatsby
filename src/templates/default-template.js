@@ -2,7 +2,6 @@ import React from "react";
 import { graphql } from "gatsby";
 import Header from "../components/header";
 import Footer from "../components/footer";
-import "../sass/index.scss";
 
 const DefaultTemplate = ({ data: { wpPage } }) => {
     const { title, content } = wpPage;

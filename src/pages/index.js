@@ -5,7 +5,6 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { LoremIpsum, loremIpsum } from "react-lorem-ipsum";
 import Layout from "../components/layout";
-import "../sass/index.scss";
 import imgFriendsCoffeeShop from "../../static/images/fpo/friends-coffee-shop-v2.jpg";
 
 const IndexPage = ({ data }) => {
