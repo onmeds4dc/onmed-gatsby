@@ -84,13 +84,7 @@ const IndexPage = ({ data }) => {
                         clinicians, virtually anywhere
                     </h2>
                     <p class="lead">
-                        The OnMed Station provides a more personalized virtual
-                        care experience and connects patients directly with live
-                        certified clinicians whenever they need it. Our care
-                        station is open 24/7, with no appointment needed. Every
-                        examination is one-on-one in real-time, and we can
-                        address 85% of a typical Primary Care visit, including
-                        all key biometrics and vitals.
+                        Getting Care at an OnMed station is simple
                     </p>
                     <p>
                         <Link to="/" className="btn btn-primary">
@@ -152,6 +146,9 @@ const IndexPage = ({ data }) => {
         <section className="bg-secondary py-4 py-md-6 text-center">
             <div className="container">
                 <h2 className="text-white">How it Works</h2>
+                <p className="lead">
+                    Getting Care at an OnMed station is simple
+                </p>
                 <ol className="list-unstyled row">
                     <li className="col-md">
                         <h4>Step 1</h4>
