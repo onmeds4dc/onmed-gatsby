@@ -8,11 +8,44 @@ $orange: #fe8c6e;
 $black: #000;
 $dark: #252831;
 
+// Gray
+$gray-100: #ffffff !default;
+$gray-200: #fafafa !default;
+$gray-300: #f5f5f5 !default;
+$gray-400: #f0f0f0 !default;
+$gray-500: #d9d9d9 !default;
+$gray-600: #bfbfbf !default;
+$gray-700: #80828b !default;
+$gray-800: #595959 !default;
+$gray-900: #252831 !default;
+$gray-1000: #000000 !default;
+
+$grays: (
+    "100": $gray-100,
+    "200": $gray-200,
+    "300": $gray-300,
+    "400": $gray-400,
+    "500": $gray-500,
+    "600": $gray-600,
+    "700": $gray-700,
+    "800": $gray-800,
+    "900": $gray-900,
+) !default;
+
 $primary: $blue;
 $secondary: $orange;
 
+// COLOR BY FUNCTION
+
+$disabled-color: $gray-500;
+$text-disabled: $disabled-color;
+$text-muted: $gray-600;
+$body-color: $gray-700;
+$text-dark: $gray-800;
+$headings-color: $dark;
+
 // Spacing
-$spacer: 1rem !default;
+$spacer: 1rem;
 $spacers: (
     0: 0,
     1: $spacer * 0.25,
@@ -27,55 +60,75 @@ $spacers: (
     // 32px
     6: $spacer * 3,
     // 48px
-) !default;
+);
 
 // Adding these to match .p-1, .p2, etc.
-$spacing-0: 0rem !default;
-$spacing-1: 0.25rem !default;
-$spacing-2: 0.5rem !default;
-$spacing-3: 1rem !default;
-$spacing-4: 1.5rem !default;
-$spacing-5: 2rem !default;
-$spacing-6: 3rem !default;
+$spacing-0: 0rem;
+$spacing-1: 0.25rem;
+$spacing-2: 0.5rem;
+$spacing-3: 1rem;
+$spacing-4: 1.5rem;
+$spacing-5: 2rem;
+$spacing-6: 3rem;
 
 // Typography
-$font-size-root: null !default;
-$font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
+$font-family-sans-serif: "Open Sans", sans-serif;
+$headings-font-family: "Quatro", sans-serif;
 
-$font-size-lg: $font-size-base * 1.25 !default; // 20px
-$font-size-sm: $font-size-base * 0.875 !default; // 14
-$font-size-xs: $font-size-base * 0.75 !default; // 12
+$font-size-root: null;
+$font-size-base: 1rem; // Assumes the browser default, typically `16px`
 
-$font-weight-lighter: lighter !default;
-$font-weight-light: 300 !default;
-$font-weight-normal: 400 !default;
-$font-weight-bold: 700 !default;
-$font-weight-bolder: bolder !default;
+$font-size-lg: $font-size-base * 1.25; // 20px
+$font-size-sm: $font-size-base * 0.875; // 14
+$font-size-xs: $font-size-base * 0.75; // 12
 
-$font-weight-base: $font-weight-normal !default;
+$font-weight-lighter: lighter;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+$font-weight-bolder: bolder;
 
-$line-height-base: 1.4 !default; // 24
-$line-height-lg: 1.4 !default; // 28
-$line-height-sm: 1.571428571 !default; // 22
-$line-height-xs: 1.666666667 !default; // 20
+$font-weight-base: $font-weight-normal;
 
-$h1-font-size: $font-size-base * 3.5 !default; // 56px
-$h1-line-height: 1.142857143 !default; // 64px
+$line-height-base: 1.4; // 24
+$line-height-lg: 1.4; // 28
+$line-height-sm: 1.571428571; // 22
+$line-height-xs: 1.666666667; // 20
 
-$h2-font-size: $font-size-base * 2.875 !default; // 46px
-$h2-line-height: 1.173913043 !default; // 54px
+$h1-font-size: $font-size-base * 4; // 64px
+$h1-line-height: 1.25; // 80px
+$h1-letter-spacing: 0.02em;
+$h1-font-weight: 200; // Figma say 300 but 200 = Light via Adobe Fonts
 
-$h3-font-size: $font-size-base * 2.375 !default; // 38px
-$h3-line-height: 1.210526316 !default; // 46px
+$h2-font-size: $font-size-base * 3.25; // 52px
+$h2-line-height: 1.307692308; // 68px
+$h2-letter-spacing: 0.02em;
+$h2-font-weight: 200; // Figma say 300 but 200 = Light via Adobe Fonts
 
-$h4-font-size: $font-size-base * 1.875 !default; // 30px
-$h4-line-height: 1.266666667 !default; // 38px
+$h3-font-size: $font-size-base * 2.375; // 38px
+$h3-line-height: 1.289473684; // 46px
+$h3-letter-spacing: 0;
+$h3-font-weight: 400;
 
-$h5-font-size: $font-size-base * 1.5 !default; // 24px
-$h5-line-height: 1.333333333 !default; // 32px
+$h4-font-size: $font-size-base * 1.75; // 28px
+$h4-line-height: 1.214285714; // 34px
+$h4-letter-spacing: 0;
+$h4-font-weight: 500;
 
-$h6-font-size: $font-size-base * 1.25 !default; // 20px
-$h6-line-height: 1.4 !default; // 28px
+$h5-font-size: $font-size-base * 1.125; // 18px
+$h5-line-height: 1.222222222; // 22px
+$h5-letter-spacing: 0.04em;
+$h5-font-weight: 700;
+
+$h6-font-size: $font-size-base * 0.9375; // 15px
+$h6-line-height: 1.2; // 18px
+$h6-letter-spacing: 0.04em;
+$h6-font-weight: 600;
+
+$h7-font-size: $font-size-base * 0.875; // 14px;
+$h7-line-height: 1.142857143; // 16px
+$h7-letter-spacing: 0;
+$h7-font-weight: 500;
 
 $font-sizes: (
     1: $h1-font-size,
@@ -84,34 +137,36 @@ $font-sizes: (
     4: $h4-font-size,
     5: $h5-font-size,
     6: $h6-font-size,
-) !default;
+    7: $h7-font-size,
+);
 
-$lead-font-size: $font-size-base * 1.25 !default; // 20px
-$lead-font-weight: 300 !default;
-$small-font-size: 0.875em !default;
+$lead-font-size: $font-size-base * 1.25; // 20px
+$lead-font-weight: 300;
+$small-font-size: 0.875em;
 
 // Quickly modify global styling by enabling or disabling optional features.
-$enable-caret: true !default;
-$enable-rounded: false !default;
-$enable-shadows: false !default;
-$enable-gradients: false !default;
-$enable-transitions: false !default;
-$enable-reduced-motion: true !default;
-$enable-smooth-scroll: true !default;
-$enable-grid-classes: true !default;
-$enable-cssgrid: false !default;
-$enable-button-pointers: true !default;
-$enable-rfs: true !default;
-$enable-validation-icons: false !default;
-$enable-negative-margins: true !default;
-$enable-deprecation-messages: false !default;
-$enable-important-utilities: false !default;
+$enable-caret: true;
+$enable-rounded: false;
+$enable-shadows: false;
+$enable-gradients: false;
+$enable-transitions: false;
+$enable-reduced-motion: true;
+$enable-smooth-scroll: true;
+$enable-grid-classes: true;
+$enable-cssgrid: false;
+$enable-button-pointers: true;
+$enable-rfs: true;
+$enable-validation-icons: false;
+$enable-negative-margins: true;
+$enable-deprecation-messages: false;
+$enable-important-utilities: false;
 
 // Menus
 
 $menu-primary-color: $dark;
-$menu-primary-weight: bold;
-$menu-primary-size: $small-font-size;
+$menu-primary-weight: 500;
+$menu-primary-size: 15px;
+$menu-primary-letter-spacing: 0.01em;
 
 // Images
 $mask-image-hex: "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE2LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHdpZHRoPSIyMDBweCIgaGVpZ2h0PSIyMDBweCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwMCAyMDAiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8cG9seWdvbiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9IjEzLjQ5OSw0OS44NzYgOTkuODg3LDAgMTg2LjI4NCw0OS44NzkgMTg2LjI4NCwxNDkuNjM1IDk5Ljg4NywxOTkuNTE2IDEzLjQ5OSwxNDkuNjMgIi8+Cjwvc3ZnPg==";

@@ -20,10 +20,10 @@ const IndexPage = ({ data }) => {
     console.log("pageHome: ", pageHome);
 
     const sectionIntro = (
-        <section className="bg-cloud  text-center">
+        <section className="bg-cloud ">
             <div className="container">
-                <div className="row justify-content-center">
-                    <div className="col-sm-7 col-lg-6">
+                <div className="row justify-content-between">
+                    <div className="col-sm-6">
                         <h1
                             style={{ marginTop: "5vw" }}
                             className="text-primary mb-5"
@@ -31,25 +31,21 @@ const IndexPage = ({ data }) => {
                             {pageHome.introHeadline}
                         </h1>
 
-                        {/* <div
+                        <div
+                            className="lead"
                             dangerouslySetInnerHTML={{
                                 __html: pageHome.introBody,
                             }}
-                        ></div> */}
+                        ></div>
+                    </div>
+                    <div className="col-sm-6">
+                        <img
+                            src={imgFriendsCoffeeShop}
+                            alt=""
+                            className="img-fluid mask-image--hex"
+                        />
                     </div>
                 </div>
-            </div>
-        </section>
-    );
-
-    const sectionHexImage = (
-        <section className="bg-half-horz-cloud-primary">
-            <div className="container text-center">
-                <img
-                    src={imgFriendsCoffeeShop}
-                    alt=""
-                    className="img-fluid mask-image--hex"
-                />
             </div>
         </section>
     );
@@ -71,32 +67,80 @@ const IndexPage = ({ data }) => {
             avgSentencesPerParagraph: 1,
         });
 
-    const sectionComprehensive = (
-        <section className="bg-primary">
-            <div className="container">
+    const sectionConnections = (
+        <section className="container">
+            <div className="row justify-content-between">
+                <div className="col-sm-6">
+                    <img
+                        src={imgFriendsCoffeeShop}
+                        alt=""
+                        className="img-fluid mask-image--hex"
+                    />
+                </div>
+
+                <div className="col-sm-6">
+                    <h2>
+                        We create real connections between patients and
+                        clinicians, virtually anywhere
+                    </h2>
+                    <p class="lead">
+                        The OnMed Station provides a more personalized virtual
+                        care experience and connects patients directly with live
+                        certified clinicians whenever they need it. Our care
+                        station is open 24/7, with no appointment needed. Every
+                        examination is one-on-one in real-time, and we can
+                        address 85% of a typical Primary Care visit, including
+                        all key biometrics and vitals.
+                    </p>
+                    <p>
+                        <Link to="/" className="btn btn-primary">
+                            Request a Location
+                        </Link>
+                        {""}
+                        <Link to="/" className="btn btn-outline-primary ms-2">
+                            Watch the video
+                        </Link>
+                    </p>
+                </div>
                 <div className="row justify-content-between">
-                    <div className="col-md-5 py-4 py-md-6 text-white mt-md-n6">
-                        <h2>
-                            The most comprehensive lorem ipsum dolor sit amet
-                        </h2>
-                        <LoremIpsum
-                            avgSentencesPerParagraph="1"
-                            avgWordsPerSentence="40"
+                    <div className="col-sm-4 offset-sm-3">
+                        <img
+                            src={imgFriendsCoffeeShop}
+                            alt=""
+                            className="img-fluid mask-image--hex"
                         />
-                        <p>
-                            <Link to="/" className="btn btn-light">
-                                Request a Location
-                            </Link>
-                        </p>
                     </div>
-                    <div className="col-md-5">
-                        <ul
-                            className="list-unstyled bg-white"
-                            style={{ marginTop: "200px" }}
-                        >
-                            {listItem}
-                            {listItem}
-                            {listItem}
+
+                    <div className="col-sm-5">
+                        <ul>
+                            <li>
+                                <h5>Visit us anytime</h5>
+                                <p>
+                                    The OnMed® care station is a simple and
+                                    convenient healthcare option everyone can
+                                    use, anywhere 24/7 - including rural areas
+                                    and remote locations. No appointment needed.
+                                </p>
+                            </li>
+                            <li>
+                                <h5>Virtual doctor’s office</h5>
+                                <p>
+                                    Get the most personal care outside of a
+                                    doctor’s office. Talk to a certified
+                                    clinician live, and receive 85% of typical
+                                    primary care services, including vitals
+                                    taken with medical grade diagnostics.
+                                </p>
+                            </li>
+                            <li>
+                                <h5>Meds in Minutes</h5>
+                                <p>
+                                    Our on-Site dispensary delivers most
+                                    prescriptions and over-the-counter
+                                    medications directly to you, saving time and
+                                    eliminating a trip to the pharmacy.
+                                </p>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -243,8 +287,7 @@ const IndexPage = ({ data }) => {
     return (
         <Layout>
             {sectionIntro}
-            {sectionHexImage}
-            {sectionComprehensive}
+            {sectionConnections}
             {sectionHowItWorks}
             {sectionConversation}
             {/*

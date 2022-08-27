@@ -11,7 +11,7 @@ module.exports = {
         {
             resolve: "gatsby-source-wordpress",
             options: {
-                url: "https://onmed-dev-cms.nathanhiemstra.com/graphql",
+                url: "https://onmed-cms.com/graphql/",
                 useAcf: true,
             },
         },

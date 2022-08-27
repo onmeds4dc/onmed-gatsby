@@ -3,8 +3,12 @@ import { Table } from "react-bootstrap";
 
 const DocsTypography = () => {
     const fpo =
-        "_____ is a great font. Let's use it all over this website for all the words on the website. Do you know what I mean? It's such a great idea!";
+        " is a great font. Let's use it all over this website for all the words on the website. Do you know what I mean? It's such a great idea!";
+    const fpoHeadline =
+        " is a great font. Let's use it all over this website for all the HEADLINES on the website. Do you know what I mean? It's such a great idea!";
     const fpoBold = fpo;
+    const font = "Open Sans";
+    const fontHeadline = "Quatro";
     return (
         <>
             <section className="docs docs__section">
@@ -28,9 +32,13 @@ const DocsTypography = () => {
                     <tbody>
                         <tr>
                             <td>Default</td>
-                            <td>{fpo}</td>
                             <td>
-                                <span className="fw-bold">{fpoBold}</span>
+                                {font} {fpo}
+                            </td>
+                            <td>
+                                <span className="fw-bold">
+                                    {font} {fpoBold}
+                                </span>
                             </td>
                             <td>16/24</td>
                         </tr>
@@ -39,10 +47,14 @@ const DocsTypography = () => {
                                 <code>.lead</code>
                             </td>
                             <td>
-                                <span className="lead">{fpo}</span>
+                                <span className="lead">
+                                    {font} {fpo}
+                                </span>
                             </td>
                             <td>
-                                <span className="lead fw-bold">{fpoBold}</span>
+                                <span className="lead fw-bold">
+                                    {font} {fpoBold}
+                                </span>
                             </td>
                             <td>20/28</td>
                         </tr>
@@ -51,10 +63,14 @@ const DocsTypography = () => {
                                 <code>.small </code>
                             </td>
                             <td>
-                                <span className="small">{fpo}</span>
+                                <span className="small">
+                                    {font} {fpo}
+                                </span>
                             </td>
                             <td>
-                                <span className="small fw-bold">{fpoBold}</span>
+                                <span className="small fw-bold">
+                                    {font} {fpoBold}
+                                </span>
                             </td>
                             <td>14/22</td>
                         </tr>
@@ -63,10 +79,14 @@ const DocsTypography = () => {
                                 <code>.tiny</code>
                             </td>
                             <td>
-                                <span className="tiny">{fpo}</span>
+                                <span className="tiny">
+                                    {font} {fpo}
+                                </span>
                             </td>
                             <td>
-                                <span className="tiny fw-bold">{fpoBold}</span>
+                                <span className="tiny fw-bold">
+                                    {font} {fpoBold}
+                                </span>
                             </td>
                             <td>12/20</td>
                         </tr>
@@ -79,39 +99,73 @@ const DocsTypography = () => {
                     <tbody>
                         <tr>
                             <td>
-                                <h1>h1 - {fpo}</h1>
+                                <h1 className="h1">
+                                    h1 - {fontHeadline} {fpoHeadline}
+                                </h1>
                             </td>
-                            <td>56/64</td>
+                            <td>64/80</td>
+                            <td>0.02em</td>
+                            <td>300 / Light</td>
                         </tr>
                         <tr>
                             <td>
-                                <h2>h2 - {fpo}</h2>
+                                <h2 className="h2">
+                                    h2 - {fontHeadline} {fpoHeadline}
+                                </h2>
                             </td>
-                            <td>46/54</td>
+                            <td>52/68</td>
+                            <td>0.02em</td>
+                            <td>300 / Light</td>
                         </tr>
                         <tr>
                             <td>
-                                <h3>h3 - {fpo}</h3>
+                                <h3 className="h3">
+                                    h3 - {fontHeadline} {fpoHeadline}
+                                </h3>
                             </td>
-                            <td>38/46</td>
+                            <td>32/46</td>
+                            <td>0</td>
+                            <td>400 / Regular</td>
                         </tr>
                         <tr>
                             <td>
-                                <h3>h4 - {fpo}</h3>
+                                <h4 className="h4">
+                                    h4 - {fontHeadline} {fpoHeadline}
+                                </h4>
                             </td>
-                            <td>30/38</td>
+                            <td>28/34</td>
+                            <td>0</td>
+                            <td>500 / Medium</td>
                         </tr>
                         <tr>
                             <td>
-                                <h5>h5 - {fpo}</h5>
+                                <h5 className="h5">
+                                    h5 - {fontHeadline} {fpoHeadline}
+                                </h5>
                             </td>
-                            <td>24/32</td>
+                            <td>18/22</td>
+                            <td>0.04em</td>
+                            <td>700 / Bold</td>
                         </tr>
                         <tr>
                             <td>
-                                <h6>h6 - {fpo}</h6>
+                                <h6 className="h6">
+                                    h6 - {fontHeadline} {fpoHeadline}
+                                </h6>
                             </td>
-                            <td>20/28</td>
+                            <td>15/18</td>
+                            <td>0.04em</td>
+                            <td>600 / SemiBold</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h7 className="h7">
+                                    h7 - {fontHeadline} {fpoHeadline}
+                                </h7>
+                            </td>
+                            <td>14/16</td>
+                            <td>0</td>
+                            <td>500 / Medium</td>
                         </tr>
                     </tbody>
                 </Table>
