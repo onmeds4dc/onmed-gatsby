@@ -3,4 +3,11 @@
     &-light:hover {
         color: $primary;
     }
+    &-arrow {
+        background-image: url($svg-arrow);
+        background-position: 100% -2px;
+        background-repeat: no-repeat;
+        padding-right: 29px;
+        background-size: 13% 135%;
+    }
 }

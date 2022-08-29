@@ -7,6 +7,7 @@ module.exports = {
         title: `OnMed Gatsby`,
         siteUrl: `https://www.yourdomain.tld`,
     },
+
     plugins: [
         {
             resolve: "gatsby-source-wordpress",
