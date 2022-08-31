@@ -121,7 +121,7 @@ const IndexPage = ({ data }) => {
                     </div>
 
                     <div className="col-sm-5">
-                        <ul>
+                        <ul className="list-check-mark-orange">
                             <li>
                                 <h5 className="text-uppercase">
                                     Visit us anytime

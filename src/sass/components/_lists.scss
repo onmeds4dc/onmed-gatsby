@@ -30,3 +30,15 @@
         margin-bottom: 0;
     }
 }
+
+.list-check-mark-orange {
+    padding-left: 0;
+    list-style-type: none;
+    > li {
+        background-image: url($check-mark-orange);
+        background-repeat: no-repeat;
+        background-position: 0 1px;
+        background-size: 24px;
+        padding-left: 40px;
+    }
+}
