@@ -40,7 +40,7 @@ const DocsTypography = () => {
                                     {font} {fpoBold}
                                 </span>
                             </td>
-                            <td>16/24</td>
+                            <td>16/28</td>
                         </tr>
                         <tr>
                             <td className="text-nowrap">

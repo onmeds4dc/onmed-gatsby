@@ -4,7 +4,7 @@
         &:not(.btn) {
             color: $menu-primary-color;
         }
-
+        font-family: $menu-primary-font;
         font-weight: $menu-primary-weight;
         font-size: $menu-primary-size;
         letter-spacing: $menu-primary-letter-spacing;

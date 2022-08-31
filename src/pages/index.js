@@ -7,6 +7,7 @@ import { LoremIpsum, loremIpsum } from "react-lorem-ipsum";
 import Layout from "../components/layout";
 import imgFriendsCoffeeShop from "../../static/images/fpo/friends-coffee-shop-v2.jpg";
 import SvgVideoCamera from "../components/svgs/video-camera";
+import CardCols from "../components/card-cols";
 
 const IndexPage = ({ data }) => {
     const {
@@ -40,11 +41,15 @@ const IndexPage = ({ data }) => {
                         ></div>
                     </div>
                     <div className="col-sm-6">
-                        <img
-                            src={imgFriendsCoffeeShop}
-                            alt=""
-                            className="img-fluid mask-image--hex"
-                        />
+                        <div className="img-hex-into">
+                            <div className="img-hex-into-2">
+                                <img
+                                    src={imgFriendsCoffeeShop}
+                                    alt=""
+                                    className="img-fluid mask-image--hex "
+                                />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -167,28 +172,28 @@ const IndexPage = ({ data }) => {
                 </p>
                 <ol className="list-unstyled row text-dark">
                     <li className="col-md">
-                        <h4 className="text-primary">Step 1</h4>
+                        <h4 className="text-primary">Walk In</h4>
                         <p>
                             Walk right up and enter the OnMed® care station at
                             any time. No appointment necessary.
                         </p>
                     </li>
                     <li className="col-md">
-                        <h4 className="text-primary">Step 2</h4>
+                        <h4 className="text-primary">Press Start</h4>
                         <p>
                             Just press START to connect with a certified
                             clinician on live video in real-time.
                         </p>
                     </li>
                     <li className="col-md">
-                        <h4 className="text-primary">Step 3</h4>
+                        <h4 className="text-primary">Get Exam</h4>
                         <p>
                             Have your vitals taken, including blood pressure,
                             pulse, body temperature and respiration rate.
                         </p>
                     </li>
                     <li className="col-md">
-                        <h4 className="text-primary">Step 4</h4>
+                        <h4 className="text-primary">Walk Out</h4>
                         <p>
                             Walk out with OTC medicine and most prescriptions
                             filled right on the spot, from our secure
@@ -202,19 +207,10 @@ const IndexPage = ({ data }) => {
 
     const sectionPatients = (
         <section className="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div className="pe-6">
-                        <img
-                            src={imgFriendsCoffeeShop}
-                            alt=""
-                            className="img-fluid"
-                        />
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <h7 className="text-uppercase">Patients</h7>
-                    <h3>Always open. Always On.</h3>
+            <CardCols
+                title="Patients"
+                headline="Always open. Always On."
+                body={
                     <p>
                         Our OnMed care station is like stepping into a mini
                         doctor’s office. No appointment needed. We can even
@@ -222,24 +218,30 @@ const IndexPage = ({ data }) => {
                         medications right on the spot, eliminating a trip to the
                         pharmacy.
                     </p>
-                    <p>
-                        <a href="#" class="btn-arrow">
-                            Tell me more
-                        </a>
-                    </p>
-                </div>
-            </div>
+                }
+                cta={
+                    <a href="#" class="btn-arrow">
+                        Tell me more
+                    </a>
+                }
+                img={
+                    <img
+                        src={imgFriendsCoffeeShop}
+                        alt=""
+                        className="img-fluid"
+                    />
+                }
+                imgAlignRight={false}
+            />
         </section>
     );
     const sectionProviders = (
         <section className="bg-cloud py-4 py-md-6">
             <div className="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h7 className="text-uppercase">Providers</h7>
-                        <h3>
-                            Practice everywhere. See your patients anywhere.
-                        </h3>
+                <CardCols
+                    title="Providers"
+                    headline="Practice everywhere. See your patients anywhere."
+                    body={
                         <p>
                             The quality of our care is not just for our
                             customers, because we’ve created a life-sized
@@ -251,43 +253,31 @@ const IndexPage = ({ data }) => {
                             medications immediately through our secure, on-site
                             dispensary.
                         </p>
-                        <p>
-                            <a href="#" class="btn-arrow">
-                                Learne more
-                            </a>
-                        </p>
-                    </div>
-                    <div class="col-md-6">
-                        <div className="ps-6">
-                            <img
-                                src={imgFriendsCoffeeShop}
-                                alt=""
-                                className="img-fluid"
-                            />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    );
-    const sectionPartners = (
-        <section className="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div className="pe-6">
+                    }
+                    cta={
+                        <a href="#" class="btn-arrow">
+                            Learne more
+                        </a>
+                    }
+                    img={
                         <img
                             src={imgFriendsCoffeeShop}
                             alt=""
                             className="img-fluid"
                         />
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <h7 className="text-uppercase">Partners</h7>
-                    <h3>
-                        A different kind of doctor's office. A new kind of
-                        pharmacy.
-                    </h3>
+                    }
+                    imgAlignRight={true}
+                />
+            </div>
+        </section>
+    );
+    const sectionPartners = (
+        <section className="container">
+            <CardCols
+                title="Partners"
+                headline="A different kind of doctor's office. A new kind of
+                pharmacy."
+                body={
                     <p>
                         We deliver personalized virtual care solutions, so you
                         can offer comprehensive healthcare on-demand. OnMed is
@@ -299,47 +289,52 @@ const IndexPage = ({ data }) => {
                         Care, including hospitals and clinics. OnMed is the
                         anywhere healthcare whenever you need it most.
                     </p>
+                }
+                cta={
+                    <a href="#" class="btn-arrow">
+                        Learn more
+                    </a>
+                }
+                img={
+                    <img
+                        src={imgFriendsCoffeeShop}
+                        alt=""
+                        className="img-fluid"
+                    />
+                }
+                imgAlignRight={false}
+            />
+
+            <div class="row text-end justify-content-end">
+                <div class="col-7">
+                    <h4 className="text-primary">Testimonial</h4>
                     <p>
-                        <a href="#" class="btn-arrow">
-                            Learn more
-                        </a>
-                    </p>
-                </div>
-                <div class="row text-end justify-content-end">
-                    <div class="col-7">
-                        <h4 className="text-primary">Testimonial</h4>
-                        <p>
-                            Donec ullamcorper nulla non metus auctor fringilla.
-                            Maecenas sed diam eget risus varius blandit sit amet
-                            non magna. Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit.
-                        </p>
                         Donec ullamcorper nulla non metus auctor fringilla.
                         Maecenas sed diam eget risus varius blandit sit amet non
                         magna. Lorem ipsum dolor sit amet, consectetur
                         adipiscing elit.
-                        <p>-Firstname Lastname</p>
-                    </div>
+                    </p>
+                    Donec ullamcorper nulla non metus auctor fringilla. Maecenas
+                    sed diam eget risus varius blandit sit amet non magna. Lorem
+                    ipsum dolor sit amet, consectetur adipiscing elit.
+                    <p>-Firstname Lastname</p>
                 </div>
-                <div class="row justify-content-around text-center">
-                    <div class="col-md-10">
-                        <h1 className="text-primary">Expanding nationwide</h1>
-                        <p>
-                            We are fully committed to making quality healthcare
-                            accessible to all, so we’re always growing and
-                            expanding. If you’re interested in learning more
-                            about OnMed care stations nearest to you, send us
-                            your location request.
-                        </p>
-                        <p>
-                            <Link
-                                to="/"
-                                className="btn btn-primary text-uppercase"
-                            >
-                                Request a Location
-                            </Link>
-                        </p>
-                    </div>
+            </div>
+            <div class="row justify-content-around text-center">
+                <div class="col-md-10">
+                    <h1 className="text-primary">Expanding nationwide</h1>
+                    <p>
+                        We are fully committed to making quality healthcare
+                        accessible to all, so we’re always growing and
+                        expanding. If you’re interested in learning more about
+                        OnMed care stations nearest to you, send us your
+                        location request.
+                    </p>
+                    <p>
+                        <Link to="/" className="btn btn-primary text-uppercase">
+                            Request a Location
+                        </Link>
+                    </p>
                 </div>
             </div>
         </section>
@@ -446,7 +441,6 @@ const IndexPage = ({ data }) => {
             {sectionAudiences}
             {sectionTestimonials}
              */}
-
             {/* <h1>{title}</h1>
             <div dangerouslySetInnerHTML={{ __html: content }}></div> */}
         </Layout>
