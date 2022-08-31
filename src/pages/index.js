@@ -74,45 +74,10 @@ const IndexPage = ({ data }) => {
         });
 
     const sectionConnections = (
-        <section className="container py-4 py-md-6">
-            <div className="row justify-content-between">
-                <div className="col-sm-6">
-                    <img
-                        src={imgFriendsCoffeeShop}
-                        alt=""
-                        className="img-fluid mask-image--hex"
-                    />
-                </div>
-
-                <div className="col-sm-6">
-                    <h2 className="text-primary">
-                        We create real connections between patients and
-                        clinicians, virtually anywhere
-                    </h2>
-                    <p class="lead">
-                        Getting Care at an OnMed station is simple
-                    </p>
-                    <div>
-                        <Link
-                            to="/"
-                            className="btn btn-primary text-uppercase  mb-3 me-2"
-                        >
-                            Request a Location
-                        </Link>{" "}
-                        <Link
-                            to="/"
-                            className="btn btn-outline-primary text-uppercase mb-3 "
-                        >
-                            <SvgVideoCamera
-                                className="text-primary"
-                                style={{ height: "16px" }}
-                            />{" "}
-                            Watch the video
-                        </Link>
-                    </div>
-                </div>
+        <section className="bg-hex-dark-many">
+            <div className="container py-4 py-md-6">
                 <div className="row justify-content-between">
-                    <div className="col-sm-4 offset-sm-3">
+                    <div className="col-sm-6">
                         <img
                             src={imgFriendsCoffeeShop}
                             alt=""
@@ -120,43 +85,82 @@ const IndexPage = ({ data }) => {
                         />
                     </div>
 
-                    <div className="col-sm-5">
-                        <ul className="list-check-mark-orange">
-                            <li>
-                                <h5 className="text-uppercase">
-                                    Visit us anytime
-                                </h5>
-                                <p>
-                                    The OnMed® care station is a simple and
-                                    convenient healthcare option everyone can
-                                    use, anywhere 24/7 - including rural areas
-                                    and remote locations. No appointment needed.
-                                </p>
-                            </li>
-                            <li>
-                                <h5 className="text-uppercase">
-                                    Virtual doctor’s office
-                                </h5>
-                                <p>
-                                    Get the most personal care outside of a
-                                    doctor’s office. Talk to a certified
-                                    clinician live, and receive 85% of typical
-                                    primary care services, including vitals
-                                    taken with medical grade diagnostics.
-                                </p>
-                            </li>
-                            <li>
-                                <h5 className="text-uppercase">
-                                    Meds in Minutes
-                                </h5>
-                                <p>
-                                    Our on-Site dispensary delivers most
-                                    prescriptions and over-the-counter
-                                    medications directly to you, saving time and
-                                    eliminating a trip to the pharmacy.
-                                </p>
-                            </li>
-                        </ul>
+                    <div className="col-sm-6">
+                        <h2 className="text-primary">
+                            We create real connections between patients and
+                            clinicians, virtually anywhere
+                        </h2>
+                        <p class="lead">
+                            Getting Care at an OnMed station is simple
+                        </p>
+                        <div>
+                            <Link
+                                to="/"
+                                className="btn btn-primary text-uppercase  mb-3 me-2"
+                            >
+                                Request a Location
+                            </Link>{" "}
+                            <Link
+                                to="/"
+                                className="btn btn-outline-primary text-uppercase mb-3 "
+                            >
+                                <SvgVideoCamera
+                                    className="text-primary"
+                                    style={{ height: "16px" }}
+                                />{" "}
+                                Watch the video
+                            </Link>
+                        </div>
+                    </div>
+                    <div className="row justify-content-between">
+                        <div className="col-sm-4 offset-sm-3">
+                            <img
+                                src={imgFriendsCoffeeShop}
+                                alt=""
+                                className="img-fluid mask-image--hex"
+                            />
+                        </div>
+
+                        <div className="col-sm-5">
+                            <ul className="list-check-mark-orange">
+                                <li>
+                                    <h5 className="text-uppercase">
+                                        Visit us anytime
+                                    </h5>
+                                    <p>
+                                        The OnMed® care station is a simple and
+                                        convenient healthcare option everyone
+                                        can use, anywhere 24/7 - including rural
+                                        areas and remote locations. No
+                                        appointment needed.
+                                    </p>
+                                </li>
+                                <li>
+                                    <h5 className="text-uppercase">
+                                        Virtual doctor’s office
+                                    </h5>
+                                    <p>
+                                        Get the most personal care outside of a
+                                        doctor’s office. Talk to a certified
+                                        clinician live, and receive 85% of
+                                        typical primary care services, including
+                                        vitals taken with medical grade
+                                        diagnostics.
+                                    </p>
+                                </li>
+                                <li>
+                                    <h5 className="text-uppercase">
+                                        Meds in Minutes
+                                    </h5>
+                                    <p>
+                                        Our on-Site dispensary delivers most
+                                        prescriptions and over-the-counter
+                                        medications directly to you, saving time
+                                        and eliminating a trip to the pharmacy.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -320,21 +324,33 @@ const IndexPage = ({ data }) => {
                     <p>-Firstname Lastname</p>
                 </div>
             </div>
-            <div class="row justify-content-around text-center">
-                <div class="col-md-10">
-                    <h1 className="text-primary">Expanding nationwide</h1>
-                    <p>
-                        We are fully committed to making quality healthcare
-                        accessible to all, so we’re always growing and
-                        expanding. If you’re interested in learning more about
-                        OnMed care stations nearest to you, send us your
-                        location request.
-                    </p>
-                    <p>
-                        <Link to="/" className="btn btn-primary text-uppercase">
-                            Request a Location
-                        </Link>
-                    </p>
+        </section>
+    );
+    const sectionExpanding = (
+        <section
+            className="bg-hex-decrescendo"
+            style={{ paddingBottom: "220px" }}
+        >
+            <div className="container">
+                <div class="row justify-content-around text-center">
+                    <div class="col-md-10">
+                        <h1 className="text-primary">Expanding nationwide</h1>
+                        <p>
+                            We are fully committed to making quality healthcare
+                            accessible to all, so we’re always growing and
+                            expanding. If you’re interested in learning more
+                            about OnMed care stations nearest to you, send us
+                            your location request.
+                        </p>
+                        <p>
+                            <Link
+                                to="/"
+                                className="btn btn-primary text-uppercase"
+                            >
+                                Request a Location
+                            </Link>
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -435,6 +451,7 @@ const IndexPage = ({ data }) => {
             {sectionPatients}
             {sectionProviders}
             {sectionPartners}
+            {sectionExpanding}
             {sectionContact}
 
             {/*

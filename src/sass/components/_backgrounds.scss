@@ -11,4 +11,20 @@
     &-half-horz-cloud-primary {
         background: linear-gradient(0deg, $primary 50%, $cloud 50%);
     }
+    &-hex-dark-many {
+        background-image: url("/images/backgrounds/hex-dark-many.svg");
+        background-repeat: no-repeat;
+        background-position: 100% -213px;
+        background-size: 500px;
+    }
+
+    &-hex-decrescendo {
+        background-image: url("/images/backgrounds/hex-decrescendo.png");
+        background-repeat: repeat-x;
+        // background-position: 0 100%;
+        // background-size: 100%;
+
+        background-position: 0px 100%;
+        background-size: 1608px;
+    }
 }
