@@ -11,7 +11,7 @@ const CardCols = (props) => {
     const imgColLeft = props.imgAlignRight ? null : imgCol;
     const imgColRight = props.imgAlignRight ? imgCol : null;
     return (
-        <div class="row">
+        <div class="row my-4 my-md-6">
             {imgColLeft}
             <div class="col-md-6">
                 <h7 className="text-uppercase text-primary">{props.title}</h7>

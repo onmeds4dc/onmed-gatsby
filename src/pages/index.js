@@ -22,9 +22,9 @@ const IndexPage = ({ data }) => {
     console.log("pageHome: ", pageHome);
 
     const sectionIntro = (
-        <section className="bg-cloud ">
+        <section className="bg-cloud py-4 py-md-6">
             <div className="container">
-                <div className="row justify-content-between">
+                <div className="row justify-content-between ">
                     <div className="col-sm-6">
                         <h1
                             style={{ marginTop: "5vw" }}
@@ -74,7 +74,7 @@ const IndexPage = ({ data }) => {
         });
 
     const sectionConnections = (
-        <section className="container">
+        <section className="container py-4 py-md-6">
             <div className="row justify-content-between">
                 <div className="col-sm-6">
                     <img
@@ -236,7 +236,7 @@ const IndexPage = ({ data }) => {
         </section>
     );
     const sectionProviders = (
-        <section className="bg-cloud py-4 py-md-6">
+        <section className="bg-cloud d-flex">
             <div className="container">
                 <CardCols
                     title="Providers"
@@ -272,7 +272,7 @@ const IndexPage = ({ data }) => {
         </section>
     );
     const sectionPartners = (
-        <section className="container">
+        <section className="container pb-4 pb-md-6">
             <CardCols
                 title="Partners"
                 headline="A different kind of doctor's office. A new kind of
