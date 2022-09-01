@@ -21,10 +21,8 @@
     &-hex-decrescendo {
         background-image: url("/images/backgrounds/hex-decrescendo.png");
         background-repeat: repeat-x;
-        // background-position: 0 100%;
-        // background-size: 100%;
-
         background-position: 0px 100%;
-        background-size: 1608px;
+        background-size: 100%;
+        min-height: 470px;
     }
 }

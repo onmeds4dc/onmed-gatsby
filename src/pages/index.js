@@ -276,7 +276,7 @@ const IndexPage = ({ data }) => {
         </section>
     );
     const sectionPartners = (
-        <section className="container pb-4 pb-md-6">
+        <section className="container pb-4 pb-md-0">
             <CardCols
                 title="Partners"
                 headline="A different kind of doctor's office. A new kind of
@@ -311,25 +311,25 @@ const IndexPage = ({ data }) => {
 
             <div class="row text-end justify-content-end">
                 <div class="col-7">
-                    <h4 className="text-primary">Testimonial</h4>
-                    <p>
-                        Donec ullamcorper nulla non metus auctor fringilla.
-                        Maecenas sed diam eget risus varius blandit sit amet non
-                        magna. Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit.
-                    </p>
-                    Donec ullamcorper nulla non metus auctor fringilla. Maecenas
-                    sed diam eget risus varius blandit sit amet non magna. Lorem
-                    ipsum dolor sit amet, consectetur adipiscing elit.
-                    <p>-Firstname Lastname</p>
+                    <div className="testimonial">
+                        <h4 className="text-primary">Testimonial</h4>
+                        <p className="testimonial--text">
+                            Donec ullamcorper nulla non metus auctor fringilla.
+                            Maecenas sed diam eget risus varius blandit sit amet
+                            non magna. Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit.
+                        </p>
+
+                        <p>-Firstname Lastname</p>
+                    </div>
                 </div>
             </div>
         </section>
     );
     const sectionExpanding = (
         <section
-            className="bg-hex-decrescendo"
-            style={{ paddingBottom: "220px" }}
+            className="bg-hex-decrescendo d-flex align-items-center"
+            style={{ padding: "20px 0" }}
         >
             <div className="container">
                 <div class="row justify-content-around text-center">
@@ -342,14 +342,14 @@ const IndexPage = ({ data }) => {
                             about OnMed care stations nearest to you, send us
                             your location request.
                         </p>
-                        <p>
+                        <div>
                             <Link
                                 to="/"
                                 className="btn btn-primary text-uppercase"
                             >
                                 Request a Location
                             </Link>
-                        </p>
+                        </div>
                     </div>
                 </div>
             </div>
