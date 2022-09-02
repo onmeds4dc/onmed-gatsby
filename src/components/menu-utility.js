@@ -4,7 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { flatListToHierarchical } from "../utilities/menus";
 
-const MenuUtility = () => {
+const MenuUtility = (props) => {
     const { wpMenu } = useStaticQuery(graphql`
         {
             wpMenu(slug: { eq: "utility-menu" }) {
@@ -23,7 +23,7 @@ const MenuUtility = () => {
     const menuHierarchical = flatListToHierarchical(wpMenu.menuItems.nodes);
 
     return !!wpMenu && !!wpMenu.menuItems && !!wpMenu.menuItems.nodes ? (
-        <Navbar expand="md">
+        <Navbar expand="md" className={props.className}>
             <Nav className="me-auto" defaultActiveKey="/">
                 {menuHierarchical.map((menuItem, i) => (
                     <Nav.Link key={`menu-${i}`} href={menuItem.url}>
