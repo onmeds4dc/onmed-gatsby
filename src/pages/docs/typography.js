@@ -14,7 +14,7 @@ const DocsTypography = () => {
             <section className="docs docs__section">
                 <h2>Typography</h2>
                 <hr className="my-5" />
-                <h3>Text Size</h3>
+                <h4>Text Size</h4>
                 <Table responsive="md">
                     <thead>
                         <tr>
@@ -93,7 +93,7 @@ const DocsTypography = () => {
                     </tbody>
                 </Table>
 
-                <h4 className="mt-5 pt-5">Headlines</h4>
+                <h5 className="mt-5 pt-5">Headlines</h5>
 
                 <Table responsive="md">
                     <tbody>
@@ -103,8 +103,8 @@ const DocsTypography = () => {
                                     h1 - {fontHeadline} {fpoHeadline}
                                 </h1>
                             </td>
-                            <td>64/80</td>
-                            <td>0.02em</td>
+                            <td>80/97</td>
+                            <td>0.04em</td>
                             <td>300 / Light</td>
                         </tr>
                         <tr>
@@ -113,7 +113,7 @@ const DocsTypography = () => {
                                     h2 - {fontHeadline} {fpoHeadline}
                                 </h2>
                             </td>
-                            <td>52/68</td>
+                            <td>64/80</td>
                             <td>0.02em</td>
                             <td>300 / Light</td>
                         </tr>
@@ -123,9 +123,9 @@ const DocsTypography = () => {
                                     h3 - {fontHeadline} {fpoHeadline}
                                 </h3>
                             </td>
-                            <td>32/46</td>
-                            <td>0</td>
-                            <td>400 / Regular</td>
+                            <td>52/68</td>
+                            <td>0.02em</td>
+                            <td>300 / Light</td>
                         </tr>
                         <tr>
                             <td>
@@ -133,9 +133,9 @@ const DocsTypography = () => {
                                     h4 - {fontHeadline} {fpoHeadline}
                                 </h4>
                             </td>
-                            <td>28/34</td>
+                            <td>32/46</td>
                             <td>0</td>
-                            <td>500 / Medium</td>
+                            <td>400 / Regular</td>
                         </tr>
                         <tr>
                             <td>
@@ -143,9 +143,9 @@ const DocsTypography = () => {
                                     h5 - {fontHeadline} {fpoHeadline}
                                 </h5>
                             </td>
-                            <td>18/22</td>
-                            <td>0.04em</td>
-                            <td>700 / Bold</td>
+                            <td>28/34</td>
+                            <td>0</td>
+                            <td>500 / Medium</td>
                         </tr>
                         <tr>
                             <td>
@@ -153,15 +153,25 @@ const DocsTypography = () => {
                                     h6 - {fontHeadline} {fpoHeadline}
                                 </h6>
                             </td>
-                            <td>15/18</td>
+                            <td>18/22</td>
                             <td>0.04em</td>
-                            <td>600 / SemiBold</td>
+                            <td>700 / Bold</td>
                         </tr>
                         <tr>
                             <td>
                                 <h7 className="h7">
                                     h7 - {fontHeadline} {fpoHeadline}
                                 </h7>
+                            </td>
+                            <td>15/18</td>
+                            <td>0.04em</td>
+                            <td>600 / SemiBold</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span className="h8">
+                                    h8 - {fontHeadline} {fpoHeadline}
+                                </span>
                             </td>
                             <td>14/16</td>
                             <td>0</td>

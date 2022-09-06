@@ -8,6 +8,7 @@ import Layout from "../components/layout";
 import imgFriendsCoffeeShop from "../../static/images/fpo/friends-coffee-shop-v2.jpg";
 import SvgVideoCamera from "../components/svgs/video-camera";
 import CardCols from "../components/card-cols";
+import HexImage from "../components/hex-image";
 
 const IndexPage = ({ data }) => {
     const {
@@ -24,29 +25,33 @@ const IndexPage = ({ data }) => {
     const sectionIntro = (
         <section className="bg-cloud py-4 py-md-6">
             <div className="container">
-                <div className="row justify-content-between ">
-                    <div className="col-sm-6">
-                        <h1
-                            style={{ marginTop: "5vw" }}
-                            className="text-primary mb-5"
-                        >
-                            {pageHome.introHeadline}
-                        </h1>
+                <div className="row justify-content-between gx-6">
+                    <div className="col-sm-6 d-flex align-items-center">
+                        <div className="me-4">
+                            <h1 className="text-primary mb-3">
+                                {pageHome.introHeadline}
+                            </h1>
 
-                        <div
-                            className="lead"
-                            dangerouslySetInnerHTML={{
-                                __html: pageHome.introBody,
-                            }}
-                        ></div>
+                            <div
+                                className="lead"
+                                dangerouslySetInnerHTML={{
+                                    __html: pageHome.introBody,
+                                }}
+                            ></div>
+                        </div>
                     </div>
                     <div className="col-sm-6">
-                        <div className="img-hex-into">
+                        <div
+                            className="img-hex-into mx-md-5 mt-md-n3"
+                            style={{
+                                marginLeft: "4.5rem",
+                                marginRight: "4.5rem",
+                            }}
+                        >
                             <div className="img-hex-into-2">
-                                <img
-                                    src={imgFriendsCoffeeShop}
-                                    alt=""
-                                    className="img-fluid mask-image--hex "
+                                <HexImage
+                                    imgSrc={imgFriendsCoffeeShop}
+                                    alt="Alt text"
                                 />
                             </div>
                         </div>
@@ -56,15 +61,26 @@ const IndexPage = ({ data }) => {
         </section>
     );
 
-    const listItem = (
-        <li>
-            <h3 className="text-primary">Value props</h3>
-            <p>
-                Integer posuere erat a ante venenatis dapibus posuere velit
-                aliquet.
-            </p>
-        </li>
-    );
+    const ListItem = (props) => {
+        return (
+            <li className="col-md">
+                <div className="list-inline-arrows--target">
+                    <div className="px-4">
+                        <HexImage
+                            imgSrc={imgFriendsCoffeeShop}
+                            className="m-6"
+                            alt="Alt text"
+                        />
+                    </div>
+                </div>
+                <div className="mx-3">
+                    {" "}
+                    <h5 className="text-primary mb-3">{props.headline}</h5>
+                    {props.body}
+                </div>
+            </li>
+        );
+    };
 
     const listItem1 =
         "<h4>Step 1</h4> " +
@@ -76,43 +92,61 @@ const IndexPage = ({ data }) => {
     const sectionConnections = (
         <section className="bg-hex-dark-many">
             <div className="container py-4 py-md-6">
-                <div className="row justify-content-between">
+                <div
+                    className="row justify-content-between"
+                    style={{ marginTop: "6.5vw" }}
+                >
                     <div className="col-sm-6">
-                        <img
-                            src={imgFriendsCoffeeShop}
-                            alt=""
-                            className="img-fluid mask-image--hex"
+                        <HexImage
+                            imgSrc={imgFriendsCoffeeShop}
+                            alt="Alt text"
                         />
                     </div>
 
                     <div className="col-sm-6">
-                        <h2 className="text-primary">
-                            We create real connections between patients and
-                            clinicians, virtually anywhere
-                        </h2>
-                        <p class="lead">
-                            Getting Care at an OnMed station is simple
-                        </p>
-                        <div>
-                            <Link
+                        <div className="ms-md-6">
+                            <h2 className="text-primary">
+                                We create real connections between patients and
+                                clinicians, virtually anywhere
+                            </h2>
+                            <p class="lead mt-5">
+                                The OnMed care station provides a more
+                                personalized virtual care experience and
+                                connects patients directly with live certified
+                                clinicians whenever they need it. Our care
+                                station is open 24/7, with no appointment
+                                needed. Every examination is one-on-one in
+                                real-time, and we can address 85% of a typical
+                                Primary Care visit, including all key biometrics
+                                and vitals. Patients can also receive needed OTC
+                                and most prescription medications at the time of
+                                visit.
+                            </p>
+                            <div className="mt-6">
+                                {/* <Link
                                 to="/"
                                 className="btn btn-primary text-uppercase  mb-3 me-2"
                             >
                                 Request a Location
-                            </Link>{" "}
-                            <Link
-                                to="/"
-                                className="btn btn-outline-primary text-uppercase mb-3 "
-                            >
-                                <SvgVideoCamera
-                                    className="text-primary"
-                                    style={{ height: "16px" }}
-                                />{" "}
-                                Watch the video
-                            </Link>
+                            </Link>{" "} */}
+                                <Link
+                                    to="/"
+                                    className="btn btn-primary text-uppercase mb-3 d-inline-flex align-items-center"
+                                >
+                                    <SvgVideoCamera
+                                        className="me-2
+                                    "
+                                        style={{
+                                            height: "14px",
+                                            width: "auto",
+                                        }}
+                                    />{" "}
+                                    Watch the video
+                                </Link>
+                            </div>
                         </div>
                     </div>
-                    <div className="row justify-content-between">
+                    {/* <div className="row justify-content-between">
                         <div className="col-sm-4 offset-sm-3">
                             <img
                                 src={imgFriendsCoffeeShop}
@@ -161,7 +195,7 @@ const IndexPage = ({ data }) => {
                                 </li>
                             </ul>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </section>
@@ -174,36 +208,54 @@ const IndexPage = ({ data }) => {
                 <p className="lead">
                     Getting Care at an OnMed station is simple
                 </p>
-                <ol className="list-unstyled row text-dark">
-                    <li className="col-md">
-                        <h4 className="text-primary">Walk In</h4>
-                        <p>
-                            Walk right up and enter the OnMed® care station at
-                            any time. No appointment necessary.
-                        </p>
-                    </li>
-                    <li className="col-md">
-                        <h4 className="text-primary">Press Start</h4>
-                        <p>
-                            Just press START to connect with a certified
-                            clinician on live video in real-time.
-                        </p>
-                    </li>
-                    <li className="col-md">
-                        <h4 className="text-primary">Get Exam</h4>
-                        <p>
-                            Have your vitals taken, including blood pressure,
-                            pulse, body temperature and respiration rate.
-                        </p>
-                    </li>
-                    <li className="col-md">
-                        <h4 className="text-primary">Walk Out</h4>
-                        <p>
-                            Walk out with OTC medicine and most prescriptions
-                            filled right on the spot, from our secure
-                            dispensary.
-                        </p>
-                    </li>
+                <ol className="list-unstyled row text-dark list-inline-arrows">
+                    <ListItem
+                        imgSrc={imgFriendsCoffeeShop}
+                        imgAlt="Alt text"
+                        headline="Walk In"
+                        body={
+                            <p>
+                                Walk right up and enter the OnMed® care station
+                                at any time. No appointment necessary.
+                            </p>
+                        }
+                    />
+
+                    <ListItem
+                        imgSrc={imgFriendsCoffeeShop}
+                        imgAlt="Alt text"
+                        headline="Press Start"
+                        body={
+                            <p>
+                                Just press START to connect with a certified
+                                clinician on live video in real-time.
+                            </p>
+                        }
+                    />
+                    <ListItem
+                        imgSrc={imgFriendsCoffeeShop}
+                        imgAlt="Alt text"
+                        headline="Get Exam"
+                        body={
+                            <p>
+                                Have your vitals taken, including blood
+                                pressure, pulse, body temperature and
+                                respiration rate.
+                            </p>
+                        }
+                    />
+                    <ListItem
+                        imgSrc={imgFriendsCoffeeShop}
+                        imgAlt="Alt text"
+                        headline="Walk Out"
+                        body={
+                            <p>
+                                Walk out with OTC medicine and most
+                                prescriptions filled right on the spot, from our
+                                secure dispensary.
+                            </p>
+                        }
+                    />
                 </ol>
             </div>
         </section>

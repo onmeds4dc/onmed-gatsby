@@ -1,12 +1,28 @@
 .navbar--primary {
     .nav-link {
         text-transform: uppercase;
-        &:not(.btn) {
+        &:not(.navbar--primary-btn) {
             color: $menu-primary-color;
+            letter-spacing: $menu-primary-letter-spacing;
         }
         font-family: $menu-primary-font;
         font-weight: $menu-primary-weight;
         font-size: $menu-primary-size;
-        letter-spacing: $menu-primary-letter-spacing;
+    }
+    &-btn.nav-link.nav-link {
+        @extend .btn;
+        @extend .btn-primary;
+        @extend .text-nowrap;
+        color: $white;
+        margin-left: $spacing-3;
+        padding: $btn-padding-y $btn-padding-x;
+        font-size: $menu-primary-size;
+        @include media-breakpoint-down(lg) {
+            margin-left: $spacing-5;
+        }
+
+        &:hover {
+            color: $white;
+        }
     }
 }

@@ -58,8 +58,18 @@
     $h7-font-weight
 );
 
+@include headline(
+    8,
+    $h8-font-size,
+    $h8-line-height,
+    $h8-letter-spacing,
+    $h8-font-weight
+);
+
 h7,
-.h7 {
+.h7,
+h8,
+.h8 {
     margin-top: 0;
     margin-bottom: 0.5rem;
     font-family: $headings-font-family;

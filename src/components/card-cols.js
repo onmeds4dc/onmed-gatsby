@@ -14,7 +14,9 @@ const CardCols = (props) => {
         <div class="row my-4 my-md-6">
             {imgColLeft}
             <div class="col-md-6">
-                <h7 className="text-uppercase text-primary">{props.title}</h7>
+                <span className="h7 text-uppercase text-primary">
+                    {props.title}
+                </span>
                 <h3>{props.headline}</h3>
                 {props.body}
                 <p>{props.cta}</p>

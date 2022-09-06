@@ -1,44 +1,68 @@
 // Inline turns list items into inline-block
 
-.list-inline-item {
-    display: inline-block;
+.list {
+    &-inline-item {
+        display: inline-block;
 
-    &:not(:last-child) {
-        margin-right: $list-inline-padding;
+        &:not(:last-child) {
+            margin-right: $list-inline-padding;
+        }
     }
-}
 
-.list-indent-none {
-    padding-left: 20px;
-}
-
-.list-definition-justified {
-    display: flex;
-    justify-content: space-between;
-
-    + .list-definition-justified {
-        border-top: 1px solid $border-color;
-        margin-top: $spacing-3;
-        padding-top: $spacing-3;
+    &-indent-none {
+        padding-left: 20px;
     }
-    > dt {
-        font-weight: bold;
-        color: $black;
-    }
-    > dd {
-        text-align: end;
-        margin-bottom: 0;
-    }
-}
 
-.list-check-mark-orange {
-    padding-left: 0;
-    list-style-type: none;
-    > li {
-        background-image: url($check-mark-orange);
-        background-repeat: no-repeat;
-        background-position: 0 1px;
-        background-size: 24px;
-        padding-left: 40px;
+    &-definition-justified {
+        display: flex;
+        justify-content: space-between;
+
+        + .list-definition-justified {
+            border-top: 1px solid $border-color;
+            margin-top: $spacing-3;
+            padding-top: $spacing-3;
+        }
+        > dt {
+            font-weight: bold;
+            color: $black;
+        }
+        > dd {
+            text-align: end;
+            margin-bottom: 0;
+        }
+    }
+
+    &-check-mark-orange {
+        padding-left: 0;
+        list-style-type: none;
+        > li {
+            background-image: url($check-mark-orange);
+            background-repeat: no-repeat;
+            background-position: 0 1px;
+            background-size: 24px;
+            padding-left: 40px;
+        }
+    }
+
+    &-inline-arrows {
+        > li {
+            &:not(:first-child) {
+                .list-inline-arrows--target {
+                    position: relative;
+                    &:before {
+                        content: " ";
+                        background-image: url($svg-arrow-sage);
+                        background-size: cover;
+                        height: 23px;
+                        width: 24px;
+                        display: block;
+                        position: absolute;
+                        top: 50%;
+                        margin-top: -12px;
+                        left: -18px;
+                    }
+                }
+            }
+        }
     }
 }

@@ -12,6 +12,7 @@ export default function SvgVideoCamera(props) {
             fill="currentColor"
             width="21px"
             height="16.5px"
+            className={props.className}
         >
             <path
                 // className={props.className}
