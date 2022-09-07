@@ -204,11 +204,11 @@ const IndexPage = ({ data }) => {
     const sectionHowItWorks = (
         <section className="bg-cloud py-4 py-md-6 text-center">
             <div className="container">
-                <h2>How it Works</h2>
-                <p className="lead">
+                <h2 className="mt-6">How it Works</h2>
+                <p className="lead mt-3">
                     Getting Care at an OnMed station is simple
                 </p>
-                <ol className="list-unstyled row text-dark list-inline-arrows">
+                <ol className="list-unstyled row text-dark list-inline-arrows mt-6 mb-4">
                     <ListItem
                         imgSrc={imgFriendsCoffeeShop}
                         imgAlt="Alt text"
@@ -265,7 +265,12 @@ const IndexPage = ({ data }) => {
         <section className="container">
             <CardCols
                 title="Patients"
-                headline="Always open. Always On."
+                headline={
+                    <>
+                        Always open. Always{" "}
+                        <span className="text-primary">On.</span>
+                    </>
+                }
                 body={
                     <p>
                         Our OnMed care station is like stepping into a mini
@@ -312,7 +317,7 @@ const IndexPage = ({ data }) => {
                     }
                     cta={
                         <a href="#" class="btn-arrow">
-                            Learne more
+                            Learn more
                         </a>
                     }
                     img={
@@ -363,16 +368,16 @@ const IndexPage = ({ data }) => {
 
             <div class="row text-end justify-content-end">
                 <div class="col-7">
-                    <div className="testimonial">
-                        <h4 className="text-primary">Testimonial</h4>
-                        <p className="testimonial--text">
+                    <div className="testimonial text-dark">
+                        <h5 className="text-primary mb-3">Testimonial</h5>
+                        <p className="testimonial--text mb-3">
                             Donec ullamcorper nulla non metus auctor fringilla.
                             Maecenas sed diam eget risus varius blandit sit amet
                             non magna. Lorem ipsum dolor sit amet, consectetur
                             adipiscing elit.
                         </p>
 
-                        <p>-Firstname Lastname</p>
+                        <p style={{ fontSize: "20px" }}>- Firstname Lastname</p>
                     </div>
                 </div>
             </div>
@@ -380,21 +385,23 @@ const IndexPage = ({ data }) => {
     );
     const sectionExpanding = (
         <section
-            className="bg-hex-decrescendo d-flex align-items-center"
-            style={{ padding: "20px 0" }}
+            className="bg-hex-decrescendo d-flex align-items-center mt-n4"
+            style={{ padding: "150px 0" }}
         >
             <div className="container">
                 <div class="row justify-content-around text-center">
                     <div class="col-md-10">
-                        <h1 className="text-primary">Expanding nationwide</h1>
-                        <p>
+                        <h2 className="text-primary mb-5">
+                            Expanding nationwide
+                        </h2>
+                        <p className="lead">
                             We are fully committed to making quality healthcare
                             accessible to all, so we’re always growing and
                             expanding. If you’re interested in learning more
                             about OnMed care stations nearest to you, send us
                             your location request.
                         </p>
-                        <div>
+                        <div className="mt-6">
                             <Link
                                 to="/"
                                 className="btn btn-primary text-uppercase"

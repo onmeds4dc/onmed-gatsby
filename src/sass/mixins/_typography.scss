@@ -15,5 +15,8 @@
         @if $font-weight {
             font-weight: $font-weight;
         }
+        &.text-primary {
+            color: $primary;
+        }
     }
 }
