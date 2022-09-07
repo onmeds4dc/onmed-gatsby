@@ -11,31 +11,39 @@ import imgSocialTwitter from "../../static/icons/social-media/twitter.svg";
 
 const Footer = ({ data }) => {
     return (
-        <footer className="bg-primary text-white links-white footer">
-            <div className="container py-4">
+        <footer className="bg-primary text-white links-white footer py-4 py-md-6">
+            <div className="container my-md-3">
                 <div className="footer-groups">
-                    <div className="footer--group-info">
+                    <div
+                        className="footer--group-info"
+                        style={{ fontSize: "15px", lineHeight: "20px" }}
+                    >
                         <Link to="/" className="d-flex">
                             <SiteLogoLight />
                         </Link>
 
-                        <div>
-                            <Link to="mailto:info@onmed.com">
+                        <p className="mt-5">
+                            <Link
+                                to="mailto:info@onmed.com"
+                                className="link-no-underline"
+                            >
                                 info@onmed.com
                             </Link>
                             <br />
                             (727) 601-4513
-                        </div>
-                        <div>
-                            <p>Copyright ©2022 OnMed. All Rights Reserved.</p>
-                            <p>Terms of Use | Privacy Policy</p>
-                        </div>
+                        </p>
+
+                        <p>Copyright ©2022 OnMed. All Rights Reserved.</p>
+                        <p>Terms of Use | Privacy Policy</p>
                     </div>
-                    <div className="footer--group-menus d-flex align-items-start">
+                    <div
+                        className="footer--group-menus d-flex align-items-start mt-n3"
+                        style={{ fontSize: "20px", lineHeight: "32px" }}
+                    >
                         <MenuFooter className="footer--menu" />
                         <MenuUtility className="footer--menu" />
                     </div>
-                    <div className="footer--group-social-media">
+                    <div className="footer--group-social-media mt-3">
                         <div className="footer--social-media">
                             <Link
                                 to="https://www.facebook.com/OnMedStation/"

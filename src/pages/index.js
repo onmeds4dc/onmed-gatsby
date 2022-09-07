@@ -417,12 +417,12 @@ const IndexPage = ({ data }) => {
     const sectionContact = (
         <section className="bg-sage py-4 py-md-6">
             <div className="container">
-                <div class="row">
+                <div class="row gx-6">
                     <div class="col-md-6">
-                        <h2>
+                        <h3>
                             Opening more doors to Healthcare around the world
-                        </h2>
-                        <p className="text-dark">
+                        </h3>
+                        <p className="text-dark lead">
                             Please complete this form, and a member of our team
                             will be in touch shortly.
                         </p>
@@ -492,7 +492,11 @@ const IndexPage = ({ data }) => {
                                 <Form.Label>Message</Form.Label>
                             </Form.Group>
 
-                            <Button variant="primary" type="submit">
+                            <Button
+                                variant="primary"
+                                type="submit"
+                                className="text-uppercase"
+                            >
                                 Submit
                             </Button>
                         </Form>
