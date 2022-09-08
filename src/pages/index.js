@@ -385,7 +385,7 @@ const IndexPage = ({ data }) => {
     );
     const sectionExpanding = (
         <section
-            className="bg-hex-decrescendo d-flex align-items-center mt-n4"
+            className="bg-hex-decrescendo d-flex align-items-end mt-n5"
             style={{ padding: "150px 0" }}
         >
             <div className="container">
