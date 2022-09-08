@@ -23,31 +23,27 @@ const IndexPage = ({ data }) => {
     console.log("pageHome: ", pageHome);
 
     const sectionIntro = (
-        <section className="bg-cloud py-4 py-md-6">
+        <section className="bg-cloud pt-4 py-md-6">
             <div className="container">
                 <div className="row justify-content-between gx-6">
-                    <div className="col-sm-6 d-flex align-items-center">
-                        <div className="me-4">
-                            <h1 className="text-primary mb-3">
-                                {pageHome.introHeadline}
-                            </h1>
+                    <div className="col-md-7 col-lg-6">
+                        <div className="d-flex align-items-center">
+                            <div className="me-xl-4">
+                                <h1 className="text-primary mb-3">
+                                    {pageHome.introHeadline}
+                                </h1>
 
-                            <div
-                                className="lead"
-                                dangerouslySetInnerHTML={{
-                                    __html: pageHome.introBody,
-                                }}
-                            ></div>
+                                <div
+                                    className="lead"
+                                    dangerouslySetInnerHTML={{
+                                        __html: pageHome.introBody,
+                                    }}
+                                ></div>
+                            </div>
                         </div>
                     </div>
-                    <div className="col-sm-6">
-                        <div
-                            className="img-hex-into mx-md-5 mt-md-n3"
-                            style={{
-                                marginLeft: "4.5rem",
-                                marginRight: "4.5rem",
-                            }}
-                        >
+                    <div className="col-md-5 col-lg-6 img-hex-into--col bg-half-horz-cloud-white-md">
+                        <div className="img-hex-into mt-md-n3">
                             <div className="img-hex-into-2">
                                 <HexImage
                                     imgSrc={imgFriendsCoffeeShop}
@@ -93,18 +89,18 @@ const IndexPage = ({ data }) => {
         <section className="bg-hex-dark-many">
             <div className="container py-4 py-md-6">
                 <div
-                    className="row justify-content-between"
-                    style={{ marginTop: "6.5vw" }}
+                    className="row justify-content-between mt-lg-6 pt-lg-6"
+                    // style={{ marginTop: "6.5vw" }}
                 >
-                    <div className="col-sm-6">
+                    <div className="col-lg-5 col-xxl-6 d-none d-lg-block">
                         <HexImage
                             imgSrc={imgFriendsCoffeeShop}
                             alt="Alt text"
                         />
                     </div>
 
-                    <div className="col-sm-6">
-                        <div className="ms-md-6">
+                    <div className="col-lg-7 col-xxl-6">
+                        <div className="ms-lg-6">
                             <h2 className="text-primary">
                                 We create real connections between patients and
                                 clinicians, virtually anywhere

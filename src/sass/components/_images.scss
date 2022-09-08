@@ -4,40 +4,112 @@
     background-size: cover;
 }
 
+$img-hex-height: 130px;
+$img-hex-width: 112px;
+
 .img-hex-into,
 .img-hex-into-2 {
     z-index: 0;
     position: relative;
     &:before,
     &:after {
+        display: none;
         content: " ";
-        height: 130px;
-        width: 112px;
-        display: block;
         background-image: url($svg-hex-white);
         background-repeat: no-repeat;
         background-size: contain;
         background-position: 50% 50%;
         position: absolute;
         z-index: -1;
+        @include media-breakpoint-up(md) {
+            height: $img-hex-height;
+            width: $img-hex-width;
+        }
+        @include media-breakpoint-up(lg) {
+            display: block;
+            height: $img-hex-height * 0.75;
+            width: $img-hex-width * 0.75;
+        }
+        @include media-breakpoint-up(xl) {
+            height: $img-hex-height;
+            width: $img-hex-width;
+        }
     }
 }
 .img-hex-into {
-    &:before {
-        left: 15%;
-        top: -4%;
+    &--col {
+        @include media-breakpoint-down(md) {
+            padding-left: 0;
+            padding-right: 0;
+        }
     }
-    &:after {
-        right: -23.3%;
-        top: 7.5%;
+    @include media-breakpoint-up(lg) {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        &:before {
+            left: 11%;
+            top: -5%;
+        }
+        &:after {
+            right: -20.7%;
+            top: 8.7%;
+        }
+    }
+    @include media-breakpoint-up(xl) {
+        margin-left: 4.5rem;
+        margin-right: 4.5rem;
+        &:before {
+            left: 10%;
+            top: -4%;
+        }
+        &:after {
+            right: -28.8%;
+            top: 3.5%;
+        }
+    }
+    @include media-breakpoint-up(xxl) {
+        &:before {
+            left: 15%;
+            top: -4%;
+        }
+        &:after {
+            right: -23.3%;
+            top: 7.5%;
+        }
     }
 }
 .img-hex-into-2 {
-    &:after {
-        right: -35%;
-        top: 44.5%;
-    }
     &:before {
         display: none;
+        @include media-breakpoint-down(md) {
+            display: block;
+            background: $bg-half-horz-cloud-white;
+
+            top: 0;
+            right: -100%;
+            bottom: 0;
+            left: -100%;
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        &:after {
+            right: -35%;
+            top: 44.5%;
+        }
+    }
+
+    @include media-breakpoint-up(xl) {
+        &:after {
+            right: -54%;
+            top: 40.5%;
+        }
+    }
+
+    @include media-breakpoint-up(xxl) {
+        &:after {
+            right: -35%;
+            top: 44.5%;
+        }
     }
 }
