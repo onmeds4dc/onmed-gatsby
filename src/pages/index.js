@@ -416,7 +416,7 @@ const IndexPage = ({ data }) => {
     const sectionContact = (
         <section className="bg-sage py-4 py-md-6">
             <div className="container">
-                <div class="row gx-6 gy-4">
+                <div class="row gx-lg-6 gy-4">
                     <div class="col-lg-6">
                         <h3>
                             Opening more doors to Healthcare around the world
@@ -516,10 +516,6 @@ const IndexPage = ({ data }) => {
             {sectionExpanding}
             {sectionContact}
 
-            {/*
-            {sectionAudiences}
-            {sectionTestimonials}
-             */}
             {/* <h1>{title}</h1>
             <div dangerouslySetInnerHTML={{ __html: content }}></div> */}
         </Layout>
