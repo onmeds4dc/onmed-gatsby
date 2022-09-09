@@ -12,7 +12,9 @@ module.exports = {
         {
             resolve: "gatsby-source-wordpress",
             options: {
-                url: "https://onmed-cms.com/graphql/",
+                url:
+                    process.env.WPGRAPHQL_URL ||
+                    `https://onmed-cms.com/graphql/`,
                 useAcf: true,
             },
         },

@@ -1,6 +1,15 @@
 .testimonial {
-    border-right: 7px solid $secondary;
-    padding: 38px 35px 38px 0;
+    @include media-breakpoint-up(lg) {
+        border-right: 7px solid $secondary;
+        padding: 38px 35px 38px 0;
+    }
+
+    &-wrapper {
+        @include media-breakpoint-up(lg) {
+            text-align: right;
+            justify-content: end;
+        }
+    }
 
     &--text {
         font-family: $headings-font-family;
@@ -8,5 +17,12 @@
         line-height: 1.541666667;
         font-style: italic;
         font-weight: 350;
+    }
+
+    &--author {
+        font-size: 20px;
+        @include media-breakpoint-down(lg) {
+            color: $text-muted;
+        }
     }
 }

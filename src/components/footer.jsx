@@ -11,8 +11,8 @@ import imgSocialTwitter from "../../static/icons/social-media/twitter.svg";
 
 const Footer = ({ data }) => {
     return (
-        <footer className="bg-primary text-white links-white footer py-4 py-md-6">
-            <div className="container my-md-3">
+        <footer className="bg-primary text-white links-white footer py-6">
+            <div className="container my-3">
                 <div className="footer-groups">
                     <div
                         className="footer--group-info"
@@ -37,13 +37,13 @@ const Footer = ({ data }) => {
                         <p>Terms of Use | Privacy Policy</p>
                     </div>
                     <div
-                        className="footer--group-menus d-flex align-items-start mt-n3"
+                        className="footer--group-menus d-flex align-items-start mt-5 mt-md-n3"
                         style={{ fontSize: "20px", lineHeight: "32px" }}
                     >
                         <MenuFooter className="footer--menu" />
                         <MenuUtility className="footer--menu" />
                     </div>
-                    <div className="footer--group-social-media mt-3">
+                    <div className="footer--group-social-media mt-5 mt-md-3">
                         <div className="footer--social-media">
                             <Link
                                 to="https://www.facebook.com/OnMedStation/"

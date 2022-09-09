@@ -1,0 +1,13 @@
+.card-cols {
+    @include media-breakpoint-down(md) {
+        &--item {
+            margin-left: calc(-1 * var(--bs-gutter-x));
+            margin-right: calc(-1 * var(--bs-gutter-x));
+        }
+
+        &--text {
+            padding-left: calc(var(--bs-gutter-x) * 0.5);
+            padding-right: $gutter-x;
+        }
+    }
+}
