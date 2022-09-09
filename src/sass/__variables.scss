@@ -71,6 +71,8 @@ $spacing-4: 1.5rem;
 $spacing-5: 2rem;
 $spacing-6: 3rem;
 
+$gutter-x: calc(var(--bs-gutter-x) * 0.5);
+
 // Typography
 $font-family-sans-serif: "Open Sans", sans-serif;
 $headings-font-family: "Quatro", sans-serif;

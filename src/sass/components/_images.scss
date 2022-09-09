@@ -2,6 +2,7 @@
     @include mask-image($mask-image-hex);
     aspect-ratio: 173 / 200;
     background-size: cover;
+    width: 100%;
 }
 
 $img-hex-height: 130px;

@@ -59,20 +59,19 @@ const IndexPage = ({ data }) => {
 
     const ListItem = (props) => {
         return (
-            <li className="col-md">
-                <div className="list-inline-arrows--target">
-                    <div className="px-4">
+            <li className="col-lg">
+                <div className="d-flex d-lg-block list-inline-arrows--items my-3">
+                    <div className="flex-fill mx-lg-auto list-inline-arrows--item-1 list-inline-arrows--target">
                         <HexImage
                             imgSrc={imgFriendsCoffeeShop}
-                            className="m-6"
                             alt="Alt text"
                         />
                     </div>
-                </div>
-                <div className="mx-3">
-                    {" "}
-                    <h5 className="text-primary mb-3">{props.headline}</h5>
-                    {props.body}
+                    <div className="flex-fill list-inline-arrows--item-2 mx-3 mt-lg-6">
+                        {" "}
+                        <h5 className="text-primary mb-3">{props.headline}</h5>
+                        {props.body}
+                    </div>
                 </div>
             </li>
         );
@@ -198,13 +197,13 @@ const IndexPage = ({ data }) => {
     );
 
     const sectionHowItWorks = (
-        <section className="bg-cloud py-4 py-md-6 text-center">
+        <section className="bg-cloud py-4 py-md-6 text-lg-center">
             <div className="container">
-                <h2 className="mt-6">How it Works</h2>
+                <h2 className="mt-lg-6">How it Works</h2>
                 <p className="lead mt-3">
                     Getting Care at an OnMed station is simple
                 </p>
-                <ol className="list-unstyled row text-dark list-inline-arrows mt-6 mb-4">
+                <ol className="list-unstyled row text-dark list-inline-arrows mt-6 mb-0 mb-lg-4">
                     <ListItem
                         imgSrc={imgFriendsCoffeeShop}
                         imgAlt="Alt text"
@@ -258,7 +257,7 @@ const IndexPage = ({ data }) => {
     );
 
     const sectionPatients = (
-        <section className="container">
+        <section className="container card-cols | mt-n4 mt-sm-6 mt-md-2">
             <CardCols
                 title="Patients"
                 headline={
@@ -293,8 +292,8 @@ const IndexPage = ({ data }) => {
         </section>
     );
     const sectionProviders = (
-        <section className="bg-cloud d-flex">
-            <div className="container">
+        <section className="bg-cloud-md d-flex | mt-5 mt-md-2 py-md-6">
+            <div className="container card-cols">
                 <CardCols
                     title="Providers"
                     headline="Practice everywhere. See your patients anywhere."
@@ -329,7 +328,7 @@ const IndexPage = ({ data }) => {
         </section>
     );
     const sectionPartners = (
-        <section className="container pb-4 pb-md-0">
+        <section className="container card-cols | pb-4 pb-md-0 mt-5 mt-md-0">
             <CardCols
                 title="Partners"
                 headline="A different kind of doctor's office. A new kind of
@@ -362,29 +361,30 @@ const IndexPage = ({ data }) => {
                 imgAlignRight={false}
             />
 
-            <div class="row text-end justify-content-end">
-                <div class="col-7">
+            <div class="testimonial-wrapper row">
+                <div class="col-lg-7">
                     <div className="testimonial text-dark">
-                        <h5 className="text-primary mb-3">Testimonial</h5>
-                        <p className="testimonial--text mb-3">
+                        <h5 className="text-primary | mb-4 mb-lg-3 mt-6 pt-4 mt-lg-0 pt-lg-0">
+                            Testimonial
+                        </h5>
+                        <p className="testimonial--text mb-4 mb-lg-3">
                             Donec ullamcorper nulla non metus auctor fringilla.
                             Maecenas sed diam eget risus varius blandit sit amet
                             non magna. Lorem ipsum dolor sit amet, consectetur
                             adipiscing elit.
                         </p>
 
-                        <p style={{ fontSize: "20px" }}>- Firstname Lastname</p>
+                        <p className="testimonial--author">
+                            - Firstname Lastname
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
     );
     const sectionExpanding = (
-        <section
-            className="bg-hex-decrescendo d-flex align-items-end mt-n5"
-            style={{ padding: "150px 0" }}
-        >
-            <div className="container">
+        <section className="bg-hex-decrescendo d-flex align-items-end mt-5">
+            <div className="container my-6">
                 <div class="row justify-content-around text-center">
                     <div class="col-md-10">
                         <h2 className="text-primary mb-5">
@@ -413,8 +413,8 @@ const IndexPage = ({ data }) => {
     const sectionContact = (
         <section className="bg-sage py-4 py-md-6">
             <div className="container">
-                <div class="row gx-6">
-                    <div class="col-md-6">
+                <div class="row gx-6 gy-4">
+                    <div class="col-lg-6">
                         <h3>
                             Opening more doors to Healthcare around the world
                         </h3>
@@ -423,7 +423,7 @@ const IndexPage = ({ data }) => {
                             will be in touch shortly.
                         </p>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-lg-6 pb-4 pb-lg-0">
                         <Form>
                             <div class="row">
                                 <div class="col-md-6">
