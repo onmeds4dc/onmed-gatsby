@@ -23,7 +23,10 @@ const IndexPage = ({ data }) => {
     console.log("pageHome: ", pageHome);
 
     const sectionIntro = (
-        <section className="bg-cloud pt-4 py-md-6">
+        <section
+            className="bg-cloud pt-4 py-md-6"
+            style={{ overflow: "hidden" }}
+        >
             <div className="container">
                 <div className="row justify-content-between gx-6">
                     <div className="col-md-7 col-lg-6">

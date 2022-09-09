@@ -7,11 +7,13 @@ import MenuHeader from "./menu-header";
 const Header = () => {
     return (
         <header className="bg-cloud py-4">
-            <div className="container  d-flex justify-content-between">
-                <Link to="/" className="text-light d-flex">
-                    <SiteLogo />
-                </Link>
-                <MenuHeader />
+            <div className="container">
+                <div className="d-flex justify-content-between">
+                    <Link to="/" className="text-light d-flex">
+                        <SiteLogo />
+                    </Link>
+                    <MenuHeader />
+                </div>
             </div>
         </header>
     );
