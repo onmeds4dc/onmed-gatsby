@@ -49,7 +49,7 @@ const IndexPage = ({ data }) => {
 
     const sectionIntro = (
         <section
-            className="bg-cloud pt-4 py-md-6"
+            className="section-home-intro bg-cloud pt-4 py-md-6"
             // style={{ overflowX: "hidden" }}
         >
             <div className="container">
