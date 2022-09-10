@@ -10,7 +10,7 @@ import {
     trackingAccessibility,
     trackingZoom,
     trackingGoogle,
-    connectionsScripts,
+    // connectionsScripts,
 } from "./tracking-codes";
 
 const Layout = ({ children, data }) => (
@@ -67,13 +67,6 @@ const Layout = ({ children, data }) => (
                     trackingActiveCampaign,
             }}
         /> */}
-
-        <div
-            className="tracking-codes"
-            dangerouslySetInnerHTML={{
-                __html: connectionsScripts,
-            }}
-        />
     </>
 );
 

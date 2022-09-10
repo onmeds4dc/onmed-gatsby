@@ -41,7 +41,7 @@ const Footer = ({ data }) => {
                         style={{ fontSize: "20px", lineHeight: "32px" }}
                     >
                         <MenuFooter className="footer--menu" />
-                        <MenuUtility className="footer--menu" />
+                        {/* <MenuUtility className="footer--menu" /> */}
                     </div>
                     <div className="footer--group-social-media mt-5 mt-md-3">
                         <div className="footer--social-media">
