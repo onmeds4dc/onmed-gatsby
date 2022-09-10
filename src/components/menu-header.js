@@ -37,6 +37,7 @@ const MenuHeader = () => {
                             <>
                                 <Nav.Link
                                     href={menuItem.path}
+                                    key={`menu-${i}`}
                                     className={
                                         menuItem.cssClasses.length
                                             ? menuItem.cssClasses.map(

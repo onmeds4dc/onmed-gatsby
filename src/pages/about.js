@@ -6,80 +6,41 @@ import Form from "react-bootstrap/Form";
 import { LoremIpsum, loremIpsum } from "react-lorem-ipsum";
 import Layout from "../components/layout";
 import imgFriendsCoffeeShop from "../../static/images/fpo/friends-coffee-shop-v2.jpg";
-import imgWomanTakesPulse from "../../static/images/backgrounds/woman-takes-pulse.jpg";
-import imgWomanWhiteCoat from "../../static/images/backgrounds/woman-white-coat.jpg";
-
 import SvgVideoCamera from "../components/svgs/video-camera";
 import CardCols from "../components/card-cols";
 import HexImage from "../components/hex-image";
-// import { jQuery } from "jquery";
-// import connections from "jquery-connections";
-// import * as $ from "jquery";
 
-// function dotsConnector() {
-//     $("#start").connections({
-//         to: "#end",
-//         class: "related",
-//     });
-
-//     var c = $("connection");
-//     setInterval(function () {
-//         c.connections("update");
-//     }, 100);
-
-//     setTimeout(() => {
-//         console.log($("connection"));
-//         $("connection").html(
-//             '<span class="dots-corner dots-corner-1"></span><span class="dots-corner dots-corner-2"></span>'
-//         );
-//     }, "2000");
-// }
-
-const IndexPage = ({ data }) => {
-    const {
-        wpPage: { title, content, featuredImage, pageHome, introBody },
-    } = data;
+const AboutPage = ({ data }) => {
+    // const {
+    //     wpPage: { title, content, featuredImage, pageHome, introBody },
+    // } = data;
 
     //     const image = getImage(featuredImage.node.localFile);
     // <GatsbyImage image={image} alt="" />
 
-    console.log("introHeadline: ", pageHome.introHeadline);
-
-    console.log("pageHome: ", pageHome);
-
     const sectionIntro = (
         <section
             className="bg-cloud pt-4 py-md-6"
-            // style={{ overflowX: "hidden" }}
+            style={{ overflow: "hidden" }}
         >
             <div className="container">
                 <div className="row justify-content-between gx-6">
-                    <div className="col-md6 col-lg-6 hex-and-dots--text">
+                    <div className="col-md-7 col-lg-6">
                         <div className="d-flex align-items-center">
                             <div className="me-xl-4">
-                                <h1 className="text-primary mb-3">
-                                    {pageHome.introHeadline}
-                                </h1>
+                                <h1 className="text-primary mb-3">ss</h1>
 
-                                <div
-                                    className="lead"
-                                    dangerouslySetInnerHTML={{
-                                        __html: pageHome.introBody,
-                                    }}
-                                ></div>
+                                <div className="lead">xxx</div>
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-6 col-lg-6 img-hex-into--col bg-half-horz-cloud-white-md">
+                    <div className="col-md-5 col-lg-6 img-hex-into--col bg-half-horz-cloud-white-md">
                         <div className="img-hex-into mt-md-n3">
                             <div className="img-hex-into-2">
-                                <div id="start" className="hex-and-dots">
-                                    <HexImage
-                                        imgSrc={imgWomanTakesPulse}
-                                        alt="Alt text"
-                                        className="hex-and-dots--img"
-                                    />
-                                </div>
+                                <HexImage
+                                    imgSrc={imgFriendsCoffeeShop}
+                                    alt="Alt text"
+                                />
                             </div>
                         </div>
                     </div>
@@ -118,18 +79,18 @@ const IndexPage = ({ data }) => {
     const sectionConnections = (
         <section className="bg-hex-dark-many">
             <div className="container py-4 py-md-6">
-                <div className="row justify-content-between mt-lg-6 pt-lg-6">
-                    <div className="col-lg-6 col-xxl-6 d-none d-lg-block">
-                        <div id="start">
-                            <HexImage
-                                imgSrc={imgWomanWhiteCoat}
-                                alt="Alt text"
-                                className="hex-and-dots--img"
-                            />
-                        </div>
+                <div
+                    className="row justify-content-between mt-lg-6 pt-lg-6"
+                    // style={{ marginTop: "6.5vw" }}
+                >
+                    <div className="col-lg-5 col-xxl-6 d-none d-lg-block">
+                        <HexImage
+                            imgSrc={imgFriendsCoffeeShop}
+                            alt="Alt text"
+                        />
                     </div>
 
-                    <div className="col-lg-6 col-xxl-6 hex-and-dots--text">
+                    <div className="col-lg-7 col-xxl-6">
                         <div className="ms-lg-6">
                             <h2 className="text-primary">
                                 We create real connections between patients and
@@ -556,7 +517,7 @@ const IndexPage = ({ data }) => {
     );
 };
 
-export default IndexPage;
+export default AboutPage;
 
 export const pageQuery = graphql`
     query {

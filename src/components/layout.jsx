@@ -10,12 +10,15 @@ import {
     trackingAccessibility,
     trackingZoom,
     trackingGoogle,
+    connectionsScripts,
 } from "./tracking-codes";
 
 const Layout = ({ children, data }) => (
     <>
         <Helmet>
             <title>OnMed</title>
+            {/* <script src="https://code.jquery.com/jquery-latest.min.js"></script> */}
+
             {/* <meta property="og:url" content="https://www.onmed.com" />
             <meta property="og:type" content="website" />
             <meta
@@ -64,6 +67,13 @@ const Layout = ({ children, data }) => (
                     trackingActiveCampaign,
             }}
         /> */}
+
+        <div
+            className="tracking-codes"
+            dangerouslySetInnerHTML={{
+                __html: connectionsScripts,
+            }}
+        />
     </>
 );
 

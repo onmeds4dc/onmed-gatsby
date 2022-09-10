@@ -4,7 +4,7 @@ const DocsSpacing = () => {
     const spacing = (
         <section className="docs docs__section">
             <h4>Spacing</h4>
-            <table class="table">
+            <table className="table">
                 <thead>
                     <tr>
                         <th>Variable</th>
@@ -21,7 +21,7 @@ const DocsSpacing = () => {
                         <td>0.25rem</td>
                         <td>4px</td>
                         <td>
-                            <span class="pe-1 pb-1 d-inline-block docs__bg"></span>
+                            <span className="pe-1 pb-1 d-inline-block docs__bg"></span>
                         </td>
                     </tr>
                     <tr data-row-key="1">
@@ -31,7 +31,7 @@ const DocsSpacing = () => {
                         <td>0.5rem</td>
                         <td>8px</td>
                         <td>
-                            <span class="pe-2 pb-2 d-inline-block docs__bg"></span>
+                            <span className="pe-2 pb-2 d-inline-block docs__bg"></span>
                         </td>
                     </tr>
                     <tr data-row-key="2">
@@ -41,7 +41,7 @@ const DocsSpacing = () => {
                         <td>1em</td>
                         <td>16px</td>
                         <td>
-                            <span class="pe-3 pb-3 d-inline-block docs__bg"></span>
+                            <span className="pe-3 pb-3 d-inline-block docs__bg"></span>
                         </td>
                     </tr>
                     <tr data-row-key="3">
@@ -51,7 +51,7 @@ const DocsSpacing = () => {
                         <td>1.5rem</td>
                         <td>24px</td>
                         <td>
-                            <span class="pe-4 pb-4 d-inline-block docs__bg"></span>
+                            <span className="pe-4 pb-4 d-inline-block docs__bg"></span>
                         </td>
                     </tr>
                     <tr data-row-key="4">
@@ -61,7 +61,7 @@ const DocsSpacing = () => {
                         <td>2em</td>
                         <td>32px</td>
                         <td>
-                            <span class="pe-5 pb-5 d-inline-block docs__bg"></span>
+                            <span className="pe-5 pb-5 d-inline-block docs__bg"></span>
                         </td>
                     </tr>
                     <tr data-row-key="5">
@@ -71,7 +71,7 @@ const DocsSpacing = () => {
                         <td>3em</td>
                         <td>48px</td>
                         <td>
-                            <span class="pe-6 pb-6 d-inline-block docs__bg"></span>
+                            <span className="pe-6 pb-6 d-inline-block docs__bg"></span>
                         </td>
                     </tr>
                 </tbody>
@@ -80,14 +80,14 @@ const DocsSpacing = () => {
     );
 
     const padding = (
-        <section class="docs docs__section">
-            <h4 class="">Padding</h4>
+        <section className="docs docs__section">
+            <h4 className="">Padding</h4>
             <p>
                 We use "start/end" instead of "left/right"
-                <span class="ps-5 d-inline-block me-4 docs__bg">
+                <span className="ps-5 d-inline-block me-4 docs__bg">
                     <code>.ps-5</code>
                 </span>{" "}
-                <span class="pe-5 d-inline-block me-4 docs__bg">
+                <span className="pe-5 d-inline-block me-4 docs__bg">
                     <code>.pe-5</code>
                 </span>
             </p>
@@ -95,42 +95,42 @@ const DocsSpacing = () => {
                 Still in use: <code>-x</code>, <code>-y</code>, <code>-t</code>,{" "}
                 <code>-b</code>.
             </p>
-            <span class="p-0 me-3 d-inline-block docs__bg">
+            <span className="p-0 me-3 d-inline-block docs__bg">
                 <code>.p-0</code>
             </span>
-            <span class="p-1 me-3 d-inline-block docs__bg">
+            <span className="p-1 me-3 d-inline-block docs__bg">
                 <code>.p-1</code>
             </span>
-            <span class="p-2 me-3 d-inline-block docs__bg">
+            <span className="p-2 me-3 d-inline-block docs__bg">
                 <code>.p-2</code>
             </span>
-            <span class="p-3 me-3 d-inline-block docs__bg">
+            <span className="p-3 me-3 d-inline-block docs__bg">
                 <code>.p-3</code>
             </span>
-            <span class="p-4 me-3 d-inline-block docs__bg">
+            <span className="p-4 me-3 d-inline-block docs__bg">
                 <code>.p-4</code>
             </span>
-            <span class="p-5 me-3 d-inline-block docs__bg">
+            <span className="p-5 me-3 d-inline-block docs__bg">
                 <code>.p-5</code>
             </span>
-            <span class="p-6 me-3 d-inline-block docs__bg">
+            <span className="p-6 me-3 d-inline-block docs__bg">
                 <code>.p-6</code>
             </span>
         </section>
     );
 
     const margin = (
-        <section class="docs docs__section">
+        <section className="docs docs__section">
             <h4>Margin</h4>
             <p>
                 We use "start/end" instead of "left/right":
-                <span class="d-inline-block mx-3 docs__bg">
-                    <span class="ms-5 d-inline-block docs__bg--reverse">
+                <span className="d-inline-block mx-3 docs__bg">
+                    <span className="ms-5 d-inline-block docs__bg--reverse">
                         <code>.ms-5</code>
                     </span>
                 </span>
-                <span class="d-inline-block mx-3 docs__bg">
-                    <span class="me-5 d-inline-block docs__bg--reverse">
+                <span className="d-inline-block mx-3 docs__bg">
+                    <span className="me-5 d-inline-block docs__bg--reverse">
                         <code>.me-5</code>
                     </span>
                 </span>
@@ -139,54 +139,54 @@ const DocsSpacing = () => {
                 Still in use: <code>-x</code>, <code>-y</code>, <code>-t</code>,{" "}
                 <code>-b</code>.
             </p>
-            <span class="d-inline-block me-3 docs__bg">
-                <span class="m-0 d-inline-block docs__bg--reverse">
+            <span className="d-inline-block me-3 docs__bg">
+                <span className="m-0 d-inline-block docs__bg--reverse">
                     <code>.m-0</code>
                 </span>
             </span>
-            <span class="d-inline-block me-3 docs__bg">
-                <span class="m-1 d-inline-block docs__bg--reverse">
+            <span className="d-inline-block me-3 docs__bg">
+                <span className="m-1 d-inline-block docs__bg--reverse">
                     <code>.m-1</code>
                 </span>
             </span>
-            <span class="d-inline-block me-3 docs__bg">
-                <span class="m-2 d-inline-block docs__bg--reverse">
+            <span className="d-inline-block me-3 docs__bg">
+                <span className="m-2 d-inline-block docs__bg--reverse">
                     <code>.m-2</code>
                 </span>
             </span>
-            <span class="d-inline-block me-3 docs__bg">
-                <span class="m-3 d-inline-block docs__bg--reverse">
+            <span className="d-inline-block me-3 docs__bg">
+                <span className="m-3 d-inline-block docs__bg--reverse">
                     <code>.m-3</code>
                 </span>
             </span>
-            <span class="d-inline-block me-3 docs__bg">
-                <span class="m-4 d-inline-block docs__bg--reverse">
+            <span className="d-inline-block me-3 docs__bg">
+                <span className="m-4 d-inline-block docs__bg--reverse">
                     <code>.m-4</code>
                 </span>
             </span>
-            <span class="d-inline-block me-3 docs__bg">
-                <span class="m-5 d-inline-block docs__bg--reverse">
+            <span className="d-inline-block me-3 docs__bg">
+                <span className="m-5 d-inline-block docs__bg--reverse">
                     <code>.m-5</code>
                 </span>
             </span>
-            <span class="d-inline-block me-3 docs__bg">
-                <span class="m-6 d-inline-block docs__bg--reverse">
+            <span className="d-inline-block me-3 docs__bg">
+                <span className="m-6 d-inline-block docs__bg--reverse">
                     <code>.m-6</code>
                 </span>
             </span>
-            <h5 class=" mt-6">Negative Margin</h5>
-            <p class="mb-6">
+            <h5 className=" mt-6">Negative Margin</h5>
+            <p className="mb-6">
                 Just add <code>n</code> before the number.
             </p>
             <hr />
-            <div class="d-flex">
-                <div class="me-3 docs__bg">
-                    <span class="mt-4 d-inline-block docs__bg--reverse">
+            <div className="d-flex">
+                <div className="me-3 docs__bg">
+                    <span className="mt-4 d-inline-block docs__bg--reverse">
                         <code>.mt-4</code>
                     </span>
                 </div>
-                <div class="me-3 docs__bg mt-n4 ">
-                    <span class="d-inline-block docs__bg--reverse">
+                <div className="me-3 docs__bg mt-n4 ">
+                    <span className="d-inline-block docs__bg--reverse">
                         <code>.mt-n4</code>
                     </span>
                 </div>
@@ -195,9 +195,9 @@ const DocsSpacing = () => {
     );
 
     const breakpoints = (
-        <section class="docs docs__section">
+        <section className="docs docs__section">
             <h4>Breakpoints</h4>
-            <table class="table">
+            <table className="table">
                 <thead>
                     <tr>
                         <th>Name</th>

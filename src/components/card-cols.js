@@ -11,11 +11,11 @@ const CardCols = (props) => {
     const colImgOrderg = props.imgAlignRight ? " order-md-2 " : "";
 
     return (
-        <div class="card-cols--item row my-md-6 py-md-5">
+        <div className="card-cols--item row my-md-6 py-md-5">
             <div className={"card-cols--img col-md-6 " + colImgOrderg}>
                 <div className={colImgPadding}>{props.img}</div>
             </div>
-            <div class="card-cols--text col-md-6 ">
+            <div className="card-cols--text col-md-6 ">
                 <div className="p-3 p-md-0">
                     <div className={colTextPadding}>
                         <span className="h8 text-uppercase text-primary">
