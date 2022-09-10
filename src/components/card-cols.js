@@ -16,7 +16,7 @@ const CardCols = (props) => {
                 <div className={colImgPadding}>{props.img}</div>
             </div>
             <div className="card-cols--text col-md-6 ">
-                <div className="p-3 p-md-0">
+                <div className="py-3 p-md-0">
                     <div className={colTextPadding}>
                         <span className="h8 text-uppercase text-primary">
                             {props.title}

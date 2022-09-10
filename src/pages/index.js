@@ -43,24 +43,16 @@ const IndexPage = ({ data }) => {
     //     const image = getImage(featuredImage.node.localFile);
     // <GatsbyImage image={image} alt="" />
 
-    console.log("introHeadline: ", pageHome.introHeadline);
-
-    console.log("pageHome: ", pageHome);
-
     const sectionIntro = (
-        <section
-            className="section-home-intro bg-cloud pt-4 py-md-6"
-            // style={{ overflowX: "hidden" }}
-        >
+        <section className="section-home-intro bg-cloud pt-4 py-md-6">
             <div className="container">
                 <div className="row justify-content-between gx-6">
-                    <div className="col-md6 col-lg-6 hex-and-dots--text">
+                    <div className="col-md-7 col-lg-6 hex-and-dots--text">
                         <div className="d-flex align-items-center">
                             <div className="me-xl-4">
                                 <h1 className="text-primary mb-3">
                                     {pageHome.introHeadline}
                                 </h1>
-
                                 <div
                                     className="lead"
                                     dangerouslySetInnerHTML={{
@@ -70,7 +62,7 @@ const IndexPage = ({ data }) => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-6 col-lg-6 img-hex-into--col bg-half-horz-cloud-white-md">
+                    <div className="col-md-5 col-lg-6 img-hex-into--col bg-half-horz-cloud-white-md">
                         <div className="img-hex-into mt-md-n3">
                             <div className="img-hex-into-2">
                                 <div id="start" className="hex-and-dots">
