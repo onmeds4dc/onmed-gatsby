@@ -27,10 +27,18 @@ const MenuHeader = () => {
 
     const menuHierarchical = flatListToHierarchical(wpMenu.menuItems.nodes);
 
+    function test(event) {
+        console.log("Hello");
+        // console.log(event.target.value);
+    }
+
     return !!wpMenu && !!wpMenu.menuItems && !!wpMenu.menuItems.nodes ? (
         <Navbar expand="xl" className="navbar--primary">
             <Container>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Toggle
+                    aria-controls="basic-navbar-nav"
+                    onClick={test()}
+                />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto" defaultActiveKey="/">
                         {menuHierarchical.map((menuItem, i) => (

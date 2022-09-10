@@ -1,28 +1,86 @@
 .navbar--primary {
-    .nav-link {
-        text-transform: uppercase;
-        &:not(.navbar--primary-btn) {
-            color: $menu-primary-color;
-            letter-spacing: $menu-primary-letter-spacing;
-        }
-        font-family: $menu-primary-font;
-        font-weight: $menu-primary-weight;
-        font-size: $menu-primary-size;
-    }
     &-btn.nav-link.nav-link {
         @extend .btn;
-        @extend .btn-primary;
+        @extend .btn-light;
         @extend .text-nowrap;
-        color: $white;
-        margin-left: $spacing-3;
         padding: $btn-padding-y $btn-padding-x;
-        font-size: $menu-primary-size;
-        @include media-breakpoint-down(lg) {
-            margin-left: $spacing-5;
+        text-transform: uppercase;
+        font-weight: 600;
+
+        @include media-breakpoint-down(xl) {
+            position: fixed;
+            bottom: $spacing-3;
+            left: $spacing-3;
+            right: $spacing-3;
+            &:hover {
+                color: $primary;
+                background-color: $white;
+                border-color: $white;
+            }
         }
 
-        &:hover {
+        @include media-breakpoint-up(xl) {
             color: $white;
+            background-color: $primary;
+            border-color: $primary;
+            margin-left: $spacing-3;
+        }
+    }
+
+    .nav-link {
+        &:not(.navbar--primary-btn) {
+            font-family: $menu-primary-font;
+
+            @include media-breakpoint-up(xl) {
+                text-transform: uppercase;
+                color: $menu-primary-color-desktop;
+                letter-spacing: $menu-primary-letter-spacing-desktop;
+                font-weight: $menu-primary-weight-desktop;
+                font-size: $menu-primary-size-desktop;
+            }
+        }
+    }
+
+    @include media-breakpoint-down(xl) {
+        .navbar-toggler {
+            &:not(.collapsed) {
+                z-index: $zindex-fixed + 1;
+                position: fixed;
+                top: $spacing-3;
+                right: $spacing-3;
+                background-image: url($svg-x);
+                background-position: 50% 50%;
+                background-repeat: no-repeat;
+                border: none;
+                .navbar-toggler-icon {
+                    visibility: hidden;
+                }
+            }
+        }
+        .navbar-collapse {
+            &.show {
+                z-index: $zindex-fixed;
+                position: fixed;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background-color: $primary;
+                padding: $spacing-6 $spacing-4 5rem;
+                display: flex;
+
+                .navbar-nav {
+                    width: 100%;
+                }
+                .nav-link {
+                    &:not(.navbar--primary-btn) {
+                        color: $menu-primary-color;
+                        font-size: $menu-primary-size;
+                        font-weight: $menu-primary-weight;
+                        letter-spacing: $menu-primary-letter-spacing;
+                    }
+                }
+            }
         }
     }
 }
