@@ -3,15 +3,15 @@ import { graphql } from "gatsby";
 import { Link } from "gatsby";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
-import { LoremIpsum, loremIpsum } from "react-lorem-ipsum";
 import Layout from "../components/layout";
 import imgFriendsCoffeeShop from "../../static/images/fpo/friends-coffee-shop-v2.jpg";
 import imgWomanTakesPulse from "../../static/images/backgrounds/woman-takes-pulse.jpg";
 import imgWomanWhiteCoat from "../../static/images/backgrounds/woman-white-coat.jpg";
-
 import SvgVideoCamera from "../components/svgs/video-camera";
 import CardCols from "../components/card-cols";
 import HexImage from "../components/hex-image";
+import ListFigureGrid from "../components/list-figure-grid";
+import ListFigureGridItem from "../components/list-figure-grid-item";
 // import { jQuery } from "jquery";
 // import connections from "jquery-connections";
 // import * as $ from "jquery";
@@ -85,10 +85,7 @@ const IndexPage = ({ data }) => {
             <li className="col-lg">
                 <div className="d-flex d-lg-block list-inline-arrows--items my-3">
                     <div className="flex-fill mx-lg-auto list-inline-arrows--item-1 list-inline-arrows--target">
-                        <HexImage
-                            imgSrc={imgFriendsCoffeeShop}
-                            alt="Alt text"
-                        />
+                        {props.img}
                     </div>
                     <div className="flex-fill list-inline-arrows--item-2 mx-3 mt-lg-6">
                         {" "}
@@ -99,13 +96,6 @@ const IndexPage = ({ data }) => {
             </li>
         );
     };
-
-    const listItem1 =
-        "<h4>Step 1</h4> " +
-        loremIpsum({
-            avgWordsPerSentence: 5,
-            avgSentencesPerParagraph: 1,
-        });
 
     const sectionConnections = (
         <section className="bg-hex-dark-many">
@@ -226,10 +216,8 @@ const IndexPage = ({ data }) => {
                 <p className="lead mt-3">
                     Getting Care at an OnMed station is simple
                 </p>
-                <ol className="list-unstyled row text-dark list-inline-arrows mt-6 mb-0 mb-lg-4">
-                    <ListItem
-                        imgSrc={imgFriendsCoffeeShop}
-                        imgAlt="Alt text"
+                <ListFigureGrid inlineArrows={true}>
+                    <ListFigureGridItem
                         headline="Walk In"
                         body={
                             <p>
@@ -237,11 +225,14 @@ const IndexPage = ({ data }) => {
                                 at any time. No appointment necessary.
                             </p>
                         }
+                        img={
+                            <HexImage
+                                imgSrc={imgFriendsCoffeeShop}
+                                alt="Alt text"
+                            />
+                        }
                     />
-
-                    <ListItem
-                        imgSrc={imgFriendsCoffeeShop}
-                        imgAlt="Alt text"
+                    <ListFigureGridItem
                         headline="Press Start"
                         body={
                             <p>
@@ -249,10 +240,55 @@ const IndexPage = ({ data }) => {
                                 clinician on live video in real-time.
                             </p>
                         }
+                        img={
+                            <HexImage
+                                imgSrc={imgFriendsCoffeeShop}
+                                alt="Alt text"
+                            />
+                        }
                     />
+                    <ListFigureGridItem
+                        headline="Get Exam"
+                        body={
+                            <p>
+                                Have your vitals taken, including blood
+                                pressure, pulse, body temperature and
+                                respiration rate.
+                            </p>
+                        }
+                        img={
+                            <HexImage
+                                imgSrc={imgFriendsCoffeeShop}
+                                alt="Alt text"
+                            />
+                        }
+                    />
+                    <ListFigureGridItem
+                        headline="Walk Out"
+                        body={
+                            <p>
+                                Walk out with OTC medicine and most
+                                prescriptions filled right on the spot, from our
+                                secure dispensary.
+                            </p>
+                        }
+                        img={
+                            <HexImage
+                                imgSrc={imgFriendsCoffeeShop}
+                                alt="Alt text"
+                            />
+                        }
+                    />
+                </ListFigureGrid>
+
+                {/* <ol className="list-unstyled row text-dark list-inline-arrows mt-6 mb-0 mb-lg-4 list-figure-grid">
                     <ListItem
-                        imgSrc={imgFriendsCoffeeShop}
-                        imgAlt="Alt text"
+                        img={
+                            <HexImage
+                                imgSrc={imgFriendsCoffeeShop}
+                                alt="Alt text"
+                            />
+                        }
                         headline="Get Exam"
                         body={
                             <p>
@@ -263,8 +299,12 @@ const IndexPage = ({ data }) => {
                         }
                     />
                     <ListItem
-                        imgSrc={imgFriendsCoffeeShop}
-                        imgAlt="Alt text"
+                        img={
+                            <HexImage
+                                imgSrc={imgFriendsCoffeeShop}
+                                alt="Alt text"
+                            />
+                        }
                         headline="Walk Out"
                         body={
                             <p>
@@ -274,7 +314,7 @@ const IndexPage = ({ data }) => {
                             </p>
                         }
                     />
-                </ol>
+                </ol> */}
             </div>
         </section>
     );

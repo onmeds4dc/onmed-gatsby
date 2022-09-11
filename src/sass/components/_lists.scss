@@ -44,65 +44,127 @@
         }
     }
 
-    &-inline-arrows {
+    &-figure-grid {
         > li {
-            .list-inline-arrows {
-                &--target {
-                    .mask-image--hex {
-                        width: 130px;
-                        @include media-breakpoint-up(lg) {
-                            width: 160px;
-                            margin-left: auto;
-                            margin-right: auto;
-                        }
-                    }
-
-                    @include media-breakpoint-up(lg) {
-                        position: relative;
-                    }
-                }
-
-                @include media-breakpoint-down(lg) {
-                    &--item-1 {
-                        padding-right: $spacing-2;
-                    }
-                }
+            @include media-breakpoint-up(md) {
+                text-align: center;
             }
             &:nth-child(even) {
-                .list-inline-arrows {
-                    @include media-breakpoint-down(lg) {
-                        &--item-1 {
-                            order: 2;
-                            padding-right: 0;
-                            padding-left: $spacing-2;
-                        }
-                        &--item-2 {
-                            order: 1;
-                        }
+                .list-figure-grid--img {
+                    @include media-breakpoint-down(md) {
+                        order: 2;
                     }
                 }
             }
+        }
+        &--row {
+            align-items: center;
+        }
+        &--img {
+            > * {
+                width: 130px;
+            }
+            @include media-breakpoint-up(md) {
+                width: 160px;
+                margin: auto;
+            }
+        }
+        &--text {
+        }
+    }
 
+    &-inline-arrows {
+        > li {
             &:not(:first-child) {
-                .list-inline-arrows {
-                    &--target {
+                .list-inline-arrows--target {
+                    position: relative;
+
+                    &:before {
                         @include media-breakpoint-up(lg) {
-                            &:before {
-                                content: " ";
-                                background-image: url($svg-arrow-sage);
-                                background-size: cover;
-                                height: 23px;
-                                width: 24px;
-                                display: block;
-                                position: absolute;
-                                top: 50%;
-                                margin-top: -12px;
-                                left: -25px;
-                            }
+                            content: " ";
+                            background-image: url($svg-arrow-sage);
+                            background-size: cover;
+                            height: 23px;
+                            width: 24px;
+                            display: block;
+                            position: absolute;
+                            top: 50%;
+                            margin-top: -12px;
+                            left: -50px;
+                        }
+                        // TODO: Make the .list-inline-arrows--target an outer contaner that goes full width, then no recaclutaing
+                        @include media-breakpoint-up(xl) {
+                            left: -80px;
+                        }
+
+                        @include media-breakpoint-up(xxl) {
+                            left: -93px;
                         }
                     }
                 }
             }
         }
     }
+
+    // &-inline-arrows {
+    //     > li {
+    //         .list-inline-arrows {
+    //             &--target {
+    //                 .mask-image--hex {
+    //                     width: 130px;
+    //                     @include media-breakpoint-up(lg) {
+    //                         width: 160px;
+    //                         margin-left: auto;
+    //                         margin-right: auto;
+    //                     }
+    //                 }
+
+    //                 @include media-breakpoint-up(lg) {
+    //                     position: relative;
+    //                 }
+    //             }
+
+    //             @include media-breakpoint-down(lg) {
+    //                 &--item-1 {
+    //                     padding-right: $spacing-2;
+    //                 }
+    //             }
+    //         }
+    //         &:nth-child(even) {
+    //             .list-inline-arrows {
+    //                 @include media-breakpoint-down(lg) {
+    //                     &--item-1 {
+    //                         order: 2;
+    //                         padding-right: 0;
+    //                         padding-left: $spacing-2;
+    //                     }
+    //                     &--item-2 {
+    //                         order: 1;
+    //                     }
+    //                 }
+    //             }
+    //         }
+
+    //         &:not(:first-child) {
+    //             .list-inline-arrows {
+    //                 &--target {
+    //                     @include media-breakpoint-up(lg) {
+    //                         &:before {
+    //                             content: " ";
+    //                             background-image: url($svg-arrow-sage);
+    //                             background-size: cover;
+    //                             height: 23px;
+    //                             width: 24px;
+    //                             display: block;
+    //                             position: absolute;
+    //                             top: 50%;
+    //                             margin-top: -12px;
+    //                             left: -25px;
+    //                         }
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
 }
