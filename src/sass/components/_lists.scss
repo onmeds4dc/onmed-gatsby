@@ -105,66 +105,32 @@
             }
         }
     }
+}
 
-    // &-inline-arrows {
-    //     > li {
-    //         .list-inline-arrows {
-    //             &--target {
-    //                 .mask-image--hex {
-    //                     width: 130px;
-    //                     @include media-breakpoint-up(lg) {
-    //                         width: 160px;
-    //                         margin-left: auto;
-    //                         margin-right: auto;
-    //                     }
-    //                 }
+.dl-primary {
+    > dt {
+        color: $primary;
+        font-weight: 600;
+        margin-top: $spacing-6;
+        @include media-breakpoint-up(md) {
+            margin-top: $spacing-5;
+            flex: 0 0 auto;
+            width: 304px;
+        }
+    }
 
-    //                 @include media-breakpoint-up(lg) {
-    //                     position: relative;
-    //                 }
-    //             }
+    > dd {
+        margin-top: $spacing-2;
+        @include media-breakpoint-up(md) {
+            margin-top: $spacing-5;
+            flex: 1 0;
+            width: auto;
+        }
+    }
 
-    //             @include media-breakpoint-down(lg) {
-    //                 &--item-1 {
-    //                     padding-right: $spacing-2;
-    //                 }
-    //             }
-    //         }
-    //         &:nth-child(even) {
-    //             .list-inline-arrows {
-    //                 @include media-breakpoint-down(lg) {
-    //                     &--item-1 {
-    //                         order: 2;
-    //                         padding-right: 0;
-    //                         padding-left: $spacing-2;
-    //                     }
-    //                     &--item-2 {
-    //                         order: 1;
-    //                     }
-    //                 }
-    //             }
-    //         }
+    // > dt {
+    //     color: $primary;
+    //     font-weight: 600;
 
-    //         &:not(:first-child) {
-    //             .list-inline-arrows {
-    //                 &--target {
-    //                     @include media-breakpoint-up(lg) {
-    //                         &:before {
-    //                             content: " ";
-    //                             background-image: url($svg-arrow-sage);
-    //                             background-size: cover;
-    //                             height: 23px;
-    //                             width: 24px;
-    //                             display: block;
-    //                             position: absolute;
-    //                             top: 50%;
-    //                             margin-top: -12px;
-    //                             left: -25px;
-    //                         }
-    //                     }
-    //                 }
-    //             }
-    //         }
-    //     }
     // }
 }
