@@ -5,7 +5,7 @@ import CardColsSecondary from "../components/card-cols-secondary";
 import imgFriendsCoffeeShop from "../../static/images/fpo/friends-coffee-shop-v2.jpg";
 import KeyAudienceSellingPoints from "../modules/key-audience-selling-points";
 
-const IndexPage = ({ data }) => {
+const PatientsPage = ({ data }) => {
     const sectionHero = (
         <HeroPrimary
             classNames="mb-5 mb-md-6"
@@ -69,4 +69,4 @@ const IndexPage = ({ data }) => {
     );
 };
 
-export default IndexPage;
+export default PatientsPage;

@@ -9,7 +9,7 @@ import SvgNewWindow from "../components/svgs/new-window";
 
 import { Link } from "gatsby";
 
-const IndexPage = ({ data }) => {
+const PartnersPage = ({ data }) => {
     const sectionHero = (
         <HeroPrimary
             classNames="mb-5 mb-md-6"
@@ -189,8 +189,8 @@ const IndexPage = ({ data }) => {
 
     const sectionContact = (
         <ContactForm
-            headline="You are the connection to better health"
-            body="OnMed is looking for certified and board eligible clinicians; including doctors, pharmacists, CNAs and nurse practitioners. We're hiring right now in all 50 states, as well as Puerto Rico."
+            headline="Request a quote"
+            body="Please complete this form, and a member of our team will be in touch shortly."
         />
     );
 
@@ -207,4 +207,4 @@ const IndexPage = ({ data }) => {
     );
 };
 
-export default IndexPage;
+export default PartnersPage;
