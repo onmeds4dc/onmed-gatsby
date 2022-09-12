@@ -2,7 +2,8 @@ import * as React from "react";
 import Layout from "../components/layout";
 import HeroPrimary from "../components/hero-primary";
 import CardColsSecondary from "../components/card-cols-secondary";
-import imgFriendsCoffeeShop from "../../static/images/fpo/friends-coffee-shop-v2.jpg";
+import imgWalkinsWelcome from "../../static/images/general/walkins-welcome.jpg";
+import imgCareForAnyone from "../../static/images/general/care-for-anyone.jpg";
 import KeyAudienceSellingPoints from "../modules/key-audience-selling-points";
 
 const PatientsPage = ({ data }) => {
@@ -26,9 +27,7 @@ const PatientsPage = ({ data }) => {
                     Available 24/7.
                 </p>
             }
-            img={
-                <img src={imgFriendsCoffeeShop} alt="" className="img-fluid" />
-            }
+            img={<img src={imgWalkinsWelcome} alt="" className="img-fluid" />}
             imgAlignRight={false}
         />
     );
@@ -44,9 +43,7 @@ const PatientsPage = ({ data }) => {
                     taken care of, including your biometrics and key vitals.
                 </p>
             }
-            img={
-                <img src={imgFriendsCoffeeShop} alt="" className="img-fluid" />
-            }
+            img={<img src={imgCareForAnyone} alt="" className="img-fluid" />}
             imgAlignRight={true}
         />
     );

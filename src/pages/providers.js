@@ -2,7 +2,11 @@ import * as React from "react";
 import Layout from "../components/layout";
 import HeroPrimary from "../components/hero-primary";
 import CardColsSecondary from "../components/card-cols-secondary";
-import imgFriendsCoffeeShop from "../../static/images/fpo/friends-coffee-shop-v2.jpg";
+import imgQualifiedClinicians from "../../static/images/general/qualified-clincians.jpg";
+import imgBetterAccess from "../../static/images/general/better-access.jpg";
+import imgMakeTheLivingroomp from "../../static/images/general/make-the-livingroom.jpg";
+import imgOnboarding from "../../static/images/general/onboarding-at-onmed.jpg";
+
 import ContactForm from "../components/contact-form";
 
 const ProvidersPage = ({ data }) => {
@@ -33,7 +37,11 @@ const ProvidersPage = ({ data }) => {
                 </p>
             }
             img={
-                <img src={imgFriendsCoffeeShop} alt="" className="img-fluid" />
+                <img
+                    src={imgQualifiedClinicians}
+                    alt=""
+                    className="img-fluid"
+                />
             }
             imgAlignRight={false}
         />
@@ -51,9 +59,7 @@ const ProvidersPage = ({ data }) => {
                     Join us in our mission by applying now.
                 </p>
             }
-            img={
-                <img src={imgFriendsCoffeeShop} alt="" className="img-fluid" />
-            }
+            img={<img src={imgBetterAccess} alt="" className="img-fluid" />}
             imgAlignRight={true}
         />
     );
@@ -74,7 +80,7 @@ const ProvidersPage = ({ data }) => {
                 </p>
             }
             img={
-                <img src={imgFriendsCoffeeShop} alt="" className="img-fluid" />
+                <img src={imgMakeTheLivingroomp} alt="" className="img-fluid" />
             }
             imgAlignRight={false}
         />
@@ -93,9 +99,7 @@ const ProvidersPage = ({ data }) => {
                     trust, just like a typical doctor’s visit.{" "}
                 </p>
             }
-            img={
-                <img src={imgFriendsCoffeeShop} alt="" className="img-fluid" />
-            }
+            img={<img src={imgOnboarding} alt="" className="img-fluid" />}
             imgAlignRight={true}
         />
     );

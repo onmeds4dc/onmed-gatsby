@@ -6,6 +6,8 @@ import imgFriendsCoffeeShop from "../../static/images/fpo/friends-coffee-shop-v2
 import KeyAudienceSellingPoints from "../modules/key-audience-selling-points";
 import ContactForm from "../components/contact-form";
 import SvgNewWindow from "../components/svgs/new-window";
+import imgCareOnSite from "../../static/images/general/care-on-site.jpg";
+import imgEasySetup from "../../static/images/general/easy-set-up.jpg";
 
 import { Link } from "gatsby";
 
@@ -33,9 +35,7 @@ const PartnersPage = ({ data }) => {
                     Care delivery model.
                 </p>
             }
-            img={
-                <img src={imgFriendsCoffeeShop} alt="" className="img-fluid" />
-            }
+            img={<img src={imgCareOnSite} alt="" className="img-fluid" />}
             imgAlignRight={false}
         />
     );
@@ -51,9 +51,7 @@ const PartnersPage = ({ data }) => {
                     no physical requirements - just an outlet.
                 </p>
             }
-            img={
-                <img src={imgFriendsCoffeeShop} alt="" className="img-fluid" />
-            }
+            img={<img src={imgEasySetup} alt="" className="img-fluid" />}
             imgAlignRight={true}
         />
     );
@@ -167,11 +165,12 @@ const PartnersPage = ({ data }) => {
                         to="/"
                         className="btn btn-primary text-uppercase  mb-3 me-2 mx-3"
                     >
-                        View PSA Contracy
+                        View PSA Contract
                     </Link>{" "}
                     <Link
-                        to="/"
+                        to="https://psabuy.org/"
                         className="btn btn-outline-primary bg-white text-uppercase mb-3  mx-3 d-inline-flex align-items-center"
+                        target="_blank"
                     >
                         Visit PSABUY.org
                         <SvgNewWindow
