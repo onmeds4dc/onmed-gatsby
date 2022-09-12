@@ -33,7 +33,7 @@ const MenuHeader = () => {
     }
 
     return !!wpMenu && !!wpMenu.menuItems && !!wpMenu.menuItems.nodes ? (
-        <Navbar expand="xl" className="navbar--primary">
+        <Navbar expand="lg" className="navbar--primary">
             <Container>
                 <Navbar.Toggle
                     aria-controls="basic-navbar-nav"

@@ -13,13 +13,14 @@ import {
     // connectionsScripts,
 } from "./tracking-codes";
 
-const Layout = ({ children, data }) => (
-    <>
-        <Helmet>
-            <title>OnMed</title>
-            {/* <script src="https://code.jquery.com/jquery-latest.min.js"></script> */}
+const Layout = ({ pageTitle, children }) => {
+    return (
+        <>
+            <Helmet>
+                <title>OnMed</title>
+                {/* <script src="https://code.jquery.com/jquery-latest.min.js"></script> */}
 
-            {/* <meta property="og:url" content="https://www.onmed.com" />
+                {/* <meta property="og:url" content="https://www.onmed.com" />
             <meta property="og:type" content="website" />
             <meta
                 property="og:title"
@@ -52,11 +53,11 @@ const Layout = ({ children, data }) => (
                 name="twitter:image"
                 content="https://www.onmed.com/images/onmed/social_image.jpg"
             /> */}
-        </Helmet>
-        <Header />
-        <main>{children}</main>
-        <Footer />
-        {/* <div
+            </Helmet>
+            <Header pageTitle={pageTitle} />
+            <main>{children}</main>
+            <Footer />
+            {/* <div
             className="tracking-codes"
             dangerouslySetInnerHTML={{
                 __html:
@@ -67,7 +68,8 @@ const Layout = ({ children, data }) => (
                     trackingActiveCampaign,
             }}
         /> */}
-    </>
-);
+        </>
+    );
+};
 
 export default Layout;

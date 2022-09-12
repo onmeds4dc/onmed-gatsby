@@ -44,7 +44,8 @@ $text-muted: $gray-600;
 $body-color: $gray-700;
 $text-dark: $gray-800;
 $headings-color: $dark;
-$header-bg-color: rgba(255, 255, 255, 0.8);
+$header-bg-color: rgba(255, 255, 255, 0.9);
+$header-bg-color-home: $cloud;
 // Spacing
 $spacer: 1rem;
 $spacers: (
@@ -169,8 +170,11 @@ $enable-negative-margins: true;
 $enable-deprecation-messages: false;
 $enable-important-utilities: false;
 
-// Menus
+// Heroes
+$hero-height: 847px;
 
+// Menus
+$menu-primary-height: 84px;
 $menu-primary-color: #fff;
 $menu-primary-font: $headings-font-family;
 $menu-primary-weight: $h3-font-weight;
@@ -182,6 +186,7 @@ $menu-primary-font-desktop: $menu-primary-font;
 $menu-primary-weight-desktop: 500;
 $menu-primary-size-desktop: 15px;
 $menu-primary-letter-spacing-desktop: 0.01em;
+$menu-primary-breakpoint: lg;
 
 // Images
 

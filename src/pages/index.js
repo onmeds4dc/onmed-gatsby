@@ -46,7 +46,7 @@ const IndexPage = ({ data }) => {
 
     const sectionIntro = (
         <section className="section-home-intro bg-cloud pt-4 py-md-6">
-            <div className="container">
+            <div className="container section-home-intro--inner">
                 <div className="row justify-content-between gx-6">
                     <div className="col-md-7 col-lg-6 hex-and-dots--text">
                         <div className="d-flex align-items-center">
@@ -80,23 +80,6 @@ const IndexPage = ({ data }) => {
             </div>
         </section>
     );
-
-    const ListItem = (props) => {
-        return (
-            <li className="col-lg">
-                <div className="d-flex d-lg-block list-inline-arrows--items my-3">
-                    <div className="flex-fill mx-lg-auto list-inline-arrows--item-1 list-inline-arrows--target">
-                        {props.img}
-                    </div>
-                    <div className="flex-fill list-inline-arrows--item-2 mx-3 mt-lg-6">
-                        {" "}
-                        <h5 className="text-primary mb-3">{props.headline}</h5>
-                        {props.body}
-                    </div>
-                </div>
-            </li>
-        );
-    };
 
     const sectionConnections = (
         <section className="bg-hex-dark-many">
@@ -447,7 +430,7 @@ const IndexPage = ({ data }) => {
     );
 
     return (
-        <Layout>
+        <Layout pageTitle="home">
             {sectionIntro}
             {sectionConnections}
             {sectionHowItWorks}

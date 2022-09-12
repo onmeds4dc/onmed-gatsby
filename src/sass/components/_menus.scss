@@ -1,10 +1,19 @@
 .menu-header-wrapper {
+    height: $menu-primary-height;
     background-color: $header-bg-color;
-    background-color: $cloud;
-    // position: fixed;
-    // width: 100%;
-    // box-shadow: 1px -9px 8px 7px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px -9px 8px 7px rgba(0, 0, 0, 0.1);
+    z-index: $zindex-fixed + 2;
+    .page-home & {
+        background-color: $header-bg-color-home;
+        box-shadow: 1px -9px 8px 7px rgba(0, 0, 0, 0);
+    }
 }
+.menu-header-wrapper,
+.hero--inner {
+    position: fixed;
+    width: 100%;
+}
+
 .navbar--primary {
     &-btn.nav-link.nav-link {
         @extend .btn;
@@ -14,7 +23,7 @@
         text-transform: uppercase;
         font-weight: 600;
 
-        @include media-breakpoint-down(xl) {
+        @include media-breakpoint-down($menu-primary-breakpoint) {
             position: fixed;
             bottom: $spacing-3;
             left: $spacing-3;
@@ -26,7 +35,7 @@
             }
         }
 
-        @include media-breakpoint-up(xl) {
+        @include media-breakpoint-up($menu-primary-breakpoint) {
             color: $white;
             background-color: $primary;
             border-color: $primary;
@@ -39,7 +48,7 @@
         &:not(.navbar--primary-btn) {
             font-family: $menu-primary-font;
 
-            @include media-breakpoint-up(xl) {
+            @include media-breakpoint-up($menu-primary-breakpoint) {
                 text-transform: uppercase;
                 color: $menu-primary-color-desktop;
                 letter-spacing: $menu-primary-letter-spacing-desktop;
@@ -49,7 +58,7 @@
         }
     }
 
-    @include media-breakpoint-down(xl) {
+    @include media-breakpoint-down($menu-primary-breakpoint) {
         .navbar-toggler {
             &:not(.collapsed) {
                 z-index: $zindex-fixed + 1;
