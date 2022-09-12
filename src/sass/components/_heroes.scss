@@ -1,29 +1,9 @@
-.hero,
-.hero--blur,
-.hero--inner {
+.hero {
     min-height: $hero-height;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-}
-
-.hero {
-    z-index: $zindex-fixed - 2;
-    position: relative;
-    &--blur {
-        filter: blur(3px);
-        z-index: $zindex-fixed - 1;
-        -webkit-clip-path: inset(0 0 85% 0);
-        clip-path: inset(0 0 #{$hero-height - $menu-primary-height} 0);
-        position: absolute;
-        height: $menu-primary-height;
-        top: 0;
-        left: 0;
-        right: 0;
-    }
-
-    &--inner {
-        z-index: $zindex-fixed;
-        // padding-top: $menu-primary-height; // Because it's sticky
+    @include media-breakpoint-up(lg) {
+        padding-top: $menu-primary-height; // Because the menu is sticky
     }
 }

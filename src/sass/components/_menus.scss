@@ -1,17 +1,19 @@
 .menu-header-wrapper {
+    width: 100%;
     height: $menu-primary-height;
     background-color: $header-bg-color;
+    position: fixed;
     box-shadow: 1px -9px 8px 7px rgba(0, 0, 0, 0.1);
     z-index: $zindex-fixed + 2;
-    .page-home & {
-        background-color: $header-bg-color-home;
-        box-shadow: 1px -9px 8px 7px rgba(0, 0, 0, 0);
+
+    @include media-breakpoint-up(lg) {
+        background-color: $header-bg-color-desktop;
+        backdrop-filter: blur(3px);
+        .page-home & {
+            background-color: $header-bg-color-home;
+            box-shadow: 1px -9px 8px 7px rgba(0, 0, 0, 0);
+        }
     }
-}
-.menu-header-wrapper,
-.hero--inner {
-    position: fixed;
-    width: 100%;
 }
 
 .navbar--primary {

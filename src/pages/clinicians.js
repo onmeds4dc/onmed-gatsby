@@ -11,7 +11,7 @@ import imgEasySetup from "../../static/images/general/easy-set-up.jpg";
 
 import { Link } from "gatsby";
 
-const PartnersPage = ({ data }) => {
+const CliniciansPage = ({ data }) => {
     const sectionHero = (
         <HeroPrimary
             classNames="mb-5 mb-md-6"
@@ -206,4 +206,4 @@ const PartnersPage = ({ data }) => {
     );
 };
 
-export default PartnersPage;
+export default CliniciansPage;

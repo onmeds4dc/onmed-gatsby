@@ -6,24 +6,14 @@ const HeroPrimary = (props) => {
     const imgYPosition = props.imgYPosition ? props.imgYPosition : "50%";
     return (
         <section
-            className={`hero ${props.classNames} `}
+            className={`hero d-flex justify-contents-center align-items-center text-center ${props.classNames} `}
             style={{
                 backgroundImage: `url(${props.img})`,
                 backgroundPosition: `${imgXPosition} ${imgYPosition}`,
             }}
         >
-            <div
-                className="hero--blur"
-                style={{
-                    backgroundImage: `url(${props.img})`,
-                    backgroundPosition: `${imgXPosition} ${imgYPosition}`,
-                }}
-            >
-                <div className="hero--inner d-flex justify-contents-center align-items-center text-center">
-                    <div className="container">
-                        <h1 className="text-white mt-5">{props.title}</h1>
-                    </div>
-                </div>
+            <div className="container">
+                <h1 className="text-white mb-0">{props.title}</h1>
             </div>
         </section>
     );
