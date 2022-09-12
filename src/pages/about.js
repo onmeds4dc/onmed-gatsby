@@ -154,8 +154,8 @@ const AboutPage = ({ data }) => {
                     img={imgPortraitMarkRoyals}
                 />
                 <LeadershipItem
-                    name="Tom Vanderheyden"
-                    title="Chief executive officer"
+                    name="Robert Forsythe"
+                    title="Board Member"
                     img={imgPortraitPlaceholder}
                 />
             </div>
