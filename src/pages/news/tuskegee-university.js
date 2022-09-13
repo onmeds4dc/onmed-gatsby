@@ -1,22 +1,21 @@
 import * as React from "react";
 import Layout from "../../components/layout";
 import HeroPrimary from "../../components/hero-primary";
-import { Link } from "gatsby";
 import NewsStory from "../../components/news-story";
 
-// const sectionHero = (
-//     <HeroPrimary
-//         classNames="mb-5 mb-md-6"
-//         title=""
-//         img="/images/heroes/news/tuskegee-university.jpg"
-//         imgXPosition="60%"
-//     />
-// );
+const sectionHero = (
+    <HeroPrimary
+        classNames="mb-5 mb-md-6"
+        title=""
+        img="/images/heroes/news/tuskegee-university.jpg"
+        imgXPosition="60%"
+    />
+);
 
 const NewStoryTuskegee = ({ data }) => {
     return (
         <Layout>
-            {/* {sectionHero}
+            {sectionHero}
             <NewsStory
                 headline="Tuskegee University and OnMed Announce Partnership to Deliver Innovative Virtual Care Clinic and Services."
                 date="September 09, 2022"
@@ -142,7 +141,7 @@ const NewStoryTuskegee = ({ data }) => {
                         </p>
                     </>
                 }
-            /> */}
+            />
         </Layout>
     );
 };

@@ -1,21 +1,20 @@
 import * as React from "react";
 import Layout from "../../components/layout";
 import HeroPrimary from "../../components/hero-primary";
-import { Link } from "gatsby";
 import NewsStory from "../../components/news-story";
 
-// const sectionHero = (
-//     <HeroPrimary
-//         classNames="mb-5 mb-md-6"
-//         title="Purchasing Solutions Alliance Awards Telehealth Clinic to OnMed "
-//         heroSecondary={true}
-//     />
-// );
+const sectionHero = (
+    <HeroPrimary
+        classNames="mb-5 mb-md-6"
+        title="Purchasing Solutions Alliance Awards Telehealth Clinic to OnMed "
+        heroSecondary={true}
+    />
+);
 
 const NewStoryPurchasingSolutionsAlliance = ({ data }) => {
     return (
         <Layout>
-            {/* {sectionHero}
+            {sectionHero}
             <NewsStory
                 lead={
                     <p>
@@ -83,7 +82,7 @@ const NewStoryPurchasingSolutionsAlliance = ({ data }) => {
                         </p>
                     </>
                 }
-            /> */}
+            />
         </Layout>
     );
 };

@@ -1,21 +1,20 @@
 import * as React from "react";
 import Layout from "../../components/layout";
 import HeroPrimary from "../../components/hero-primary";
-import { Link } from "gatsby";
 import NewsStory from "../../components/news-story";
 
-// const sectionHero = (
-//     <HeroPrimary
-//         classNames="mb-5 mb-md-6"
-//         title="OnMed will Partner with Auburn University for Rural Health Project"
-//         heroSecondary={true}
-//     />
-// );
+const sectionHero = (
+    <HeroPrimary
+        classNames="mb-5 mb-md-6"
+        title="OnMed will Partner with Auburn University for Rural Health Project"
+        heroSecondary={true}
+    />
+);
 
 const NewStoryAuburn = ({ data }) => {
     return (
         <Layout>
-            {/* {sectionHero}
+            {sectionHero}
             <NewsStory
                 lead={
                     <p>
@@ -52,7 +51,7 @@ const NewStoryAuburn = ({ data }) => {
                         </p>
                     </>
                 }
-            /> */}
+            />
         </Layout>
     );
 };
