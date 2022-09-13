@@ -1,6 +1,4 @@
 import React from "react";
-import ListFigureGrid from "../components/list-figure-grid";
-import ListFigureGridItem from "../components/list-figure-grid-item";
 
 const NewsStory = (props) => {
     const headline = props.headline
