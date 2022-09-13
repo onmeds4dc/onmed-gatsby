@@ -1,10 +1,14 @@
 .hero {
     min-height: $hero-height;
+    &--secondary {
+        min-height: $hero-height-secondary;
+    }
     background-size: cover;
     background-color: $primary;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(sm) {
         padding-top: $menu-primary-height; // Because the menu is sticky
+        padding-bottom: $spacing-4;
     }
 }

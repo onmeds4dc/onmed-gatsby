@@ -4,9 +4,10 @@ import Button from "react-bootstrap/Button";
 const HeroPrimary = (props) => {
     const imgXPosition = props.imgXPosition ? props.imgXPosition : "50%";
     const imgYPosition = props.imgYPosition ? props.imgYPosition : "50%";
+    const heroClass = props.heroSecondary ? " hero--secondary " : "";
     return (
         <section
-            className={`hero d-flex justify-contents-center align-items-center text-center ${props.classNames} `}
+            className={`hero ${heroClass} d-flex justify-contents-center align-items-center text-center ${props.classNames} `}
             style={{
                 backgroundImage: `url(${props.img})`,
                 backgroundPosition: `${imgXPosition} ${imgYPosition}`,
