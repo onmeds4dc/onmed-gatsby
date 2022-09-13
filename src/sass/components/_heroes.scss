@@ -1,6 +1,7 @@
 .hero {
     min-height: $hero-height;
     background-size: cover;
+    background-color: $primary;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     @include media-breakpoint-up(lg) {
