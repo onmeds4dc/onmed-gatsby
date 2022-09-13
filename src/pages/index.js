@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useEffect, useState } from "react";
 import { graphql } from "gatsby";
 import { Link } from "gatsby";
 import Button from "react-bootstrap/Button";
@@ -12,16 +12,17 @@ import imgHexWalkOut from "../../static/images/hex/walk-out.png";
 import imgHexWalkIn from "../../static/images/hex/walk-in.png";
 import imgHexPressStart from "../../static/images/hex/press-start.png";
 import imgHexGetExam from "../../static/images/hex/get-exam.png";
-
 import imgManBoothPills from "../../static/images/general/man-booth-pills.jpg";
 import imgWomanScreenWomanThouchscreen from "../../static/images/general/woman-screen-woman-touchscreen.jpg";
-
 import SvgVideoCamera from "../components/svgs/video-camera";
 import CardCols from "../components/card-cols";
 import HexImage from "../components/hex-image";
 import ListFigureGrid from "../components/list-figure-grid";
 import ListFigureGridItem from "../components/list-figure-grid-item";
 import ContactForm from "../components/contact-form";
+import YouTube from "react-youtube";
+import Modal from "react-bootstrap/Modal";
+
 // import { jQuery } from "jquery";
 // import connections from "jquery-connections";
 // import * as $ from "jquery";
@@ -130,20 +131,8 @@ const IndexPage = ({ data }) => {
                             >
                                 Request a Location
                             </Link>{" "} */}
-                                <Link
-                                    to="/"
-                                    className="btn btn-primary text-uppercase mb-3 d-inline-flex align-items-center"
-                                >
-                                    <SvgVideoCamera
-                                        className="me-2
-                                    "
-                                        style={{
-                                            height: "14px",
-                                            width: "auto",
-                                        }}
-                                    />{" "}
-                                    Watch the video
-                                </Link>
+
+                                <Video />
                             </div>
                         </div>
                     </div>
@@ -417,6 +406,77 @@ const IndexPage = ({ data }) => {
             body="Please complete this form to learn more about how to be a Partner with OnMed. An OnMed team member will be in touch shortly."
         />
     );
+
+    // function Video() {
+    //     const [show, setShow] = useState(false);
+
+    //     const handleClose = () => setShow(false);
+    //     const handleShow = () => setShow(true);
+
+    //     return (
+    //         <>
+    //             <Button variant="primary" onClick={handleShow}>
+    //                 Launch demo modal
+    //             </Button>
+
+    //             <Modal show={show} onHide={handleClose}>
+    //                 <Modal.Header closeButton>
+    //                     <Modal.Title>Modal heading</Modal.Title>
+    //                 </Modal.Header>
+    //                 <Modal.Body>
+    //                     <YouTube videoId="SkMxdumhrSU" width="100%" />
+    //                 </Modal.Body>
+    //                 <Modal.Footer>
+    //                     <Button variant="secondary" onClick={handleClose}>
+    //                         Close
+    //                     </Button>
+    //                     <Button variant="primary" onClick={handleClose}>
+    //                         Save Changes
+    //                     </Button>
+    //                 </Modal.Footer>
+    //             </Modal>
+    //         </>
+    //     );
+    // }
+
+    function Video() {
+        const [lgShow, setLgShow] = useState(false);
+
+        return (
+            <>
+                <Button
+                    className="btn btn-primary text-uppercase mb-3 d-inline-flex align-items-center"
+                    onClick={() => setLgShow(true)}
+                >
+                    <SvgVideoCamera
+                        className="me-2
+                                "
+                        style={{
+                            height: "14px",
+                            width: "auto",
+                        }}
+                    />{" "}
+                    Watch the video
+                </Button>
+
+                <Modal
+                    size="lg"
+                    show={lgShow}
+                    onHide={() => setLgShow(false)}
+                    aria-labelledby="example-modal-sizes-title-lg"
+                    centered
+                >
+                    <Modal.Header closeButton></Modal.Header>
+                    <Modal.Body className="d-flex justify-content-center align-items-center">
+                        <YouTube
+                            videoId="SkMxdumhrSU"
+                            className="youtube-container"
+                        />
+                    </Modal.Body>
+                </Modal>
+            </>
+        );
+    }
 
     return (
         <Layout pageTitle="home">
