@@ -23,10 +23,12 @@ const PatientsPage = ({ data }) => {
             headline="Walk-ins always welcome. Walk out with what you need."
             body={
                 <p>
-                    No appointment needed, just enter and press START. Plus, we
-                    can deliver most common prescriptions and over-the-counter
-                    meds right from our on-site dispensary directly to you.
-                    Available 24/7.
+                    No appointment needed, just enter and press START. Our OnMed
+                    Clinicians will join you immediately via our interactive
+                    screen to introduce themselves and walk you through your
+                    entire appointment. Your visit will be private, safe and
+                    secure and the Care Station Room will automatically clean
+                    and sanitize itself after you leave for the next patient.
                 </p>
             }
             img={<img src={imgWalkinsWelcome} alt="" className="img-fluid" />}

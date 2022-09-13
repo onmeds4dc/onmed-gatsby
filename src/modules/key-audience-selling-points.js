@@ -74,7 +74,7 @@ const KeyAudienceSellingPoints = (props) => {
                     body={
                         <p>
                             Open 24/7 for consultations and no appointment
-                            needed{" "}
+                            needed
                         </p>
                     }
                     img={<img src="/icons/icon-clock.svg" alt="Clock icon" />}

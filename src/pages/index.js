@@ -393,14 +393,6 @@ const IndexPage = ({ data }) => {
                             needs, send us your information and we’ll get back
                             to you shortly. We can even set up a demonstration.
                         </p>
-                        {/* <div className="mt-6">
-                            <Link
-                                to="/"
-                                className="btn btn-primary text-uppercase"
-                            >
-                                Request a Location
-                            </Link>
-                        </div> */}
                     </div>
                 </div>
             </div>
