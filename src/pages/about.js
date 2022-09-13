@@ -165,7 +165,7 @@ const AboutPage = ({ data }) => {
     const sectionContact = (
         <ContactForm
             headline="You are the connection to better health"
-            body="OnMed is looking for certified and board eligible clinicians; including doctors, pharmacists, CNAs and nurse practitioners. We're hiring right now in all 50 states, as well as Puerto Rico."
+            body="OnMed is looking for certified and board eligible clinicians; including doctors, pharmacists, CNAs and nurse practitioners. We're hiring right now in all 50 states, as well as Puerto Rico. "
         />
     );
 

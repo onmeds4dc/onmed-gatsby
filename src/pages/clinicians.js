@@ -6,8 +6,8 @@ import imgFriendsCoffeeShop from "../../static/images/fpo/friends-coffee-shop-v2
 import KeyAudienceSellingPoints from "../modules/key-audience-selling-points";
 import ContactForm from "../components/contact-form";
 import SvgNewWindow from "../components/svgs/new-window";
-import imgCareOnSite from "../../static/images/general/care-on-site.jpg";
-import imgEasySetup from "../../static/images/general/easy-set-up.jpg";
+import imgCareOnSite from "../../static/images/general/woman-green-rain-jacket.jpg";
+import imgEasySetup from "../../static/images/general/booth.jpg";
 
 import { Link } from "gatsby";
 
@@ -23,16 +23,18 @@ const CliniciansPage = ({ data }) => {
 
     const sectionWalkIn = (
         <CardColsSecondary
-            headline="Walk-ins always welcome. Walk out with what you need."
+            headline="Care for anyone. Anywhere."
             body={
                 <p>
-                    OnMed is a convenient and cost-effective healthcare solution
-                    for Large Employers, Providers, Government Agencies, Payers,
-                    High-Traffic Venues, Colleges and Universities. We deliver a
-                    business and economic model that provides sponsors and
-                    patients with a meaningful cost-saving solution for the
-                    current challenges of the current brick-and-mortar Primary
-                    Care delivery model.
+                    OnMed is a convenient virtual healthcare solution for
+                    sponsor partners including Government Agencies, Payers,
+                    Providers, Large Employers, Colleges and Universities and
+                    high traffic venues. We deliver sponsors and patients with a
+                    meaningful cost-saving solution for the challenges of the
+                    current brick and mortar Primary Care delivery model. OnMed
+                    can deliver care to communities and patients where access
+                    and availability is difficult, even in rural and remote
+                    areas.
                 </p>
             }
             img={<img src={imgCareOnSite} alt="" className="img-fluid" />}
@@ -48,7 +50,8 @@ const CliniciansPage = ({ data }) => {
                     OnMed Care Stations are easy to install and provide
                     comprehensive virtual care services 24/7, when and where
                     patients need it most. Simple and modern design, with almost
-                    no physical requirements - just an outlet.
+                    no physical requirements - just an outlet and an internet
+                    connection.
                 </p>
             }
             img={<img src={imgEasySetup} alt="" className="img-fluid" />}
@@ -57,7 +60,7 @@ const CliniciansPage = ({ data }) => {
     );
 
     const sectionKeyAudienceSellingPoints = (
-        <section className="bg-cloud">
+        <section className="bg-cloud py-5">
             <div className="container py-4 py-md-6">
                 <KeyAudienceSellingPoints />
             </div>

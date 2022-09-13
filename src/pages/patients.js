@@ -3,16 +3,18 @@ import Layout from "../components/layout";
 import HeroPrimary from "../components/hero-primary";
 import CardColsSecondary from "../components/card-cols-secondary";
 import imgWalkinsWelcome from "../../static/images/general/walkins-welcome.jpg";
-import imgCareForAnyone from "../../static/images/general/care-for-anyone.jpg";
+import imgYourVitalsMatter from "../../static/images/general/booth-woman-vitals.jpg";
+import imgMedsInMinutes from "../../static/images/general/pill-bottles-in-booth.jpg";
+
 import KeyAudienceSellingPoints from "../modules/key-audience-selling-points";
 
 const PatientsPage = ({ data }) => {
     const sectionHero = (
         <HeroPrimary
             classNames="mb-5 mb-md-6"
-            title="Just press start"
-            img="/images/heroes/man-office-chair.jpg"
-            imgXPosition="50%"
+            title="Step into the future of healthcare"
+            img="/images/heroes/booth-screen-stethoscope.jpg"
+            imgXPosition="60%"
         />
     );
 
@@ -34,22 +36,37 @@ const PatientsPage = ({ data }) => {
 
     const sectionCareAnywhere = (
         <CardColsSecondary
-            headline="Care for anyone, anywhere."
+            headline="Meds in minutes"
             body={
                 <p>
-                    OnMed is simple, easy and accessible wherever you need it,
-                    including rural and remote areas. Connect immediately with a
-                    live clinician and get 85% of typical Primary Care services
-                    taken care of, including your biometrics and key vitals.
+                    OnMed’s proprietary robotic dispensary system allows our
+                    Clinicians to provide you with the necessary OTC or
+                    prescription medications at the time of your visit.
                 </p>
             }
-            img={<img src={imgCareForAnyone} alt="" className="img-fluid" />}
+            img={<img src={imgMedsInMinutes} alt="" className="img-fluid" />}
             imgAlignRight={true}
         />
     );
 
+    const sectionVitals = (
+        <CardColsSecondary
+            headline="Your vitals matter"
+            body={
+                <p>
+                    OnMed’s care visit includes real-time measurement of your
+                    key vitals for an accurate diagnosis and treatment
+                    experience. Your key health metrics are displayed instantly
+                    on the screen.
+                </p>
+            }
+            img={<img src={imgYourVitalsMatter} alt="" className="img-fluid" />}
+            imgAlignRight={false}
+        />
+    );
+
     const sectionKeyAudienceSellingPoints = (
-        <section className="bg-cloud">
+        <section className="bg-cloud py-5">
             <div className="container py-4 py-md-6">
                 <KeyAudienceSellingPoints />
             </div>
@@ -61,6 +78,7 @@ const PatientsPage = ({ data }) => {
             {sectionHero}
             {sectionWalkIn}
             {sectionCareAnywhere}
+            {sectionVitals}
             {sectionKeyAudienceSellingPoints}
         </Layout>
     );
