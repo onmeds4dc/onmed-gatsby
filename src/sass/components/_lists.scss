@@ -63,10 +63,10 @@
         &--img {
             > * {
                 width: 130px;
-            }
-            @include media-breakpoint-up(md) {
-                width: 160px;
-                margin: auto;
+                @include media-breakpoint-up(md) {
+                    margin: auto;
+                    width: 190px;
+                }
             }
         }
         &--text {
@@ -90,15 +90,7 @@
                             position: absolute;
                             top: 50%;
                             margin-top: -12px;
-                            left: -50px;
-                        }
-                        // TODO: Make the .list-inline-arrows--target an outer contaner that goes full width, then no recaclutaing
-                        @include media-breakpoint-up(xl) {
-                            left: -80px;
-                        }
-
-                        @include media-breakpoint-up(xxl) {
-                            left: -93px;
+                            left: -25px;
                         }
                     }
                 }

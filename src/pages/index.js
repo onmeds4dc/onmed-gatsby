@@ -5,8 +5,17 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Layout from "../components/layout";
 import imgFriendsCoffeeShop from "../../static/images/fpo/friends-coffee-shop-v2.jpg";
-import imgWomanTakesPulse from "../../static/images/backgrounds/woman-takes-pulse.jpg";
-import imgWomanWhiteCoat from "../../static/images/backgrounds/woman-white-coat.jpg";
+import imgWomanLabCoat from "../../static/images/general/woman-lab-coat.jpg";
+import imgWomanCurlyHair from "../../static/images/general/woman-curly-hair.jpg";
+import imgManWomanHelmet from "../../static/images/general/man-woman-helmets.jpg";
+import imgHexWalkOut from "../../static/images/hex/walk-out.png";
+import imgHexWalkIn from "../../static/images/hex/walk-in.png";
+import imgHexPressStart from "../../static/images/hex/press-start.png";
+import imgHexGetExam from "../../static/images/hex/get-exam.png";
+
+import imgManBoothPills from "../../static/images/general/man-booth-pills.jpg";
+import imgWomanScreenWomanThouchscreen from "../../static/images/general/woman-screen-woman-touchscreen.jpg";
+
 import SvgVideoCamera from "../components/svgs/video-camera";
 import CardCols from "../components/card-cols";
 import HexImage from "../components/hex-image";
@@ -68,7 +77,7 @@ const IndexPage = ({ data }) => {
                             <div className="img-hex-into-2">
                                 <div id="start" className="hex-and-dots">
                                     <HexImage
-                                        imgSrc={imgWomanTakesPulse}
+                                        imgSrc={imgManBoothPills}
                                         alt="Alt text"
                                         className="hex-and-dots--img"
                                     />
@@ -88,7 +97,7 @@ const IndexPage = ({ data }) => {
                     <div className="col-lg-6 col-xxl-6 d-none d-lg-block">
                         <div id="start">
                             <HexImage
-                                imgSrc={imgWomanWhiteCoat}
+                                imgSrc={imgWomanScreenWomanThouchscreen}
                                 alt="Alt text"
                                 className="hex-and-dots--img"
                             />
@@ -209,12 +218,7 @@ const IndexPage = ({ data }) => {
                                 at any time. No appointment necessary.
                             </p>
                         }
-                        img={
-                            <HexImage
-                                imgSrc={imgFriendsCoffeeShop}
-                                alt="Alt text"
-                            />
-                        }
+                        img={<HexImage imgSrc={imgHexWalkIn} alt="Alt text" />}
                     />
                     <ListFigureGridItem
                         headline="Press Start"
@@ -226,7 +230,7 @@ const IndexPage = ({ data }) => {
                         }
                         img={
                             <HexImage
-                                imgSrc={imgFriendsCoffeeShop}
+                                imgSrc={imgHexPressStart}
                                 alt="Alt text"
                             />
                         }
@@ -240,12 +244,7 @@ const IndexPage = ({ data }) => {
                                 respiration rate.
                             </p>
                         }
-                        img={
-                            <HexImage
-                                imgSrc={imgFriendsCoffeeShop}
-                                alt="Alt text"
-                            />
-                        }
+                        img={<HexImage imgSrc={imgHexGetExam} alt="Alt text" />}
                     />
                     <ListFigureGridItem
                         headline="Walk Out"
@@ -256,12 +255,7 @@ const IndexPage = ({ data }) => {
                                 secure dispensary.
                             </p>
                         }
-                        img={
-                            <HexImage
-                                imgSrc={imgFriendsCoffeeShop}
-                                alt="Alt text"
-                            />
-                        }
+                        img={<HexImage imgSrc={imgHexWalkOut} alt="Alt text" />}
                     />
                 </ListFigureGrid>
             </div>
@@ -293,21 +287,17 @@ const IndexPage = ({ data }) => {
                     </a>
                 }
                 img={
-                    <img
-                        src={imgFriendsCoffeeShop}
-                        alt=""
-                        className="img-fluid"
-                    />
+                    <img src={imgManWomanHelmet} alt="" className="img-fluid" />
                 }
                 imgAlignRight={false}
             />
         </section>
     );
-    const sectionProviders = (
+    const sectionClinicians = (
         <section className="bg-cloud-md d-flex | mt-5 mt-md-2 py-md-6">
             <div className="container card-cols">
                 <CardCols
-                    title="Providers"
+                    title="Clinicians"
                     headline="Practice everywhere. See your patients anywhere."
                     body={
                         <p>
@@ -329,7 +319,7 @@ const IndexPage = ({ data }) => {
                     }
                     img={
                         <img
-                            src={imgFriendsCoffeeShop}
+                            src={imgWomanLabCoat}
                             alt=""
                             className="img-fluid"
                         />
@@ -364,11 +354,7 @@ const IndexPage = ({ data }) => {
                     </a>
                 }
                 img={
-                    <img
-                        src={imgFriendsCoffeeShop}
-                        alt=""
-                        className="img-fluid"
-                    />
+                    <img src={imgWomanCurlyHair} alt="" className="img-fluid" />
                 }
                 imgAlignRight={false}
             />
@@ -380,14 +366,17 @@ const IndexPage = ({ data }) => {
                             Testimonial
                         </h5>
                         <p className="testimonial--text mb-4 mb-lg-3">
-                            Donec ullamcorper nulla non metus auctor fringilla.
-                            Maecenas sed diam eget risus varius blandit sit amet
-                            non magna. Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit.
+                            Tuskegee University has a long history of bringing
+                            trusted healthcare to rural spaces in the state of
+                            Alabama and worldwide, hosting the very first OnMed
+                            Station in the state of Alabama is another
+                            affirmative step that Tuskegee University has taken
+                            to build on our community and strategic
+                            partnerships…
                         </p>
 
                         <p className="testimonial--author">
-                            - Firstname Lastname
+                            - Dr. Charlotte P. Morris
                         </p>
                     </div>
                 </div>
@@ -409,14 +398,14 @@ const IndexPage = ({ data }) => {
                             about OnMed care stations nearest to you, send us
                             your location request.
                         </p>
-                        <div className="mt-6">
+                        {/* <div className="mt-6">
                             <Link
                                 to="/"
                                 className="btn btn-primary text-uppercase"
                             >
                                 Request a Location
                             </Link>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>
@@ -424,8 +413,8 @@ const IndexPage = ({ data }) => {
     );
     const sectionContact = (
         <ContactForm
-            headline="Opening more doors to Healthcare around the world"
-            body="Please complete this form, and a member of our team will be in touch shortly."
+            headline="Opening more doors to Healthcare for everyone"
+            body="Please complete this form to learn more about how to be a Partner with OnMed. An OnMed team member will be in touch shortly."
         />
     );
 
@@ -435,7 +424,7 @@ const IndexPage = ({ data }) => {
             {sectionConnections}
             {sectionHowItWorks}
             {sectionPatients}
-            {sectionProviders}
+            {sectionClinicians}
             {sectionPartners}
             {sectionExpanding}
             {sectionContact}
