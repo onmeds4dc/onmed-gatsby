@@ -5,7 +5,9 @@ import ListFigureGridItem from "../components/list-figure-grid-item";
 const KeyAudienceSellingPoints = (props) => {
     return (
         <>
-            <h2 className="text-center mb-5">The OnMed Care Experience</h2>
+            <h2 className="text-center mb-5">
+                The OnMed Care Station Experience
+            </h2>
             <ListFigureGrid>
                 <ListFigureGridItem
                     headline="Clean"

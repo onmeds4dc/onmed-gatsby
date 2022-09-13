@@ -23,7 +23,7 @@ const PatientsPage = ({ data }) => {
             body={
                 <p>
                     No appointment needed, just enter and press START. Our OnMed
-                    Clinicians will join you immediately via our interactive
+                    clinicians will join you immediately via our interactive
                     screen to introduce themselves and walk you through your
                     entire appointment. Your visit will be private, safe and
                     secure and the Care Station Room will automatically clean
@@ -41,7 +41,7 @@ const PatientsPage = ({ data }) => {
             body={
                 <p>
                     OnMed’s proprietary robotic dispensary system allows our
-                    Clinicians to provide you with the necessary OTC or
+                    clinicians to provide you with the necessary OTC or
                     prescription medications at the time of your visit.
                 </p>
             }
