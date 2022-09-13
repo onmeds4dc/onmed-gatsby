@@ -15,8 +15,8 @@ const PartnersPage = ({ data }) => {
     const sectionHero = (
         <HeroPrimary
             classNames="mb-5 mb-md-6"
-            title="Care on-site. Care on demand."
-            img="/images/heroes/woman-blood-pressure.jpg"
+            title="Become an OnMed partner"
+            img="/images/heroes/man-office-chair.jpg"
             imgXPosition="70%"
         />
     );
@@ -94,7 +94,7 @@ const PartnersPage = ({ data }) => {
                             licensing fees, patient utilization fees and
                             maintenance fees. Additional Marketing and
                             Advertising support and programs are available
-                            through separate fee arrangements.
+                            through separate fee arrangements. .
                         </dd>
                         <div className="100%"></div>
                         <dt>Lead Times and Implementation</dt>
@@ -160,7 +160,7 @@ const PartnersPage = ({ data }) => {
                 <p className="lead">
                     PSA is a nationwide purchasing cooperative for public
                     agencies. As a PSA member you have access to all of PSA's
-                    competitive contracts.
+                    competitive contracts .
                 </p>
                 <p className="lead">Reference OnMed Contract No. 22-205</p>
                 <div className="mt-6">
@@ -192,7 +192,7 @@ const PartnersPage = ({ data }) => {
     const sectionContact = (
         <ContactForm
             headline="Request a quote"
-            body="Please complete this form, and a member of our team will be in touch shortly."
+            body="Please complete this form, and a member of our team will be in touch shortly. "
         />
     );
 
