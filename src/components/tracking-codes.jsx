@@ -138,5 +138,5 @@ export const trackingGoogle = `<!---------------GOOGLE ANALYTICS------------->
     gtag("config", "UA-135158659-1");
 </script>`;
 
-export const connectionsScripts = `<script src="https://code.jquery.com/jquery-latest.min.js"></script>
-<script src="https://musclesoft.github.io/jquery-connections/jquery.connections.js"></script>`;
+// export const connectionsScripts = `<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+// <script src="https://musclesoft.github.io/jquery-connections/jquery.connections.js"></script>`;

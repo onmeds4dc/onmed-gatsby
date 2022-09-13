@@ -9,7 +9,7 @@ const KeyAudienceTemplate = ({ data: { wpPage } }) => {
         <>
             <Header />
             <main className="container">
-                <h3>{title}</h3>sss
+                <h3>{title}</h3>
                 <hr />
                 <div dangerouslySetInnerHTML={{ __html: content }}></div>
             </main>

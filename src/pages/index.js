@@ -50,9 +50,9 @@ import Modal from "react-bootstrap/Modal";
 // }
 
 const IndexPage = ({ data }) => {
-    const {
-        wpPage: { title, content, featuredImage, pageHome, introBody },
-    } = data;
+    // const {
+    //     wpPage: { title, content, featuredImage, pageHome, introBody },
+    // } = data;
 
     // const sectionIntro = (
     //     <section className="section-home-intro bg-cloud pt-4 py-md-6">
@@ -410,27 +410,27 @@ const IndexPage = ({ data }) => {
 
 export default IndexPage;
 
-export const pageQuery = graphql`
-    query {
-        wpPage(isFrontPage: { eq: true }) {
-            slug
-            title
-            pageHome {
-                introBody
-                introHeadline
-            }
-            featuredImage {
-                node {
-                    localFile {
-                        childImageSharp {
-                            gatsbyImageData(
-                                placeholder: BLURRED
-                                formats: [AUTO, WEBP, AVIF]
-                            )
-                        }
-                    }
-                }
-            }
-        }
-    }
-`;
+// export const pageQuery = graphql`
+//     query {
+//         wpPage(isFrontPage: { eq: true }) {
+//             slug
+//             title
+//             pageHome {
+//                 introBody
+//                 introHeadline
+//             }
+//             featuredImage {
+//                 node {
+//                     localFile {
+//                         childImageSharp {
+//                             gatsbyImageData(
+//                                 placeholder: BLURRED
+//                                 formats: [AUTO, WEBP, AVIF]
+//                             )
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// `;
