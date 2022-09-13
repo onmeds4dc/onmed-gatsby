@@ -5,7 +5,7 @@ import CardColsSecondary from "../components/card-cols-secondary";
 import KeyAudienceSellingPoints from "../modules/key-audience-selling-points";
 import ContactForm from "../components/contact-form";
 import SvgNewWindow from "../components/svgs/new-window";
-import imgCareOnSite from "../../static/images/general/woman-green-rain-jacket.jpg";
+import imgCareOnSite from "../../static/images/general/care-for-anyone.jpg";
 import imgEasySetup from "../../static/images/general/booth.jpg";
 import { Link } from "gatsby";
 
@@ -152,36 +152,51 @@ const PartnersPage = ({ data }) => {
     const sectionPsaPurchase = (
         <section className="bg-cloud py-4 py-6">
             <div className="container text-center py-6">
-                <h2 className="text-primary mb-6">
-                    PSA Purchasing Solutions Alliance
-                </h2>
-                <p className="lead">
-                    PSA is a nationwide purchasing cooperative for public
-                    agencies. As a PSA member you have access to all of PSA's
-                    competitive contracts .
-                </p>
-                <p className="lead">Reference OnMed Contract No. 22-205</p>
-                <div className="mt-6">
-                    {/* <Link
+                <div class="row justify-content-cnter">
+                    <div class="col-lg-10">
+                        <h2 className="text-primary mb-6">
+                            PSA Purchasing Solutions Alliance
+                        </h2>
+                        <div className="lead">
+                            <p className="mt-4">
+                                For Current PSA Members and Interested Parties.
+                            </p>
+                            <div className="text-dark">
+                                <p className="mt-4">
+                                    PSA is a nationwide purchasing cooperative
+                                    for public agencies. As a PSA member you
+                                    have access to all of PSA's competitive
+                                    contracts.
+                                </p>
+                                <p className="mt-4">
+                                    Reference OnMed Contract No. 22-205
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="mt-6">
+                            {/* <Link
                         to="/"
                         className="btn btn-primary text-uppercase  mb-3 me-2 mx-3"
                     >
                         View PSA Contract
                     </Link>{" "} */}
-                    <Link
-                        to="https://psabuy.org/"
-                        className="btn btn-primary text-uppercase mb-3  mx-3 d-inline-flex align-items-center"
-                        target="_blank"
-                    >
-                        Visit PSABUY.org
-                        <SvgNewWindow
-                            className="ms-2"
-                            style={{
-                                height: "14px",
-                                width: "auto",
-                            }}
-                        />
-                    </Link>
+                            <Link
+                                to="https://psabuy.org/"
+                                className="btn btn-primary text-uppercase mb-3  mx-3 d-inline-flex align-items-center"
+                                target="_blank"
+                            >
+                                Visit PSABUY.org
+                                <SvgNewWindow
+                                    className="ms-2"
+                                    style={{
+                                        height: "14px",
+                                        width: "auto",
+                                    }}
+                                />
+                            </Link>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

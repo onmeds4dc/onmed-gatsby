@@ -129,7 +129,7 @@ const IndexPage = ({ data }) => {
     );
 
     const sectionHowItWorks = (
-        <section className="bg-cloud py-4 py-md-6 text-lg-center">
+        <section className="bg-cloud py-4 py-md-6 text-md-center">
             <div className="container">
                 <h2 className="mt-lg-6">How it Works</h2>
                 <p className="lead mt-3">
@@ -227,7 +227,7 @@ const IndexPage = ({ data }) => {
         </section>
     );
     const sectionClinicians = (
-        <section className="bg-cloud-md d-flex | mt-5 mt-md-2 py-md-6">
+        <section className="bg-cloud-md d-flex | mt-5 mt-md-2">
             <div className="container card-cols">
                 <CardCols
                     title="Clinicians"

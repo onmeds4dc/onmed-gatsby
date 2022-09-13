@@ -31,7 +31,7 @@ const AboutPage = ({ data }) => {
     const sectionHero = (
         <HeroPrimary
             classNames="mb-5 mb-md-6"
-            title="Just press start"
+            title="Our story"
             img="/images/heroes/woman-screen-woman-touchscreen.jpg"
             imgXPosition="27%"
         />
@@ -95,7 +95,8 @@ const AboutPage = ({ data }) => {
     );
 
     const sectionLeadershipTeam = (
-        <section className="container">
+        <section className="container pt-6 pb-6 pb-md-0">
+            <h2 className="text-primary text-center my-6">Leaderhip Team</h2>
             <div class="row">
                 <LeadershipItem
                     name="Tom Vanderheyden"

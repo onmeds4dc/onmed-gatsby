@@ -9,10 +9,10 @@
     @include media-breakpoint-up(lg) {
         background-color: $header-bg-color-desktop;
         backdrop-filter: blur(3px);
-        .page-home & {
-            background-color: $header-bg-color-home;
-            box-shadow: 1px -9px 8px 7px rgba(0, 0, 0, 0);
-        }
+        // .page-home & {
+        //     background-color: $header-bg-color-home;
+        //     box-shadow: 1px -9px 8px 7px rgba(0, 0, 0, 0);
+        // }
     }
 }
 
