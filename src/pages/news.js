@@ -39,46 +39,46 @@ const NewsItem = (props) => {
 };
 
 const NewsPage = ({ data }) => {
-    const sectionHero = (
-        <HeroPrimary
-            classNames="mb-5 mb-md-6"
-            title="News"
-            img="/images/heroes/grabbing-pill-bottles.jpg"
-            imgXPosition="60%"
-        />
-    );
+    // const sectionHero = (
+    //     <HeroPrimary
+    //         classNames="mb-5 mb-md-6"
+    //         title="News"
+    //         img="/images/heroes/grabbing-pill-bottles.jpg"
+    //         imgXPosition="60%"
+    //     />
+    // );
 
-    const sectionOnMedNews = (
-        <section className="container py-4 py-md-6">
-            <h1 className="text-center text-primary mb-6">OnMed News</h1>
-            <div className="row gx-md-6">
-                <NewsItem
-                    title="Tuskegee University and OnMed Announce Partnership to Deliver Innovative Virtual Care Clinic and Services"
-                    body="Tuskegee University, a preeminent Historical Black College and University (HBCU), has partnered with Virtual Health..."
-                    date="September 09, 2022"
-                    img="/images/news/tuskegee.jpg"
-                    slug="tuskegee-university"
-                />
-                <NewsItem
-                    title="Purchasing Solutions Alliance Awards Telehealth Clinic to OnMed"
-                    body="OnMed has been selected to provide Telehealth Clinics services to non-profit and governmental agencies..."
-                    img="/images/news/purchasing-solutions-alliance.jpg"
-                    slug="purchasing-solutions-alliance"
-                />
-                <NewsItem
-                    title="OnMed will Partner with Auburn University for Rural Health Project"
-                    body="OnMed will partner with Auburn University, along with the city of LaFayette and the Chambers County Commission to offer a wide variety of health and wellness services to the community..."
-                    img="/images/news/auburn-tigers.jpg"
-                    slug="auburn-university"
-                />
-            </div>
-        </section>
-    );
+    // const sectionOnMedNews = (
+    //     <section className="container py-4 py-md-6">
+    //         <h1 className="text-center text-primary mb-6">OnMed News</h1>
+    //         <div className="row gx-md-6">
+    //             <NewsItem
+    //                 title="Tuskegee University and OnMed Announce Partnership to Deliver Innovative Virtual Care Clinic and Services"
+    //                 body="Tuskegee University, a preeminent Historical Black College and University (HBCU), has partnered with Virtual Health..."
+    //                 date="September 09, 2022"
+    //                 img="/images/news/tuskegee.jpg"
+    //                 slug="tuskegee-university"
+    //             />
+    //             <NewsItem
+    //                 title="Purchasing Solutions Alliance Awards Telehealth Clinic to OnMed"
+    //                 body="OnMed has been selected to provide Telehealth Clinics services to non-profit and governmental agencies..."
+    //                 img="/images/news/purchasing-solutions-alliance.jpg"
+    //                 slug="purchasing-solutions-alliance"
+    //             />
+    //             <NewsItem
+    //                 title="OnMed will Partner with Auburn University for Rural Health Project"
+    //                 body="OnMed will partner with Auburn University, along with the city of LaFayette and the Chambers County Commission to offer a wide variety of health and wellness services to the community..."
+    //                 img="/images/news/auburn-tigers.jpg"
+    //                 slug="auburn-university"
+    //             />
+    //         </div>
+    //     </section>
+    // );
 
     return (
         <Layout>
-            {sectionHero}
-            {sectionOnMedNews}
+            {/* {sectionHero}
+            {sectionOnMedNews} */}
         </Layout>
     );
 };

@@ -13,7 +13,7 @@ const NewsStory = (props) => {
         : "";
     return (
         <section className="container py-4 py-md-6 news-story">
-            <div className="row gx-md-6 justify-content-center">
+            {/* <div className="row gx-md-6 justify-content-center">
                 <div className="col-md-10 col-lg-9">
                     {props.date} {props.category}
                     <div
@@ -34,7 +34,7 @@ const NewsStory = (props) => {
                     ></div>
                     <div className="news-story--body">{props.body}</div>
                 </div>
-            </div>
+            </div> */}
         </section>
     );
 };
