@@ -164,15 +164,15 @@ const PartnersPage = ({ data }) => {
                 </p>
                 <p className="lead">Reference OnMed Contract No. 22-205</p>
                 <div className="mt-6">
-                    <Link
+                    {/* <Link
                         to="/"
                         className="btn btn-primary text-uppercase  mb-3 me-2 mx-3"
                     >
                         View PSA Contract
-                    </Link>{" "}
+                    </Link>{" "} */}
                     <Link
                         to="https://psabuy.org/"
-                        className="btn btn-outline-primary bg-white text-uppercase mb-3  mx-3 d-inline-flex align-items-center"
+                        className="btn btn-primary text-uppercase mb-3  mx-3 d-inline-flex align-items-center"
                         target="_blank"
                     >
                         Visit PSABUY.org

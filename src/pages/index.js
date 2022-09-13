@@ -8,6 +8,9 @@ import imgFriendsCoffeeShop from "../../static/images/fpo/friends-coffee-shop-v2
 import imgWomanLabCoat from "../../static/images/general/woman-lab-coat.jpg";
 import imgWomanCurlyHair from "../../static/images/general/woman-curly-hair.jpg";
 import imgManWomanHelmet from "../../static/images/general/man-woman-helmets.jpg";
+
+import imgSectionPatients from "../../static/images/general/woman-blood-pressure.jpg";
+
 import imgHexWalkOut from "../../static/images/hex/walk-out.png";
 import imgHexWalkIn from "../../static/images/hex/walk-in.png";
 import imgHexPressStart from "../../static/images/hex/press-start.png";
@@ -279,7 +282,11 @@ const IndexPage = ({ data }) => {
                     </a>
                 }
                 img={
-                    <img src={imgManWomanHelmet} alt="" className="img-fluid" />
+                    <img
+                        src={imgSectionPatients}
+                        alt=""
+                        className="img-fluid"
+                    />
                 }
                 imgAlignRight={false}
             />

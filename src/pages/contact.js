@@ -8,7 +8,7 @@ const AboutPage = ({ data }) => {
         <HeroPrimary
             classNames="mb-5 mb-md-6"
             title="Contact us"
-            img="/images/heroes/lab-coats-meeting-table.jpg"
+            img="/images/heroes/man-touch-screen.jpg"
             imgYPosition="90%"
         />
     );
