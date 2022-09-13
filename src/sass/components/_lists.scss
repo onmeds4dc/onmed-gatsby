@@ -63,7 +63,8 @@
         &--img {
             > * {
                 width: 130px;
-                @include media-breakpoint-up(md) {
+
+                @include media-breakpoint-up(lg) {
                     margin: auto;
                     width: 190px;
                 }

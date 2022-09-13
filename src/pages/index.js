@@ -112,11 +112,11 @@ const IndexPage = ({ data }) => {
                                 clinicians, virtually anywhere
                             </h2>
                             <p className="lead mt-5">
-                                The OnMed care station provides a more
+                                The OnMed Care Station provides a more
                                 personalized virtual care experience and
                                 connects patients directly with live certified
-                                clinicians whenever they need it. Our care
-                                station is open 24/7, with no appointment
+                                clinicians whenever they need it. Our Care
+                                Station is open 24/7, with no appointment
                                 needed. Every examination is one-on-one in
                                 real-time, and we can address 85% of a typical
                                 Primary Care visit, including all key biometrics
@@ -196,14 +196,14 @@ const IndexPage = ({ data }) => {
             <div className="container">
                 <h2 className="mt-lg-6">How it Works</h2>
                 <p className="lead mt-3">
-                    Getting Care at an OnMed station is simple
+                    Getting Care at an OnMed Care Station is simple
                 </p>
                 <ListFigureGrid inlineArrows={true}>
                     <ListFigureGridItem
                         headline="Walk In"
                         body={
                             <p>
-                                Walk right up and enter the OnMed® care station
+                                Walk right up and enter the OnMed Care Station
                                 at any time. No appointment necessary.
                             </p>
                         }
@@ -214,7 +214,8 @@ const IndexPage = ({ data }) => {
                         body={
                             <p>
                                 Just press START to connect with a certified
-                                clinician on live video in real-time.
+                                clinician on live video in real-time to begin
+                                your private visit.
                             </p>
                         }
                         img={
@@ -230,7 +231,8 @@ const IndexPage = ({ data }) => {
                             <p>
                                 Have your vitals taken, including blood
                                 pressure, pulse, body temperature and
-                                respiration rate.
+                                respiration rate and interact with our
+                                clinician.
                             </p>
                         }
                         img={<HexImage imgSrc={imgHexGetExam} alt="Alt text" />}
@@ -263,15 +265,16 @@ const IndexPage = ({ data }) => {
                 }
                 body={
                     <p>
-                        Our OnMed care station is like stepping into a mini
-                        doctor’s office. No appointment needed. We can even
-                        dispense most of your prescriptions and over-the-counter
+                        Our OnMed Care Station is like stepping into a mini
+                        doctor’s office. No appointment needed. We can diagnose
+                        and treat most common conditions and can even dispense
+                        most of your prescriptions and over-the-counter
                         medications right on the spot, eliminating a trip to the
                         pharmacy.
                     </p>
                 }
                 cta={
-                    <a href="#" className="btn-arrow">
+                    <a href="/patients/" className="btn-arrow">
                         Tell me more
                     </a>
                 }
@@ -291,18 +294,18 @@ const IndexPage = ({ data }) => {
                     body={
                         <p>
                             The quality of our care is not just for our
-                            customers, because we’ve created a life-sized
-                            virtual experience for clinicians to connect in
-                            real-time with patients. We also provide medical
-                            grade diagnostics so you can give professional care.
-                            Our OnMed care stations even allow you to prescribe
-                            and dispense most prescriptions and over-the-counter
-                            medications immediately through our secure, on-site
-                            dispensary.
+                            customers, because we’ve created a new way for
+                            clinicians to serve and connect with patients, in
+                            real-time, through a life-sized virtual experience.
+                            We also provide medical grade diagnostics so you can
+                            give real professional care. Our OnMed Care Stations
+                            even allow you to prescribe and dispense most
+                            prescriptions and over-the-counter medications
+                            immediately through our secure, on-site dispensary.
                         </p>
                     }
                     cta={
-                        <a href="#" className="btn-arrow">
+                        <a href="/clinicians/" className="btn-arrow">
                             Learn more
                         </a>
                     }
@@ -322,23 +325,24 @@ const IndexPage = ({ data }) => {
         <section className="container card-cols | pb-4 pb-md-0 mt-5 mt-md-0">
             <CardCols
                 title="Partners"
-                headline="A different kind of doctor's office. A new kind of
-                pharmacy."
+                headline="A different kind of Primary Care. A new kind of solution. "
                 body={
                     <p>
                         We deliver personalized virtual care solutions, so you
                         can offer comprehensive healthcare on-demand. OnMed is
                         easy to install and fully operational in no time, ready
-                        to serve company employees, business patrons, or even
-                        students on campus. Our care station features a modern
-                        design that’s sleek and aesthetically pleasing. It’s
-                        also cost effective compared to brick-and-mortar Primary
-                        Care, including hospitals and clinics. OnMed is the
-                        anywhere healthcare whenever you need it most.
+                        to serve your community and population, members, company
+                        employees, business patrons, or even students on campus.
+                        Our OnMed Care Station can be customized to your brand
+                        and features a modern design that’s sleek and
+                        aesthetically pleasing. It’s also cost effective
+                        compared to brick-and-mortar Primary Care, including
+                        hospitals and clinics. OnMed is the anywhere healthcare
+                        whenever you need it most.
                     </p>
                 }
                 cta={
-                    <a href="#" className="btn-arrow">
+                    <a href="/partners/" className="btn-arrow">
                         Learn more
                     </a>
                 }
@@ -382,10 +386,12 @@ const IndexPage = ({ data }) => {
                         </h2>
                         <p className="lead">
                             We are fully committed to making quality healthcare
-                            accessible to all, so we’re always growing and
-                            expanding. If you’re interested in learning more
-                            about OnMed care stations nearest to you, send us
-                            your location request.
+                            affordable and accessible to all, so we’re always
+                            growing and expanding. If you’re interested in
+                            learning more about OnMed and our innovative Virtual
+                            Care Platform, and how it can solve your health care
+                            needs, send us your information and we’ll get back
+                            to you shortly. We can even set up a demonstration.
                         </p>
                         {/* <div className="mt-6">
                             <Link
@@ -403,7 +409,8 @@ const IndexPage = ({ data }) => {
     const sectionContact = (
         <ContactForm
             headline="Opening more doors to Healthcare for everyone"
-            body="Please complete this form to learn more about how to be a Partner with OnMed. An OnMed team member will be in touch shortly."
+            body="Please complete this form to learn more about how to be a Partner with OnMed. 
+            An OnMed team member will be in touch shortly."
         />
     );
 
