@@ -49,7 +49,7 @@ const ClinciansPage = ({ data }) => {
 
     const sectionBetterAccess = (
         <CardColsSecondary
-            headline="Better access means better health"
+            headline="Better access means better health  "
             body={
                 <p>
                     Access to Primary Care can be difficult for many, not to
@@ -96,7 +96,7 @@ const ClinciansPage = ({ data }) => {
                     and empathy. We will provide you all the training you need
                     to use the diagnostics systems of our Care Stations to
                     examine, diagnose and offer the treatment that patients can
-                    trust, just like a typical doctor’s visit.{" "}
+                    trust, just like a typical doctor’s visit.
                 </p>
             }
             img={<img src={imgOnboarding} alt="" className="img-fluid" />}
@@ -107,7 +107,7 @@ const ClinciansPage = ({ data }) => {
     const sectionContact = (
         <ContactForm
             headline="You are the connection to better health"
-            body="OnMed is looking for certified and board eligible clinicians; including doctors, pharmacists, CNAs and nurse practitioners. We're hiring right now in all 50 states, as well as Puerto Rico."
+            body="OnMed is looking for certified and board eligible clinicians, and other pivotal roles across all functional areas of our organization. We're hiring right now in all 50 states, as well as Puerto Rico. "
         />
     );
 
