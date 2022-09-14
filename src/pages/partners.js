@@ -68,10 +68,8 @@ const PartnersPage = ({ data }) => {
     const sectionPartnerRequirements = (
         <section className="container py-6 my-4">
             <div className="text-center">
-                <h2>Partner requirements</h2>
-                <p className="lead">
-                    Below is an overview of basic partner requirements.
-                </p>
+                <h2>Becoming an OnMed Partner</h2>
+                <p className="lead">An overview of key partner requirements</p>
             </div>
             <div className="row justify-content-center">
                 <div className="col-lg-10 col-xl-8">
@@ -92,7 +90,7 @@ const PartnersPage = ({ data }) => {
                             licensing fees, patient utilization fees and
                             maintenance fees. Additional Marketing and
                             Advertising support and programs are available
-                            through separate fee arrangements. .
+                            through separate fee arrangements.
                         </dd>
                         <div className="100%"></div>
                         <dt>Lead Times and Implementation</dt>
@@ -129,10 +127,8 @@ const PartnersPage = ({ data }) => {
                         <div className="100%"></div>
                         <dt>Maintenance and Cleaning</dt>
                         <dd>
-                            OnMed provides a complete Maintenance and Service
-                            plan as part of the overall fee structure. Daily
-                            cleaning maintenance due to normal patient traffic
-                            are the responsibility of the Sponsor.
+                            Daily cleaning and maintenance due to normal patient
+                            traffic is the responsibility of the Sponsor.
                         </dd>
                         <div className="100%"></div>
                         <dt>Publicity and Marketing</dt>
@@ -152,8 +148,8 @@ const PartnersPage = ({ data }) => {
     const sectionPsaPurchase = (
         <section className="bg-cloud py-4 py-6">
             <div className="container text-center py-6">
-                <div class="row justify-content-cnter">
-                    <div class="col-lg-10">
+                <div className="row justify-content-center">
+                    <div className="col-lg-10">
                         <h2 className="text-primary mb-6">
                             PSA Purchasing Solutions Alliance
                         </h2>

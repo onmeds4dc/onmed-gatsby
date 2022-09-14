@@ -16,7 +16,7 @@ const NewsItem = (props) => {
     const date = props.date ? props.date : "";
 
     return (
-        <div class="col-md-6 my-5 my-md-6 position-relative">
+        <div className="col-md-6 my-5 my-md-6 position-relative">
             <img src={img} alt={title} className="img-fluid mb-4" />
 
             {category}
@@ -30,9 +30,9 @@ const NewsItem = (props) => {
                 </Link>
             </h5>
             <p>{body}</p>
-            <div class="row mt-4">
-                <div class="col">{author}</div>
-                <div class="col-auto text-end">{date}</div>
+            <div className="row mt-4">
+                <div className="col">{author}</div>
+                <div className="col-auto text-end">{date}</div>
             </div>
         </div>
     );

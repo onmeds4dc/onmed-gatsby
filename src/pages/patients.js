@@ -26,7 +26,7 @@ const PatientsPage = ({ data }) => {
                     clinicians will join you immediately via our interactive
                     screen to introduce themselves and walk you through your
                     entire appointment. Your visit will be private, safe and
-                    secure and the Care Station Room will automatically clean
+                    secure and the Care Station room will automatically clean
                     and sanitize itself after you leave for the next patient.
                 </p>
             }

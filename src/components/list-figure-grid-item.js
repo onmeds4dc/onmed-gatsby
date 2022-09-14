@@ -2,8 +2,8 @@ import React from "react";
 
 const ListFigureGridItem = (props) => {
     return (
-        <li class="col-md my-5">
-            <div class="row list-figure-grid--row">
+        <li className="col-md my-5">
+            <div className="row list-figure-grid--row">
                 <div className="list-figure-grid--img list-inline-arrows--target col-auto col-md-12">
                     {props.img}
                 </div>

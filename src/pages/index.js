@@ -310,7 +310,8 @@ const IndexPage = ({ data }) => {
                         </p>
 
                         <p className="testimonial--author">
-                            - Dr. Charlotte P. Morris
+                            - Dr. Charlotte P. Morris - President, Tuskegee
+                            University
                         </p>
                     </div>
                 </div>
@@ -341,7 +342,7 @@ const IndexPage = ({ data }) => {
     );
     const sectionContact = (
         <ContactForm
-            headline="Opening more doors to Healthcare for everyone"
+            headline="Opening more doors to healthcare for everyone"
             body="Please complete this form to learn more about how to be a Partner with OnMed.
             An OnMed team member will be in touch shortly."
         />

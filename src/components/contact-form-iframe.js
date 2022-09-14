@@ -7,6 +7,7 @@ const ContactFormIFrame = (props) => {
             width="100%"
             height="1300"
             className={props.className}
+            title="Contact Form"
         ></iframe>
     );
 };

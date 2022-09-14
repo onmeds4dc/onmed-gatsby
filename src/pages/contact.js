@@ -19,8 +19,8 @@ const AboutPage = ({ data }) => {
                 Please complete this form, and a member of our team will be in
                 touch shortly.
             </p>
-            <div class="row justify-content-center">
-                <div class="col-md-9 col-md-6">
+            <div className="row justify-content-center">
+                <div className="col-md-9 col-md-6">
                     <ContactFormIFrame className="mb-md-6" />
                 </div>
             </div>

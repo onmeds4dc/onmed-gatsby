@@ -1,5 +1,4 @@
 import React from "react";
-import Button from "react-bootstrap/Button";
 
 const CardColsSecondary = (props) => {
     const colImgPadding = props.imgAlignRight

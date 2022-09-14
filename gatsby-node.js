@@ -57,29 +57,29 @@ exports.createPages = async ({ graphql, actions }) => {
         });
     });
 
-    contactPage.nodes.map((page) => {
-        // console.log("page: ", page);
-        const { id, uri } = page;
-        return actions.createPage({
-            path: uri,
-            component: require.resolve("./src/templates/contact-template.js"),
-            context: {
-                id: id,
-            },
-        });
-    });
+    // contactPage.nodes.map((page) => {
+    //     // console.log("page: ", page);
+    //     const { id, uri } = page;
+    //     return actions.createPage({
+    //         path: uri,
+    //         component: require.resolve("./src/templates/contact-template.js"),
+    //         context: {
+    //             id: id,
+    //         },
+    //     });
+    // });
 
-    keyAudiencePage.nodes.map((page) => {
-        // console.log("page: ", page);
-        const { id, uri } = page;
-        return actions.createPage({
-            path: uri,
-            component: require.resolve(
-                "./src/templates/key-audience-template.js"
-            ),
-            context: {
-                id: id,
-            },
-        });
-    });
+    // keyAudiencePage.nodes.map((page) => {
+    //     // console.log("page: ", page);
+    //     const { id, uri } = page;
+    //     return actions.createPage({
+    //         path: uri,
+    //         component: require.resolve(
+    //             "./src/templates/key-audience-template.js"
+    //         ),
+    //         context: {
+    //             id: id,
+    //         },
+    //     });
+    // });
 };

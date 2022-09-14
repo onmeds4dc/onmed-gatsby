@@ -36,6 +36,20 @@ const NewStoryTuskegee = ({ data }) => {
                 body={
                     <>
                         <p>
+                            Tuskegee University, a preeminent Historical Black
+                            College and University (HBCU), has partnered with
+                            Virtual Health company OnMed to deploy a custom
+                            OnMed Care Station on the Tuskegee campus. The
+                            Tuskegee OnMed Care Station allows Tuskegee
+                            students, faculty and staff to have extended hours
+                            access to most Primary Care services and elevates
+                            the University’s commitment to enhancing student
+                            experience through extended access to quality
+                            healthcare and complements their current student
+                            health center service.
+                        </p>
+
+                        <p>
                             Tuskegee’s investment into the OnMed Virtual Care
                             Platform is consistent with the goals and objectives
                             of the University’s strategic plan. In addition,
@@ -44,6 +58,7 @@ const NewStoryTuskegee = ({ data }) => {
                             Station will be available at no cost to the citizens
                             of the community and Macon County.
                         </p>
+
                         <p>
                             Tuskegee University President Dr. Charlotte P.
                             Morris commented on Tuskegee’s investment into the
@@ -67,11 +82,11 @@ const NewStoryTuskegee = ({ data }) => {
                             exterior and is prominently located in the atrium of
                             the Margaret Murray Washington Hall building just
                             inside the Lincoln gates at the Tuskegee University
-                            campus. Students, faculty and staff along with the
-                            general public can access the Care Station 24/7
+                            campus. Students, faculty, and staff along with the
+                            general public can access the Care Station,
                             providing patients with a quality health care option
                             along with the regular daytime hours of the Student
-                            Health Center. The OnMed clinicians work with the
+                            Health Center. OnMed clinicians work with the
                             University Health Center to coordinate necessary
                             follow-up or extended care required. OnMed
                             clinicians can prescribe medications via
@@ -81,43 +96,46 @@ const NewStoryTuskegee = ({ data }) => {
 
                         <p>
                             With regards to OnMed’s partnership with Tuskegee
-                            University, Tom Vanderheyden, CEO of OnMed said, “We
-                            couldn’t be more excited and prouder of our
+                            University, Tom Vanderheyden, CEO of OnMed, said,
+                            “We couldn’t be more excited and prouder of our
                             partnership with Tuskegee University. They represent
                             the best reflection of our mission and purpose and
-                            certainly the quality of partners we aspire to
-                            serve. We are committed to working with the
-                            leadership of Tuskegee and their broader
-                            constituents to advance the core tenets of access
-                            and affordability across the region and country.
-                            Most importantly, we’re grateful for the opportunity
-                            to deliver a valued health care experience to their
-                            students, faculty, staff and community.”
+                            certainly the quality of partners we aspire to have.
+                            We are committed to working with the leadership of
+                            Tuskegee and their broader constituents to advance
+                            the core tenets of access and affordability across
+                            the region and the country, and to deliver a valued
+                            health care experience to their students, faculty,
+                            and staff.”
                         </p>
+
+                        <p className="fw-bold">About Tuskegee University</p>
+
                         <p>
-                            About Tuskegee University, Tuskegee University was
-                            founded in 1881 and remains one of the preeminent
-                            Historical Black Colleges and Universities in the
-                            country. The University has been a pioneer and
-                            leader in education and the advancement of awareness
-                            and progress of both social and historical
-                            significance. In 1965 Tuskegee University was
-                            declared a National Historic Landmark for the
-                            significance of its academic programs, its role in
-                            higher education for African Americans, and its
-                            status in United States history. Today, the
+                            Tuskegee University was founded in 1881 and remains
+                            one of the preeminent Historical Black Colleges and
+                            Universities in the country. The University has been
+                            a pioneer and leader in education and the
+                            advancement of awareness and progress of both social
+                            and historical significance. In 1965 Tuskegee
+                            University was declared a National Historic Landmark
+                            for the significance of its academic programs, its
+                            role in higher education for African Americans, and
+                            its status in United States history. Today, the
                             University serves over 3000 students and employs
                             over 800 faculty and staff. Tuskegee University is
                             consistently ranked as one of the top Universities
                             in the country.
                         </p>
 
+                        <p className="fw-bold">About OnMed</p>
+
                         <p>
-                            About OnMed; OnMed is an innovative leader in the
-                            Virtual Care space offering primary care and urgent
-                            care through their patented OnMed Care Station and
-                            Virtual Medical Center. OnMed utilizes a proprietary
-                            system of diagnostic and interactive technologies to
+                            OnMed is an innovative leader in the Virtual Care
+                            space offering primary care and urgent care through
+                            their patented OnMed Care Station and Virtual
+                            Medical Center. OnMed utilizes a proprietary system
+                            of diagnostic and interactive technologies to
                             provide a highly personalized patient consult and
                             treatment experience that is designed to duplicate a
                             traditional in-office clinic visit. The OnMed

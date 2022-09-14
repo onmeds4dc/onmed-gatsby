@@ -19,7 +19,7 @@ import imgPortraitChrisKent from "../../static/images/portraits/chris-kent.jpg";
 
 const LeadershipItem = (props) => {
     return (
-        <div class="col-md-6 col-lg-4 mb-md-6">
+        <div className="col-md-6 col-lg-4 mb-md-6">
             <img src={props.img} alt="" className="img-fluid" />
             <h5 className="mt-3 mb-0 text-primary">{props.name}</h5>
             <p className="lead text-uppercase">{props.title}</p>
@@ -49,13 +49,13 @@ const AboutPage = ({ data }) => {
                         care, including getting the medications they need
                         quickly. Our goal was to create a patient experience
                         that maintained clinical standards and protocols to
-                        provide a highly personalized empathy-based clinician
-                        patient connection. The OnMed Virtual Care Platform
-                        utilizes a broad range of diagnostic and interactive
-                        technologies to ensure a highly efficient and effective
-                        experience, but does not sacrifice the real-life
-                        dynamics of a traditional brick and mortar clinic
-                        setting.
+                        provide a highly personalized empathy-based
+                        clinician-patient connection. The OnMed Virtual Care
+                        Platform utilizes a broad range of diagnostic and
+                        interactive technologies to ensure a highly efficient
+                        and effective experience, but does not sacrifice the
+                        real-life dynamics of a traditional brick and mortar
+                        clinic setting.
                     </p>
                     <p>
                         Beyond designing a new Primary Care model and patient
@@ -66,7 +66,7 @@ const AboutPage = ({ data }) => {
                         or clinics. Going forward, OnMed will continue to expand
                         the breadth of care provided and clinical needs
                         addressed through new technologies and services, along
-                        with our on-going commitment to deliver the best patient
+                        with our on going commitment to deliver the best patient
                         experience possible.
                     </p>
                 </div>
@@ -79,8 +79,8 @@ const AboutPage = ({ data }) => {
             headline="Innovation for real"
             body={
                 <p>
-                    Over 31 Million people in the US alone do not have access to
-                    healthcare. At OnMed, we believe everyone has a right to
+                    Over 31 Million people in the U.S. alone do not have access
+                    to healthcare. At OnMed, we believe everyone has a right to
                     affordable convenient care. This real problem can only be
                     solved with real innovation. That’s why we combined the best
                     of interactive and diagnostic technology, with the medical
@@ -96,8 +96,8 @@ const AboutPage = ({ data }) => {
 
     const sectionLeadershipTeam = (
         <section className="container pt-6 pb-6 pb-md-0">
-            <h2 className="text-primary text-center my-6">Leaderhip Team</h2>
-            <div class="row">
+            <h2 className="text-primary text-center my-6">Leadership Team</h2>
+            <div className="row">
                 <LeadershipItem
                     name="Tom Vanderheyden"
                     title="Chief executive officer"
@@ -110,12 +110,12 @@ const AboutPage = ({ data }) => {
                 />
                 <LeadershipItem
                     name="Howard Gruverman"
-                    title="Chief comMercial Officer"
+                    title="Chief Commercial Officer"
                     img={imgPortraitHowardGruverman}
                 />
                 <LeadershipItem
                     name="Jim Sparks"
-                    title="Chief financial officers"
+                    title="Chief Financial Officer"
                     img={imgPortraitJimSparks}
                 />
                 <LeadershipItem

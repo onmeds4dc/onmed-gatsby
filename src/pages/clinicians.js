@@ -72,7 +72,7 @@ const CliniciansPage = ({ data }) => {
                     need it. When you work at OnMed, you’ll have more
                     flexibility compared to traditional hospitals and
                     brick-and-mortar clinics, without sacrificing the core
-                    principles of the clinician patient relationship. Now you
+                    principles of the clinician-patient relationship. Now you
                     can set your own schedule and even work from your home
                     office, utilizing our proprietary remote interactive
                     technology and tools.

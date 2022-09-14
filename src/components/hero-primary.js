@@ -1,5 +1,4 @@
 import React from "react";
-import Button from "react-bootstrap/Button";
 
 const HeroPrimary = (props) => {
     const imgXPosition = props.imgXPosition ? props.imgXPosition : "50%";
