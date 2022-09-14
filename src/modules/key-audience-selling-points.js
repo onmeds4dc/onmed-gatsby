@@ -8,7 +8,7 @@ const KeyAudienceSellingPoints = (props) => {
             <h2 className="text-center mb-5">
                 The OnMed Care Station Experience
             </h2>
-            <ListFigureGrid>
+            <ListFigureGrid hasIcons={true}>
                 <ListFigureGridItem
                     headline="Clean"
                     body={

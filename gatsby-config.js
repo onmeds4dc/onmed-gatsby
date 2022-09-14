@@ -4,8 +4,8 @@ require("dotenv").config({
 
 module.exports = {
     siteMetadata: {
-        title: `OnMed Gatsby`,
-        siteUrl: `https://www.yourdomain.tld`,
+        title: `OnMed - Reconnecting prople to better health`,
+        siteUrl: `https://onmed.com`,
     },
 
     plugins: [

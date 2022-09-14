@@ -17,7 +17,6 @@ const Layout = ({ pageTitle, children }) => {
         <>
             <Helmet>
                 <title>OnMed</title>
-                <script src="https://code.jquery.com/jquery-latest.min.js"></script>
 
                 <meta property="og:url" content="https://www.onmed.com" />
                 <meta property="og:type" content="website" />

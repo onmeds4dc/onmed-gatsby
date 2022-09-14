@@ -55,7 +55,7 @@ const PatientsPage = ({ data }) => {
             headline="Your vitals matter"
             body={
                 <p>
-                    OnMed’s care visit includes real-time measurement of your
+                    OnMed’s care visit includes real-time measurements of your
                     key vitals for an accurate diagnosis and treatment
                     experience. Your key health metrics are displayed instantly
                     on the screen.

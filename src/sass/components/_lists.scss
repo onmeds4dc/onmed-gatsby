@@ -64,13 +64,25 @@
             > * {
                 width: 130px;
 
-                @include media-breakpoint-up(lg) {
+                @include media-breakpoint-up(md) {
                     margin: auto;
-                    width: 190px;
+                    width: 80%;
                 }
             }
         }
         &--text {
+        }
+
+        &.list-figure-grid_has-icons {
+            .list-figure-grid--img {
+                > * {
+                    width: 110px;
+
+                    @include media-breakpoint-up(md) {
+                        width: 110px;
+                    }
+                }
+            }
         }
     }
 

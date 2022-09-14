@@ -20,29 +20,6 @@ import ContactForm from "../components/contact-form";
 import YouTube from "react-youtube";
 import Modal from "react-bootstrap/Modal";
 
-// import { jQuery } from "jquery";
-// import connections from "jquery-connections";
-// import * as $ from "jquery";
-
-// function dotsConnector() {
-//     $("#start").connections({
-//         to: "#end",
-//         class: "related",
-//     });
-
-//     var c = $("connection");
-//     setInterval(function () {
-//         c.connections("update");
-//     }, 100);
-
-//     setTimeout(() => {
-//         console.log($("connection"));
-//         $("connection").html(
-//             '<span class="dots-corner dots-corner-1"></span><span class="dots-corner dots-corner-2"></span>'
-//         );
-//     }, "2000");
-// }
-
 const IndexPage = ({ data }) => {
     const {
         wpPage: { title, content, featuredImage, pageHome, introBody },
@@ -53,7 +30,7 @@ const IndexPage = ({ data }) => {
             <div className="container section-home-intro--inner">
                 <div className="row justify-content-between gx-6">
                     <div className="col-md-7 col-lg-6 hex-and-dots--text">
-                        <div className="d-flex align-items-center">
+                        <div className="d-flex align-items-center text-center text-md-start ">
                             <div className="me-xl-4">
                                 <h1 className="text-primary mb-3">
                                     {pageHome.introHeadline}
@@ -129,13 +106,16 @@ const IndexPage = ({ data }) => {
     );
 
     const sectionHowItWorks = (
-        <section className="bg-cloud py-4 py-md-6 text-md-center">
+        <section className="bg-cloud py-6 text-md-center">
             <div className="container">
-                <h2 className="mt-lg-6">How it Works</h2>
-                <p className="lead mt-3">
-                    Getting Care at an OnMed Care Station is simple
-                </p>
-                <ListFigureGrid inlineArrows={true}>
+                <div className="text-center">
+                    <h2 className="mt-lg-6">How it Works</h2>
+                    <p className="lead mt-3">
+                        Getting Care at an OnMed Care Station is simple
+                    </p>
+                </div>
+
+                <ListFigureGrid>
                     <ListFigureGridItem
                         headline="Walk In"
                         body={
