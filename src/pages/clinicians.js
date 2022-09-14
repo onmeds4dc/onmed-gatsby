@@ -6,7 +6,6 @@ import imgQualifiedClinicians from "../../static/images/general/qualified-clinci
 import imgBetterAccess from "../../static/images/general/better-access.jpg";
 import imgMakeTheLivingroomp from "../../static/images/general/make-the-livingroom.jpg";
 import imgOnboarding from "../../static/images/general/onboarding-at-onmed.jpg";
-import ContactForm from "../components/contact-form";
 
 const CliniciansPage = ({ data }) => {
     const sectionHero = (
@@ -103,13 +102,6 @@ const CliniciansPage = ({ data }) => {
         />
     );
 
-    const sectionContact = (
-        <ContactForm
-            headline="You are the connection to better health"
-            body="OnMed is looking for certified and board eligible clinicians, and other pivotal roles across all functional areas of our organization. We're hiring right now in all 50 states, as well as Puerto Rico. "
-        />
-    );
-
     return (
         <Layout>
             {sectionHero}
@@ -117,7 +109,6 @@ const CliniciansPage = ({ data }) => {
             {sectionBetterAccess}
             {sectionMakeLiving}
             {sectionOnboarding}
-            {sectionContact}
         </Layout>
     );
 };

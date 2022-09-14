@@ -1,7 +1,6 @@
 import * as React from "react";
 import Layout from "../components/layout";
 import HeroPrimary from "../components/hero-primary";
-import ContactForm from "../components/contact-form";
 import CardColsSecondary from "../components/card-cols-secondary";
 import imgInnovation from "../../static/images/general/innovation-for-real.jpg";
 import imgPortraitTomVanderheyden from "../../static/images/portraits/tom-vanderheyden.jpg";
@@ -22,7 +21,12 @@ const LeadershipItem = (props) => {
         <div className="col-md-6 col-lg-4 mb-md-6">
             <img src={props.img} alt="" className="img-fluid" />
             <h5 className="mt-3 mb-0 text-primary">{props.name}</h5>
-            <p className="lead text-uppercase">{props.title}</p>
+            <p
+                className="lead text-uppercase"
+                dangerouslySetInnerHTML={{
+                    __html: props.title,
+                }}
+            ></p>
         </div>
     );
 };
@@ -130,7 +134,7 @@ const AboutPage = ({ data }) => {
                 />
                 <LeadershipItem
                     name="Patricia Agnello"
-                    title="Chief HR Officer"
+                    title="Chief HR Officer &amp; Employment Counsel"
                     img={imgPortraitPatriciaAgnello}
                 />
                 <LeadershipItem
@@ -144,29 +148,22 @@ const AboutPage = ({ data }) => {
                     img={imgPortraitSteveJohnston}
                 />
                 <LeadershipItem
-                    name="Leonard Solio"
-                    title="Board chair"
+                    name="Leonard Solie"
+                    title="Board Chair<br /> Founder"
                     img={imgPortraitLeonardSolio}
                 />
                 <LeadershipItem
                     name="Mark Royals"
-                    title="Board Member"
+                    title="Board Member<br /> Founder"
                     img={imgPortraitMarkRoyals}
                 />
                 <LeadershipItem
                     name="Robert Forsythe"
-                    title="Board Member"
+                    title="Board Member<br /> Third Lake Capital"
                     img={imgPortraitPlaceholder}
                 />
             </div>
         </section>
-    );
-
-    const sectionContact = (
-        <ContactForm
-            headline="You are the connection to better health"
-            body="OnMed is a fast growing mission-driven company. We are always looking for people who are interested in making a difference in healthcare and within the company. We are adding positions across all areas of our company. If you are interested in a career at OnMed, please send us your information. "
-        />
     );
 
     return (
@@ -175,7 +172,6 @@ const AboutPage = ({ data }) => {
             {sectionIntro}
             {sectionInnovation}
             {sectionLeadershipTeam}
-            {sectionContact}
         </Layout>
     );
 };
