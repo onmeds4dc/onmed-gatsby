@@ -1,6 +1,8 @@
-export const trackingFacebookPixel = `<!-- Facebook Pixel Code -->
-      
-<script>
+import React from "react";
+import { Script } from "gatsby";
+
+const trackingFacebookPixel = `
+<!-- Facebook Pixel Code -->
     !(function (f, b, e, v, n, t, s) {
         if (f.fbq) return;
         n = f.fbq = function () {
@@ -25,19 +27,10 @@ export const trackingFacebookPixel = `<!-- Facebook Pixel Code -->
         "https://connect.facebook.net/en_US/fbevents.js"
     );
     fbq("init", "322337645564245");
-    fbq("track", "PageView");
-</script>
-      <noscript>
-         <img
-        height="1"
-        width="1"
-        src="https://www.facebook.com/tr?id=322337645564245&ev=PageView&noscript=1"
-    />
-          </noscript
->`;
+    fbq("track", "PageView");`;
 
-export const trackingActiveCampaign = `<!-- ActiveCampaign -->
-<script type="text/javascript">
+const trackingActiveCampaign = `
+<!-- ActiveCampaign -->
 (function (e, t, o, n, p, r, i) {
     e.visitorGlobalObjectAlias = n;
     e[e.visitorGlobalObjectAlias] =
@@ -62,10 +55,10 @@ vgo("setAccount", "68450342");
 vgo("setTrackByDefault", true);
 
 vgo("process");
-</script>`;
+`;
 
-export const trackingAccessibility = `<!-- Accessibility Code for "onmed.com" -->
-<script>
+const trackingAccessibility = `
+<!-- Accessibility Code for "onmed.com" -->
 window.interdeal = {
     sitekey: "09c07391dee5e65c1eff38c8656a13c7",
     Position: "Right",
@@ -97,10 +90,10 @@ window.interdeal = {
     coreCall.setAttribute("data-cfasync", true);
     body ? body.appendChild(coreCall) : head.appendChild(coreCall);
 })(document, document.head, document.body);
-</script>`;
+`;
 
-export const trackingZoom = `<!-------Zoom Info------>
-<script>
+const trackingZoom = `<!-------Zoom Info------>
+
 (function () {
     var zi = document.createElement("script");
     zi.type = "text/javascript";
@@ -110,33 +103,52 @@ export const trackingZoom = `<!-------Zoom Info------>
     var s = document.getElementsByTagName("script")[0];
     s.parentNode.insertBefore(zi, s);
 })();
-</script>
+`;
 
-<noscript>
-<img
-    src="https://ws.zoominfo.com/pixel/6306496cf89d68d453b8c302"
-    width="1"
-    height="1"
-    style="display: none"
-    alt="websights"
-/>
-</noscript>`;
+const trackingGoogleAnalyticsLink = `https://www.googletagmanager.com/gtag/js?id=UA-135158659-1`;
 
-export const trackingGoogle = `<!---------------GOOGLE ANALYTICS------------->
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=UA-135158659-1"
-></script>
-<script>
+const trackingGoogleAnalytics = `
+<!---------------GOOGLE ANALYTICS------------->
     window.dataLayer = window.dataLayer || [];
     function gtag() {
         dataLayer.push(arguments);
     }
     gtag("js", new Date());
 
-    gtag("config", "UA-135158659-1");
-</script>`;
+    gtag("config", "UA-135158659-1");`;
 
-// export const connectionsScripts = `<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+// const connectionsScripts = `<script src="https://code.jquery.com/jquery-latest.min.js"></script>
 // <script src="https://musclesoft.github.io/jquery-connections/jquery.connections.js"></script>`;
+
+const SiteScripts = (props) => {
+    return (
+        <>
+            <Script
+                id="tracking-facebook-pixel"
+                dangerouslySetInnerHTML={{ __html: trackingFacebookPixel }}
+            />
+            <Script
+                id="tracking-active-campaign"
+                dangerouslySetInnerHTML={{ __html: trackingActiveCampaign }}
+            />
+            <Script
+                id="tracking-accessibility-equalweb"
+                dangerouslySetInnerHTML={{ __html: trackingFacebookPixel }}
+            />
+            <Script
+                id="tracking-zoom"
+                dangerouslySetInnerHTML={{ __html: trackingZoom }}
+            />
+            <Script
+                id="tracking-google-analytics-link"
+                src={trackingGoogleAnalyticsLink}
+            />
+            <Script
+                id="tracking-google-analytics"
+                dangerouslySetInnerHTML={{ __html: trackingGoogleAnalytics }}
+            />
+        </>
+    );
+};
+
+export default SiteScripts;

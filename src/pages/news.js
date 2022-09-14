@@ -2,6 +2,7 @@ import * as React from "react";
 import Layout from "../components/layout";
 import HeroPrimary from "../components/hero-primary";
 import { Link } from "gatsby";
+import MetaTags from "../components/meta-tags";
 
 const NewsItem = (props) => {
     const category = props.category
@@ -84,3 +85,10 @@ const NewsPage = ({ data }) => {
 };
 
 export default NewsPage;
+
+export const Head = () => (
+    <>
+        <title>News about OnMed</title>
+        <MetaTags></MetaTags>
+    </>
+);

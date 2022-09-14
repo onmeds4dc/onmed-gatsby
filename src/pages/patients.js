@@ -6,6 +6,7 @@ import imgWalkinsWelcome from "../../static/images/general/walkins-welcome.jpg";
 import imgYourVitalsMatter from "../../static/images/general/booth-woman-vitals.jpg";
 import imgMedsInMinutes from "../../static/images/general/pill-bottles-in-booth.jpg";
 import KeyAudienceSellingPoints from "../modules/key-audience-selling-points";
+import MetaTags from "../components/meta-tags";
 
 const PatientsPage = ({ data }) => {
     const sectionHero = (
@@ -86,3 +87,10 @@ const PatientsPage = ({ data }) => {
 };
 
 export default PatientsPage;
+
+export const Head = () => (
+    <>
+        <title>Patients - OnMed</title>
+        <MetaTags></MetaTags>
+    </>
+);

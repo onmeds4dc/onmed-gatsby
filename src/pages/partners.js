@@ -8,6 +8,7 @@ import SvgNewWindow from "../components/svgs/new-window";
 import imgCareOnSite from "../../static/images/general/care-for-anyone.jpg";
 import imgEasySetup from "../../static/images/general/booth.jpg";
 import { Link } from "gatsby";
+import MetaTags from "../components/meta-tags";
 
 const PartnersPage = ({ data }) => {
     const sectionHero = (
@@ -219,3 +220,10 @@ const PartnersPage = ({ data }) => {
 };
 
 export default PartnersPage;
+
+export const Head = () => (
+    <>
+        <title>Partners - OnMed</title>
+        <MetaTags></MetaTags>
+    </>
+);

@@ -1,5 +1,6 @@
 import * as React from "react";
 import Layout from "../components/layout";
+import MetaTags from "../components/meta-tags";
 import HeroPrimary from "../components/hero-primary";
 import CardColsSecondary from "../components/card-cols-secondary";
 import imgQualifiedClinicians from "../../static/images/general/qualified-clincians.jpg";
@@ -114,3 +115,10 @@ const CliniciansPage = ({ data }) => {
 };
 
 export default CliniciansPage;
+
+export const Head = () => (
+    <>
+        <title>Clinicians - OnMed</title>
+        <MetaTags></MetaTags>
+    </>
+);
