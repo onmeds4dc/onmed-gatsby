@@ -86,16 +86,15 @@ const IndexPage = ({ data }) => {
                                 The OnMed Care Station provides a more
                                 personalized virtual care experience and
                                 connects patients directly with live certified
-                                clinicians whenever they need it. Our Care
-                                Station is open provide comprehensive virtual
-                                care services 7 days a week with extended hours,
-                                when and where patients need it most, with no
-                                appointment needed. Every examination is
-                                one-on-one in real-time, and we can address 85%
-                                of a typical Primary Care visit, including all
-                                key biometrics and vitals. Patients can also
-                                receive needed Over The Counter (OTC) and most
-                                prescription medications at the time of visit.
+                                clinicians whenever they need it. All OnMed Care
+                                Stations are available 7 days a week with
+                                extended hours and no appointment needed. Every
+                                examination is one-on-one in real-time, and we
+                                can address 85% of a typical Primary Care visit,
+                                including all key biometrics and vitals.
+                                Patients can also receive needed Over The
+                                Counter (OTC) and most prescription medications
+                                at the time of visit.
                             </p>
                             <div className="mt-6">
                                 <Video />
