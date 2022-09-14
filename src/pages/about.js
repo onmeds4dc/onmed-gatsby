@@ -1,5 +1,6 @@
 import * as React from "react";
 import Layout from "../components/layout";
+import MetaTags from "../components/meta-tags";
 import HeroPrimary from "../components/hero-primary";
 import ContactForm from "../components/contact-form";
 import CardColsSecondary from "../components/card-cols-secondary";
@@ -181,3 +182,10 @@ const AboutPage = ({ data }) => {
 };
 
 export default AboutPage;
+
+export const Head = () => (
+    <>
+        <title>About and Leadership Team - OnMed</title>
+        <MetaTags></MetaTags>
+    </>
+);

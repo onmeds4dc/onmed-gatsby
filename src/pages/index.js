@@ -19,6 +19,7 @@ import ListFigureGridItem from "../components/list-figure-grid-item";
 import ContactForm from "../components/contact-form";
 import YouTube from "react-youtube";
 import Modal from "react-bootstrap/Modal";
+import MetaTags from "../components/meta-tags";
 
 const IndexPage = ({ data }) => {
     const {
@@ -407,3 +408,10 @@ export const pageQuery = graphql`
         }
     }
 `;
+
+export const Head = () => (
+    <>
+        <title>OnMed Station - Instant Med Solutions Clinician Access</title>
+        <MetaTags></MetaTags>
+    </>
+);
