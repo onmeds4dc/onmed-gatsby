@@ -4,8 +4,8 @@ require("dotenv").config({
 
 module.exports = {
     siteMetadata: {
-        title: `OnMed Gatsby`,
-        siteUrl: `https://www.yourdomain.tld`,
+        title: `OnMed - Reconnecting prople to better health`,
+        siteUrl: `https://onmed.com`,
     },
 
     plugins: [
@@ -15,7 +15,7 @@ module.exports = {
                 url:
                     process.env.WPGRAPHQL_URL ||
                     `https://onmed-cms.com/graphql/`,
-                useAcf: true,
+                useACF: true,
             },
         },
         {

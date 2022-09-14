@@ -26,7 +26,7 @@ const MenuFooter = (props) => {
         <Navbar expand="md" className={props.className}>
             <Nav className="me-auto" defaultActiveKey="/">
                 {menuHierarchical.map((menuItem, i) => (
-                    <Nav.Link key={`menu-${i}`} href={menuItem.url}>
+                    <Nav.Link key={`menu-${i}`} href={menuItem.path}>
                         {menuItem.label}
                     </Nav.Link>
                 ))}

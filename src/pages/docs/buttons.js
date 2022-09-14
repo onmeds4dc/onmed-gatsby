@@ -85,7 +85,7 @@ const DocsButtons = () => {
         <>
             <section className="docs docs__section">
                 <h2 className="mt-2">Buttons</h2>
-                <table class="table">
+                <table className="table">
                     <thead>
                         <tr>
                             <th></th>

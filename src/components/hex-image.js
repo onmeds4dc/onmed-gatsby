@@ -1,5 +1,4 @@
 import React from "react";
-import Button from "react-bootstrap/Button";
 
 const HexImage = (props) => {
     const classNameCompiled = "mask-image--hex " + props.className;

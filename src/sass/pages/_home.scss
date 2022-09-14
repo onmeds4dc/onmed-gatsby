@@ -1,0 +1,9 @@
+.section-home-intro {
+    overflow-x: clip;
+    @include media-breakpoint-up(xl) {
+        overflow-y: visible;
+    }
+    &--inner {
+        padding-top: $menu-primary-height;
+    }
+}

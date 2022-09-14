@@ -4,11 +4,14 @@ import React from "react";
 import SiteLogo from "./site-logo";
 import MenuHeader from "./menu-header";
 
-const Header = () => {
+const Header = ({ pageTitle }) => {
+    const classes = pageTitle ? `page-${pageTitle.toLowerCase()}` : "";
     return (
-        <header className="bg-cloud py-4">
-            <div className="container">
-                <div className="d-flex justify-content-between">
+        <header
+            className={`py-2  menu-header-wrapper d-flex align-items-center ${classes}`}
+        >
+            <div className="container ">
+                <div className="d-flex justify-content-between align-items-center">
                     <Link to="/" className="text-light d-flex">
                         <SiteLogo />
                     </Link>
