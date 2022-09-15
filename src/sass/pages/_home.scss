@@ -1,5 +1,7 @@
 .section-home-intro {
-    overflow-x: clip;
+    @include media-breakpoint-down(md) {
+        overflow-x: hidden;
+    }
     @include media-breakpoint-up(xl) {
         overflow-y: visible;
     }
