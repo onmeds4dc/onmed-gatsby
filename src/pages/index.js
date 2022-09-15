@@ -221,7 +221,7 @@ const IndexPage = ({ data }) => {
                             customers, because we’ve created a new way for
                             clinicians to serve and connect with patients, in
                             real-time, through a life-sized virtual experience.
-                            We also provide medical grade diagnostics so you can
+                            We also provide medical-grade diagnostics so you can
                             give real professional care. Our OnMed Care Stations
                             even allow you to prescribe and dispense most
                             prescriptions and over-the-counter medications
@@ -260,7 +260,7 @@ const IndexPage = ({ data }) => {
                         employees, business patrons, or even students on campus.
                         Our OnMed Care Station can be customized to your brand
                         and features a modern design that’s sleek and
-                        aesthetically pleasing. It’s also cost effective
+                        aesthetically pleasing. It’s also cost-effective
                         compared to brick-and-mortar Primary Care, including
                         hospitals and clinics. OnMed is the anywhere healthcare
                         whenever you need it most.

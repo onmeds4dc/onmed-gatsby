@@ -61,8 +61,8 @@ const NewsPage = ({ data }) => {
                     slug="tuskegee-university"
                 />
                 <NewsItem
-                    title="Purchasing Solutions Alliance Awards Telehealth Clinic to OnMed"
-                    body="OnMed has been selected to provide Telehealth Clinics services to non-profit and governmental agencies..."
+                    title="Purchasing Solutions Alliance awards Virtual Health Clinics contract to OnMed"
+                    body="OnMed has been selected to provide Virtual Health Clinics and Services to PSA Public Agency members..."
                     img="/images/news/purchasing-solutions-alliance.jpg"
                     slug="purchasing-solutions-alliance"
                 />

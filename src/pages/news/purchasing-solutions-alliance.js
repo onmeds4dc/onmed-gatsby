@@ -7,7 +7,7 @@ import MetaTags from "../../components/meta-tags";
 const sectionHero = (
     <HeroPrimary
         classNames="mb-5 mb-md-6"
-        title="Purchasing Solutions Alliance Awards Telehealth Clinic to OnMed "
+        title="Purchasing Solutions Alliance awards Virtual Health Clinics contract to OnMed"
         heroSecondary={true}
     />
 );
@@ -19,8 +19,8 @@ const NewStoryPurchasingSolutionsAlliance = ({ data }) => {
             <NewsStory
                 lead={
                     <p>
-                        OnMed has been selected to provide Telehealth Clinics
-                        services to non-profit and governmental agencies.
+                        OnMed has been selected to provide Virtual Health
+                        Clinics and Services to PSA Public Agency members.
                     </p>
                 }
                 img="/images/logos/purchasing-solutions-alliance.png"

@@ -28,11 +28,11 @@ const PartnersPage = ({ data }) => {
                     OnMed is a convenient virtual healthcare solution for
                     sponsor partners including Government Agencies, Payers,
                     Providers, Large Employers, Colleges and Universities and
-                    high traffic venues. We deliver sponsors and patients with a
+                    high-traffic venues. We deliver sponsors and patients with a
                     meaningful cost-saving solution for the challenges of the
-                    current brick and mortar Primary Care delivery model. OnMed
+                    current brick-and-mortar Primary Care delivery model. OnMed
                     can deliver care to communities and patients where access
-                    and availability is difficult, even in rural and remote
+                    and availability are difficult, even in rural and remote
                     areas.
                 </p>
             }
@@ -47,11 +47,10 @@ const PartnersPage = ({ data }) => {
             body={
                 <p>
                     OnMed Care Stations are easy to install and provide
-                    comprehensive virtual care services provide comprehensive
-                    virtual care services 7 days a week with extended hours,
-                    when and where patients need it most. Simple and modern
-                    design, with almost no physical requirements - just an
-                    outlet and an internet connection.
+                    comprehensive virtual care services 7 days a week with
+                    extended hours, when and where patients need it most. Simple
+                    and modern design, with almost no physical requirements -
+                    just an outlet and an internet connection.
                 </p>
             }
             img={<img src={imgEasySetup} alt="" className="img-fluid" />}
@@ -122,7 +121,7 @@ const PartnersPage = ({ data }) => {
                             dedicated high-speed internet connection and power
                             outlet. The Care Station operates in common indoor
                             HVAC controlled conditions which is secure and
-                            monitored. For custom installed locations, other
+                            monitored. For custom-installed locations, other
                             than a free-standing location, OnMed requires
                             additional implementation time and potential fees.
                         </dd>
