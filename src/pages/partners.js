@@ -47,10 +47,11 @@ const PartnersPage = ({ data }) => {
             body={
                 <p>
                     OnMed Care Stations are easy to install and provide
-                    comprehensive virtual care services 24/7, when and where
-                    patients need it most. Simple and modern design, with almost
-                    no physical requirements - just an outlet and an internet
-                    connection.
+                    comprehensive virtual care services provide comprehensive
+                    virtual care services 7 days a week with extended hours,
+                    when and where patients need it most. Simple and modern
+                    design, with almost no physical requirements - just an
+                    outlet and an internet connection.
                 </p>
             }
             img={<img src={imgEasySetup} alt="" className="img-fluid" />}

@@ -205,6 +205,7 @@ const IndexPage = ({ data }) => {
                     />
                 }
                 imgAlignRight={false}
+                imgFlush={true}
             />
         </section>
     );
@@ -240,6 +241,7 @@ const IndexPage = ({ data }) => {
                         />
                     }
                     imgAlignRight={true}
+                    imgFlush={true}
                 />
             </div>
         </section>
@@ -273,6 +275,7 @@ const IndexPage = ({ data }) => {
                     <img src={imgWomanCurlyHair} alt="" className="img-fluid" />
                 }
                 imgAlignRight={false}
+                imgFlush={true}
             />
 
             <div className="testimonial-wrapper row">
