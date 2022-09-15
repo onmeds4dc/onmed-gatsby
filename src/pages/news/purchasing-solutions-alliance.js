@@ -2,6 +2,7 @@ import * as React from "react";
 import Layout from "../../components/layout";
 import HeroPrimary from "../../components/hero-primary";
 import NewsStory from "../../components/news-story";
+import MetaTags from "../../components/meta-tags";
 
 const sectionHero = (
     <HeroPrimary
@@ -88,3 +89,10 @@ const NewStoryPurchasingSolutionsAlliance = ({ data }) => {
 };
 
 export default NewStoryPurchasingSolutionsAlliance;
+
+export const Head = () => (
+    <>
+        <title>Purchasing Solutions Alliance News Story - OnMed</title>
+        <MetaTags></MetaTags>
+    </>
+);

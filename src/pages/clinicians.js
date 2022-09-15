@@ -1,12 +1,12 @@
 import * as React from "react";
 import Layout from "../components/layout";
+import MetaTags from "../components/meta-tags";
 import HeroPrimary from "../components/hero-primary";
 import CardColsSecondary from "../components/card-cols-secondary";
 import imgQualifiedClinicians from "../../static/images/general/qualified-clincians.jpg";
 import imgBetterAccess from "../../static/images/general/better-access.jpg";
 import imgMakeTheLivingroomp from "../../static/images/general/make-the-livingroom.jpg";
 import imgOnboarding from "../../static/images/general/onboarding-at-onmed.jpg";
-import ContactForm from "../components/contact-form";
 
 const CliniciansPage = ({ data }) => {
     const sectionHero = (
@@ -103,13 +103,6 @@ const CliniciansPage = ({ data }) => {
         />
     );
 
-    const sectionContact = (
-        <ContactForm
-            headline="You are the connection to better health"
-            body="OnMed is looking for certified and board eligible clinicians, and other pivotal roles across all functional areas of our organization. We're hiring right now in all 50 states, as well as Puerto Rico. "
-        />
-    );
-
     return (
         <Layout>
             {sectionHero}
@@ -117,9 +110,15 @@ const CliniciansPage = ({ data }) => {
             {sectionBetterAccess}
             {sectionMakeLiving}
             {sectionOnboarding}
-            {sectionContact}
         </Layout>
     );
 };
 
 export default CliniciansPage;
+
+export const Head = () => (
+    <>
+        <title>Clinicians - OnMed</title>
+        <MetaTags></MetaTags>
+    </>
+);

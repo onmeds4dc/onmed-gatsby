@@ -206,6 +206,9 @@ $btn-font-size: $input-btn-font-size;
 
 // Menus and Navs
 $navbar-nav-link-padding-x: $spacing-3;
+$navbar-light-color: $primary;
+$navbar-light-toggler-border-color: transparent;
+$navbar-toggler-padding-x: 0;
 
 // Backgrounds
 $bg-half-horz-cloud-white: linear-gradient(0deg, #ffff 50%, $cloud 50%);

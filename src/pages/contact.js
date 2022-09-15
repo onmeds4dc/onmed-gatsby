@@ -2,6 +2,7 @@ import * as React from "react";
 import Layout from "../components/layout";
 import HeroPrimary from "../components/hero-primary";
 import ContactFormIFrame from "../components/contact-form-iframe";
+import MetaTags from "../components/meta-tags";
 
 const AboutPage = ({ data }) => {
     const sectionHero = (
@@ -36,3 +37,10 @@ const AboutPage = ({ data }) => {
 };
 
 export default AboutPage;
+
+export const Head = () => (
+    <>
+        <title>Contact - OnMed</title>
+        <MetaTags></MetaTags>
+    </>
+);

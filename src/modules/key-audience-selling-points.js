@@ -51,7 +51,7 @@ const KeyAudienceSellingPoints = (props) => {
                     body={
                         <p>
                             Works with major insurance and only a fraction of
-                            the cost of a traditional visit
+                            the cost of a traditional doctor's office visit
                         </p>
                     }
                     img={
@@ -66,7 +66,7 @@ const KeyAudienceSellingPoints = (props) => {
                     body={
                         <p>
                             HIPAA compliant transfer and storage of all patient
-                            data using advanced encryption tech
+                            data using advanced encryption technology
                         </p>
                     }
                     img={<img src="/icons/icon-lock.svg" alt="Lock icon" />}
@@ -75,8 +75,8 @@ const KeyAudienceSellingPoints = (props) => {
                     headline="Convenient"
                     body={
                         <p>
-                            Open 24/7 for consultations and no appointment
-                            needed
+                            Open 7 days a week with extended hours and no
+                            appointment needed
                         </p>
                     }
                     img={<img src="/icons/icon-clock.svg" alt="Clock icon" />}
