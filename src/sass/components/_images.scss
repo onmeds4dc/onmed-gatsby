@@ -130,21 +130,16 @@ $img-hex-width: 112px;
         }
     }
 
-    &:before {
-        @include media-breakpoint-up(xl) {
-            content: " ";
-            display: block;
-            position: absolute;
-            aspect-ratio: 1227 / 1523;
-            width: 1013px;
-            z-index: 3;
-            top: -3px;
-            right: 0;
-            background-image: url("/images/backgrounds/hex-and-dots.webp");
-            background-repeat: no-repeat;
-            background-size: cover;
+    &--bg {
+        position: absolute;
+        aspect-ratio: 1227 / 1523;
+        width: 1013px;
+        z-index: 3;
+        top: -3px;
+        right: 0;
+        @include media-breakpoint-down(xl) {
+            display: none;
         }
-
         @include media-breakpoint-up(xxl) {
             width: 1227px;
             top: 0;
