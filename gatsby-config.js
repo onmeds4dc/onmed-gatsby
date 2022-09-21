@@ -54,5 +54,6 @@ module.exports = {
         `gatsby-transformer-sharp`,
         "gatsby-plugin-image",
         "gatsby-plugin-sass",
+        `gatsby-plugin-client-side-redirect`, // keep it in last in list
     ],
 };
