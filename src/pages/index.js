@@ -32,7 +32,7 @@ const IndexPage = ({ data }) => {
     const sectionIntro = (
         <section className="section-home-intro bg-cloud pt-4 py-md-6">
             <div className="container section-home-intro--inner">
-                <div className="row justify-content-between gx-6">
+                <div className="row justify-content-between">
                     <div className="col-md-7 col-lg-6 hex-and-dots--text">
                         <div className="d-flex align-items-center text-center text-md-start ">
                             <div className="me-xl-4">
@@ -75,17 +75,17 @@ const IndexPage = ({ data }) => {
         <section className="bg-hex-dark-many">
             <div className="container py-4 py-md-6">
                 <div className="row justify-content-between mt-lg-6 pt-lg-6">
-                    <div className="col-lg-6 col-xxl-6 d-none d-lg-block">
+                    <div className="col-lg-6 d-none d-lg-block">
                         <div id="start">
-                            <ImgWomanThouchscreen
+                            {/* <ImgWomanThouchscreen
                                 alt="Woman with touch screen watching video of woman in station"
                                 className="hex-and-dots--img mask-image--hex"
-                            />
+                            /> */}
                         </div>
                     </div>
 
-                    <div className="col-lg-6 col-xxl-6 hex-and-dots--text">
-                        <div className="ms-lg-6">
+                    <div className="col-lg-6 hex-and-dots--text">
+                        <div className="ms-md-4 ms-xl-6">
                             <h2 className="text-primary">
                                 We create real connections between patients and
                                 clinicians, virtually anywhere
