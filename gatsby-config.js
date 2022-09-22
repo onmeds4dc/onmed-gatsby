@@ -24,8 +24,8 @@ module.exports = {
                 defaults: {
                     formats: [`auto`],
                     placeholder: `dominantColor`,
-                    quality: 50,
-                    breakpoints: [750, 1080, 1366, 1920],
+                    quality: 80,
+                    breakpoints: [768, 992, 1200, 1400],
                     backgroundColor: `transparent`,
                     tracedSVGOptions: {},
                     blurredOptions: {},

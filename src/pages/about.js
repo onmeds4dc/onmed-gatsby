@@ -16,6 +16,9 @@ import imgPortraitMalienaLongley from "../../static/images/portraits/maliena-lon
 import imgPortraitJimSparks from "../../static/images/portraits/jim-sparks.jpg";
 import imgPortraitHowardGruverman from "../../static/images/portraits/howard-gruverman.jpg";
 import imgPortraitChrisKent from "../../static/images/portraits/chris-kent.jpg";
+import { ImgHeroWomanScreenWomanTouchscreen } from "../components/images/heroes/woman-screen-woman-touchscreen";
+
+import Hero from "../components/hero";
 
 const LeadershipItem = (props) => {
     return (
@@ -34,12 +37,16 @@ const LeadershipItem = (props) => {
 
 const AboutPage = ({ data }) => {
     const sectionHero = (
-        <HeroPrimary
-            classNames="mb-5 mb-md-6"
-            title="Our story"
-            img="/images/heroes/woman-screen-woman-touchscreen.jpg"
-            imgXPosition="27%"
-        />
+        <Hero
+            img={
+                <ImgHeroWomanScreenWomanTouchscreen
+                    alt="Our story"
+                    position="27% 50%"
+                />
+            }
+        >
+            Step into the future of healthcare
+        </Hero>
     );
 
     const sectionIntro = (

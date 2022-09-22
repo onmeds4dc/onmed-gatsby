@@ -1,22 +1,26 @@
 import * as React from "react";
 import Layout from "../components/layout";
 import MetaTags from "../components/meta-tags";
-import HeroPrimary from "../components/hero-primary";
+import Hero from "../components/hero";
 import CardColsSecondary from "../components/card-cols-secondary";
 import imgQualifiedClinicians from "../../static/images/general/qualified-clincians.jpg";
 import imgBetterAccess from "../../static/images/general/better-access.jpg";
 import imgMakeTheLivingroomp from "../../static/images/general/make-the-livingroom.jpg";
 import imgOnboarding from "../../static/images/general/onboarding-at-onmed.jpg";
+import { ImgHeroWomanScreenManPills } from "../components/images/heroes/woman-screen-man-pills";
 
 const CliniciansPage = ({ data }) => {
     const sectionHero = (
-        <HeroPrimary
-            classNames="mb-5 mb-md-6"
-            title="A real connection"
-            img="/images/heroes/woman-screen-man-pills-sm.jpg"
-            imgXPosition="10%"
-            imgYPosition="70%"
-        />
+        <Hero
+            img={
+                <ImgHeroWomanScreenManPills
+                    alt="A real connection"
+                    position="50% 77%"
+                />
+            }
+        >
+            A real connection
+        </Hero>
     );
 
     const sectionQualifiedClinicians = (

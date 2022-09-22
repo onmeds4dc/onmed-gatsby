@@ -3,15 +3,16 @@ import Layout from "../components/layout";
 import HeroPrimary from "../components/hero-primary";
 import ContactFormIFrame from "../components/contact-form-iframe";
 import MetaTags from "../components/meta-tags";
+import Hero from "../components/hero";
+import { ImgHeroManTouchscreen } from "../components/images/heroes/man-touchscreen";
 
 const AboutPage = ({ data }) => {
     const sectionHero = (
-        <HeroPrimary
-            classNames="mb-5 mb-md-6"
-            title="Contact us"
-            img="/images/heroes/man-touch-screen.jpg"
-            imgYPosition="90%"
-        />
+        <Hero
+            img={<ImgHeroManTouchscreen alt="Contact us" position="90% 50%" />}
+        >
+            News
+        </Hero>
     );
 
     const sectionContact = (

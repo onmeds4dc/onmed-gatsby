@@ -1,15 +1,14 @@
 import * as React from "react";
 import Layout from "../../components/layout";
-import HeroPrimary from "../../components/hero-primary";
+import Hero from "../../components/hero";
 import NewsStory from "../../components/news-story";
 import MetaTags from "../../components/meta-tags";
 
 const sectionHero = (
-    <HeroPrimary
-        classNames="mb-5 mb-md-6"
-        title="Purchasing Solutions Alliance awards Virtual Health Clinics contract to OnMed"
-        heroSecondary={true}
-    />
+    <Hero heroSecondary={true}>
+        Purchasing Solutions Alliance awards Virtual Health Clinics contract to
+        OnMed
+    </Hero>
 );
 
 const NewStoryPurchasingSolutionsAlliance = ({ data }) => {

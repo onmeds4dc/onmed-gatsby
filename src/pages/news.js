@@ -3,6 +3,8 @@ import Layout from "../components/layout";
 import HeroPrimary from "../components/hero-primary";
 import { Link } from "gatsby";
 import MetaTags from "../components/meta-tags";
+import Hero from "../components/hero";
+import { ImgHeroGrabbingPillBottles } from "../components/images/heroes/grabbing-pill-bottles";
 
 const NewsItem = (props) => {
     const category = props.category
@@ -41,12 +43,11 @@ const NewsItem = (props) => {
 
 const NewsPage = ({ data }) => {
     const sectionHero = (
-        <HeroPrimary
-            classNames="mb-5 mb-md-6"
-            title="News"
-            img="/images/heroes/grabbing-pill-bottles.jpg"
-            imgXPosition="60%"
-        />
+        <Hero
+            img={<ImgHeroGrabbingPillBottles alt="News" position="60% 50%" />}
+        >
+            News
+        </Hero>
     );
 
     const sectionOnMedNews = (
