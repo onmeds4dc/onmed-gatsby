@@ -234,7 +234,10 @@ const IndexPage = ({ data }) => {
                     }
                     cta={
                         <a href="/clinicians/" className="btn-arrow">
-                            Learn more
+                            Learn more{" "}
+                            <span className="visually-hidden">
+                                about clinicians
+                            </span>
                         </a>
                     }
                     img={<ImgWomanLabCoat alt="Woman in a lab coat" />}
@@ -267,6 +270,7 @@ const IndexPage = ({ data }) => {
                 cta={
                     <a href="/partners/" className="btn-arrow">
                         Learn more
+                        <span className="visually-hidden">about partners</span>
                     </a>
                 }
                 img={<ImgWomanCurlyHair alt="Woman in a business meeting" />}
