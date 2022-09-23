@@ -6,7 +6,8 @@ export function ImgWomanThouchscreen(props) {
         <StaticImage
             src="../../../static/images/general/woman-lab-coat-touchscreen.jpg"
             alt={props.alt}
-            className={`img-fluid ${props.className}`}
+            className={props.className}
+            layout="fullWidth"
         />
     );
 }

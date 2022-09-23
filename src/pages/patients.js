@@ -1,9 +1,8 @@
 import * as React from "react";
 import Layout from "../components/layout";
-import HeroPrimary from "../components/hero-primary";
 import CardColsSecondary from "../components/card-cols-secondary";
 
-import { ImgHeroManOfficeChair } from "../components/images/hero-man-office-chair";
+import { ImgHeroBoothScreenStethoscope } from "../components/images/heroes/booth-screen-stethoscope";
 import { ImgWalkinsWelcome } from "../components/images/walkins-welcome";
 import { ImgBoothWomanVitals } from "../components/images/booth-woman-vitals";
 import { ImgPillBottlesInBooth } from "../components/images/pill-bottles-in-booth";
@@ -14,17 +13,16 @@ import Hero from "../components/hero";
 
 const PatientsPage = ({ data }) => {
     const sectionHero = (
-        <>
-            <Hero img={<ImgHeroManOfficeChair alt="ALT" positions="60% 50%" />}>
-                Step into the future of healthcare
-            </Hero>
-            {/* <HeroPrimary
-                classNames="mb-5 mb-md-6"
-                title="Step into the future of healthcare"
-                img="/images/heroes/booth-screen-stethoscope.jpg"
-                imgXPosition="60%"
-            /> */}
-        </>
+        <Hero
+            img={
+                <ImgHeroBoothScreenStethoscope
+                    alt="Step into the future of healthcare"
+                    positions="60% 50%"
+                />
+            }
+        >
+            Step into the future of healthcare
+        </Hero>
     );
 
     const sectionWalkIn = (

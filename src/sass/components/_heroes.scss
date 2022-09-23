@@ -20,11 +20,7 @@
     min-height: $hero-height;
     &--secondary {
         min-height: $hero-height-secondary;
-    }
-
-    @include media-breakpoint-up(sm) {
-        padding-top: $menu-primary-height; // Because the menu is sticky
-        padding-bottom: $spacing-4;
+        background-color: $primary;
     }
 
     &--bg-img {
@@ -38,13 +34,6 @@
         > *,
         & img {
             height: 100%;
-        }
-
-        & img {
-            // object-fit: cover;
-            // object-position: 50% 50%;
-
-            // width: 100%;
         }
     }
 
@@ -61,5 +50,9 @@
         justify-content: center;
         align-items: center;
         text-align: center;
+        @include media-breakpoint-up(lg) {
+            padding-top: $menu-primary-height; // Because the menu is sticky
+            padding-bottom: $spacing-4;
+        }
     }
 }

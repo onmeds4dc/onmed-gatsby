@@ -6,7 +6,8 @@ export function ImgManBoothPills(props) {
         <StaticImage
             src="../../../static/images/general/man-booth-pills.jpg"
             alt={props.alt}
-            className={`img-fluid ${props.className}`}
+            className={props.className}
+            layout="fullWidth"
         />
     );
 }
