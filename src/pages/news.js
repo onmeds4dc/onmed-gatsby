@@ -1,10 +1,12 @@
 import * as React from "react";
 import Layout from "../components/layout";
-import HeroPrimary from "../components/hero-primary";
 import { Link } from "gatsby";
 import MetaTags from "../components/meta-tags";
 import Hero from "../components/hero";
 import { ImgHeroGrabbingPillBottles } from "../components/images/heroes/grabbing-pill-bottles";
+import { ImgNewsTuskegee } from "../components/images/news/tuskegee";
+import { ImgNewsPurchasingSolutionsAlliance } from "../components/images/news/purchasing-solutions-alliance";
+import { ImgNewsAuburnTigers } from "../components/images/news/auburn-tigers";
 
 const NewsItem = (props) => {
     const category = props.category
@@ -15,12 +17,11 @@ const NewsItem = (props) => {
         ? props.body
         : "Donec sed odio dui. Sed posuere consectetur est at lobortis. Fusce dapibus, tellus ac cursus commodo, tortor mauri.";
     const author = props.author ? props.author : "";
-    const img = props.img ? props.img : "/images/news/placeholder.jpg";
     const date = props.date ? props.date : "";
 
     return (
         <div className="col-md-6 my-5 my-md-6 position-relative">
-            <img src={img} alt={title} className="img-fluid mb-4" />
+            {props.img}
 
             {category}
 
@@ -58,19 +59,21 @@ const NewsPage = ({ data }) => {
                     title="Tuskegee University and OnMed Announce Partnership to Deliver Innovative Virtual Care Clinic and Services"
                     body="Tuskegee University, a preeminent Historical Black College and University (HBCU), has partnered with Virtual Health..."
                     date="September 09, 2022"
-                    img="/images/news/tuskegee.jpg"
+                    img={<ImgNewsTuskegee className="mb-4" />}
                     slug="tuskegee-university"
                 />
                 <NewsItem
                     title="Purchasing Solutions Alliance awards Virtual Health Clinics contract to OnMed"
                     body="OnMed has been selected to provide Virtual Health Clinics and Services to PSA Public Agency members..."
-                    img="/images/news/purchasing-solutions-alliance.jpg"
+                    img={
+                        <ImgNewsPurchasingSolutionsAlliance className="mb-4" />
+                    }
                     slug="purchasing-solutions-alliance"
                 />
                 <NewsItem
                     title="OnMed will Partner with Auburn University for Rural Health Project"
                     body="OnMed will partner with Auburn University, along with the city of LaFayette and the Chambers County Commission to offer a wide variety of health and wellness services to the community..."
-                    img="/images/news/auburn-tigers.jpg"
+                    img={<ImgNewsAuburnTigers className="mb-4" />}
                     slug="auburn-university"
                 />
             </div>

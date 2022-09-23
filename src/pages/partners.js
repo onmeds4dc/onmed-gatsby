@@ -1,12 +1,11 @@
 import * as React from "react";
 import Layout from "../components/layout";
-import HeroPrimary from "../components/hero-primary";
 import CardColsSecondary from "../components/card-cols-secondary";
 import KeyAudienceSellingPoints from "../modules/key-audience-selling-points";
 import ContactForm from "../components/contact-form";
 import SvgNewWindow from "../components/svgs/new-window";
-import imgCareOnSite from "../../static/images/general/care-for-anyone.jpg";
-import imgEasySetup from "../../static/images/general/booth.jpg";
+import { ImgCareForAnyone } from "../components/images/general/care-for-anyone";
+import { ImgBooth } from "../components/images/general/booth";
 import { Link } from "gatsby";
 import MetaTags from "../components/meta-tags";
 import { ImgHeroManOfficeChair } from "../components/images/heroes/man-office-chair";
@@ -43,7 +42,7 @@ const PartnersPage = ({ data }) => {
                     areas.
                 </p>
             }
-            img={<img src={imgCareOnSite} alt="" className="img-fluid" />}
+            img={<ImgCareForAnyone />}
             imgAlignRight={false}
         />
     );
@@ -60,7 +59,7 @@ const PartnersPage = ({ data }) => {
                     just an outlet and an internet connection.
                 </p>
             }
-            img={<img src={imgEasySetup} alt="" className="img-fluid" />}
+            img={<ImgBooth />}
             imgAlignRight={true}
         />
     );

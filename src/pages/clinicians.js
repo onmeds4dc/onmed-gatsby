@@ -3,10 +3,10 @@ import Layout from "../components/layout";
 import MetaTags from "../components/meta-tags";
 import Hero from "../components/hero";
 import CardColsSecondary from "../components/card-cols-secondary";
-import imgQualifiedClinicians from "../../static/images/general/qualified-clincians.jpg";
-import imgBetterAccess from "../../static/images/general/better-access.jpg";
-import imgMakeTheLivingroomp from "../../static/images/general/make-the-livingroom.jpg";
-import imgOnboarding from "../../static/images/general/onboarding-at-onmed.jpg";
+import { ImgQualifiedClinicians } from "../components/images/general/qualified-clincians";
+import { ImgBetterAccess } from "../components/images/general/better-access";
+import { ImgMakeTheLivingroom } from "../components/images/general/make-the-livingroom";
+import { ImgOboardingAtOnmed } from "../components/images/general/onboarding-at-onmed";
 import { ImgHeroWomanScreenManPills } from "../components/images/heroes/woman-screen-man-pills";
 
 const CliniciansPage = ({ data }) => {
@@ -39,13 +39,7 @@ const CliniciansPage = ({ data }) => {
                     medications directly to patients in minutes.
                 </p>
             }
-            img={
-                <img
-                    src={imgQualifiedClinicians}
-                    alt=""
-                    className="img-fluid"
-                />
-            }
+            img={<ImgQualifiedClinicians />}
             imgAlignRight={false}
         />
     );
@@ -62,7 +56,7 @@ const CliniciansPage = ({ data }) => {
                     Join us in our mission by applying now.
                 </p>
             }
-            img={<img src={imgBetterAccess} alt="" className="img-fluid" />}
+            img={<ImgBetterAccess />}
             imgAlignRight={true}
         />
     );
@@ -82,9 +76,7 @@ const CliniciansPage = ({ data }) => {
                     technology and tools.
                 </p>
             }
-            img={
-                <img src={imgMakeTheLivingroomp} alt="" className="img-fluid" />
-            }
+            img={<ImgMakeTheLivingroom />}
             imgAlignRight={false}
         />
     );
@@ -102,7 +94,7 @@ const CliniciansPage = ({ data }) => {
                     trust, just like a typical doctor’s visit.
                 </p>
             }
-            img={<img src={imgOnboarding} alt="" className="img-fluid" />}
+            img={<ImgOboardingAtOnmed />}
             imgAlignRight={true}
         />
     );

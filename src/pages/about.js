@@ -1,21 +1,20 @@
 import * as React from "react";
 import Layout from "../components/layout";
 import MetaTags from "../components/meta-tags";
-import HeroPrimary from "../components/hero-primary";
 import CardColsSecondary from "../components/card-cols-secondary";
-import imgInnovation from "../../static/images/general/innovation-for-real.jpg";
-import imgPortraitTomVanderheyden from "../../static/images/portraits/tom-vanderheyden.jpg";
-import imgPortraitRyanBrock from "../../static/images/portraits/ryan-brock.jpg";
-import imgPortraitSteveJohnston from "../../static/images/portraits/steve-johnston.jpg";
-import imgPortraitPlaceholder from "../../static/images/portraits/placeholder.jpg";
-import imgPortraitMikeZeman from "../../static/images/portraits/mike-zeman.jpg";
-import imgPortraitPatriciaAgnello from "../../static/images/portraits/patricia-agnello.jpg";
-import imgPortraitMarkRoyals from "../../static/images/portraits/mark-royals.jpg";
-import imgPortraitLeonardSolio from "../../static/images/portraits/leonard-solio.jpg";
-import imgPortraitMalienaLongley from "../../static/images/portraits/maliena-longley.jpg";
-import imgPortraitJimSparks from "../../static/images/portraits/jim-sparks.jpg";
-import imgPortraitHowardGruverman from "../../static/images/portraits/howard-gruverman.jpg";
-import imgPortraitChrisKent from "../../static/images/portraits/chris-kent.jpg";
+import { ImgInnovationForReal } from "../components/images/general/innovation-for-real";
+import { ImgPortraitTomVanderheyden } from "../components/images/portraits/tom-vanderheyden";
+import { ImgPortraitRyanBrock } from "../components/images/portraits/ryan-brock";
+import { ImgPortraitSteveJohnston } from "../components/images/portraits/steve-johnston";
+import { ImgPortraitPlaceholder } from "../components/images/portraits/placeholder";
+import { ImgPortraitMikeZeman } from "../components/images/portraits/mike-zeman";
+import { ImgPortraitPatriciaAgnello } from "../components/images/portraits/patricia-agnello";
+import { ImgPortraitMarkRoyals } from "../components/images/portraits/mark-royals";
+import { ImgPortraitLeonardSolio } from "../components/images/portraits/leonard-solio";
+import { ImgPortraitMalienaLongley } from "../components/images/portraits/maliena-longley";
+import { ImgPortraitJimSparks } from "../components/images/portraits/jim-sparks";
+import { ImgPortraitHowardGruverman } from "../components/images/portraits/howard-gruverman";
+import { ImgPortraitChrisKent } from "../components/images/portraits/chris-kent";
 import { ImgHeroWomanScreenWomanTouchscreen } from "../components/images/heroes/woman-screen-woman-touchscreen";
 
 import Hero from "../components/hero";
@@ -23,7 +22,7 @@ import Hero from "../components/hero";
 const LeadershipItem = (props) => {
     return (
         <div className="col-md-6 col-lg-4 mb-md-6">
-            <img src={props.img} alt="" className="img-fluid" />
+            {props.img}
             <h5 className="mt-3 mb-0 text-primary">{props.name}</h5>
             <p
                 className="lead text-uppercase"
@@ -101,7 +100,7 @@ const AboutPage = ({ data }) => {
                     innovation for real.
                 </p>
             }
-            img={<img src={imgInnovation} alt="" className="img-fluid" />}
+            img={<ImgInnovationForReal />}
             imgAlignRight={false}
         />
     );
@@ -113,62 +112,62 @@ const AboutPage = ({ data }) => {
                 <LeadershipItem
                     name="Tom Vanderheyden"
                     title="Chief executive officer"
-                    img={imgPortraitTomVanderheyden}
+                    img={<ImgPortraitTomVanderheyden />}
                 />
                 <LeadershipItem
                     name="Chris Kent"
                     title="Chief operating Officer"
-                    img={imgPortraitChrisKent}
+                    img={<ImgPortraitChrisKent />}
                 />
                 <LeadershipItem
                     name="Howard Gruverman"
                     title="Chief Commercial Officer"
-                    img={imgPortraitHowardGruverman}
+                    img={<ImgPortraitHowardGruverman />}
                 />
                 <LeadershipItem
                     name="Jim Sparks"
                     title="Chief Financial Officer"
-                    img={imgPortraitJimSparks}
+                    img={<ImgPortraitJimSparks />}
                 />
                 <LeadershipItem
                     name="Maliena Longley"
                     title="Chief Medical officer"
-                    img={imgPortraitMalienaLongley}
+                    img={<ImgPortraitMalienaLongley />}
                 />
                 <LeadershipItem
                     name="Mike Zeman"
                     title="Chief Marketing Officer"
-                    img={imgPortraitMikeZeman}
+                    img={<ImgPortraitMikeZeman />}
                 />
                 <LeadershipItem
                     name="Patricia Agnello"
                     title="Chief HR Officer &amp; Employment Counsel"
-                    img={imgPortraitPatriciaAgnello}
+                    img={<ImgPortraitPatriciaAgnello />}
                 />
                 <LeadershipItem
                     name="Ryan Brock"
                     title="Chief Technology Officer"
-                    img={imgPortraitRyanBrock}
+                    img={<ImgPortraitRyanBrock />}
                 />
                 <LeadershipItem
                     name="Steve Johnston"
                     title="Chief legal officer"
-                    img={imgPortraitSteveJohnston}
+                    img={<ImgPortraitSteveJohnston />}
                 />
                 <LeadershipItem
                     name="Leonard Solie"
                     title="Board Chair<br /> Founder"
-                    img={imgPortraitLeonardSolio}
+                    img={<ImgPortraitLeonardSolio />}
                 />
                 <LeadershipItem
                     name="Mark Royals"
                     title="Board Member<br /> Founder"
-                    img={imgPortraitMarkRoyals}
+                    img={<ImgPortraitMarkRoyals />}
                 />
                 <LeadershipItem
                     name="Robert Forsythe"
                     title="Board Member<br /> Third Lake Capital"
-                    img={imgPortraitPlaceholder}
+                    img={<ImgPortraitPlaceholder />}
                 />
             </div>
         </section>
