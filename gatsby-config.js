@@ -24,7 +24,7 @@ module.exports = {
                 defaults: {
                     formats: [`auto`],
                     placeholder: `dominantColor`,
-                    quality: 80,
+                    quality: 75,
                     breakpoints: [768, 992, 1200, 1400],
                     backgroundColor: `transparent`,
                     tracedSVGOptions: {},
@@ -49,6 +49,12 @@ module.exports = {
                 typekit: {
                     id: process.env.TYPEKIT_ID,
                 },
+            },
+        },
+        {
+            resolve: "gatsby-plugin-html-attributes",
+            options: {
+                lang: "en",
             },
         },
         `gatsby-transformer-sharp`,

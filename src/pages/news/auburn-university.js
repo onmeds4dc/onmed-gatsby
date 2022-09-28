@@ -3,7 +3,6 @@ import Layout from "../../components/layout";
 import Hero from "../../components/hero";
 import NewsStory from "../../components/news-story";
 import MetaTags from "../../components/meta-tags";
-import { ImgHeroAuburnUniversity } from "../../components/images/heroes/news/auburn-university";
 
 const sectionHero = (
     <Hero heroSecondary={true}>

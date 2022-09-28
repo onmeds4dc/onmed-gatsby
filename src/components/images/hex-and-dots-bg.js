@@ -7,6 +7,7 @@ export function ImgHexAndDotsBg(props) {
             src="../../../static/images/backgrounds/hex-and-dots.webp"
             alt={props.alt}
             className={`img-fluid ${props.className}`}
+            backgroundColor="transparent"
         />
     );
 }

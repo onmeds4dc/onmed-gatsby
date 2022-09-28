@@ -7,7 +7,7 @@ import { ImgWomanLabCoat } from "../components/images/woman-lab-coat";
 import { ImgWomanCurlyHair } from "../components/images/woman-curly-hair";
 import { ImgWomanBloodPressure } from "../components/images/woman-blood-pressure";
 import { ImgManBoothPills } from "../components/images/man-booth-pills";
-import { ImgWomanThouchscreen } from "../components/images/woman-touchscreen";
+// import { ImgWomanThouchscreen } from "../components/images/woman-touchscreen";
 import { ImgHexWalkOut } from "../components/images/hex-walk-out";
 import { ImgHexWalkIn } from "../components/images/hex-walk-in";
 import { ImgHexPressStart } from "../components/images/hex-press-start";
@@ -77,6 +77,7 @@ const IndexPage = ({ data }) => {
                 <div className="row justify-content-between mt-lg-6 pt-lg-6">
                     <div className="col-lg-6 d-none d-lg-block">
                         <div id="start">
+                            {/* Turn this back on if we do teh jQuery dots */}
                             {/* <ImgWomanThouchscreen
                                 alt="Woman with touch screen watching video of woman in station"
                                 className="hex-and-dots--img mask-image--hex"

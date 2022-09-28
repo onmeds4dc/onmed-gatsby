@@ -162,6 +162,10 @@ $img-hex-width: 112px;
         right: 0;
         display: none;
 
+        [data-placeholder-image] {
+            background-color: transparent !important;
+        }
+
         @include media-breakpoint-up(lg) {
             display: block;
         }
