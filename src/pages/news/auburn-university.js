@@ -1,15 +1,13 @@
 import * as React from "react";
 import Layout from "../../components/layout";
-import HeroPrimary from "../../components/hero-primary";
+import Hero from "../../components/hero";
 import NewsStory from "../../components/news-story";
 import MetaTags from "../../components/meta-tags";
 
 const sectionHero = (
-    <HeroPrimary
-        classNames="mb-5 mb-md-6"
-        title="OnMed will Partner with Auburn University for Rural Health Project"
-        heroSecondary={true}
-    />
+    <Hero heroSecondary={true}>
+        OnMed will Partner with Auburn University for Rural Health Project
+    </Hero>
 );
 
 const NewStoryAuburn = ({ data }) => {

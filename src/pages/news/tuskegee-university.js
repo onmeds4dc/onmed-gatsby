@@ -1,16 +1,14 @@
 import * as React from "react";
 import Layout from "../../components/layout";
-import HeroPrimary from "../../components/hero-primary";
 import NewsStory from "../../components/news-story";
 import MetaTags from "../../components/meta-tags";
+import Hero from "../../components/hero";
+import { ImgHeroTuskegeeUniversity } from "../../components/images/heroes/news/tuskegee-university";
 
 const sectionHero = (
-    <HeroPrimary
-        classNames="mb-5 mb-md-6"
-        title=""
-        img="/images/heroes/news/tuskegee-university.jpg"
-        imgXPosition="60%"
-    />
+    <Hero
+        img={<ImgHeroTuskegeeUniversity alt="Tuskegee" position="60% 50%" />}
+    ></Hero>
 );
 
 const NewStoryTuskegee = ({ data }) => {

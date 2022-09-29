@@ -1,21 +1,28 @@
 import * as React from "react";
 import Layout from "../components/layout";
-import HeroPrimary from "../components/hero-primary";
 import CardColsSecondary from "../components/card-cols-secondary";
-import imgWalkinsWelcome from "../../static/images/general/walkins-welcome.jpg";
-import imgYourVitalsMatter from "../../static/images/general/booth-woman-vitals.jpg";
-import imgMedsInMinutes from "../../static/images/general/pill-bottles-in-booth.jpg";
+
+import { ImgHeroBoothScreenStethoscope } from "../components/images/heroes/booth-screen-stethoscope";
+import { ImgWalkinsWelcome } from "../components/images/walkins-welcome";
+import { ImgBoothWomanVitals } from "../components/images/booth-woman-vitals";
+import { ImgPillBottlesInBooth } from "../components/images/pill-bottles-in-booth";
+
 import KeyAudienceSellingPoints from "../modules/key-audience-selling-points";
 import MetaTags from "../components/meta-tags";
+import Hero from "../components/hero";
 
 const PatientsPage = ({ data }) => {
     const sectionHero = (
-        <HeroPrimary
-            classNames="mb-5 mb-md-6"
-            title="Step into the future of healthcare"
-            img="/images/heroes/booth-screen-stethoscope.jpg"
-            imgXPosition="60%"
-        />
+        <Hero
+            img={
+                <ImgHeroBoothScreenStethoscope
+                    alt="Step into the future of healthcare"
+                    positions="60% 50%"
+                />
+            }
+        >
+            Step into the future of healthcare
+        </Hero>
     );
 
     const sectionWalkIn = (
@@ -31,7 +38,7 @@ const PatientsPage = ({ data }) => {
                     and sanitize itself after you leave for the next patient.
                 </p>
             }
-            img={<img src={imgWalkinsWelcome} alt="" className="img-fluid" />}
+            img={<ImgWalkinsWelcome alt="" />}
             imgAlignRight={false}
         />
     );
@@ -46,7 +53,7 @@ const PatientsPage = ({ data }) => {
                     prescription medications at the time of your visit.
                 </p>
             }
-            img={<img src={imgMedsInMinutes} alt="" className="img-fluid" />}
+            img={<ImgPillBottlesInBooth alt="" />}
             imgAlignRight={true}
         />
     );
@@ -62,7 +69,7 @@ const PatientsPage = ({ data }) => {
                     on the screen.
                 </p>
             }
-            img={<img src={imgYourVitalsMatter} alt="" className="img-fluid" />}
+            img={<ImgBoothWomanVitals alt="" />}
             imgAlignRight={false}
         />
     );

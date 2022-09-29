@@ -2,18 +2,21 @@ import React, { useState } from "react";
 import { graphql } from "gatsby";
 import Button from "react-bootstrap/Button";
 import Layout from "../components/layout";
-import imgWomanLabCoat from "../../static/images/general/woman-lab-coat.jpg";
-import imgWomanCurlyHair from "../../static/images/general/woman-curly-hair.jpg";
-import imgSectionPatients from "../../static/images/general/woman-blood-pressure.jpg";
-import imgHexWalkOut from "../../static/images/hex/walk-out.png";
-import imgHexWalkIn from "../../static/images/hex/walk-in.png";
-import imgHexPressStart from "../../static/images/hex/press-start.png";
-import imgHexGetExam from "../../static/images/hex/get-exam.png";
-import imgManBoothPills from "../../static/images/general/man-booth-pills.jpg";
-import imgWomanScreenWomanThouchscreen from "../../static/images/general/woman-screen-woman-touchscreen.jpg";
+
+import { ImgWomanLabCoat } from "../components/images/woman-lab-coat";
+import { ImgWomanCurlyHair } from "../components/images/woman-curly-hair";
+import { ImgWomanBloodPressure } from "../components/images/woman-blood-pressure";
+import { ImgManBoothPills } from "../components/images/man-booth-pills";
+// import { ImgWomanThouchscreen } from "../components/images/woman-touchscreen";
+import { ImgHexWalkOut } from "../components/images/hex-walk-out";
+import { ImgHexWalkIn } from "../components/images/hex-walk-in";
+import { ImgHexPressStart } from "../components/images/hex-press-start";
+import { ImgHexGetExam } from "../components/images/hex-get-exam";
+import { ImgHexAndDotsBg } from "../components/images/hex-and-dots-bg";
+
 import SvgVideoCamera from "../components/svgs/video-camera";
+
 import CardCols from "../components/card-cols";
-import HexImage from "../components/hex-image";
 import ListFigureGrid from "../components/list-figure-grid";
 import ListFigureGridItem from "../components/list-figure-grid-item";
 import ContactForm from "../components/contact-form";
@@ -29,7 +32,7 @@ const IndexPage = ({ data }) => {
     const sectionIntro = (
         <section className="section-home-intro bg-cloud pt-4 py-md-6">
             <div className="container section-home-intro--inner">
-                <div className="row justify-content-between gx-6">
+                <div className="row justify-content-between">
                     <div className="col-md-7 col-lg-6 hex-and-dots--text">
                         <div className="d-flex align-items-center text-center text-md-start ">
                             <div className="me-xl-4">
@@ -49,10 +52,15 @@ const IndexPage = ({ data }) => {
                         <div className="img-hex-into mt-md-n3">
                             <div className="img-hex-into-2">
                                 <div id="start" className="hex-and-dots">
-                                    <HexImage
-                                        imgSrc={imgManBoothPills}
+                                    <div className="hex-and-dots--bg">
+                                        <ImgHexAndDotsBg
+                                            alt="Alt text"
+                                            className="hex-and-dots--bg-img"
+                                        />
+                                    </div>
+                                    <ImgManBoothPills
                                         alt="Alt text"
-                                        className="hex-and-dots--img"
+                                        className="hex-and-dots--img mask-image--hex"
                                     />
                                 </div>
                             </div>
@@ -67,18 +75,18 @@ const IndexPage = ({ data }) => {
         <section className="bg-hex-dark-many">
             <div className="container py-4 py-md-6">
                 <div className="row justify-content-between mt-lg-6 pt-lg-6">
-                    <div className="col-lg-6 col-xxl-6 d-none d-lg-block">
+                    <div className="col-lg-6 d-none d-lg-block">
                         <div id="start">
-                            <HexImage
-                                imgSrc={imgWomanScreenWomanThouchscreen}
-                                alt="Alt text"
-                                className="hex-and-dots--img"
-                            />
+                            {/* Turn this back on if we do teh jQuery dots */}
+                            {/* <ImgWomanThouchscreen
+                                alt="Woman with touch screen watching video of woman in station"
+                                className="hex-and-dots--img mask-image--hex"
+                            /> */}
                         </div>
                     </div>
 
-                    <div className="col-lg-6 col-xxl-6 hex-and-dots--text">
-                        <div className="ms-lg-6">
+                    <div className="col-lg-6 hex-and-dots--text">
+                        <div className="ms-md-4 ms-xl-6">
                             <h2 className="text-primary">
                                 We create real connections between patients and
                                 clinicians, virtually anywhere
@@ -126,7 +134,7 @@ const IndexPage = ({ data }) => {
                                 at any time. No appointment necessary.
                             </p>
                         }
-                        img={<HexImage imgSrc={imgHexWalkIn} alt="Alt text" />}
+                        img={<ImgHexWalkIn alt="An OnMed Care Station" />}
                     />
                     <ListFigureGridItem
                         headline="Press Start"
@@ -138,10 +146,7 @@ const IndexPage = ({ data }) => {
                             </p>
                         }
                         img={
-                            <HexImage
-                                imgSrc={imgHexPressStart}
-                                alt="Alt text"
-                            />
+                            <ImgHexPressStart alt="Man touching start button on touchscreen" />
                         }
                     />
                     <ListFigureGridItem
@@ -154,7 +159,9 @@ const IndexPage = ({ data }) => {
                                 clinician.
                             </p>
                         }
-                        img={<HexImage imgSrc={imgHexGetExam} alt="Alt text" />}
+                        img={
+                            <ImgHexGetExam alt="Woman taking her own vitals iin a med station" />
+                        }
                     />
                     <ListFigureGridItem
                         headline="Walk Out"
@@ -165,7 +172,9 @@ const IndexPage = ({ data }) => {
                                 secure dispensary.
                             </p>
                         }
-                        img={<HexImage imgSrc={imgHexWalkOut} alt="Alt text" />}
+                        img={
+                            <ImgHexWalkOut alt="Man walking out of station with meds" />
+                        }
                     />
                 </ListFigureGrid>
             </div>
@@ -198,11 +207,7 @@ const IndexPage = ({ data }) => {
                     </a>
                 }
                 img={
-                    <img
-                        src={imgSectionPatients}
-                        alt=""
-                        className="img-fluid"
-                    />
+                    <ImgWomanBloodPressure alt="Woman having blood pressure taken" />
                 }
                 imgAlignRight={false}
                 imgFlush={true}
@@ -230,16 +235,13 @@ const IndexPage = ({ data }) => {
                     }
                     cta={
                         <a href="/clinicians/" className="btn-arrow">
-                            Learn more
+                            Learn more{" "}
+                            <span className="visually-hidden">
+                                about clinicians
+                            </span>
                         </a>
                     }
-                    img={
-                        <img
-                            src={imgWomanLabCoat}
-                            alt=""
-                            className="img-fluid"
-                        />
-                    }
+                    img={<ImgWomanLabCoat alt="Woman in a lab coat" />}
                     imgAlignRight={true}
                     imgFlush={true}
                 />
@@ -269,11 +271,10 @@ const IndexPage = ({ data }) => {
                 cta={
                     <a href="/partners/" className="btn-arrow">
                         Learn more
+                        <span className="visually-hidden">about partners</span>
                     </a>
                 }
-                img={
-                    <img src={imgWomanCurlyHair} alt="" className="img-fluid" />
-                }
+                img={<ImgWomanCurlyHair alt="Woman in a business meeting" />}
                 imgAlignRight={false}
                 imgFlush={true}
             />

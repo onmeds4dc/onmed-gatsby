@@ -24,8 +24,8 @@ module.exports = {
                 defaults: {
                     formats: [`auto`],
                     placeholder: `dominantColor`,
-                    quality: 50,
-                    breakpoints: [750, 1080, 1366, 1920],
+                    quality: 75,
+                    breakpoints: [768, 992, 1200, 1400],
                     backgroundColor: `transparent`,
                     tracedSVGOptions: {},
                     blurredOptions: {},
@@ -51,8 +51,15 @@ module.exports = {
                 },
             },
         },
+        {
+            resolve: "gatsby-plugin-html-attributes",
+            options: {
+                lang: "en",
+            },
+        },
         `gatsby-transformer-sharp`,
         "gatsby-plugin-image",
         "gatsby-plugin-sass",
+        `gatsby-plugin-client-side-redirect`, // keep it in last in list
     ],
 };

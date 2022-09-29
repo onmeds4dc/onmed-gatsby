@@ -2,6 +2,10 @@ import React from "react";
 
 const MetaTags = ({ children }) => (
     <>
+        <meta
+            name="description"
+            content="OnMed Care Station provide personalized virtual care and connects patients with live certified clinicians whenever they need it."
+        />
         <meta property="og:url" content="https://www.onmed.com" />
         <meta property="og:type" content="website" />
         <meta
