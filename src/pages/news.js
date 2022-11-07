@@ -5,6 +5,7 @@ import MetaTags from "../components/meta-tags";
 import Hero from "../components/hero";
 import { ImgHeroGrabbingPillBottles } from "../components/images/heroes/grabbing-pill-bottles";
 import { ImgNewsTuskegee } from "../components/images/news/tuskegee";
+import { ImgNewsTuskegeeVideo } from "../components/images/news/tuskegee-video";
 import { ImgNewsPurchasingSolutionsAlliance } from "../components/images/news/purchasing-solutions-alliance";
 import { ImgNewsAuburnTigers } from "../components/images/news/auburn-tigers";
 
@@ -18,17 +19,20 @@ const NewsItem = (props) => {
         : "Donec sed odio dui. Sed posuere consectetur est at lobortis. Fusce dapibus, tellus ac cursus commodo, tortor mauri.";
     const author = props.author ? props.author : "";
     const date = props.date ? props.date : "";
+    const slugPrefix = props.slug.startsWith("http") ? "" : "/news/";
+    const slugTarget = props.slug.startsWith("http") ? "_blank" : "_self";
 
     return (
         <div className="col-md-6 my-5 my-md-6 position-relative">
             {props.img}
-
             {category}
 
             <h5 className="mt-2">
                 <Link
-                    to={`/news/${props.slug}`}
+                    to={`${slugPrefix}${props.slug}`}
                     className="text-dark link-no-underline stretched-link"
+                    target={slugTarget}
+                    rel="noopener noreferrer"
                 >
                     {title}
                 </Link>
@@ -56,9 +60,16 @@ const NewsPage = ({ data }) => {
             <h1 className="text-center text-primary mb-6">OnMed News</h1>
             <div className="row gx-md-6">
                 <NewsItem
+                    title="WSFA 12 Covers the Rollout of the OnMed Care Station at Tuskegee University"
+                    body="WSFA 12 News interviews OnMed CEO Tom Vanderheyden about the OnMed Virtual Care Clinic on Tuskegee University's campus..."
+                    date="November 2, 2022"
+                    img={<ImgNewsTuskegeeVideo className="mb-4" />}
+                    slug="https://www.wsfa.com/video/2022/11/02/hometown-tour-new-onmed-virtual-care-clinic-tuskegee-campus/"
+                />
+                <NewsItem
                     title="Tuskegee University and OnMed Announce Partnership to Deliver Innovative Virtual Care Clinic and Services"
                     body="Tuskegee University, a preeminent Historical Black College and University (HBCU), has partnered with Virtual Health..."
-                    date="September 09, 2022"
+                    date="September 9, 2022"
                     img={<ImgNewsTuskegee className="mb-4" />}
                     slug="tuskegee-university"
                 />
