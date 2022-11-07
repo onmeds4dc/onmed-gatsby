@@ -60,7 +60,7 @@ const NewsPage = ({ data }) => {
             <h1 className="text-center text-primary mb-6">OnMed News</h1>
             <div className="row gx-md-6">
                 <NewsItem
-                    title="WSFA 12 News Hometown Tour: New OnMed virtual care clinic on Tuskegee campus"
+                    title="WSFA 12 Covers the Rollout of the OnMed Care Station at Tuskegee University"
                     body="WSFA 12 News interviews OnMed CEO Tom Vanderheyden about the OnMed Virtual Care Clinic on Tuskegee University's campus..."
                     date="November 2, 2022"
                     img={<ImgNewsTuskegeeVideo className="mb-4" />}
