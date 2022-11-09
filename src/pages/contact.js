@@ -11,7 +11,7 @@ const AboutPage = ({ data }) => {
         <Hero
             img={<ImgHeroManTouchscreen alt="Contact us" position="90% 50%" />}
         >
-            News
+            Contact
         </Hero>
     );
 
