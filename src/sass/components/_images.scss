@@ -165,6 +165,7 @@ $img-hex-width: 112px;
         [data-placeholder-image] {
             background-color: transparent !important;
         }
+        // Test
 
         @include media-breakpoint-up(lg) {
             display: block;
