@@ -157,6 +157,7 @@ $img-hex-width: 112px;
     &--video {
         --video-font-size: 16px;
         --video-width: 100%;
+        display: none !important;
 
         &.video-desktop {
             display: none;
