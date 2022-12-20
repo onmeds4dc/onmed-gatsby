@@ -155,10 +155,19 @@ $img-hex-width: 112px;
     }
 
     &--video {
+        --video-font-size: 16px;
+        --video-width: 100%;
+        @include media-breakpoint-up(sm) {
+            --video-font-size: $h5-font-size;
+        }
+        @include media-breakpoint-up(lg) {
+            width: 49%;
+        }
+
         position: absolute;
         top: 0;
         right: 0;
-        width: 49%;
+        width: var(--video-width);
         aspect-ratio: 1/1.155;
         display: flex;
         align-items: center;
@@ -169,7 +178,7 @@ $img-hex-width: 112px;
             color: #fff;
             position: absolute;
             font-weight: bold;
-            font-size: $h5-font-size;
+            font-size: var(--video-font-size);
             letter-spacing: 2px;
             text-shadow: 0px 0px 39px rgb(0 0 0 / 76%),
                 0px 0px 3px rgb(0 0 0 / 28%);
@@ -194,11 +203,17 @@ $img-hex-width: 112px;
             &:before,
             &:after {
                 opacity: 1;
-                transition: opacity 3s;
+            }
+            &:before {
+                transition: opacity 1s;
+            }
+            &:after,
+            .icon-play {
+                transition: opacity 0.5s;
             }
             .icon-play {
                 opacity: 0.6;
-                transition: opacity 3s;
+
                 z-index: 1;
                 // box-shadow: 0px 0px 40px 101px rgb(0 0 0 / 70%);
             }
@@ -240,9 +255,23 @@ $img-hex-width: 112px;
 }
 
 .icon-play {
+    --button-size: 50px;
+    @include media-breakpoint-up(sm) {
+        --button-size: 80px;
+    }
+    @include media-breakpoint-up(md) {
+        --button-size: 60px;
+    }
+    @include media-breakpoint-up(lg) {
+        --button-size: 120px;
+    }
+    --arrow-size: calc(var(--button-size) * 0.258333333);
+    --arrow-size-long: calc(var(--arrow-size) * 1.566);
+    --arrow-margin: calc(calc(var(--arrow-size-long) - var(--arrow-size)) / 2);
+
+    height: var(--button-size);
+    width: var(--button-size);
     border-radius: 50%;
-    height: 120px;
-    width: 120px;
     display: inline-block;
     background-color: $cloud-90;
     opacity: 1;
@@ -257,12 +286,9 @@ $img-hex-width: 112px;
         display: block;
         width: 0;
         height: 0;
-        $arrow-size: 31px;
-        $arrow-size-long: $arrow-size * 1.566;
-        $arow-margin: ($arrow-size-long - $arrow-size) / 2;
-        border-top: $arrow-size solid transparent;
-        border-bottom: $arrow-size solid transparent;
-        border-left: $arrow-size-long solid $primary;
-        margin-left: $arow-margin;
+        border-top: var(--arrow-size) solid transparent;
+        border-bottom: var(--arrow-size) solid transparent;
+        border-left: var(--arrow-size-long) solid $primary;
+        margin-left: var(--arrow-margin);
     }
 }

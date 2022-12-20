@@ -1,5 +1,6 @@
 import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
+import { VideoLongForm } from "../video-long-form";
 
 export function ImgHexAndDotsBg(props) {
     return (
@@ -10,11 +11,7 @@ export function ImgHexAndDotsBg(props) {
                 className={`img-fluid ${props.className}`}
                 backgroundColor="transparent"
             />
-            <a href="#" className="hex-and-dots--video">
-                <span className="hex-and-dots--video-inner">
-                    <span className="icon-play"></span>
-                </span>
-            </a>
+            <VideoLongForm className="video-desktop" />
         </div>
     );
 }

@@ -23,6 +23,7 @@ import ContactForm from "../components/contact-form";
 import YouTube from "react-youtube";
 import Modal from "react-bootstrap/Modal";
 import MetaTags from "../components/meta-tags";
+import { VideoLongForm } from "../components/video-long-form";
 
 const IndexPage = ({ data }) => {
     const {
@@ -62,6 +63,7 @@ const IndexPage = ({ data }) => {
                                         alt="Alt text"
                                         className="hex-and-dots--img mask-image--hex"
                                     />
+                                    <VideoLongForm className="video-mobile " />
                                 </div>
                             </div>
                         </div>
@@ -105,9 +107,9 @@ const IndexPage = ({ data }) => {
                                 Counter (OTC) and most prescription medications
                                 at the time of visit.
                             </p>
-                            <div className="mt-6">
+                            {/* <div className="mt-6">
                                 <Video />
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
