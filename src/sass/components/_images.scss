@@ -132,6 +132,7 @@ $img-hex-width: 112px;
 
 .hex-and-dots {
     padding-bottom: 100px;
+
     @include media-breakpoint-up(lg) {
         padding-bottom: 54px;
     }
@@ -151,6 +152,65 @@ $img-hex-width: 112px;
         @include media-breakpoint-up(lg) {
             z-index: 4;
         }
+    }
+
+    &--video {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 49%;
+        aspect-ratio: 1/1.155;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:after {
+            content: "WATCH THE VIDEO";
+            color: #fff;
+            position: absolute;
+            font-weight: bold;
+            font-size: $h5-font-size;
+            letter-spacing: 2px;
+            text-shadow: 0px 0px 39px rgb(0 0 0 / 76%),
+                0px 0px 3px rgb(0 0 0 / 28%);
+            opacity: 0;
+            transition: opacity 1s;
+            z-index: 2;
+        }
+        &:before {
+            content: "";
+            background: radial-gradient(
+                circle,
+                rgba(0, 0, 0, 0.2) 0%,
+                transparent 70%
+            );
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            opacity: 0;
+            transition: opacity 1s;
+        }
+        &:hover {
+            &:before,
+            &:after {
+                opacity: 1;
+                transition: opacity 3s;
+            }
+            .icon-play {
+                opacity: 0.6;
+                transition: opacity 3s;
+                z-index: 1;
+                // box-shadow: 0px 0px 40px 101px rgb(0 0 0 / 70%);
+            }
+        }
+
+        // &-inner {
+        //     border: 1px solid #ff0;
+        //     height: 100%;
+        //     min-height: 100%;
+        //     width: 100%;
+        //     posit
+        // }
     }
 
     &--bg {
@@ -176,5 +236,33 @@ $img-hex-width: 112px;
             width: 1297px;
             top: 0;
         }
+    }
+}
+
+.icon-play {
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    display: inline-block;
+    background-color: $cloud-90;
+    opacity: 1;
+    transition: opacity 1s;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:after {
+        content: " ";
+        display: block;
+        width: 0;
+        height: 0;
+        $arrow-size: 31px;
+        $arrow-size-long: $arrow-size * 1.566;
+        $arow-margin: ($arrow-size-long - $arrow-size) / 2;
+        border-top: $arrow-size solid transparent;
+        border-bottom: $arrow-size solid transparent;
+        border-left: $arrow-size-long solid $primary;
+        margin-left: $arow-margin;
     }
 }
