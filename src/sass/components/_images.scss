@@ -157,8 +157,22 @@ $img-hex-width: 112px;
     &--video {
         --video-font-size: 16px;
         --video-width: 100%;
-        @include media-breakpoint-up(sm) {
-            --video-font-size: $h5-font-size;
+
+        &.video-desktop {
+            display: none;
+        }
+
+        @include media-breakpoint-up(lg) {
+            &.video-mobile {
+                display: none;
+            }
+            &.video-desktop {
+                display: flex;
+            }
+        }
+
+        @include media-breakpoint-up(lg) {
+            --video-font-size: 28px;
         }
         @include media-breakpoint-up(lg) {
             width: 49%;
@@ -255,16 +269,7 @@ $img-hex-width: 112px;
 }
 
 .icon-play {
-    --button-size: 50px;
-    @include media-breakpoint-up(sm) {
-        --button-size: 80px;
-    }
-    @include media-breakpoint-up(md) {
-        --button-size: 60px;
-    }
-    @include media-breakpoint-up(lg) {
-        --button-size: 120px;
-    }
+    --button-size: 120px;
     --arrow-size: calc(var(--button-size) * 0.258333333);
     --arrow-size-long: calc(var(--arrow-size) * 1.566);
     --arrow-margin: calc(calc(var(--arrow-size-long) - var(--arrow-size)) / 2);
