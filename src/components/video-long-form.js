@@ -26,7 +26,7 @@ export function VideoLongForm(props) {
                 <Modal.Header closeButton></Modal.Header>
                 <Modal.Body className="d-flex justify-content-center align-items-center">
                     <YouTube
-                        videoId="LuWAHsB2mMw"
+                        videoId="juw-0i2jdQs"
                         className="youtube-container"
                     />
                 </Modal.Body>
