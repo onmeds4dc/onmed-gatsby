@@ -107,9 +107,9 @@ const IndexPage = ({ data }) => {
                                 Counter (OTC) and most prescription medications
                                 at the time of visit.
                             </p>
-                            {/* <div className="mt-6">
+                            <div className="mt-6 mt-6">
                                 <Video />
-                            </div> */}
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -163,11 +163,11 @@ $img-hex-width: 112px;
         }
 
         @include media-breakpoint-up(lg) {
-            &.video-mobile {
-                display: none;
-            }
             &.video-desktop {
                 display: flex;
+            }
+            &.video-mobile {
+                display: none;
             }
         }
 
