@@ -79,7 +79,7 @@ const IndexPage = ({ data }) => {
                 <div className="row justify-content-between mt-lg-6 pt-lg-6">
                     <div className="col-lg-6 d-none d-lg-block">
                         <div id="start">
-                            {/* Turn this back on if we do teh jQuery dots */}
+                            {/* Turn this back on if we do the jQuery dots */}
                             {/* <ImgWomanThouchscreen
                                 alt="Woman with touch screen watching video of woman in station"
                                 className="hex-and-dots--img mask-image--hex"
