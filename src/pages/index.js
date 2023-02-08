@@ -418,7 +418,7 @@ export const pageQuery = graphql`
 
 export const Head = () => (
     <>
-        <title>OnMed Station - Instant Med Solutions Clinician Access</title>
+        <title>OnMed - The Anywhere Healthcare Solution</title>
         <MetaTags></MetaTags>
     </>
 );
