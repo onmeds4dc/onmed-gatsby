@@ -13,27 +13,46 @@ import { ImgNewsPurchasingSolutionsAlliance } from "../components/images/news/pu
 import { ImgNewsAuburnTigers } from "../components/images/news/auburn-tigers";
 
 const NewsItem = (props) => {
-    const category = props.category
-        ? `<p className="text-uppercase mb-0">${props.category}</p>`
-        : "";
-    const title = props.title ? props.title : "Title";
-    const body = props.body
-        ? props.body
-        : "Donec sed odio dui. Sed posuere consectetur est at lobortis. Fusce dapibus, tellus ac cursus commodo, tortor mauri.";
-    const author = props.author ? props.author : "";
-    const date = props.date ? props.date : "";
-    console.log('props.slug: ', props.slug);
-    const slugPrefix = props.slug && props.slug.startsWith("http") ? "" : "/news/";
-    const slugTarget = props.slug && props.slug.startsWith("http") ? "_blank" : "_self";
+
+    console.log('props!: ', props);
+    const {
+        id: _id,
+        title: _title,
+        content: _content,
+        excerpt: _excerpt,
+        date: _date,
+        slug: _slug,
+        featuredImage: _img,
+        postAcf: _postAcf
+    } = props.post.node;
+
+
+
+    // const category = props.category
+    //     ? `<p className="text-uppercase mb-0">${props.category}</p>`
+    //     : "";
+    const title = _title ? _title : "Title";
+    const exerpt = _excerpt
+        ? _excerpt
+        : "Content coming soon.";
+
+    // const author = props.author ? props.author : "";
+    const date = _date ? _date : "";
+
+    const linkIsExternal = _postAcf && _postAcf.linkexternal == "true" && _postAcf.linkexternalurl && _postAcf.linkexternalurl.startsWith("http") ? true : false;
+    const slugPrefix = linkIsExternal ? "" : "/news/";
+    const slugTarget = linkIsExternal ? "_blank" : "_self";
+    const slug = linkIsExternal ? _postAcf.linkexternalurl : _slug;
+    const img = _img ? <GatsbyImage image={getImage(_img.node.localFile)} alt={title} /> : "";
+
+    console.log('_featuredImage: ', _img);
 
     return (
         <div className="col-md-6 my-5 my-md-6 position-relative">
-            {props.img}
-            {category}
-
+            {img}
             <h5 className="mt-2">
                 <Link
-                    to={`${slugPrefix}${props.slug}`}
+                    to={`${slugPrefix}${slug}`}
                     className="text-dark link-no-underline stretched-link"
                     target={slugTarget}
                     rel="noopener noreferrer"
@@ -42,9 +61,9 @@ const NewsItem = (props) => {
                 </Link>
             </h5>
 
-            <div dangerouslySetInnerHTML={{ __html: body }} />
+            <div dangerouslySetInnerHTML={{ __html: exerpt }} />
             <div className="row mt-4">
-                <div className="col">{author}</div>
+                {/* <div className="col">{author}</div> */}
                 <div className="col-auto text-end">{date}</div>
             </div>
         </div>
@@ -77,14 +96,18 @@ const NewsPage = ({ data }) => {
                                 featuredImage },
                         } = post;
 
+                        console.log('post: ', post);
+
                         return (
                             <NewsItem
-                                key={id}
-                                title={title}
-                                body={content}
-                                date={date}
-                                img={<GatsbyImage image={getImage(featuredImage.node.localFile)} alt="" />}
-                                slug={slug}
+                                post={post}
+                            // key={id}
+                            // title={title}
+                            // body={content}
+                            // date={date}
+                            // img={featuredImage}
+                            // slug={slug}
+
                             />
                         )
                     })
@@ -154,10 +177,14 @@ export const pageQuery = graphql`
                 node {
                     title
                     slug
-                    date
+                    date(formatString: "MMMM DD, YYYY")
                     excerpt
                     content
                     id
+                    postAcf {
+                        linkexternal
+                        linkexternalurl
+                      }
                     featuredImage {
                         node {
                           id
