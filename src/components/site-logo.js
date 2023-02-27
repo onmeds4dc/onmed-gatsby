@@ -1,5 +1,4 @@
 import React from "react";
-import { StaticImage } from "gatsby-plugin-image";
 import logo from "../../static/images/logos/onmed-logo.svg";
 
 const SiteLogo = () => {
