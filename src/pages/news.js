@@ -43,9 +43,8 @@ const NewsItem = (props) => {
     const slugPrefix = linkIsExternal ? "" : "/news/";
     const slugTarget = linkIsExternal ? "_blank" : "_self";
     const slug = linkIsExternal ? _postAcf.linkexternalurl : _slug;
-    const img = _img ? <GatsbyImage image={getImage(_img.node.localFile)} alt={title} /> : "";
+    const img = _img ? <GatsbyImage image={getImage(_img.node.localFile)} className="mb-4" alt={_img.node.altText} /> : "";
 
-    console.log('_featuredImage: ', _img);
 
     return (
         <div className="col-md-6 my-5 my-md-6 position-relative">
@@ -85,7 +84,6 @@ const NewsPage = ({ data }) => {
             <div className="row gx-md-6">
                 {
                     data.allWpPost.edges.map(post => {
-
                         const {
                             node: {
                                 id,
@@ -96,25 +94,14 @@ const NewsPage = ({ data }) => {
                                 featuredImage },
                         } = post;
 
-                        console.log('post: ', post);
-
                         return (
-                            <NewsItem
-                                post={post}
-                            // key={id}
-                            // title={title}
-                            // body={content}
-                            // date={date}
-                            // img={featuredImage}
-                            // slug={slug}
-
-                            />
+                            <NewsItem post={post} />
                         )
                     })
                 }
                 {/* <NewsItem
                     title="WSFA 12 Covers the Rollout of the OnMed Care Station at Tuskegee University"
-                    body="WSFA 12 News interviews OnMed CEO Tom Vanderheyden about the OnMed Virtual Care Clinic on Tuskegee University's campus..."
+                    body="WSFA 12 News interviews OnMed CEO Tom Vanderheyden about the OnMed Virtual Care Clinic on Tuskegee University's campus."
                     date="November 2, 2022"
                     img={<GatsbyImage image={getImage(post.node.featuredImage.node.localFile)} alt="" />}
                     slug="https://www.wsfa.com/video/2022/11/02/hometown-tour-new-onmed-virtual-care-clinic-tuskegee-campus/"
@@ -155,7 +142,7 @@ const NewsPage = ({ data }) => {
 
     return (
         <Layout>
-            {/* {sectionHero} */}
+            {sectionHero}
             {sectionOnMedNews}
         </Layout>
     );
@@ -172,7 +159,7 @@ export const Head = () => (
 
 export const pageQuery = graphql`
     query {
-        allWpPost(sort: {order: ASC, fields: date}) {
+        allWpPost(sort: {order: DESC, fields: date}, filter: {status: {eq: "publish"}}) {
             edges {
                 node {
                     title
@@ -182,12 +169,13 @@ export const pageQuery = graphql`
                     content
                     id
                     postAcf {
+                        herobg
                         linkexternal
                         linkexternalurl
                       }
                     featuredImage {
                         node {
-                          id
+                          altText
                           localFile {
                             childImageSharp {
                               gatsbyImageData(
