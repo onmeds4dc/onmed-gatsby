@@ -1,19 +1,28 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Header from "../components/header";
-import Footer from "../components/footer";
+import Layout from "../components/layout";
+import Hero from "../components/hero";
+import NewsStory from "../components/news-story";
+import MetaTags from "../components/meta-tags";
 
 const DefaultTemplate = ({ data: { wpPage } }) => {
+
+    const sectionHero = (
+        <Hero heroSecondary={true}>
+            OnMed will Partner with Auburn University for Rural Health Project
+        </Hero>
+    );
+
+
     const { title, content } = wpPage;
+    console.log('wpPage: ' + wpPage);
     return (
-        <>
-            <Header />
-            <main className="container">
-                <h1>{title}</h1>
-                <div dangerouslySetInnerHTML={{ __html: content }}></div>
-            </main>
-            <Footer />
-        </>
+        <Layout>
+            {sectionHero}
+            <h1>{title}</h1>
+            <div dangerouslySetInnerHTML={{ __html: content }}></div>
+
+        </Layout>
     );
 };
 
