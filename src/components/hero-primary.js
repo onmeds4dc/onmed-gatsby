@@ -4,6 +4,7 @@ const HeroPrimary = (props) => {
     const imgXPosition = props.imgXPosition ? props.imgXPosition : "50%";
     const imgYPosition = props.imgYPosition ? props.imgYPosition : "50%";
     const heroClass = props.heroSecondary ? " hero--secondary " : "";
+    const headline = props.heroSecondary ? <h1 className="text-white mb-0">{props.title}</h1> : "";
     return (
         <section
             className={`hero ${heroClass} d-flex justify-contents-center align-items-center text-center ${props.classNames} `}
@@ -12,9 +13,7 @@ const HeroPrimary = (props) => {
                 backgroundPosition: `${imgXPosition} ${imgYPosition}`,
             }}
         >
-            <div className="container">
-                <h1 className="text-white mb-0">{props.title}</h1>
-            </div>
+            <div className="container" dangerouslySetInnerHTML={{ __html: headline }}></div>
         </section>
     );
 };

@@ -1,5 +1,6 @@
 const redirects = require("./redirects.json");
 
+
 exports.createPages = async ({ graphql, actions }) => {
     const { createPage, createRedirect } = actions;
 
@@ -24,10 +25,30 @@ exports.createPages = async ({ graphql, actions }) => {
                     }
                 }
             }
+          
+            allWpPost: allWpPost(sort: { fields: [date], order: DESC }) {
+                edges {
+                    previous {
+                        id
+                    }
+        
+                    # note: this is a GraphQL alias. It renames "node" to "post" for this query
+                    # We're doing this because this "node" is a post! It makes our code more readable further down the line.
+                    post: node {
+                        id
+                        uri
+                    }
+        
+                    next {
+                        id
+                    }
+                }
+            }
+              
         }
     `);
 
-    const { allWpPage, contactPage, keyAudiencePage } = result.data;
+    const { allWpPage, allWpPost } = result.data;
 
     allWpPage.nodes.map((page) => {
         const { id, uri } = page;
@@ -39,4 +60,16 @@ exports.createPages = async ({ graphql, actions }) => {
             },
         });
     });
+
+    allWpPost.edges.map((post) => {
+        const { id, uri } = post.post;
+        return actions.createPage({
+            path: uri,
+            component: require.resolve("./src/templates/news-template.js"),
+            context: {
+                id: id,
+            },
+        });
+    });
 };
+

@@ -1,6 +1,5 @@
 import * as React from "react";
 import { Link } from "gatsby";
-import MetaTags from "../components/meta-tags";
 
 // styles
 const pageStyles = {
