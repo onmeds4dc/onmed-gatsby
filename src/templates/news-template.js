@@ -29,8 +29,6 @@ const NewsTemplate = ({ data: { wpPost } }) => {
         image={getImage(_img.node.localFile)}
         className="mb-4"
         alt={_img.node.altText}
-        width="100"
-        gratscale="true"
       />;
     sectionHero = <Hero img={img} />;
     bodyHeadline = title;
