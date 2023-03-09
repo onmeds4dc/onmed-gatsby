@@ -1,6 +1,5 @@
 import * as React from "react";
 import Layout from "../components/layout";
-import HeroPrimary from "../components/hero-primary";
 import ContactFormIFrame from "../components/contact-form-iframe";
 import MetaTags from "../components/meta-tags";
 import Hero from "../components/hero";
