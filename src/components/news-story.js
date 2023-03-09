@@ -2,7 +2,6 @@ import React from "react";
 
 const NewsStory = (props) => {
 
-
     return (
         <section className="container py-4 py-md-6 news-story">
             <div className="row gx-md-6 justify-content-center">
@@ -30,3 +29,5 @@ const NewsStory = (props) => {
 };
 
 export default NewsStory;
+
+

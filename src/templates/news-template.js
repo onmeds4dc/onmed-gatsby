@@ -8,11 +8,9 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 const NewsTemplate = ({ data: { wpPost } }) => {
   const {
-    title: title,
-    content: content,
-    excerpt: _excerpt,
-    date: date,
-    slug: _slug,
+    title,
+    content,
+    date,
     featuredImage: _img,
     postAcf: _postAcf
   } = wpPost;
@@ -58,6 +56,7 @@ export const Head = ({ data: { wpPost } }) => {
   const {
     title
   } = wpPost;
+
   <return>(
     <title>{title}</title>
     <MetaTags></MetaTags>
@@ -99,3 +98,5 @@ export const query = graphql`
 
 
 export default NewsTemplate;
+
+
