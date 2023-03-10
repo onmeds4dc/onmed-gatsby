@@ -92,12 +92,19 @@ const NewsPage = ({ data }) => {
 
 export default NewsPage;
 
-export const Head = () => (
-    <>
-        <title>News about OnMed</title>
-        <MetaTags></MetaTags>
-    </>
-);
+
+export const Head = () => {
+    const title = "News about OnMed";
+    return (
+        <>
+            <title>{title}</title>
+            <MetaTags title={title} description="News stories about OnMed's medical kiosk stations." ></MetaTags>
+        </>
+    )
+};
+
+
+
 
 export const pageQuery = graphql`
     query {
