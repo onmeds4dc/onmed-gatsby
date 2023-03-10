@@ -9,7 +9,7 @@ import { ImgMakeTheLivingroom } from "../components/images/general/make-the-livi
 import { ImgOboardingAtOnmed } from "../components/images/general/onboarding-at-onmed";
 import { ImgHeroWomanScreenManPills } from "../components/images/heroes/woman-screen-man-pills";
 
-const CliniciansPage = ({ data }) => {
+const CliniciansPage = () => {
     const sectionHero = (
         <Hero
             img={
@@ -112,9 +112,15 @@ const CliniciansPage = ({ data }) => {
 
 export default CliniciansPage;
 
-export const Head = () => (
-    <>
-        <title>Clinicians - OnMed</title>
-        <MetaTags></MetaTags>
-    </>
-);
+
+export const Head = () => {
+    const title = "Clinicians - OnMed";
+    return (
+        <>
+            <title>{title}</title>
+            <MetaTags title={title} description="As a part of OnMed, you can provide high-quality care for
+                    patients through one-on-one virtual consultations, in
+                    real-time." ></MetaTags>
+        </>
+    )
+};

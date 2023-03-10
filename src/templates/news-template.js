@@ -20,7 +20,6 @@ const NewsTemplate = ({ data: { wpPost } }) => {
   const heroType = _postAcf && _postAcf.herobg === "color" ? "color" : "img";
   let bodyHeadline = "";
   let sectionHero = "";
-  // console.log('_img.node.localFile: ', _img.node.localFile.childImageSharp.gatsbyImageData.images.fallback.src);
 
 
   if (heroType === "img" && _img) {
@@ -52,14 +51,16 @@ const NewsTemplate = ({ data: { wpPost } }) => {
 
 export const Head = ({ data: { wpPost } }) => {
   const {
-    title
+    title, excerpt
   } = wpPost;
 
-  <return>(
-    <title>{title}</title>
-    <MetaTags></MetaTags>
-    )
-  </return>
+  return (
+    <>
+      <title>{title}</title>
+      <MetaTags description={excerpt} title={title}></MetaTags>
+    </>
+  )
+
 };
 
 
@@ -69,6 +70,7 @@ export const query = graphql`
             title
             date(formatString: "MMMM D, YYYY")
             content
+            excerpt,
             id
             postAcf {
                 herobg

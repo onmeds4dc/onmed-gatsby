@@ -227,9 +227,16 @@ const PartnersPage = ({ data }) => {
 
 export default PartnersPage;
 
-export const Head = () => (
-    <>
-        <title>Partners - OnMed</title>
-        <MetaTags></MetaTags>
-    </>
-);
+export const Head = () => {
+    const title = "Partners - OnMed";
+    return (
+        <>
+            <title>{title}</title>
+            <MetaTags title={title} description="OnMed is a convenient virtual healthcare solution for
+                    sponsor partners including Government Agencies, Payers,
+                    Providers, Large Employers, Colleges and Universities and
+                    high-traffic venues." ></MetaTags>
+        </>
+    )
+};
+

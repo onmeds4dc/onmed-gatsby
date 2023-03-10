@@ -416,9 +416,13 @@ export const pageQuery = graphql`
     }
 `;
 
-export const Head = () => (
-    <>
-        <title>OnMed - The Anywhere Healthcare Solution</title>
-        <MetaTags></MetaTags>
-    </>
-);
+
+export const Head = () => {
+    const title = "OnMed - The Anywhere Healthcare Solution";
+    return (
+        <>
+            <title>{title}</title>
+            <MetaTags title={title}></MetaTags>
+        </>
+    )
+};
