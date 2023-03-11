@@ -8,11 +8,9 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 const NewsTemplate = ({ data: { wpPost } }) => {
   const {
-    title: title,
-    content: content,
-    excerpt: _excerpt,
-    date: date,
-    slug: _slug,
+    title,
+    content,
+    date,
     featuredImage: _img,
     postAcf: _postAcf
   } = wpPost;
@@ -22,7 +20,6 @@ const NewsTemplate = ({ data: { wpPost } }) => {
   const heroType = _postAcf && _postAcf.herobg === "color" ? "color" : "img";
   let bodyHeadline = "";
   let sectionHero = "";
-  // console.log('_img.node.localFile: ', _img.node.localFile.childImageSharp.gatsbyImageData.images.fallback.src);
 
 
   if (heroType === "img" && _img) {
@@ -31,8 +28,6 @@ const NewsTemplate = ({ data: { wpPost } }) => {
         image={getImage(_img.node.localFile)}
         className="mb-4"
         alt={_img.node.altText}
-        width="100"
-        gratscale="true"
       />;
     sectionHero = <Hero img={img} />;
     bodyHeadline = title;
@@ -56,13 +51,16 @@ const NewsTemplate = ({ data: { wpPost } }) => {
 
 export const Head = ({ data: { wpPost } }) => {
   const {
-    title
+    title, excerpt
   } = wpPost;
-  <return>(
-    <title>{title}</title>
-    <MetaTags></MetaTags>
-    )
-  </return>
+
+  return (
+    <>
+      <title>{title}</title>
+      <MetaTags description={excerpt} title={title}></MetaTags>
+    </>
+  )
+
 };
 
 
@@ -72,6 +70,7 @@ export const query = graphql`
             title
             date(formatString: "MMMM D, YYYY")
             content
+            excerpt,
             id
             postAcf {
                 herobg
@@ -99,3 +98,5 @@ export const query = graphql`
 
 
 export default NewsTemplate;
+
+

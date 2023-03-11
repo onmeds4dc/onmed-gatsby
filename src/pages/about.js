@@ -19,6 +19,7 @@ import { ImgHeroWomanScreenWomanTouchscreen } from "../components/images/heroes/
 
 import Hero from "../components/hero";
 
+
 const LeadershipItem = (props) => {
     return (
         <div className="col-md-6 col-lg-4 mb-md-6">
@@ -185,9 +186,13 @@ const AboutPage = ({ data }) => {
 
 export default AboutPage;
 
-export const Head = () => (
-    <>
-        <title>About and Leadership Team - OnMed</title>
-        <MetaTags></MetaTags>
-    </>
-);
+export const Head = () => {
+    const title = "About and Leadership Team - OnMed";
+    return (
+        <>
+            <title>{title}</title>
+            <MetaTags title={title} description="About OnMed was founded on the commitment to make quality affordable healthcare accessible to all." ></MetaTags>
+        </>
+    )
+
+};
