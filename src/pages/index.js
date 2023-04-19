@@ -27,7 +27,7 @@ import { VideoLongForm } from "../components/video-long-form";
 
 const IndexPage = ({ data }) => {
     const {
-        wpPage: { title, content, featuredImage, pageHome, introBody },
+        wpPage: { pageHome },
     } = data;
 
     const sectionIntro = (

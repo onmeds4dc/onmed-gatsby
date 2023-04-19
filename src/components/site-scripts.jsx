@@ -133,7 +133,7 @@ const SiteScripts = (props) => {
             />
             <Script
                 id="tracking-accessibility-equalweb"
-                dangerouslySetInnerHTML={{ __html: trackingFacebookPixel }}
+                dangerouslySetInnerHTML={{ __html: trackingAccessibility }}
             />
             <Script
                 id="tracking-zoom"
