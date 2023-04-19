@@ -2,7 +2,7 @@ import { Link } from "gatsby";
 import React from "react";
 import SiteLogoLight from "./site-logo-light";
 import MenuFooter from "./menu-footer";
-import MenuUtility from "./menu-utility";
+// import MenuUtility from "./menu-utility";
 import imgSocialFacebook from "../../static/icons/social-media/facebook.svg";
 import imgSocialYouTube from "../../static/icons/social-media/youtube.svg";
 import imgSocialInstagram from "../../static/icons/social-media/instagram.svg";

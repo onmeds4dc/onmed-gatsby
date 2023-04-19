@@ -1,19 +1,24 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Header from "../components/header";
-import Footer from "../components/footer";
+import Layout from "../components/layout";
+import Hero from "../components/hero";
 
 const DefaultTemplate = ({ data: { wpPage } }) => {
+
     const { title, content } = wpPage;
+
+    const sectionHero = (
+        <Hero heroSecondary={true}>
+            OnMed will Partner with Auburn University for Rural Health Project
+        </Hero>
+    );
+
     return (
-        <>
-            <Header />
-            <main className="container">
-                <h1>{title}</h1>
-                <div dangerouslySetInnerHTML={{ __html: content }}></div>
-            </main>
-            <Footer />
-        </>
+        <Layout>
+            {sectionHero}
+            <h1>{title}</h1>
+            <div dangerouslySetInnerHTML={{ __html: content }}></div>
+        </Layout>
     );
 };
 

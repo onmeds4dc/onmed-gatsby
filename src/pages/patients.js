@@ -95,9 +95,15 @@ const PatientsPage = ({ data }) => {
 
 export default PatientsPage;
 
-export const Head = () => (
-    <>
-        <title>Patients - OnMed</title>
-        <MetaTags></MetaTags>
-    </>
-);
+export const Head = () => {
+    const title = "Patients - OnMed";
+    return (
+        <>
+            <title>{title}</title>
+            <MetaTags title={title} description="Our OnMed
+                    clinicians will join you immediately via our interactive
+                    screen to introduce themselves and walk you through your
+                    entire appointment." ></MetaTags>
+        </>
+    )
+};

@@ -1,6 +1,5 @@
 import * as React from "react";
 import Layout from "../components/layout";
-import HeroPrimary from "../components/hero-primary";
 import ContactFormIFrame from "../components/contact-form-iframe";
 import MetaTags from "../components/meta-tags";
 import Hero from "../components/hero";
@@ -39,9 +38,13 @@ const AboutPage = ({ data }) => {
 
 export default AboutPage;
 
-export const Head = () => (
-    <>
-        <title>Contact - OnMed</title>
-        <MetaTags></MetaTags>
-    </>
-);
+export const Head = () => {
+    const title = "Contact - OnMed";
+    return (
+        <>
+            <title>{title}</title>
+            <MetaTags title={title} description="Contact us and and a member of our team will be in
+                touch shortly." ></MetaTags>
+        </>
+    )
+};
