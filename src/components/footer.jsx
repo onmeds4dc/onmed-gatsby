@@ -34,7 +34,12 @@ const Footer = ({ data }) => {
                         </p>
 
                         <p>Copyright ©2022 OnMed. All Rights Reserved.</p>
-                        <p>Terms of Use | Privacy Policy</p>
+                        <p>
+                            <Link to="/terms-conditions">
+                                Terms and Conditions
+                            </Link>{" "}
+                            | <Link to="/privacy-policy">Privacy Policy</Link>
+                        </p>
                     </div>
                     <div
                         className="footer--group-menus d-flex align-items-start mt-5 mt-md-n3"
