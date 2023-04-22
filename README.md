@@ -1,54 +1,89 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby minimal starter
-</h1>
+# OnMed.com
+
+## 👀 Overview
+
+| Tech       |                                                                                                            |
+| ---------- | ---------------------------------------------------------------------------------------------------------- |
+| Repository | https://github.com/onmeds4dc/onmed-gatsby                                                                  |
+| CMS        | Wordpress                                                                                                  |
+| Front End  | [React](https://react.dev/) and [Gatsby](https://www.gatsbyjs.com/)                                        |
+| Deploys    | [Gatsby Cloud](https://www.gatsbyjs.com/dashboard/organization/ecde845d-1818-44f6-a363-1e51415ba69a/sites) |
+| Fonts      | [Adobe](https://fonts.adobe.com/my_fonts#web_projects-section) (Lisence: )                                 |
+| Paragraph  | Text                                                                                                       |
+
+Note: CMS and public URLs are separate.
+
+|                | CMS URL                                  | Production URL                    |
+| -------------- | ---------------------------------------- | --------------------------------- |
+| **Production** | https://onmed-cms.com/wp-admin/          | https://onmed.com/                |
+| **Staging**    | https://staging2.onmed-cms.com/wp-admin/ | https://onmedstaging.gatsbyjs.io/ |
 
 ## 🚀 Quick start
 
-1.  **Create a Gatsby site.**
+```shell
+git clone https://github.com/onmeds4dc/onmed-gatsby.git
+```
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+```shell
+cd onmed-gatsby
+```
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+```shell
+npm i
+```
 
-2.  **Start developing.**
+In the project root, add a `.env.development` file with these contents:
 
-    Navigate into your new site’s directory and start it up.
+```shell
+TYPEKIT_ID=dig7fyt
+WPGRAPHQL_URL=https://onmedstaging.gatsbyjs.io/graphql/
+```
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+-   `TYPEKIT_ID` tells Adobe we can use the font
+-   `WPGRAPHQL_URL` tells our local environment to point to the staging CMS.
 
-3.  **Open the code and start customizing!**
+```shell
+gatsby develop
+```
 
-    Your site is now running at http://localhost:8000!
+Your site is now running at http://localhost:8000!
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+## ✏️ Edit Content
 
-4.  **Learn more**
+### News pages
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+**Wordpress**
+Password: `tampa`
 
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+|                | CMS URL                                  | Production URL                    |
+| -------------- | ---------------------------------------- | --------------------------------- |
+| **Production** | https://onmed-cms.com/wp-admin/          | https://onmed.com/                |
+| **Staging**    | https://staging2.onmed-cms.com/wp-admin/ | https://onmedstaging.gatsbyjs.io/ |
 
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+Changes in Wordpress are automatically deployed within minutes via Gatsby Cloud. [Monitor status here.](https://www.gatsbyjs.com/dashboard/organization/ecde845d-1818-44f6-a363-1e51415ba69a/sites)
 
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+### All other pages
 
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+**Gatsby/React**
 
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+|                       |               |
+| --------------------- | ------------- |
+| **Pages**             | `/src/pages/` |
+| **Uncompiled files**  | `/src/`       |
+| **Uncompiled assets** | `/static/`    |
+| **Compiled**          | `/public/`    |
 
-## 🚀 Quick start (Gatsby Cloud)
+Changes pushed into `main` or `staging` branches are automatically deployed within minutes via Gatsby Cloud. [Monitor status here.](https://www.gatsbyjs.com/dashboard/organization/ecde845d-1818-44f6-a363-1e51415ba69a/sites)
 
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
+**Gatsby Resources**
 
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+-   [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+-   [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+-   [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+-   [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+-   [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+-   [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+
+## 🔁 Redirects
+
+`redirects.json`
