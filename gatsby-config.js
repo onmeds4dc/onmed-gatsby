@@ -1,3 +1,5 @@
+process.env.WP_INCONSISTENT_SCHEMA_WARN = 'true';
+
 require("dotenv").config({
     path: `.env.${process.env.NODE_ENV}`,
 });
