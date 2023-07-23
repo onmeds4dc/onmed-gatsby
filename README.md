@@ -8,7 +8,7 @@
 | CMS        | Wordpress                                                                                                  |
 | Front End  | [React](https://react.dev/) and [Gatsby](https://www.gatsbyjs.com/)                                        |
 | Deploys    | [Gatsby Cloud](https://www.gatsbyjs.com/dashboard/organization/ecde845d-1818-44f6-a363-1e51415ba69a/sites) |
-| Fonts      | [Adobe](https://fonts.adobe.com/my_fonts#web_projects-section) (Lisence: )                                 |
+| Fonts      | [Adobe](https://fonts.adobe.com/my_fonts#web_projects-section) (License: `dig7fyt`)                        |
 | Paragraph  | Text                                                                                                       |
 
 Note: CMS and public URLs are separate.
@@ -73,8 +73,6 @@ Changes in Wordpress are automatically deployed within minutes via Gatsby Cloud.
 | **Uncompiled assets** | `/static/`    |
 | **Compiled**          | `/public/`    |
 
-Changes pushed into `main` or `staging` branches are automatically deployed within minutes via Gatsby Cloud. [Monitor status here.](https://www.gatsbyjs.com/dashboard/organization/ecde845d-1818-44f6-a363-1e51415ba69a/sites)
-
 **Gatsby Resources**
 
 -   [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
@@ -83,6 +81,12 @@ Changes pushed into `main` or `staging` branches are automatically deployed with
 -   [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
 -   [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
 -   [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+
+## 🛫 Deploys
+
+Code changes pushed into a feature branch, will need a [pull request](https://github.com/onmeds4dc/onmed-gatsby/pulls) (that you can also approve) to be pulled it to `main` or `staging` branches.
+
+Changes pushed into `main` or `staging` are automatically deployed within minutes via Gatsby Cloud. [Monitor status here.](https://www.gatsbyjs.com/dashboard/organization/ecde845d-1818-44f6-a363-1e51415ba69a/sites)
 
 ## 🔁 Redirects
 
