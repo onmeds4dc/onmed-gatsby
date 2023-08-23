@@ -53,7 +53,7 @@ const CliniciansPage = () => {
                     mention costly. In rural and remote communities it may not
                     even be within reach at all. That’s why we’re on a mission
                     to make quality care affordable and accessible for everyone.
-                    Join us in our mission by applying now.
+                    Join us in our mission by <a href="https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=3ae5dc83-4d29-4017-9f9c-481dcf3fef6d&ccId=19000101_000001&source=LI&lang=en_US&selectedMenuKey=CareerCenter" target="_blank">applying now.</a>
                 </p>
             }
             img={<ImgBetterAccess />}
