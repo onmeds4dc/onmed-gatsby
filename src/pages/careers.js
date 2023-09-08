@@ -27,15 +27,13 @@ const CareersPage = ({ data }) => {
 
     const sectionWalkIn = (
         <CardColsSecondary
-            headline="Walk-ins always welcome. Walk out with what you need."
+            headline="A career in health care is more than just a job"
             body={
                 <p>
-                    No appointment needed, just enter and press START. Our OnMed
-                    clinicians will join you immediately via our interactive
-                    screen to introduce themselves and walk you through your
-                    entire appointment. Your visit will be private, safe and
-                    secure and the Care Station room will automatically clean
-                    and sanitize itself after you leave for the next patient.
+                    A career in health care is more than just a job,
+                    it's a calling where you make a difference in people's lives
+                    each and every day.
+                    Step into the future of health care with OnMed.
                 </p>
             }
             img={<ImgWalkinsWelcome alt="" />}
@@ -45,12 +43,13 @@ const CareersPage = ({ data }) => {
 
     const sectionCareAnywhere = (
         <CardColsSecondary
-            headline="Meds in minutes"
+            headline="OnMed is committed to making quality affordable health care accessible to all."
             body={
                 <p>
-                    OnMed’s proprietary robotic dispensary system allows our
-                    clinicians to provide you with the necessary OTC or
-                    prescription medications at the time of your visit.
+                    Founded in 2013, OnMed is committed to making quality affordable 
+                    health care accessible to all. The Company was born out of an innovative 
+                    spirit and belief that it could create a more effective way for 
+                    people to receive care, including getting the medications they need quickly. 
                 </p>
             }
             img={<ImgPillBottlesInBooth alt="" />}
