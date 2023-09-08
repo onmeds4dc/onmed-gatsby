@@ -69,6 +69,7 @@ const CareersPage = ({ data }) => {
                         <dt>Health and Wellness</dt>
                         <dd>
                             <li>Medical Coverage (Including Prescription Drugs) </li>
+                            <li>Dental Coverage</li>
                         </dd>
                         <div className="100%"></div>
 
