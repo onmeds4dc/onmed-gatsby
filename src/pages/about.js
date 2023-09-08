@@ -147,7 +147,7 @@ const AboutPage = ({ data }) => {
                 />
                 <LeadershipItem
                     name="Ryan Brock"
-                    title="Chief Technology Officer"
+                    title="Chief of Staff<br /> Founder"
                     img={<ImgPortraitRyanBrock />}
                 />
                 <LeadershipItem

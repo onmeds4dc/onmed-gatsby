@@ -14,7 +14,7 @@ module.exports = {
             options: {
                 url:
                     process.env.WPGRAPHQL_URL ||
-                    `https://onmed-cms.com/graphql/`,
+                    `https://onmed-cms.com/graphql`,
                 useACF: true,
             },
         },
