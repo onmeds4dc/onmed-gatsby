@@ -32,9 +32,7 @@ const CareersPage = ({ data }) => {
                 <p>
                     A career in health care is more than just a job,
                     it's a calling where you make a difference in people's lives
-                    each and every day.
-                </p>
-                <p>
+                    each and every day.<br>
                     Step into the future of health care with OnMed.
                 </p>
             }
