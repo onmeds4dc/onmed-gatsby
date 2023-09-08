@@ -94,45 +94,6 @@ const CareersPage = ({ data }) => {
                             signing of a Letter of Intent.
                         </dd>
                         <div className="100%"></div>
-                        <dt>Single or Double OnMed Care Stations</dt>
-                        <dd>
-                            The OnMed Care Station is available in two
-                            configurations; a Single Room, featuring one patient
-                            consult room with attached Robotic Dispensing System
-                            and embedded software and servers or a Double Room,
-                            featuring two patient consult rooms with the Robotic
-                            Dispensing System and embedded software and servers
-                            configured between the patient rooms.
-                        </dd>
-                        <div className="100%"></div>
-                        <dt>Location &amp; Installation Requirements</dt>
-                        <dd>
-                            The free-standing OnMed Care Station requires
-                            sufficient available square footage and ceiling
-                            height to accommodate the Single or Double Care
-                            Station. Additionally, the Care Station requires a
-                            dedicated high-speed internet connection and power
-                            outlet. The Care Station operates in common indoor
-                            HVAC controlled conditions which is secure and
-                            monitored. For custom-installed locations, other
-                            than a free-standing location, OnMed requires
-                            additional implementation time and potential fees.
-                        </dd>
-                        <div className="100%"></div>
-                        <dt>Maintenance and Cleaning</dt>
-                        <dd>
-                            Daily cleaning and maintenance due to normal patient
-                            traffic is the responsibility of the Sponsor.
-                        </dd>
-                        <div className="100%"></div>
-                        <dt>Publicity and Marketing</dt>
-                        <dd>
-                            All Sponsor driven publicity and marketing that
-                            utilizes the trademarks, images, technical
-                            information or general OnMed marketing information
-                            or content requires the approval of OnMed before
-                            distribution or release.
-                        </dd>
                     </dl>
                 </div>
             </div>
