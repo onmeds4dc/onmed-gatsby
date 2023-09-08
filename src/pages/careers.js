@@ -1,7 +1,7 @@
 import * as React from "react";
 import Layout from "../components/layout";
 import CardColsSecondary from "../components/card-cols-secondary";
-
+import SvgNewWindow from "../components/svgs/new-window";
 import { ImgHeroClinicianStationConsultVMC } from "../components/images/heroes/clinician-station-consult-vmc";
 import { ImgWalkinsWelcome } from "../components/images/walkins-welcome";
 import { ImgBoothWomanVitals } from "../components/images/booth-woman-vitals";
@@ -32,8 +32,25 @@ const CareersPage = ({ data }) => {
                 <p>
                     A career in health care is more than just a job,
                     it's a calling where you make a difference in people's lives
-                    each and every day.
+                    each and every day.{'\n'}
                     Step into the future of health care with OnMed.
+
+                    <div className="mt-6">
+                            {<Link
+                                to="https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=3ae5dc83-4d29-4017-9f9c-481dcf3fef6d&ccId=19000101_000001&source=LI&lang=en_US&selectedMenuKey=CareerCenter"
+                                className="btn btn-primary text-uppercase mb-3  mx-3 d-inline-flex align-items-center"
+                                target="_blank"
+                            >
+                                APPLY NOW
+                                <SvgNewWindow
+                                    className="ms-2"
+                                    style={{
+                                        height: "14px",
+                                        width: "auto",
+                                    }}
+                                />
+                            </Link>
+                        </div>
                 </p>
             }
             img={<ImgWalkinsWelcome alt="" />}
@@ -61,7 +78,8 @@ const CareersPage = ({ data }) => {
         <section className="container py-6 my-4">
             <div className="text-center">
                 <h2>Employee Benefits</h2>
-                <p className="lead">Our well-being is as important as the patients we serve.  We offer benefits and resources to help our employees and their families lead healthy lives.</p>
+                <p className="lead">Our well-being is as important as the patients we serve.{'\n'}
+                We offer benefits and resources to help our employees and their families lead healthy lives.</p>
             </div>
             <div className="row justify-content-center">
                 <div className="col-lg-10 col-xl-8">
