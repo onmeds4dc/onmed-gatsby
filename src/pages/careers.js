@@ -6,7 +6,7 @@ import { ImgHeroClinicianStationConsultVMC } from "../components/images/heroes/c
 import { ImgWalkinsWelcome } from "../components/images/walkins-welcome";
 import { ImgBoothWomanVitals } from "../components/images/booth-woman-vitals";
 import { ImgPillBottlesInBooth } from "../components/images/pill-bottles-in-booth";
-
+import { Link } from "gatsby";
 import KeyAudienceSellingPoints from "../modules/key-audience-selling-points";
 import MetaTags from "../components/meta-tags";
 import Hero from "../components/hero";
