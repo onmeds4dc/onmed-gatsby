@@ -11,7 +11,7 @@ import KeyAudienceSellingPoints from "../modules/key-audience-selling-points";
 import MetaTags from "../components/meta-tags";
 import Hero from "../components/hero";
 
-const PatientsPage = ({ data }) => {
+const CareersPage = ({ data }) => {
     const sectionHero = (
         <Hero
             img={
