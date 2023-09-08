@@ -31,24 +31,9 @@ const CareersPage = ({ data }) => {
                 <div className="row justify-content-center">
                     <div className="col-lg-10">
                         <h2 className="text-primary mb-6">
-                            PSA Purchasing Solutions Alliance
+                            Click Below to Apply Now
                         </h2>
-                        <div className="lead">
-                            <p className="mt-4">
-                                For Current PSA Members and Interested Parties.
-                            </p>
-                            <div className="text-dark">
-                                <p className="mt-4">
-                                    PSA is a nationwide purchasing cooperative
-                                    for public agencies. As a PSA member you
-                                    have access to all of PSA's competitive
-                                    contracts.
-                                </p>
-                                <p className="mt-4">
-                                    Reference OnMed Contract No. 22-205
-                                </p>
-                            </div>
-                        </div>
+                        
 
                         <div className="mt-6">
                             {/* <Link
@@ -58,11 +43,11 @@ const CareersPage = ({ data }) => {
                         View PSA Contract
                     </Link>{" "} */}
                             <Link
-                                to="https://psabuy.org/"
+                                to="https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=3ae5dc83-4d29-4017-9f9c-481dcf3fef6d&ccId=19000101_000001&source=LI&lang=en_US&selectedMenuKey=CareerCenter"
                                 className="btn btn-primary text-uppercase mb-3  mx-3 d-inline-flex align-items-center"
                                 target="_blank"
                             >
-                                Visit PSABUY.org
+                                APPLY NOW
                                 <SvgNewWindow
                                     className="ms-2"
                                     style={{
