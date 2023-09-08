@@ -2,7 +2,7 @@ import * as React from "react";
 import Layout from "../components/layout";
 import CardColsSecondary from "../components/card-cols-secondary";
 
-import { ImgHeroBoothScreenStethoscope } from "../components/images/heroes/booth-screen-stethoscope";
+import { ImgHeroClinicianStationConsultVMC } from "../components/images/heroes/clinician-station-consult-vmc";
 import { ImgWalkinsWelcome } from "../components/images/walkins-welcome";
 import { ImgBoothWomanVitals } from "../components/images/booth-woman-vitals";
 import { ImgPillBottlesInBooth } from "../components/images/pill-bottles-in-booth";
@@ -15,7 +15,7 @@ const CareersPage = ({ data }) => {
     const sectionHero = (
         <Hero
             img={
-                <ImgHeroBoothScreenStethoscope
+                <ImgHeroClinicianStationConsultVMC
                     alt="Step into the future of healthcare"
                     positions="60% 50%"
                 />
@@ -70,25 +70,28 @@ const CareersPage = ({ data }) => {
                         <dd>
                             <li>Medical Coverage (Including Prescription Drugs) </li>
                             <li>Dental Coverage</li>
+                            <li>Vision Coverage</li>
+                            <li>Telemedicine</li>
+                            <li>Use of the OnMed Care Station for Diagnoses</li>
+                            <li>Employee Assistance Program</li>
                         </dd>
                         <div className="100%"></div>
 
-                        <dt>OnMed Fees</dt>
+                        <dt>Financial</dt>
                         <dd>
-                            The OnMed Virtual Care Platform, including the Care
-                            Station, OnMed Clinical Staff and necessary service
-                            and maintenance are accessed through monthly
-                            licensing fees, patient utilization fees and
-                            maintenance fees. Additional Marketing and
-                            Advertising support and programs are available
-                            through separate fee arrangements.
+                            <li>401(k) Plan that allows traditional and Roth contributions</li>
+                            <li>Health Savings Plan (HSA)</li>
+                            <li>Life Insurance</li>
+                            <li>Accidental Death and Dismemberment (AD&D) Insurance</li>
+                            <li>Short and Long-Term Disability Plans</li>
                         </dd>
                         <div className="100%"></div>
-                        <dt>Lead Times and Implementation</dt>
+                        <dt>Additional Benefits</dt>
                         <dd>
-                            OnMed Care Stations can be deployed and operational
-                            at the Sponsor location within 4 months from the
-                            signing of a Letter of Intent.
+                            <li>Paid Time Off (PTO)</li>
+                            <li>Paid Holidays</li>
+                            <li>Employee Referral Program</li>
+                            <li>Emergency Travel Assistance Program</li>
                         </dd>
                         <div className="100%"></div>
                     </dl>
