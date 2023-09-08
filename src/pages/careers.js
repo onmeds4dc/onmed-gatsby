@@ -25,17 +25,8 @@ const CareersPage = ({ data }) => {
         </Hero>
     );
 
-    const sectionCareer = (
-        <CardColsSecondary
-            headline="A career in health care is more than just a job"
-            body={
-                <p>
-                    A career in health care is more than just a job,
-                    it's a calling where you make a difference in people's lives
-                    each and every day.{'\n'}
-                    Step into the future of health care with OnMed.
-                </p>
-                <section className="bg-cloud py-4 py-6">
+    const sectionApplyNow = (
+        <section className="bg-cloud py-4 py-6">
             <div className="container text-center py-6">
                 <div className="row justify-content-center">
                     <div className="col-lg-10">
@@ -85,6 +76,19 @@ const CareersPage = ({ data }) => {
                 </div>
             </div>
         </section>
+    );
+
+
+    const sectionCareer = (
+        <CardColsSecondary
+            headline="A career in health care is more than just a job"
+            body={
+                <p>
+                    A career in health care is more than just a job,
+                    it's a calling where you make a difference in people's lives
+                    each and every day.{'\n'}
+                    Step into the future of health care with OnMed.
+                </p>
             }
             img={<ImgWalkinsWelcome alt="" />}
             imgAlignRight={false}
@@ -162,6 +166,7 @@ const CareersPage = ({ data }) => {
     return (
         <Layout>
             {sectionHero}
+            {sectionApplyNow}
             {sectionCareer}
             {sectionCommitment}
             {sectionBenefits}
