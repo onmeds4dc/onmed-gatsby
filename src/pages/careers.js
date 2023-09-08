@@ -71,7 +71,7 @@ const CareersPage = ({ data }) => {
                 <p>
                     A career in health care is more than just a job,
                     it's a calling where you make a difference in people's lives
-                    each and every day.{'\n'}
+                    each and every day.<br/>
                     Step into the future of health care with OnMed.
                 </p>
             }
@@ -100,7 +100,7 @@ const CareersPage = ({ data }) => {
         <section className="container py-6 my-4">
             <div className="text-center">
                 <h2>Employee Benefits</h2>
-                <p className="lead">Our well-being is as important as the patients we serve.{'\n'}
+                <p className="lead">Our well-being is as important as the patients we serve.<br/>
                 We offer benefits and resources to help our employees and their families lead healthy lives.</p>
             </div>
             <div className="row justify-content-center">
@@ -154,6 +154,7 @@ const CareersPage = ({ data }) => {
             {sectionApplyNow}
             {sectionCareer}
             {sectionCommitment}
+            {sectionApplyNow}
             {sectionBenefits}
             {sectionKeyAudienceSellingPoints}
         </Layout>
