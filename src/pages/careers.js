@@ -92,10 +92,10 @@ const CareersPage = ({ data }) => {
     );
 };
 
-export default PatientsPage;
+export default CareersPage;
 
 export const Head = () => {
-    const title = "Patients - OnMed";
+    const title = "Careers - OnMed";
     return (
         <>
             <title>{title}</title>
