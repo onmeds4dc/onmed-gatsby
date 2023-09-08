@@ -60,17 +60,15 @@ const CareersPage = ({ data }) => {
     const sectionBenefits = (
         <section className="container py-6 my-4">
             <div className="text-center">
-                <h2>Becoming an OnMed Partner</h2>
-                <p className="lead">An overview of key partner requirements</p>
+                <h2>Employee Benefits</h2>
+                <p className="lead">Our well-being is as important as the patients we serve.  We offer benefits and resources to help our employees and their families lead healthy lives.</p>
             </div>
             <div className="row justify-content-center">
                 <div className="col-lg-10 col-xl-8">
                     <dl className="dl-primary lead row">
-                        <dt>3 Year Licensing Agreement</dt>
+                        <dt>Health and Wellness</dt>
                         <dd>
-                            OnMed Care Stations are available through a 3-year
-                            Licensing Agreement with all terms and conditions
-                            spelled out in the Agreement.
+                            <li>Medical Coverage (Including Prescription Drugs) </li>
                         </dd>
                         <div className="100%"></div>
 
