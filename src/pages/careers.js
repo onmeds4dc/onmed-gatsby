@@ -25,7 +25,7 @@ const CareersPage = ({ data }) => {
         </Hero>
     );
 
-    const sectionWalkIn = (
+    const sectionCareer = (
         <CardColsSecondary
             headline="A career in health care is more than just a job"
             body={
@@ -33,6 +33,8 @@ const CareersPage = ({ data }) => {
                     A career in health care is more than just a job,
                     it's a calling where you make a difference in people's lives
                     each and every day.
+                </p>
+                <p>
                     Step into the future of health care with OnMed.
                 </p>
             }
@@ -41,9 +43,9 @@ const CareersPage = ({ data }) => {
         />
     );
 
-    const sectionCareAnywhere = (
+    const sectionCommitment = (
         <CardColsSecondary
-            headline="OnMed is committed to making quality affordable health care accessible to all."
+            headline="The OnMed Commitment"
             body={
                 <p>
                     Founded in 2013, OnMed is committed to making quality affordable 
@@ -57,20 +59,84 @@ const CareersPage = ({ data }) => {
         />
     );
 
-    const sectionVitals = (
-        <CardColsSecondary
-            headline="Your vitals matter"
-            body={
-                <p>
-                    OnMed’s care visit includes real-time measurements of your
-                    key vitals for an accurate diagnosis and treatment
-                    experience. Your key health metrics are displayed instantly
-                    on the screen.
-                </p>
-            }
-            img={<ImgBoothWomanVitals alt="" />}
-            imgAlignRight={false}
-        />
+    const sectionBenefits = (
+        <section className="container py-6 my-4">
+            <div className="text-center">
+                <h2>Becoming an OnMed Partner</h2>
+                <p className="lead">An overview of key partner requirements</p>
+            </div>
+            <div className="row justify-content-center">
+                <div className="col-lg-10 col-xl-8">
+                    <dl className="dl-primary lead row">
+                        <dt>3 Year Licensing Agreement</dt>
+                        <dd>
+                            OnMed Care Stations are available through a 3-year
+                            Licensing Agreement with all terms and conditions
+                            spelled out in the Agreement.
+                        </dd>
+                        <div className="100%"></div>
+
+                        <dt>OnMed Fees</dt>
+                        <dd>
+                            The OnMed Virtual Care Platform, including the Care
+                            Station, OnMed Clinical Staff and necessary service
+                            and maintenance are accessed through monthly
+                            licensing fees, patient utilization fees and
+                            maintenance fees. Additional Marketing and
+                            Advertising support and programs are available
+                            through separate fee arrangements.
+                        </dd>
+                        <div className="100%"></div>
+                        <dt>Lead Times and Implementation</dt>
+                        <dd>
+                            OnMed Care Stations can be deployed and operational
+                            at the Sponsor location within 4 months from the
+                            signing of a Letter of Intent.
+                        </dd>
+                        <div className="100%"></div>
+                        <dt>Single or Double OnMed Care Stations</dt>
+                        <dd>
+                            The OnMed Care Station is available in two
+                            configurations; a Single Room, featuring one patient
+                            consult room with attached Robotic Dispensing System
+                            and embedded software and servers or a Double Room,
+                            featuring two patient consult rooms with the Robotic
+                            Dispensing System and embedded software and servers
+                            configured between the patient rooms.
+                        </dd>
+                        <div className="100%"></div>
+                        <dt>Location &amp; Installation Requirements</dt>
+                        <dd>
+                            The free-standing OnMed Care Station requires
+                            sufficient available square footage and ceiling
+                            height to accommodate the Single or Double Care
+                            Station. Additionally, the Care Station requires a
+                            dedicated high-speed internet connection and power
+                            outlet. The Care Station operates in common indoor
+                            HVAC controlled conditions which is secure and
+                            monitored. For custom-installed locations, other
+                            than a free-standing location, OnMed requires
+                            additional implementation time and potential fees.
+                        </dd>
+                        <div className="100%"></div>
+                        <dt>Maintenance and Cleaning</dt>
+                        <dd>
+                            Daily cleaning and maintenance due to normal patient
+                            traffic is the responsibility of the Sponsor.
+                        </dd>
+                        <div className="100%"></div>
+                        <dt>Publicity and Marketing</dt>
+                        <dd>
+                            All Sponsor driven publicity and marketing that
+                            utilizes the trademarks, images, technical
+                            information or general OnMed marketing information
+                            or content requires the approval of OnMed before
+                            distribution or release.
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </section>
     );
 
     const sectionKeyAudienceSellingPoints = (
@@ -84,9 +150,9 @@ const CareersPage = ({ data }) => {
     return (
         <Layout>
             {sectionHero}
-            {sectionWalkIn}
-            {sectionCareAnywhere}
-            {sectionVitals}
+            {sectionCareer}
+            {sectionCommitment}
+            {sectionBenefits}
             {sectionKeyAudienceSellingPoints}
         </Layout>
     );
