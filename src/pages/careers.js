@@ -8,6 +8,7 @@ import { ImgBoothWomanVitals } from "../components/images/booth-woman-vitals";
 import { ImgPillBottlesInBooth } from "../components/images/pill-bottles-in-booth";
 import { Link } from "gatsby";
 import KeyAudienceSellingPoints from "../modules/key-audience-selling-points";
+import CareerPoints from "../modules/careers-points";
 import MetaTags from "../components/meta-tags";
 import Hero from "../components/hero";
 
@@ -152,6 +153,7 @@ const CareersPage = ({ data }) => {
         <Layout>
             {sectionHero}
             {sectionApplyNow}
+            {sectionCareerPoints}
             {sectionCareer}
             {sectionCommitment}
             {sectionApplyNow}
