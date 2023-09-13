@@ -2,7 +2,7 @@ import * as React from "react";
 import Layout from "../components/layout";
 import CardColsSecondary from "../components/card-cols-secondary";
 import SvgNewWindow from "../components/svgs/new-window";
-import { ImgHeroClinicianStationConsultVMC } from "../components/images/heroes/clinician-station-consult-vmc";
+import { ImgHeroClinicianHighFive } from "../components/images/heroes/clinician-high-five";
 import { ImgWalkinsWelcome } from "../components/images/walkins-welcome";
 import { ImgBoothWomanVitals } from "../components/images/booth-woman-vitals";
 import { ImgPillBottlesInBooth } from "../components/images/pill-bottles-in-booth";
@@ -16,13 +16,13 @@ const CareersPage = ({ data }) => {
     const sectionHero = (
         <Hero
             img={
-                <ImgHeroClinicianStationConsultVMC
-                    alt="Step into the future of healthcare"
+                <ImgHeroClinicianHighFive
+                    alt="Career Opportunities"
                     positions="60% 50%"
                 />
             }
         >
-            Step into the future of healthcare
+            Career Opportunities
         </Hero>
     );
 
