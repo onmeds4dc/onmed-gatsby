@@ -65,21 +65,6 @@ const CareersPage = ({ data }) => {
     );
 
 
-    const sectionCareer = (
-        <CardColsSecondary
-            headline="A career in health care is more than just a job"
-            body={
-                <p>
-                    A career in health care is more than just a job,
-                    it's a calling where you make a difference in people's lives
-                    each and every day.<br/>
-                    Step into the future of health care with OnMed.
-                </p>
-            }
-            img={<ImgWalkinsWelcome alt="" />}
-            imgAlignRight={false}
-        />
-    );
 
     const sectionCommitment = (
         <CardColsSecondary
@@ -162,7 +147,6 @@ const CareersPage = ({ data }) => {
             {sectionHero}
             {sectionApplyNow}
             {sectionCareerPoints}
-            {sectionCareer}
             {sectionCommitment}
             {sectionApplyNow}
             {sectionBenefits}
