@@ -225,7 +225,7 @@ const CareersPage = ({ data }) => {
         </>
     );
 };
-    );
+
 
     return (
         <Layout>
