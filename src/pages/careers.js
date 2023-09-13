@@ -149,7 +149,7 @@ const CareersPage = ({ data }) => {
         </section>
     );
 
-    const CareerPoints = (
+    const sectionCareerPoints = (
         <section className="bg-cloud py-5">
             <div className="container py-4 py-md-6">
                 <CareerPoints />
