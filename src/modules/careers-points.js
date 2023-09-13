@@ -53,6 +53,11 @@ const CareerPoints = (props) => {
                     body={
                         <p>
                             Our Employees’ Well-Being is as Important as the Patients We Serve
+                            cta={
+                            <a href="/patients/" className="btn-arrow">
+                            Tell me more
+                            </a>
+                            }
                         </p>
                     }
                     img={<img src="/icons/icon-map.svg" alt="Map icon" />}
