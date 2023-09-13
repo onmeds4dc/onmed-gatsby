@@ -3,6 +3,7 @@ import ListFigureGrid from "../components/list-figure-grid";
 import ListFigureGridItem from "../components/list-figure-grid-item";
 import SvgNewWindow from "../components/svgs/new-window";
 import { Link } from "gatsby";
+import { ImgHexWalkIn } from "../components/images/hex-walk-in";
 const CareerPoints = (props) => {
     return (
         <>
