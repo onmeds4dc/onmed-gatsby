@@ -1,7 +1,8 @@
 import React from "react";
 import ListFigureGrid from "../components/list-figure-grid";
 import ListFigureGridItem from "../components/list-figure-grid-item";
-
+import SvgNewWindow from "../components/svgs/new-window";
+import { Link } from "gatsby";
 const CareerPoints = (props) => {
     return (
         <>
@@ -10,21 +11,34 @@ const CareerPoints = (props) => {
             </h2>
             <ListFigureGrid hasIcons={true}>
                 <ListFigureGridItem
-                    headline="Clean"
+                    headline="Why Work At OnMed"
                     body={
                         <p>
-                            The Care Station is carefully sanitized using UV
-                            lighting
+                            Founded in 2013, the Company was born out of an innovative spirit and belief that it could create a more effective way for people to receive care, including getting the medications they need quickly.
+                            <be />OnMed provides the opportunity to be part of the leading edge of virtual health care.  Our team is committed to providing access to quality affordable care for everyone.
                         </p>
                     }
                     img={<img src="/icons/icon-sunset.svg" alt="Sunset icon" />}
                 />
                 <ListFigureGridItem
-                    headline="Private"
+                    headline="OnMed Careers"
                     body={
                         <p>
-                            Privacy when in use with LCD glass that is fogged
-                            completely when activated
+                            Be a part of the new world of health care and join the OnMed team. <br /><br />
+                            <Link
+                                to="https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=3ae5dc83-4d29-4017-9f9c-481dcf3fef6d&ccId=19000101_000001&source=LI&lang=en_US&selectedMenuKey=CareerCenter"
+                                className="btn btn-primary text-uppercase mb-3  mx-3 d-inline-flex align-items-center"
+                                target="_blank"
+                            >
+                                APPLY NOW
+                                <SvgNewWindow
+                                    className="ms-2"
+                                    style={{
+                                        height: "14px",
+                                        width: "auto",
+                                    }}
+                                />
+                            </Link>
                         </p>
                     }
                     img={
@@ -35,52 +49,16 @@ const CareerPoints = (props) => {
                     }
                 />
                 <ListFigureGridItem
-                    headline="Accessible"
+                    headline="Benefits"
                     body={
                         <p>
-                            Services available to anyone, anywhere, including
-                            rural and remote areas
+                            Our Employees’ Well-Being is as Important as the Patients We Serve
                         </p>
                     }
                     img={<img src="/icons/icon-map.svg" alt="Map icon" />}
                 />
                 <div className="w-100"></div>
-                <div className="w-100"></div>
-                <ListFigureGridItem
-                    headline="Affordable"
-                    body={
-                        <p>
-                            Works with major insurance and only a fraction of
-                            the cost of a traditional doctor's office visit
-                        </p>
-                    }
-                    img={
-                        <img
-                            src="/icons/icon-get-money.svg"
-                            alt="Hands and dollar symbol icon"
-                        />
-                    }
-                />
-                <ListFigureGridItem
-                    headline="Secure"
-                    body={
-                        <p>
-                            HIPAA compliant transfer and storage of all patient
-                            data using advanced encryption technology
-                        </p>
-                    }
-                    img={<img src="/icons/icon-lock.svg" alt="Lock icon" />}
-                />
-                <ListFigureGridItem
-                    headline="Convenient"
-                    body={
-                        <p>
-                            Open 7 days a week with extended hours and no
-                            appointment needed
-                        </p>
-                    }
-                    img={<img src="/icons/icon-clock.svg" alt="Clock icon" />}
-                />
+                
             </ListFigureGrid>
         </>
     );
