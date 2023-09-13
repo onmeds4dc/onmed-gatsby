@@ -15,7 +15,7 @@ const CareerPoints = (props) => {
                     body={
                         <p>
                             Founded in 2013, the Company was born out of an innovative spirit and belief that it could create a more effective way for people to receive care, including getting the medications they need quickly.
-                            <be />OnMed provides the opportunity to be part of the leading edge of virtual health care.  Our team is committed to providing access to quality affordable care for everyone.
+                            <br /><br />OnMed provides the opportunity to be part of the leading edge of virtual health care.  Our team is committed to providing access to quality affordable care for everyone.
                         </p>
                     }
                     img={<img src="/icons/icon-sunset.svg" alt="Sunset icon" />}
