@@ -27,7 +27,7 @@ export function VideoShortForm(props) {
                 <Modal.Body className="d-flex justify-content-center align-items-center">
                     <YouTube
                         videoId="u84r7ZQar4Q"
-                        className="youtube-container"
+                        className="youtube-container" 
                     />
                 </Modal.Body>
             </Modal>
