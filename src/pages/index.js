@@ -23,7 +23,7 @@ import ContactForm from "../components/contact-form";
 import YouTube from "react-youtube";
 import Modal from "react-bootstrap/Modal";
 import MetaTags from "../components/meta-tags";
-import { VideoLongForm } from "../components/video-long-form";
+import { VideoShortForm } from "../components/video-short-form";
 
 const IndexPage = ({ data }) => {
     const {
@@ -63,7 +63,7 @@ const IndexPage = ({ data }) => {
                                         alt="Alt text"
                                         className="hex-and-dots--img mask-image--hex"
                                     />
-                                    <VideoLongForm className="video-mobile " />
+                                    <VideoShortForm className="video-mobile " />
                                 </div>
                             </div>
                         </div>
