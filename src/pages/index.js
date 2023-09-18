@@ -264,10 +264,9 @@ const IndexPage = ({ data }) => {
                         employees, business patrons, or even students on campus.
                         Our OnMed Care Station can be customized to your brand
                         and features a modern design that’s sleek and
-                        aesthetically pleasing. It’s also cost-effective
-                        compared to brick-and-mortar Primary Care, including
-                        hospitals and clinics. OnMed is the anywhere healthcare
-                        whenever you need it most.
+                        aesthetically pleasing. It's also cost-effective compared
+                        to traditional brick and mortar clinics. OnMed provides 
+                        access to quality affordable care wherever you need it.
                     </p>
                 }
                 cta={
