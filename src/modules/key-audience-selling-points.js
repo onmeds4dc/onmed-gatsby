@@ -13,8 +13,8 @@ const KeyAudienceSellingPoints = (props) => {
                     headline="Clean"
                     body={
                         <p>
-                            The Care Station is carefully sanitized using UV
-                            lighting
+                            The OnMed Care Station is carefully sanitized using 
+                            UV lighting
                         </p>
                     }
                     img={<img src="/icons/icon-sunset.svg" alt="Sunset icon" />}
