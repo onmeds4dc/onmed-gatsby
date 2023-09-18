@@ -162,7 +162,7 @@ const IndexPage = ({ data }) => {
                             </p>
                         }
                         img={
-                            <ImgHexGetExam alt="Woman taking her own vitals iin a med station" />
+                            <ImgHexGetExam alt="Woman taking her own vitals in OnMed Care Station" />
                         }
                     />
                     <ListFigureGridItem
@@ -189,7 +189,7 @@ const IndexPage = ({ data }) => {
                 title="Patients"
                 headline={
                     <>
-                        Always open. Always{" "}
+                        Always welcome. Always{" "}
                         <span className="text-primary">On.</span>
                     </>
                 }
