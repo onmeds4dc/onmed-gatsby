@@ -4,6 +4,19 @@ import ListFigureGridItem from "../components/list-figure-grid-item";
 import SvgNewWindow from "../components/svgs/new-window";
 import { Link } from "gatsby";
 import { ImgHexWalkIn } from "../components/images/hex-walk-in";
+
+const modal = document.querySelector("#modal");
+const openModal = document.querySelector("#openModal");
+const closeModal = document.querySelector("#closeModal");
+
+if (modal) {
+  openModal &&
+    openModal.addEventListener("click", () => modal.showModal());
+
+  closeModal &&
+    closeModal.addEventListener("click", () => modal.close());
+}
+
 const CareerPoints = (props) => {
     return (
         <>
@@ -51,10 +64,10 @@ const CareerPoints = (props) => {
                             Our Employees’ Well-Being is as Important as the Patients We Serve. <br /><br />
                             <button id="openModal">Open the modal</button>
 
-<dialog id="modal">
-  <p>Modal content of your choice. Click the below button or press the escape key to close this.</p>
-  <button id="closeModal">Close this modal</button>
-</dialog>
+                            <dialog id="modal">
+                              <p>Modal content of your choice. Click the below button or press the escape key to close this.</p>
+                              <button id="closeModal">Close this modal</button>
+                            </dialog>
                         </p>
                     }
                     img={<ImgHexWalkIn alt="An OnMed Care Station" />}
@@ -65,17 +78,5 @@ const CareerPoints = (props) => {
         </>
     );
 };
-
-const modal = document.querySelector("#modal");
-const openModal = document.querySelector("#openModal");
-const closeModal = document.querySelector("#closeModal");
-
-if (modal) {
-  openModal &&
-    openModal.addEventListener("click", () => modal.showModal());
-
-  closeModal &&
-    closeModal.addEventListener("click", () => modal.close());
-}
 
 export default CareerPoints;
