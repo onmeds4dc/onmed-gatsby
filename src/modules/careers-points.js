@@ -8,6 +8,7 @@ import YouTube from "react-youtube";
 import Modal from "react-bootstrap/Modal";
 import MetaTags from "../components/meta-tags";
 import { VideoShortForm } from "../components/video-short-form";
+import SvgVideoCamera from "../components/svgs/video-camera";
 
 const CareerPoints = (props) => {
     return (
