@@ -52,7 +52,10 @@ const CareerPoints = (props) => {
                     body={
                         <p>
                             Our Employees’ Well-Being is as Important as the Patients We Serve. <br /><br />
-                            
+                function Video() {
+        const [lgShow, setLgShow] = useState(false);
+
+        return (
             <>
                 <Button
                     className="btn btn-primary text-uppercase mb-3 d-inline-flex align-items-center"
@@ -85,6 +88,7 @@ const CareerPoints = (props) => {
                     </Modal.Body>
                 </Modal>
             </>
+        );
                         </p>
                     }
                     img={<ImgHexWalkIn alt="An OnMed Care Station" />}
