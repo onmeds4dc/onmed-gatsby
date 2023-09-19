@@ -4,9 +4,6 @@ import ListFigureGridItem from "../components/list-figure-grid-item";
 import SvgNewWindow from "../components/svgs/new-window";
 import { Link } from "gatsby";
 import { ImgHexWalkIn } from "../components/images/hex-walk-in";
-
-import Modal from "react-bootstrap/Modal";
-
 const CareerPoints = (props) => {
     return (
         <>
@@ -52,43 +49,20 @@ const CareerPoints = (props) => {
                     body={
                         <p>
                             Our Employees’ Well-Being is as Important as the Patients We Serve. <br /><br />
-                function Video() {
-        const [lgShow, setLgShow] = useState(false);
-
-        return (
-            <>
-                <Button
-                    className="btn btn-primary text-uppercase mb-3 d-inline-flex align-items-center"
-                    onClick={() => setLgShow(true)}
-                >
-                    <SvgVideoCamera
-                        className="me-2
-                                "
-                        style={{
-                            height: "14px",
-                            width: "auto",
-                        }}
-                    />{" "}
-                    Watch the video
-                </Button>
-
-                <Modal
-                    size="lg"
-                    show={lgShow}
-                    onHide={() => setLgShow(false)}
-                    aria-labelledby="example-modal-sizes-title-lg"
-                    centered
-                >
-                    <Modal.Header closeButton></Modal.Header>
-                    <Modal.Body className="d-flex justify-content-center align-items-center">
-                        <YouTube
-                            videoId="u84r7ZQar4Q"
-                            className="youtube-container"
-                        />
-                    </Modal.Body>
-                </Modal>
-            </>
-        );
+                            <Link
+                                to="/patients/"
+                                className="btn btn-primary text-uppercase mb-3  mx-3 d-inline-flex align-items-center"
+                                target="_blank"
+                            >
+                                Learn More
+                                <SvgNewWindow
+                                    className="ms-2"
+                                    style={{
+                                        height: "14px",
+                                        width: "auto",
+                                    }}
+                                />
+                            </Link>
                         </p>
                     }
                     img={<ImgHexWalkIn alt="An OnMed Care Station" />}
