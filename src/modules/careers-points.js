@@ -1,6 +1,6 @@
 import React from "react";
 import ListFigureGrid from "../components/list-figure-grid";
-import ListFigureGridItem from "../components/list-figure-grid-item";
+import ListFigureGridItem from "../components/list-figure-grid-item2";
 import SvgNewWindow from "../components/svgs/new-window";
 import { Link } from "gatsby";
 import { ImgWomanThouchscreen } from "../components/images/woman-touchscreen";
