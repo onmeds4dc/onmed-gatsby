@@ -66,7 +66,7 @@ const BenefitsPage = ({ data }) => {
 
     return (
         <Layout>
-            {sectionHero}
+            
             {sectionBenefits}
         </Layout>
     );
