@@ -8,7 +8,7 @@ const CareerPoints = (props) => {
     return (
         <>
             <h2 className="text-center mb-5">
-                The OnMed Care Station Experience
+                Careers at OnMed
             </h2>
             <ListFigureGrid hasIcons={true}>
                 <ListFigureGridItem
