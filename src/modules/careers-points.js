@@ -10,6 +10,7 @@ import { Imgvmc } from "../components/images/vmc";
 import YouTube from "react-youtube";
 import Modal from "react-bootstrap/Modal";
 import { VideoShortForm } from "../components/video-short-form";
+import SvgVideoCamera from "../components/svgs/video-camera";
 
 
 
