@@ -117,7 +117,7 @@ const BenefitsPage = ({ data }) => {
     return (
         <Layout>
             {sectionHero}
-            {sectionPartnerRequirements}
+            {sectionBenefits}
             {sectionContact}
         </Layout>
     );
