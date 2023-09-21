@@ -3,7 +3,7 @@ import ListFigureGrid from "../components/list-figure-grid";
 import ListFigureGridItem from "../components/list-figure-grid-item";
 import SvgNewWindow from "../components/svgs/new-window";
 import { Link } from "gatsby";
-import { ImgWomanThouchscreen } from "../components/images/woman-lab-coat-touchscreen";
+import { ImgWomanThouchscreen } from "../components/images/woman-touchscreen";
 const CareerPoints = (props) => {
     return (
         <>
