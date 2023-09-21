@@ -1,7 +1,7 @@
 import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 
-export function ImgWomanThouchscreen(props) {
+export function Imgvmc(props) {
     return (
         <StaticImage
             src="../../../static/images/general/vmc.jpg"
