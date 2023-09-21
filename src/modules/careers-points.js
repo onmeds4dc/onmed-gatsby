@@ -11,9 +11,8 @@ import YouTube from "react-youtube";
 import Modal from "react-bootstrap/Modal";
 import { VideoShortForm } from "../components/video-short-form";
 
-const CareerPoints = (props) => {
 
-    function Video() {
+function Video() {
         const [lgShow, setLgShow] = useState(false);
 
         return (
@@ -50,6 +49,8 @@ const CareerPoints = (props) => {
                 </Modal>
             </>
         );
+
+const CareerPoints = (props) => {
     
     return (
         <>
