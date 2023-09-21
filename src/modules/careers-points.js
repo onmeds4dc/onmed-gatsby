@@ -82,6 +82,8 @@ const CareerPoints = (props) => {
             </ListFigureGrid>
         </>
     );
+};
+
 function Video() {
         const [lgShow, setLgShow] = useState(false);
 
@@ -119,6 +121,5 @@ function Video() {
                 </Modal>
             </>
         );
-};
 
 export default CareerPoints;
