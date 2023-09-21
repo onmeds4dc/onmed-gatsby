@@ -3,7 +3,7 @@ import ListFigureGrid from "../components/list-figure-grid";
 import ListFigureGridItem from "../components/list-figure-grid-item";
 import SvgNewWindow from "../components/svgs/new-window";
 import { Link } from "gatsby";
-import { ImgHexWalkIn } from "../components/images/hex-walk-in";
+import { ImgWomanThouchscreen } from "../components/images/woman-lab-coat-touchscreen";
 const CareerPoints = (props) => {
     return (
         <>
@@ -19,7 +19,7 @@ const CareerPoints = (props) => {
                             <br /><br />OnMed provides the opportunity to be part of the leading edge of virtual health care.  Our team is committed to providing access to quality affordable care for everyone.
                         </p>
                     }
-                    img={<ImgHexWalkIn alt="An OnMed Care Station" />}
+                    img={<ImgWomanThouchscreen alt="An OnMed Care Station" />}
                 />
                 <ListFigureGridItem
                     headline="OnMed Careers"
@@ -42,7 +42,7 @@ const CareerPoints = (props) => {
                             </Link>
                         </p>
                     }
-                    img={<ImgHexWalkIn alt="An OnMed Care Station" />}
+                    img={<ImgWomanThouchscreen alt="An OnMed Care Station" />}
                 />
                 <ListFigureGridItem
                     headline="Benefits"
@@ -65,7 +65,7 @@ const CareerPoints = (props) => {
                             </Link>
                         </p>
                     }
-                    img={<ImgHexWalkIn alt="An OnMed Care Station" />}
+                    img={<ImgWomanThouchscreen alt="An OnMed Care Station" />}
                 />
                 <div className="w-100"></div>
                 
