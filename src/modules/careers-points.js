@@ -89,43 +89,4 @@ const CareerPoints = (props) => {
     );
 };
 
-function Video() {
-        const [lgShow, setLgShow] = useState(false);
-
-        return (
-            <>
-                <Button
-                    className="btn btn-primary text-uppercase mb-3 d-inline-flex align-items-center"
-                    onClick={() => setLgShow(true)}
-                >
-                    <SvgVideoCamera
-                        className="me-2
-                                "
-                        style={{
-                            height: "14px",
-                            width: "auto",
-                        }}
-                    />{" "}
-                    Watch the video
-                </Button>
-
-                <Modal
-                    size="lg"
-                    show={lgShow}
-                    onHide={() => setLgShow(false)}
-                    aria-labelledby="example-modal-sizes-title-lg"
-                    centered
-                >
-                    <Modal.Header closeButton></Modal.Header>
-                    <Modal.Body className="d-flex justify-content-center align-items-center">
-                        <YouTube
-                            videoId="u84r7ZQar4Q"
-                            className="youtube-container"
-                        />
-                    </Modal.Body>
-                </Modal>
-            </>
-        );
-    }
-
 export default CareerPoints;
