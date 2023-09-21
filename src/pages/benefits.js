@@ -5,15 +5,15 @@ import ContactForm from "../components/contact-form";
 import { ImgBooth } from "../components/images/general/booth";
 import { Link } from "gatsby";
 import MetaTags from "../components/meta-tags";
-import { ImgHeroManOfficeChair } from "../components/images/heroes/man-office-chair";
+import { ImgHeroClinicianStationConsultVMC } from "../components/images/heroes/clinician-station-consult-vmc";
 import Hero from "../components/hero";
 
 const BenefitsPage = ({ data }) => {
     const sectionHero = (
         <Hero
             img={
-                <ImgHeroManOfficeChair
-                    alt="Become an OnMed partner"
+                <ImgHeroClinicianStationConsultVMC
+                    alt="VMC Clinician"
                     positions="70% 50%"
                     classNames="mb-5 mb-md-6"
                 />
