@@ -4,6 +4,7 @@ import ListFigureGridItem from "../components/list-figure-grid-item2";
 import SvgNewWindow from "../components/svgs/new-window";
 import { Link } from "gatsby";
 import { ImgWomanThouchscreen } from "../components/images/woman-touchscreen";
+import { ImgPTHoltingBottleExit } from "../components/images/pt-holding-bottle-exit";
 import { Imgvmc } from "../components/images/vmc";
 const CareerPoints = (props) => {
     return (
@@ -66,7 +67,7 @@ const CareerPoints = (props) => {
                             </Link>
                         </p>
                     }
-                    img={<ImgWomanThouchscreen alt="An OnMed Care Station" />}
+                    img={<ImgPTHoltingBottleExit alt="Patient Exit OnMed Care Station" />}
                 />
                 <div className="w-100"></div>
                 
