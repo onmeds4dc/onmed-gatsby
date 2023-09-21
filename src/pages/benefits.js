@@ -41,22 +41,20 @@ const BenefitsPage = ({ data }) => {
 
                         <dt>FInancial Benefits</dt>
                         <dd>
-                            <li>Medical Coverage (Including Prescription Drugs)</li>
-                            <li>Dental Coverage</li>
-                            <li>Vision Coverage</li>
-                            <li>Telemedicine</li>
-                            <li>Use of the OnMed Care Station for Diagnoses</li>
-                            <li>Employee Assistance Program</li>
+                            <li>401(k) Plan that allows traditional & Roth contributions</li>
+                            <li>Health Savings Account (HSA)</li>
+                            <li>Life Insurance</li>
+                            <li>Accidental Death & Dismemberment (AD&D Insurance)</li>
+                            <li>Short- & Long-Term Disability Plans</li>
                         </dd>
                         <div className="100%"></div>
                         <dt>Additional Benefits</dt>
                         <dd>
-                            <li>Medical Coverage (Including Prescription Drugs)</li>
-                            <li>Dental Coverage</li>
-                            <li>Vision Coverage</li>
-                            <li>Telemedicine</li>
-                            <li>Use of the OnMed Care Station for Diagnoses</li>
-                            <li>Employee Assistance Program</li>
+                            <li>Flexible Work Arrangements (Including work from home)</li>
+                            <li>Paid Time Off (PTO)</li>
+                            <li>Paid Holidays</li>
+                            <li>Employee Referral Program</li>
+                            <li>Emergency Travel Assistance Program</li>
                         </dd>
                         <div className="100%"></div>
                     </dl>
