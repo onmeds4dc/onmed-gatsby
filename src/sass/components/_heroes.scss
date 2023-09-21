@@ -52,7 +52,7 @@
         text-align: center;
         @include media-breakpoint-up(lg) {
             padding-top: $menu-primary-height; // Because the menu is sticky
-            padding-bottom: $spacing-4;
+            padding-bottom: $spacing-1;
         }
     }
 }
