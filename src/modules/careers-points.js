@@ -4,6 +4,7 @@ import ListFigureGridItem from "../components/list-figure-grid-item2";
 import SvgNewWindow from "../components/svgs/new-window";
 import { Link } from "gatsby";
 import { ImgWomanThouchscreen } from "../components/images/woman-touchscreen";
+import { Imgvmc } from "../components/images/vmc";
 const CareerPoints = (props) => {
     return (
         <>
@@ -42,7 +43,7 @@ const CareerPoints = (props) => {
                             </Link>
                         </p>
                     }
-                    img={<ImgWomanThouchscreen alt="An OnMed Care Station" />}
+                    img={<Imgvmc alt="An OnMed Care Station" />}
                 />
                 <ListFigureGridItem
                     headline="Benefits"
