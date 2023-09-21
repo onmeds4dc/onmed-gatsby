@@ -19,7 +19,7 @@ const CareerPoints = (props) => {
                             <br /><br />OnMed provides the opportunity to be part of the leading edge of virtual health care.  Our team is committed to providing access to quality affordable care for everyone.
                         </p>
                     }
-                    img={<ImgWomanThouchscreen alt="An OnMed Care Station" />}
+                    img2={<ImgWomanThouchscreen alt="An OnMed Care Station" />}
                 />
                 <ListFigureGridItem
                     headline="OnMed Careers"
@@ -42,7 +42,7 @@ const CareerPoints = (props) => {
                             </Link>
                         </p>
                     }
-                    img={<ImgWomanThouchscreen alt="An OnMed Care Station" />}
+                    img2={<ImgWomanThouchscreen alt="An OnMed Care Station" />}
                 />
                 <ListFigureGridItem
                     headline="Benefits"
@@ -65,7 +65,7 @@ const CareerPoints = (props) => {
                             </Link>
                         </p>
                     }
-                    img={<ImgWomanThouchscreen alt="An OnMed Care Station" />}
+                    img2={<ImgWomanThouchscreen alt="An OnMed Care Station" />}
                 />
                 <div className="w-100"></div>
                 
