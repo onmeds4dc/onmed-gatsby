@@ -7,14 +7,6 @@ import { ImgWomanThouchscreen } from "../components/images/woman-touchscreen";
 import { ImgPTHoltingBottleExit } from "../components/images/pt-holding-bottle-exit";
 import { Imgvmc } from "../components/images/vmc";
 
-import YouTube from "react-youtube";
-import Modal from "react-bootstrap/Modal";
-import { VideoShortForm } from "../components/video-short-form";
-import SvgVideoCamera from "../components/svgs/video-camera";
-
-
-
-
 const CareerPoints = (props) => {
     
     return (
@@ -75,9 +67,6 @@ const CareerPoints = (props) => {
                                     }}
                                 />
                             </Link>
-                            <div className="mt-6 mt-6">
-                                <Video />
-                            </div>
                         </p>
                     }
                     img={<ImgPTHoltingBottleExit alt="Patient Exit OnMed Care Station" />}
