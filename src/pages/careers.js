@@ -37,7 +37,6 @@ const CareersPage = ({ data }) => {
 
     return (
         <Layout>
-            {sectionHero}
             {sectionCareerPoints}
         </Layout>
     );
