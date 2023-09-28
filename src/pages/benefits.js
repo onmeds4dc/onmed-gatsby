@@ -25,10 +25,11 @@ const BenefitsPage = ({ data }) => {
 
     const sectionBenefits = (
         <section className="container py-6 my-4">
+        
+            <div className="row justify-content-center">
         <div className="text-center">
                 <h2 className="text-center mb-5">Our Benefits</h2>
             </div>
-            <div className="row justify-content-center">
                 <div className="col-lg-10 col-xl-8">
                     <dl className="dl-primary lead row">
                         <dt>Health & Wellness</dt>
