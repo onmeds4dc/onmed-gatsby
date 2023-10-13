@@ -70,6 +70,16 @@
                 }
             }
         }
+        &--img2 {
+            > * {
+                width: 230px;
+
+                @include media-breakpoint-up(md) {
+                    margin: auto;
+                    width: 80%;
+                }
+            }
+        }
         &--text {
         }
 

@@ -89,7 +89,7 @@ const CliniciansPage = () => {
                     We use our technology as a means to best serve our patients.
                     But the OnMed experience is nothing without human compassion
                     and empathy. We will provide you with all the training you
-                    need to use the diagnostics systems of our Care Stations to
+                    need to use the diagnostics systems of our OnMed Care Stations to
                     examine, diagnose and offer the treatment that patients can
                     trust, just like a typical doctor’s visit.
                 </p>

@@ -108,7 +108,7 @@ export const Head = () => {
 
 export const pageQuery = graphql`
     query {
-        allWpPost(sort: {order: DESC, fields: date}, filter: {status: {eq: "publish"}}) {
+        allWpPost(limit: 4, sort: {order: DESC, fields: date}, filter: {status: {eq: "publish"}}) {
             edges {
                 node {
                     title

@@ -23,7 +23,7 @@ import ContactForm from "../components/contact-form";
 import YouTube from "react-youtube";
 import Modal from "react-bootstrap/Modal";
 import MetaTags from "../components/meta-tags";
-import { VideoLongForm } from "../components/video-long-form";
+import { VideoShortForm } from "../components/video-short-form";
 
 const IndexPage = ({ data }) => {
     const {
@@ -63,7 +63,7 @@ const IndexPage = ({ data }) => {
                                         alt="Alt text"
                                         className="hex-and-dots--img mask-image--hex"
                                     />
-                                    <VideoLongForm className="video-mobile " />
+                                    <VideoShortForm className="video-mobile " />
                                 </div>
                             </div>
                         </div>
@@ -162,7 +162,7 @@ const IndexPage = ({ data }) => {
                             </p>
                         }
                         img={
-                            <ImgHexGetExam alt="Woman taking her own vitals iin a med station" />
+                            <ImgHexGetExam alt="Woman taking her own vitals in OnMed Care Station" />
                         }
                     />
                     <ListFigureGridItem
@@ -189,7 +189,7 @@ const IndexPage = ({ data }) => {
                 title="Patients"
                 headline={
                     <>
-                        Always open. Always{" "}
+                        Always welcome. Always{" "}
                         <span className="text-primary">On.</span>
                     </>
                 }
@@ -264,10 +264,9 @@ const IndexPage = ({ data }) => {
                         employees, business patrons, or even students on campus.
                         Our OnMed Care Station can be customized to your brand
                         and features a modern design that’s sleek and
-                        aesthetically pleasing. It’s also cost-effective
-                        compared to brick-and-mortar Primary Care, including
-                        hospitals and clinics. OnMed is the anywhere healthcare
-                        whenever you need it most.
+                        aesthetically pleasing. It's also cost-effective compared
+                        to traditional brick and mortar clinics. OnMed provides 
+                        access to quality affordable care wherever you need it.
                     </p>
                 }
                 cta={
@@ -366,7 +365,7 @@ const IndexPage = ({ data }) => {
                     <Modal.Header closeButton></Modal.Header>
                     <Modal.Body className="d-flex justify-content-center align-items-center">
                         <YouTube
-                            videoId="SkMxdumhrSU"
+                            videoId="u84r7ZQar4Q"
                             className="youtube-container"
                         />
                     </Modal.Body>
